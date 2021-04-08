@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "essence",
+	"pattern": [
+		"XXX",
+		"X X",
+		"XXX"
+	],
+	"key": {
+		"X": {"item": "resourcecrops:essence_betterend/crystal_shard"}
+	},
+	"result": {
+		"item": "betterend:crystal_shards",
+		"count": 8
+	}
+}

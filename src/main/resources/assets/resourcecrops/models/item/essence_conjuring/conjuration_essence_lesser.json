@@ -1,0 +1,7 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "conjuring:item/lesser_conjuration_essence",
+		"layer1": "resourcecrops:item/sparkles/sparkles_light_blue"
+	}
+}

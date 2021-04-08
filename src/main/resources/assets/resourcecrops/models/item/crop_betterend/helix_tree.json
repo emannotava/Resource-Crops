@@ -1,0 +1,7 @@
+{
+	"parent": "resourcecrops:item/seed_models/seeds_outline",
+	"textures": {
+		"fill": "betterend:block/helix_tree_log_side",
+		"stroke": "betterend:block/helix_tree_log_top"
+	}
+}

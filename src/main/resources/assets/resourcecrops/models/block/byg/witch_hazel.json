@@ -1,0 +1,7 @@
+{
+  "parent": "resourcecrops:block/crop_models/crop_log",
+  "textures": {
+    "resource": "byg:block/witch_hazel_log",
+    "resource_top": "byg:block/witch_hazel_log_top"
+  }
+}

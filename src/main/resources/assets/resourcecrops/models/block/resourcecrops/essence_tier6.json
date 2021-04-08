@@ -1,0 +1,7 @@
+{
+  "parent": "resourcecrops:block/crop_models/crop_all_sides",
+  "textures": {
+    "resource": "resourcecrops:block/essence_tier6_block",
+    "gradient": "resourcecrops:block/narcissus_leaves/purple"
+  }
+}

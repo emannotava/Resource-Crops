@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "essence",
+  "pattern": [
+    "XX",
+    "XX"
+  ],
+  "key": {
+    "X": { "item": "resourcecrops:essence_vanilla/stone"}
+  },
+  "result": {
+    "item": "minecraft:gravel",
+    "count": 4
+  }
+}

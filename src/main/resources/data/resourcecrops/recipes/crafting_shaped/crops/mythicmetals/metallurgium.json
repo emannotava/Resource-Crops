@@ -1,0 +1,17 @@
+{
+		"type": "minecraft:crafting_shaped",
+		"group": "essence",
+		"pattern": [
+			"ini",
+			"ncn",
+			"ini"
+		],
+		"key": {
+			"c": { "item": "resourcecrops:crafting_seed"},
+			"n": { "item": "resourcecrops:essence_tier_5"},
+			"i": { "item": "mythicmetals:metallurgium_ingot"}
+		},
+	"result": {
+		"item": "resourcecrops:crop_mythicmetals/metallurgium"
+	}
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "essence",
+  "pattern": [
+    "ini",
+    "ncn",
+    "ini"
+  ],
+  "key": {
+    "c": { "item": "resourcecrops:crop_resourcecrops/essence_tier3"},
+    "n": { "item": "resourcecrops:essence_tier_3"},
+    "i": { "item": "the_aether:hellfire_stone"}
+  },
+  "result": {
+    "item": "resourcecrops:crop_aether/hellfire"
+  }
+}

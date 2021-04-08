@@ -1,0 +1,6 @@
+{
+	"parent": "resourcecrops:block/crop_models/crop_all_sides",
+  "textures": {
+    "resource": "botania:block/sunny_quartz_side"
+  }
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "item/generated",
+	"textures":	{
+		"layer0": "techreborn:item/gem/yellow_garnet_gem",
+		"layer1": "resourcecrops:item/sparkles/sparkles_light_blue"
+	}
+}

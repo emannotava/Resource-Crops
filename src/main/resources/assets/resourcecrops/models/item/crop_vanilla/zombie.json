@@ -1,0 +1,7 @@
+{
+	"parent": "resourcecrops:item/seed_models/seeds_outline",
+	"textures":	{
+		"fill": "minecraft:block/lime_concrete",
+		"stroke": "minecraft:block/green_concrete"
+	}
+}

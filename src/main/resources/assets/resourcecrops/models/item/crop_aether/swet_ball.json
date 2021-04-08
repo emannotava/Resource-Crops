@@ -1,0 +1,7 @@
+{
+  "parent": "resourcecrops:item/seed_models/seeds_all",
+  "textures": {
+    "fill": "resourcecrops:block/aether/swet_ball_block",
+    "gradient": "resourcecrops:block/narcissus_leaves/white"
+  }
+}

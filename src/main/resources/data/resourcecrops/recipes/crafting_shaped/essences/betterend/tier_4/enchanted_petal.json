@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "essence",
+	"pattern": [
+		"XXX",
+		"XXX",
+		"XXX"
+	],
+	"key": {
+		"X": {"item": "resourcecrops:essence_betterend/enchanted_petal"}
+	},
+	"result": {
+		"item": "betterend:enchanted_petal",
+		"count": 1
+	}
+}

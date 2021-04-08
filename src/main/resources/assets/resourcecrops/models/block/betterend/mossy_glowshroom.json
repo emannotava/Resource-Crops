@@ -1,0 +1,7 @@
+{
+	"parent": "resourcecrops:block/crop_models/crop_log",
+	"textures": {
+		"resource": "betterend:block/mossy_glowshroom_log_side",
+		"resource_top": "betterend:block/mossy_glowshroom_log_top"
+	}
+}

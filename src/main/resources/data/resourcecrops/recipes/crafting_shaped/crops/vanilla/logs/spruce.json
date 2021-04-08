@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "essence",
+  "pattern": [
+    "ini",
+    "ncn",
+    "ini"
+  ],
+  "key": {
+    "c": { "item": "resourcecrops:crop_resourcecrops/essence_tier1"},
+    "n": { "item": "resourcecrops:essence_tier_1"},
+    "i": { "item": "minecraft:spruce_log"}
+  },
+  "result": {
+    "item": "resourcecrops:crop_vanilla/spruce"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "resourcecrops:item/seed_models/seeds_all",
+  "textures": {
+    "stroke": "the_aether:block/skyroot_log_side",
+    "fill": "the_aether:block/skyroot_log_top",
+    "gradient": "resourcecrops:block/narcissus_leaves/white"
+  }
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "mythicmetals:items/mythril_ingot",
+		"layer1": "resourcecrops:item/sparkles/sparkles_light_blue"
+	}
+}

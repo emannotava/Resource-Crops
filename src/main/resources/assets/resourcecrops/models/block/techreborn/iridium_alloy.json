@@ -1,0 +1,6 @@
+{
+  "parent": "resourcecrops:block/crop_models/crop_all_sides",
+  "textures": {
+    "resource": "techreborn:block/storage/iridium_storage_block"
+  }
+}

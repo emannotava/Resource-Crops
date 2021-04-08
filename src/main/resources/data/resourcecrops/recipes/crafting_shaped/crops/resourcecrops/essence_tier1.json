@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "essence",
+  "pattern": [
+    "III",
+    "ICI",
+    "III"
+  ],
+  "key": {
+    "C": { "item": "resourcecrops:crafting_seed"},
+    "I": { "item": "resourcecrops:essence_tier_1"}
+  },
+  "result": {
+    "item": "resourcecrops:crop_resourcecrops/essence_tier1"
+  }
+}

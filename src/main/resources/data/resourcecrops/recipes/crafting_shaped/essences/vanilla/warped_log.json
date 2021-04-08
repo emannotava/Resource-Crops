@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "essence",
+  "pattern": [
+    "XXX",
+    "X X",
+    "XXX"
+  ],
+  "key": {
+    "X": { "item": "resourcecrops:essence_vanilla/warped"}
+  },
+  "result": {
+    "item": "minecraft:warped_stem",
+    "count": 8
+  }
+}

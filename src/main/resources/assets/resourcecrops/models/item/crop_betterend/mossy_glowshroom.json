@@ -1,0 +1,7 @@
+{
+	"parent": "resourcecrops:item/seed_models/seeds_outline",
+	"textures": {
+		"fill": "betterend:block/mossy_glowshroom_log_side",
+		"stroke": "betterend:block/mossy_glowshroom_log_top"
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "item/generated",
+	"textures":	{
+		"layer0": "resourcecrops:item/debug_item",
+		"layer1": "resourcecrops:item/debug_item_s0"
+	}
+}

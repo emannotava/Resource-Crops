@@ -1,0 +1,7 @@
+{
+	"parent": "item/generated",
+	"textures":	{
+		"layer0": "resourcecrops:item/misc/wither_skeleton_bone",
+		"layer1": "resourcecrops:item/sparkles/sparkles_black"
+	}
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "essence",
+  "pattern": [
+    "ini",
+    "ncn",
+    "ini"
+  ],
+  "key": {
+    "c": { "item": "resourcecrops:crop_resourcecrops/essence_tier3"},
+    "n": { "item": "resourcecrops:essence_tier_3"},
+    "i": { "item": "appliedenergistics2:charged_certus_quartz_crystal"}
+  },
+  "result": {
+    "item": "resourcecrops:crop_ae2/certus_charged"
+  }
+}

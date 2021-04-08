@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "essence",
+  "pattern": [
+    "XXX",
+    " XX",
+    "XXX"
+  ],
+  "key": {
+    "X": { "item": "resourcecrops:essence_vanilla/stone"}
+  },
+  "result": {
+    "item": "minecraft:diorite",
+    "count": 8
+  }
+}

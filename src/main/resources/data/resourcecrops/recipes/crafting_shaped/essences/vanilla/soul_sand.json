@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "essence",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XX "
+  ],
+  "key": {
+    "X": { "item": "resourcecrops:essence_vanilla/nether"}
+  },
+  "result": {
+    "item": "minecraft:soul_sand",
+    "count": 8
+  }
+}

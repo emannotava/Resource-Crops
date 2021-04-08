@@ -1,0 +1,7 @@
+{
+  "parent": "resourcecrops:block/aether/crop_aether",
+  "textures": {
+    "resource": "resourcecrops:block/aether/gummy_swet_gold",
+    "gradient": "resourcecrops:block/narcissus_leaves/yellow"
+  }
+}

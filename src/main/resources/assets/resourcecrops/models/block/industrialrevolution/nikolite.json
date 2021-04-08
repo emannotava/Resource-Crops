@@ -1,0 +1,7 @@
+{
+  "parent": "resourcecrops:block/crop_models/crop_all_sides",
+  "textures": {
+    "resource": "resourcecrops:block/industrialrevolution/nikolite_block",
+    "gradient": "resourcecrops:block/narcissus_leaves/dark_teal_half_light_blue"
+  }
+}

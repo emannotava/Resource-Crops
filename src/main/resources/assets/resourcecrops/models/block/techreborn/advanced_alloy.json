@@ -1,0 +1,6 @@
+{
+  "parent": "resourcecrops:block/crop_models/crop_all_sides",
+  "textures": {
+    "resource": "resourcecrops:block/misc/advanced_alloy_storage_block"
+  }
+}

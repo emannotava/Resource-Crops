@@ -1,0 +1,7 @@
+{
+  "parent": "resourcecrops:block/crop_models/crop_log",
+  "textures": {
+    "resource": "byg:block/pine_log",
+    "resource_top": "byg:block/pine_log_top"
+  }
+}

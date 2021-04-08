@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "the_aether:item/food/blue_gummy_swet",
+    "layer1": "resourcecrops:item/sparkles/sparkles_light_blue"
+  }
+}

@@ -1,0 +1,10 @@
+{
+	"defaultMap": {
+		"spriteMap": [
+			{
+				"sprite": "resourcecrops:block/ore_thurston",
+				"material": "betterend:glow_all"
+			}
+		]
+	}
+}

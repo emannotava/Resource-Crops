@@ -1,0 +1,7 @@
+{
+  "parent": "resourcecrops:block/crop_models/crop_log",
+  "textures": {
+    "resource": "minecraft:block/jungle_log",
+    "resource_top": "minecraft:block/jungle_log_top"
+  }
+}

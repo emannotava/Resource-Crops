@@ -1,0 +1,6 @@
+{
+  "parent": "resourcecrops:item/seed_models/seeds_all",
+  "textures": {
+    "fill": "resourcecrops:block/aether/enchanted_blue_berry_block"
+  }
+}

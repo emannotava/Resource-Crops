@@ -1,0 +1,7 @@
+{
+  "parent": "resourcecrops:block/crop_models/crop_log",
+  "textures": {
+    "resource": "byg:block/glacial_oak_log",
+    "resource_top": "byg:block/glacial_oak_log_top"
+  }
+}

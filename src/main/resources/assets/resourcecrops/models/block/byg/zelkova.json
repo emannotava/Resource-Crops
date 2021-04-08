@@ -1,0 +1,7 @@
+{
+  "parent": "resourcecrops:block/crop_models/crop_log",
+  "textures": {
+    "resource": "byg:block/zelkova_log",
+    "resource_top": "byg:block/zelkova_log_top"
+  }
+}

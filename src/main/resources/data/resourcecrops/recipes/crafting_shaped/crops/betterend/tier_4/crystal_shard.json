@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "essence",
+  "pattern": [
+    "ini",
+    "ncn",
+    "ini"
+  ],
+  "key": {
+    "c": { "item": "resourcecrops:crop_resourcecrops/essence_tier4"},
+    "n": { "item": "resourcecrops:essence_tier_4"},
+    "i": { "item": "betterend:crystal_shards"}
+  },
+  "result": {
+    "item": "resourcecrops:crop_betterend/crystal_shard"
+  }
+}

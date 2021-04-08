@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "resourcecrops:crop_aether/quicksoil"
+  },
+  "result": "resourcecrops:crop_aether/quicksoil_glass",
+  "experience": 0.7,
+  "cookingtime": 200
+}

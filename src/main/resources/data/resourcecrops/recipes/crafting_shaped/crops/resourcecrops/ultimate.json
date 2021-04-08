@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "essence",
+  "pattern": [
+    "INI",
+    "NCN",
+    "INI"
+  ],
+  "key": {
+    "C": { "item": "resourcecrops:crafting_seed"},
+    "N": { "item": "resourcecrops:essence_tier_infinite_block"},
+    "I": { "item": "minecraft:bedrock"}
+  },
+  "result": {
+    "item": "resourcecrops:crop_resourcecrops/ultimate"
+  }
+}

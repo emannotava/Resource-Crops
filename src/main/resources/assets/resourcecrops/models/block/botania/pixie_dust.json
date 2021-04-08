@@ -1,0 +1,6 @@
+{
+	"parent": "resourcecrops:block/crop_models/crop_all_sides",
+  "textures": {
+    "resource": "resourcecrops:block/botania/pixie_dust_block"
+  }
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "resourcecrops:item/seed_models/seeds_outline",
+	"textures":	{
+		"fill": "astromine:block/rose_gold_block",
+		"stroke": "astromine:block/asteroid_stone"
+	}
+}

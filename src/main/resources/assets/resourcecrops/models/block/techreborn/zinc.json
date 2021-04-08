@@ -1,0 +1,6 @@
+{
+  "parent": "resourcecrops:block/crop_models/crop_all_sides",
+  "textures": {
+    "resource": "techreborn:block/storage/zinc_storage_block"
+  }
+}

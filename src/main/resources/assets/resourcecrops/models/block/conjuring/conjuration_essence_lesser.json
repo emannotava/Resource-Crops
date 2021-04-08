@@ -1,0 +1,7 @@
+{
+  "parent": "resourcecrops:block/crop_models/crop_all_sides",
+  "textures": {
+    "resource": "resourcecrops:block/misc/conjuration_essence_lesser_block",
+    "gradient": "resourcecrops:block/narcissus_leaves/light_blue"
+  }
+}

@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "essence",
+	"ingredients": [
+		{
+			"item": "resourcecrops:essence_tier_3"
+		}
+	],
+	"result": {
+		"item": "resourcecrops:essence_tier_2",
+		"count": 4
+	}
+}

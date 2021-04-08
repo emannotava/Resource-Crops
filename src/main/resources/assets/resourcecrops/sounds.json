@@ -1,0 +1,11 @@
+{
+    "thurston": {
+		"category": "master",
+		"sounds": [
+		  {
+			"name": "resourcecrops:thurston",
+			"stream": true
+		  }
+		]
+	}
+}

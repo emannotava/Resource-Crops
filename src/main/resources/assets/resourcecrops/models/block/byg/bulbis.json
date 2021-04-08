@@ -1,0 +1,7 @@
+{
+  "parent": "resourcecrops:block/crop_models/crop_log",
+  "textures": {
+    "resource": "byg:block/bulbis_stem",
+    "resource_top": "byg:block/bulbis_stem_top"
+  }
+}

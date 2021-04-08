@@ -1,0 +1,16 @@
+{
+		"type": "minecraft:crafting_shaped",
+		"group": "essence",
+		"pattern": [
+			"XXX",
+			"X X",
+			"XXX"
+		],
+		"key": {
+			"X": { "item": "resourcecrops:essence_byg/magmatic_stone"}
+		},
+	"result": {
+		"item": "byg:magmatic_stone",
+    "count": 8
+  }
+}

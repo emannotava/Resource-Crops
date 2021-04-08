@@ -1,0 +1,6 @@
+{
+	"parent": "resourcecrops:item/seed_models/seeds_all",
+	"textures": {
+		"fill": "mythicmetals:blocks/aquarium_block"
+	}
+}

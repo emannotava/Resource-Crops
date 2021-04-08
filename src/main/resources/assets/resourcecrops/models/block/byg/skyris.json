@@ -1,0 +1,7 @@
+{
+  "parent": "resourcecrops:block/crop_models/crop_log",
+  "textures": {
+    "resource": "byg:block/skyris_log",
+    "resource_top": "byg:block/skyris_log_top"
+  }
+}

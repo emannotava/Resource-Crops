@@ -1,0 +1,8 @@
+{
+	"parent": "resourcecrops:block/crop_models/crop_radial_center",
+	"textures": {
+		"resource": "resourcecrops:block/betterend/crystal_block",
+		"resource_center": "resourcecrops:block/betterend/crystal_block_center",
+		"gradient": "resourcecrops:block/narcissus_leaves/white"
+	}
+}

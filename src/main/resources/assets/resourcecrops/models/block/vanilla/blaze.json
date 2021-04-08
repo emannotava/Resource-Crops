@@ -1,0 +1,10 @@
+{
+  "parent": "resourcecrops:block/crop_models/crop_all_sides",
+  "textures": {
+    "resource": "resourcecrops:block/vanilla/entity/blaze",
+    "plant_stem": "resourcecrops:block/vanilla/entity/blaze_stem",
+    "plant_leaves": "resourcecrops:block/vanilla/entity/blaze_leaves",
+    "gradient": "resourcecrops:block/narcissus_leaves/dark_orange",
+    "particle": "resourcecrops:block/vanilla/entity/blaze"
+  }
+}

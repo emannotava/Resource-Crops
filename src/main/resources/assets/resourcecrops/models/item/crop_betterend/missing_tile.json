@@ -1,0 +1,9 @@
+{
+	"parent": "resourcecrops:item/seed_models/seeds_all",
+  "textures": {
+    "fill": "betterend:block/missing_tile",
+    "plant_stem": "resourcecrops:block/betterend/missing_stem",
+    "plant_leaves": "resourcecrops:block/betterend/missing_leaves",
+    "gradient": "resourcecrops:block/narcissus_leaves/missing"
+  }
+}

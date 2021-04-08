@@ -1,0 +1,8 @@
+{
+  "parent": "resourcecrops:block/aether/crop_aether_log",
+  "textures": {
+    "resource": "the_aether:block/crystal_log_side",
+    "resource_top": "the_aether:block/crystal_log_top",
+    "gradient": "resourcecrops:block/narcissus_leaves/white"
+  }
+}

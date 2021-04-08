@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "essence",
+	"pattern": [
+		"XXX",
+		"X X",
+		"XXX"
+	],
+	"key": {
+		"X": {"item": "resourcecrops:essence_aether/hellfire_light"}
+	},
+	"result": {
+		"item": "the_aether:light_hellfire_stone",
+		"count": 8
+	}
+}

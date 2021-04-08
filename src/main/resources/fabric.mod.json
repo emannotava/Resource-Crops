@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "resourcecrops",
+  "version": "${version}",
+
+  "name": "Resource Crops",
+  "description": "This is a bare-bones replica of Mystical Agriculture only meant as a temporary replacement\nIf Mystical Agriculture gets updated to work with Fabric, this mod will probably be discontinued",
+  "authors": [
+    "meme_man_not_ava"
+  ],
+  "contact": {
+    "homepage": "http://www.themostamazingwebsiteontheinternet.com/",
+    "sources": "I'll add a link here when I have one"
+  },
+
+  "license": "MIT",
+  "icon": "assets/resourcecrops/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.mememan.resourcecrops.ResourceCropsClient"
+    ],
+    "main": [
+      "com.mememan.resourcecrops.Main"
+    ]
+  },
+  "mixins": [
+    
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "appliedenergistics2": "*",
+    "botania": "*",
+    "techreborn": "*",
+    "indrev": "*",
+    "mythicmetals": "*"
+  }
+}

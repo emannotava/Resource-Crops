@@ -1,0 +1,7 @@
+{
+  "parent": "resourcecrops:block/aether/crop_aether",
+  "textures": {
+    "resource": "resourcecrops:block/aether/aechor_petal_block",
+    "gradient": "resourcecrops:block/narcissus_leaves/purple"
+  }
+}

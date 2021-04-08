@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "essence",
+  "pattern": [
+    "ini",
+    "ncn",
+    "ini"
+  ],
+  "key": {
+    "c": { "item": "resourcecrops:crafting_seed"},
+    "n": { "item": "resourcecrops:essence_tier_2"},
+    "i": { "tag": "c:yellow_garnet_gems"}
+  },
+  "result": {
+    "item": "resourcecrops:crop_techreborn/yellow_garnet"
+  }
+}

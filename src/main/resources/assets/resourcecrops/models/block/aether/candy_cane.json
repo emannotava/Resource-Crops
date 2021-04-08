@@ -1,0 +1,8 @@
+{
+  "parent": "resourcecrops:block/aether/crop_aether_radial_center",
+  "textures": {
+    "resource": "resourcecrops:block/aether/candy_cane_block",
+    "resource_center": "resourcecrops:block/aether/candy_cane_block_center",
+    "gradient": "resourcecrops:block/narcissus_leaves/white"
+  }
+}

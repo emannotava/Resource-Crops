@@ -1,0 +1,7 @@
+{
+  "parent": "resourcecrops:item/seed_models/seeds_all",
+  "textures": {
+    "fill": "the_aether:block/pink_aercloud",
+    "gradient": "resourcecrops:block/narcissus_leaves/white"
+  }
+}

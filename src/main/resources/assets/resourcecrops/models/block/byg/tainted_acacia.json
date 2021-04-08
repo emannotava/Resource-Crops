@@ -1,0 +1,7 @@
+{
+  "parent": "resourcecrops:block/crop_models/crop_log",
+  "textures": {
+    "resource": "byg:block/tainted_acacia_log",
+    "resource_top": "byg:block/tainted_acacia_log_top"
+  }
+}

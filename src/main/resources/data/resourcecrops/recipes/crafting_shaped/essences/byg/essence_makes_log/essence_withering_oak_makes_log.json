@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "essence",
+  "pattern": [
+    "XXX",
+    "X X",
+    "XXX"
+  ],
+  "key": {
+    "X": { "item": "resourcecrops:essence_byg/withering_oak"}
+  },
+  "result": {
+    "item": "byg:withering_oak_log",
+    "count": 8
+  }
+}

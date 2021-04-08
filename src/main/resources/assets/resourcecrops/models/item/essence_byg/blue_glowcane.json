@@ -1,0 +1,7 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "byg:item/blue_glowcane_dust",
+		"layer1": "resourcecrops:item/sparkles/sparkles_light_blue"
+	}
+}

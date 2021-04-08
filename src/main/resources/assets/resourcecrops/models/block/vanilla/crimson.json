@@ -1,0 +1,9 @@
+{
+  "parent": "resourcecrops:block/crop_models/crop_log",
+  "textures": {
+    "resource": "minecraft:block/crimson_stem",
+    "resource_top": "minecraft:block/crimson_stem_top",
+    "0": "resourcecrops:block/vanilla/crop_nether",
+    "gradient": "resourcecrops:block/narcissus_leaves/dark_red"
+  }
+}

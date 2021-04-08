@@ -1,0 +1,17 @@
+{
+		"type": "minecraft:crafting_shaped",
+		"group": "essence",
+		"pattern": [
+			"ini",
+			"ncn",
+			"ini"
+		],
+		"key": {
+			"c": { "item": "resourcecrops:crafting_seed"},
+			"n": { "item": "resourcecrops:essence_tier_1"},
+			"i": { "item": "byg:pink_sand"}
+		},
+	"result": {
+		"item": "resourcecrops:crop_byg/pink_sand"
+	}
+}

@@ -1,0 +1,17 @@
+{
+		"type": "minecraft:crafting_shaped",
+		"group": "essence",
+		"pattern": [
+			"ini",
+			"ncn",
+			"ini"
+		],
+		"key": {
+			"c": { "item": "resourcecrops:crafting_seed"},
+			"n": { "item": "resourcecrops:essence_tier_5"},
+			"i": { "item": "conjuring:soul_alloy"}
+		},
+	"result": {
+		"item": "resourcecrops:crop_conjuring/soul_alloy"
+	}
+}

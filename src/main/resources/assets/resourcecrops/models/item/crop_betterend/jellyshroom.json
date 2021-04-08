@@ -1,0 +1,7 @@
+{
+	"parent": "resourcecrops:item/seed_models/seeds_outline",
+	"textures": {
+		"fill": "betterend:block/jellyshroom_log_side",
+		"stroke": "betterend:block/jellyshroom_log_top"
+	}
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "resourcecrops:block/crop_models/crop_all_sides",
+  "textures": {
+    "resource": "resourcecrops:block/vanilla/entity/ghast",
+    "gradient": "resourcecrops:block/narcissus_leaves/dark_gray"
+  }
+}

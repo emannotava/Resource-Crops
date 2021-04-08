@@ -1,0 +1,7 @@
+{
+	"parent": "resourcecrops:item/seed_models/seeds_outline",
+  "textures": {
+    "stroke": "byg:block/aspen_log",
+    "fill": "byg:block/aspen_log_top"
+  }
+}

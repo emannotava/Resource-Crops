@@ -1,0 +1,7 @@
+{
+	"parent": "resourcecrops:block/crop_models/crop_log",
+	"textures": {
+		"resource": "betterend:block/tenanea_log_side",
+		"resource_top": "betterend:block/tenanea_log_top"
+	}
+}

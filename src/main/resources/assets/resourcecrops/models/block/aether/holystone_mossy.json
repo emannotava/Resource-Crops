@@ -1,0 +1,7 @@
+{
+  "parent": "resourcecrops:block/aether/crop_aether",
+  "textures": {
+    "resource": "the_aether:block/mossy_holystone",
+    "gradient": "resourcecrops:block/narcissus_leaves/white"
+  }
+}

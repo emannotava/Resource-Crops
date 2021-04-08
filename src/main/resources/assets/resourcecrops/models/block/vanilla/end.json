@@ -1,0 +1,7 @@
+{
+  "parent": "resourcecrops:block/crop_models/crop_all_sides",
+  "textures": {
+    "resource": "minecraft:block/purpur_block",
+    "0": "resourcecrops:block/vanilla/crop_end"
+  }
+}

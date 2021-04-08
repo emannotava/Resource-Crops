@@ -1,0 +1,7 @@
+{
+  "parent": "resourcecrops:block/crop_models/crop_all_sides",
+  "textures": {
+    "resource": "resourcecrops:block/industrialrevolution/enriched_nikolite_block",
+    "gradient": "resourcecrops:block/narcissus_leaves/purple"
+  }
+}

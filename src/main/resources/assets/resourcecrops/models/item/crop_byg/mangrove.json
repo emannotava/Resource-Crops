@@ -1,0 +1,7 @@
+{
+	"parent": "resourcecrops:item/seed_models/seeds_outline",
+  "textures": {
+    "stroke": "byg:block/mangrove_log",
+    "fill": "byg:block/mangrove_log_top"
+  }
+}
