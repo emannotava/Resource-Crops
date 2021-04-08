@@ -1,5 +1,7 @@
 # Resource-Crops
-A mod for automating resource gathering
+A Minecraft 1.16.5-Fabric mod for farming resources.
+Heavily inspired by Mystical Agriculture
+
 
 This repository is currently empty as I created it at work,
 Will upload the actual source code later today.
