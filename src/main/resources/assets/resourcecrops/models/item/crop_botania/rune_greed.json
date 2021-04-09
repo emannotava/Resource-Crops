@@ -1,6 +1,6 @@
 {
 	"parent": "resourcecrops:item/seed_models/seeds_all",
   "textures": {
-    "fill": "botania:block/livingrock"
+    "fill": "botania:item/rune_greed"
   }
 }

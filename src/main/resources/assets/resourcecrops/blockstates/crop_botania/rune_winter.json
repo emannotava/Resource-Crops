@@ -1,0 +1,244 @@
+{
+	"variants": {
+	"age=0": {
+		"model": "resourcecrops:block/crop_generic/crop_stage0"
+	},
+	"age=1": {
+		"model": "resourcecrops:block/crop_generic/crop_stage0"
+	},
+	"age=2": {
+		"model": "resourcecrops:block/crop_generic/crop_stage0"
+	},
+	"age=3": {
+		"model": "resourcecrops:block/crop_generic/crop_stage0"
+	},
+	"age=4": {
+		"model": "resourcecrops:block/crop_generic/crop_stage0"
+	},
+	"age=5": {
+		"model": "resourcecrops:block/crop_generic/crop_stage0"
+	},
+	"age=6": {
+		"model": "resourcecrops:block/crop_generic/crop_stage0"
+	},
+	"age=7": {
+		"model": "resourcecrops:block/crop_generic/crop_stage0"
+	},
+	"age=8": {
+		"model": "resourcecrops:block/crop_generic/crop_stage0"
+	},
+	"age=9": {
+		"model": "resourcecrops:block/crop_generic/crop_stage0"
+	},
+	"age=10": {
+		"model": "resourcecrops:block/crop_generic/crop_stage0"
+	},
+	"age=11": {
+		"model": "resourcecrops:block/crop_generic/crop_stage1"
+	},
+	"age=12": {
+		"model": "resourcecrops:block/crop_generic/crop_stage1"
+	},
+	"age=13": {
+		"model": "resourcecrops:block/crop_generic/crop_stage1"
+	},
+	"age=14": {
+		"model": "resourcecrops:block/crop_generic/crop_stage1"
+	},
+	"age=15": {
+		"model": "resourcecrops:block/crop_generic/crop_stage1"
+	},
+	"age=16": {
+		"model": "resourcecrops:block/crop_generic/crop_stage1"
+	},
+	"age=17": {
+		"model": "resourcecrops:block/crop_generic/crop_stage1"
+	},
+	"age=18": {
+		"model": "resourcecrops:block/crop_generic/crop_stage1"
+	},
+	"age=19": {
+		"model": "resourcecrops:block/crop_generic/crop_stage1"
+	},
+	"age=20": {
+		"model": "resourcecrops:block/crop_generic/crop_stage1"
+	},
+	"age=21": {
+		"model": "resourcecrops:block/crop_generic/crop_stage1"
+	},
+	"age=22": {
+		"model": "resourcecrops:block/crop_generic/crop_stage2"
+	},
+	"age=23": {
+		"model": "resourcecrops:block/crop_generic/crop_stage2"
+	},
+	"age=24": {
+		"model": "resourcecrops:block/crop_generic/crop_stage2"
+	},
+	"age=25": {
+		"model": "resourcecrops:block/crop_generic/crop_stage2"
+	},
+	"age=26": {
+		"model": "resourcecrops:block/crop_generic/crop_stage2"
+	},
+	"age=27": {
+		"model": "resourcecrops:block/crop_generic/crop_stage2"
+	},
+	"age=28": {
+		"model": "resourcecrops:block/crop_generic/crop_stage2"
+	},
+	"age=29": {
+		"model": "resourcecrops:block/crop_generic/crop_stage2"
+	},
+	"age=30": {
+		"model": "resourcecrops:block/crop_generic/crop_stage2"
+	},
+	"age=31": {
+		"model": "resourcecrops:block/crop_generic/crop_stage2"
+	},
+	"age=32": {
+		"model": "resourcecrops:block/crop_generic/crop_stage2"
+	},
+	"age=33": {
+		"model": "resourcecrops:block/crop_generic/crop_stage3"
+	},
+	"age=34": {
+		"model": "resourcecrops:block/crop_generic/crop_stage3"
+	},
+	"age=35": {
+		"model": "resourcecrops:block/crop_generic/crop_stage3"
+	},
+	"age=36": {
+		"model": "resourcecrops:block/crop_generic/crop_stage3"
+	},
+	"age=37": {
+		"model": "resourcecrops:block/crop_generic/crop_stage3"
+	},
+	"age=38": {
+		"model": "resourcecrops:block/crop_generic/crop_stage3"
+	},
+	"age=39": {
+		"model": "resourcecrops:block/crop_generic/crop_stage3"
+	},
+	"age=40": {
+		"model": "resourcecrops:block/crop_generic/crop_stage3"
+	},
+	"age=41": {
+		"model": "resourcecrops:block/crop_generic/crop_stage3"
+	},
+	"age=42": {
+		"model": "resourcecrops:block/crop_generic/crop_stage3"
+	},
+	"age=43": {
+		"model": "resourcecrops:block/crop_generic/crop_stage3"
+	},
+	"age=44": {
+		"model": "resourcecrops:block/crop_generic/crop_stage4"
+	},
+	"age=45": {
+		"model": "resourcecrops:block/crop_generic/crop_stage4"
+	},
+	"age=46": {
+		"model": "resourcecrops:block/crop_generic/crop_stage4"
+	},
+	"age=47": {
+		"model": "resourcecrops:block/crop_generic/crop_stage4"
+	},
+	"age=48": {
+		"model": "resourcecrops:block/crop_generic/crop_stage4"
+	},
+	"age=49": {
+		"model": "resourcecrops:block/crop_generic/crop_stage4"
+	},
+	"age=50": {
+		"model": "resourcecrops:block/crop_generic/crop_stage4"
+	},
+	"age=51": {
+		"model": "resourcecrops:block/crop_generic/crop_stage4"
+	},
+	"age=52": {
+		"model": "resourcecrops:block/crop_generic/crop_stage4"
+	},
+	"age=53": {
+		"model": "resourcecrops:block/crop_generic/crop_stage4"
+	},
+	"age=54": {
+		"model": "resourcecrops:block/crop_generic/crop_stage5"
+	},
+	"age=55": {
+		"model": "resourcecrops:block/crop_generic/crop_stage5"
+	},
+	"age=56": {
+		"model": "resourcecrops:block/crop_generic/crop_stage5"
+	},
+	"age=57": {
+		"model": "resourcecrops:block/crop_generic/crop_stage5"
+	},
+	"age=58": {
+		"model": "resourcecrops:block/crop_generic/crop_stage5"
+	},
+	"age=59": {
+		"model": "resourcecrops:block/crop_generic/crop_stage5"
+	},
+	"age=60": {
+		"model": "resourcecrops:block/crop_generic/crop_stage5"
+	},
+	"age=61": {
+		"model": "resourcecrops:block/crop_generic/crop_stage5"
+	},
+	"age=62": {
+		"model": "resourcecrops:block/crop_generic/crop_stage5"
+	},
+	"age=63": {
+		"model": "resourcecrops:block/crop_generic/crop_stage5"
+	},
+	"age=64": {
+		"model": "resourcecrops:block/crop_generic/crop_stage6"
+	},
+	"age=65": {
+		"model": "resourcecrops:block/crop_generic/crop_stage6"
+	},
+	"age=66": {
+		"model": "resourcecrops:block/crop_generic/crop_stage6"
+	},
+	"age=67": {
+		"model": "resourcecrops:block/crop_generic/crop_stage6"
+	},
+	"age=68": {
+		"model": "resourcecrops:block/crop_generic/crop_stage6"
+	},
+	"age=69": {
+		"model": "resourcecrops:block/crop_generic/crop_stage6"
+	},
+	"age=70": {
+		"model": "resourcecrops:block/crop_generic/crop_stage6"
+	},
+	"age=71": {
+		"model": "resourcecrops:block/crop_generic/crop_stage6"
+	},
+	"age=72": {
+		"model": "resourcecrops:block/crop_generic/crop_stage6"
+	},
+	"age=73": {
+		"model": "resourcecrops:block/crop_generic/crop_stage6"
+	},
+	"age=74": {
+		"model": "resourcecrops:block/crop_generic/crop_stage6"
+	},
+	"age=75": {
+		"model": "resourcecrops:block/crop_generic/crop_stage6"
+	},
+	"age=76": {
+		"model": "resourcecrops:block/crop_generic/crop_stage6"
+	},
+	"age=77": {
+		"model": "resourcecrops:block/crop_generic/crop_stage6"
+	},
+	"age=78": {
+		"model": "resourcecrops:block/crop_generic/crop_stage6"
+	},
+	"age=79": {
+		"model": "resourcecrops:block/botania/rune_greed"
+	}
+}
+}

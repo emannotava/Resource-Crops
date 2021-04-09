@@ -34,8 +34,8 @@ public class Main implements ModInitializer {
 	public void onInitialize() {
 		RegisterItem.initialize();
 		RegisterBlock.initialize();
-		RegisterRecipe.initialize();
 		RegisterCrop.initialize();
+		RegisterRecipe.initialize();
 		RegisterEntityLoot.initialize();
 		RRPCallback.EVENT.register(a -> a.add(assets));
 		System.out.println("Resource Crops(Server-Side) has been initialized!");

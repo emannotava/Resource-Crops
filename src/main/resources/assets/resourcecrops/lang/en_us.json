@@ -314,6 +314,7 @@
 	"tooltip.resourcecrops.tier_creative": "Tier: §cC§6r§ee§aa§9t§5i§bv§de",
 	"tooltip.resourcecrops.tier_infinite": "Tier: §k§cI§6n§ef§ai§9n§5i§bt§de",
 	"tooltip.resourcecrops.tier_ultimate": "§4§lTier: ǝʇɐɯᴉʇl∩",
+	"tooltip.resourcecrops.tier_unknown": "§kTier: Unknown",
 
 	"tooltip.resourcecrops.mod.resourcecrops": "Mod: Resource Crops",
 	"tooltip.resourcecrops.mod.vanilla": "Mod: Vanilla Minecraft",

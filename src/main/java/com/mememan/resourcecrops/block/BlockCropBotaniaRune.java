@@ -4,7 +4,7 @@ import java.util.List;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.CropBlock;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
@@ -22,7 +22,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
-public class BlockCrop extends CropBlock {
+public class BlockCropBotaniaRune extends CropBlockBotaniaRune {
 
 	public static Item SEED;
 	public String tooltipContent = "Meow";
@@ -32,8 +32,8 @@ public class BlockCrop extends CropBlock {
 	public static FabricBlockSettings BlockSettings(){
 		return FabricBlockSettings.of(Material.PLANT).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).nonOpaque();
 	}
-	public BlockCrop(String tier, String mod, String name) {
-		super(BlockSettings());
+	public BlockCropBotaniaRune(String tier, String mod, String name) {
+		super(BlockSettings(), Blocks.FARMLAND);
 		tooltipContent = tier;
 		tooltipContent2 = mod;
 		seedName = name;
