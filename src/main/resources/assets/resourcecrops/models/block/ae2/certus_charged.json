@@ -1,5 +1,5 @@
 {
-	"parent": "resourcecrops:block/crop_models/crop_all_sides",
+	"parent": "resourcecrops:block/templates/all",
   "textures": {
     "resource": "resourcecrops:block/misc/charged_certus_quartz_block",
     "gradient": "resourcecrops:block/narcissus_leaves/halved_light_blue"

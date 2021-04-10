@@ -1,5 +1,5 @@
 {
-	"parent": "resourcecrops:block/crop_models/crop_log",
+	"parent": "resourcecrops:block/templates/log",
 	"textures": {
 		"plant_leaves": "resourcecrops:block/aether/plant_leaves",
 		"plant_stem": "resourcecrops:block/aether/plant_stem",

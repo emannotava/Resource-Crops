@@ -8,6 +8,7 @@ import com.mememan.resourcecrops.item.RegisterItem;
 // import com.mememan.resourcecrops.lib.Crops;
 import com.mememan.resourcecrops.lib.Strings;
 import com.mememan.resourcecrops.loot.RegisterEntityLoot;
+import com.mememan.resourcecrops.registry.RegisterLootTables;
 import com.mememan.resourcecrops.registry.RegisterRecipe;
 
 import net.devtech.arrp.api.RRPCallback;
@@ -36,6 +37,7 @@ public class Main implements ModInitializer {
 		RegisterBlock.initialize();
 		RegisterCrop.initialize();
 		RegisterRecipe.initialize();
+		RegisterLootTables.initialize();
 		RegisterEntityLoot.initialize();
 		RRPCallback.EVENT.register(a -> a.add(assets));
 		System.out.println("Resource Crops(Server-Side) has been initialized!");

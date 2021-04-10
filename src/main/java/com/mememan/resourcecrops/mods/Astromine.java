@@ -11,15 +11,15 @@ public class Astromine {
 		if(Mods.checkMod(Mods.Astromine)==false && Mods.checkMod(Mods.AstromineCore)==true){register();}
 	}
 	public static void register(){
-		RegisterCrop.addCrop(Mods.Astromine, "asterite", Crops.asterite);
-		RegisterCrop.addCrop(Mods.Astromine, "fools_gold", Crops.fools_gold);
-		RegisterCrop.addCrop(Mods.Astromine, "galaxium", Crops.galaxium);
-		RegisterCrop.addCrop(Mods.Astromine, "lunum", Crops.lunum);
-		RegisterCrop.addCrop(Mods.Astromine, "meteoric_steel", Crops.meteoric_steel);
-		RegisterCrop.addCrop(Mods.Astromine, "metite", Crops.metite);
-		RegisterCrop.addCrop(Mods.Astromine, "rose_gold", Crops.rose_gold);
-		RegisterCrop.addCrop(Mods.Astromine, "stellum", Crops.stellum);
-		RegisterCrop.addCrop(Mods.Astromine, "sterling_silver", Crops.sterling_silver);
-		RegisterCrop.addCrop(Mods.Astromine, "univite", Crops.univite);
+		RegisterCrop.addCrop(Mods.Astromine, "asterite", Crops.asterite, Crops.asterite_item, true);
+		RegisterCrop.addCrop(Mods.Astromine, "fools_gold", Crops.fools_gold, Crops.fools_gold_item, true);
+		RegisterCrop.addCrop(Mods.Astromine, "galaxium", Crops.galaxium, Crops.galaxium_item, true);
+		RegisterCrop.addCrop(Mods.Astromine, "lunum", Crops.lunum, Crops.lunum_item, true);
+		RegisterCrop.addCrop(Mods.Astromine, "meteoric_steel", Crops.meteoric_steel, Crops.meteoric_steel_item, true);
+		RegisterCrop.addCrop(Mods.Astromine, "metite", Crops.metite, Crops.metite_item, true);
+		RegisterCrop.addCrop(Mods.Astromine, "rose_gold", Crops.rose_gold, Crops.rose_gold_item, true);
+		RegisterCrop.addCrop(Mods.Astromine, "stellum", Crops.stellum, Crops.stellum_item, true);
+		RegisterCrop.addCrop(Mods.Astromine, "sterling_silver", Crops.sterling_silver, Crops.sterling_silver_item, true);
+		RegisterCrop.addCrop(Mods.Astromine, "univite", Crops.univite, Crops.univite_item, true);
 	}
 }

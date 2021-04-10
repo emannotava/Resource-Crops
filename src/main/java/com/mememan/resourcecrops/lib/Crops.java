@@ -4,13 +4,24 @@ import com.mememan.resourcecrops.Main;
 import com.mememan.resourcecrops.block.BlockCrop;
 import com.mememan.resourcecrops.block.BlockCropBotaniaRune;
 import com.mememan.resourcecrops.item.ItemEssence;
+import com.mememan.resourcecrops.item.ItemSeeds;
 import com.mememan.resourcecrops.item.RegisterItem;
 
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.util.Rarity;
 
 public class Crops {
+
+	public static ItemSeeds itemSetting(Block BlockDeclaration, String Mod, String name, String tier){
+		return new ItemSeeds(BlockDeclaration,
+			new FabricItemSettings().group(Main.resourcecrops_groupSeeds),
+			tier,
+			Mod,
+			name);
+	}
+
 	//Resource Crops
 	public static final Block essence_tier_1 = new BlockCrop(Strings.Tier1, Mods.ResourceCrops, "Essence Tier " + Strings.Tier1);
 	public static final Block essence_tier_2 = new BlockCrop(Strings.Tier2, Mods.ResourceCrops, "Essence Tier " + Strings.Tier2);
@@ -18,9 +29,18 @@ public class Crops {
 	public static final Block essence_tier_4 = new BlockCrop(Strings.Tier4, Mods.ResourceCrops, "Essence Tier " + Strings.Tier4);
 	public static final Block essence_tier_5 = new BlockCrop(Strings.Tier5, Mods.ResourceCrops, "Essence Tier " + Strings.Tier5);
 	public static final Block essence_tier_6 = new BlockCrop(Strings.Tier6, Mods.ResourceCrops, "Essence Tier " + Strings.Tier6);
-	public static final Block essence_tier_infinity = new BlockCrop(Strings.TierInfinity, Mods.ResourceCrops, "Essence Tier " + Strings.TierInfinity);
-	public static final Block essence_tier_creative = new BlockCrop(Strings.TierCreative, Mods.ResourceCrops, "Essence Tier " + Strings.TierCreative);
+	public static final Block essence_tier_infinity = new BlockCrop(Strings.TierInfinity, Mods.ResourceCrops, "Essence Tier Infinity");
+	public static final Block essence_tier_creative = new BlockCrop(Strings.TierCreative, Mods.ResourceCrops, "Essence Tier Creative");
 	public static final Block ultimate = new BlockCrop(Strings.TierUltimate, Mods.ResourceCrops, "Ultimate");
+	public static final ItemSeeds essence_tier_1_item = itemSetting(essence_tier_1, Mods.ResourceCrops, "Essence Tier " + Strings.Tier1, Strings.Tier1);
+	public static final ItemSeeds essence_tier_2_item = itemSetting(essence_tier_2, Mods.ResourceCrops, "Essence Tier " + Strings.Tier2, Strings.Tier2);
+	public static final ItemSeeds essence_tier_3_item = itemSetting(essence_tier_3, Mods.ResourceCrops, "Essence Tier " + Strings.Tier3, Strings.Tier3);
+	public static final ItemSeeds essence_tier_4_item = itemSetting(essence_tier_4, Mods.ResourceCrops, "Essence Tier " + Strings.Tier4, Strings.Tier4);
+	public static final ItemSeeds essence_tier_5_item = itemSetting(essence_tier_5, Mods.ResourceCrops, "Essence Tier " + Strings.Tier5, Strings.Tier5);
+	public static final ItemSeeds essence_tier_6_item = itemSetting(essence_tier_6, Mods.ResourceCrops, "Essence Tier " + Strings.Tier6, Strings.Tier6);
+	public static final ItemSeeds essence_tier_infinity_item = itemSetting(essence_tier_infinity, Mods.ResourceCrops, "Essence Tier Infinity", Strings.TierInfinity);
+	public static final ItemSeeds essence_tier_creative_item = itemSetting(essence_tier_creative, Mods.ResourceCrops, "Essence Tier Creative", Strings.TierCreative);
+	public static final ItemSeeds ultimate_item = itemSetting(ultimate, Mods.ResourceCrops, "Ultimate", Strings.TierUltimate);
 	public static final Item essence_essence_tier_1 = RegisterItem.addEssenceItem(Mods.ResourceCrops, "tier_1", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier1, Mods.ResourceCrops));
 	public static final Item essence_essence_tier_2 = RegisterItem.addEssenceItem(Mods.ResourceCrops, "tier_2", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier2, Mods.ResourceCrops));
 	public static final Item essence_essence_tier_3 = RegisterItem.addEssenceItem(Mods.ResourceCrops, "tier_3", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier3, Mods.ResourceCrops));
@@ -29,13 +49,7 @@ public class Crops {
 	public static final Item essence_essence_tier_6 = RegisterItem.addEssenceItem(Mods.ResourceCrops, "tier_6", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier6, Mods.ResourceCrops));
 	public static final Item essence_essence_tier_infinity = RegisterItem.addEssenceItem(Mods.ResourceCrops, "tier_infinity", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence).rarity(Rarity.RARE), Strings.TierInfinity, Mods.ResourceCrops));
 	public static final Item essence_essence_tier_creative = RegisterItem.addEssenceItem(Mods.ResourceCrops, "tier_creative", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence).rarity(Rarity.EPIC), Strings.TierCreative, Mods.ResourceCrops));
-	// public static final Object[] LoremIpsum = {
-	// 	new BlockCrop(Strings.TierUltimate, Mods.ResourceCrops),
-	// 	RegisterItem.addEssenceItem(Mods.ResourceCrops, "loremipsum", new ItemEssence(
-	// 		new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.TierUltimate, Mods.ResourceCrops
-	// 	))
-	// };
-	
+
 	//Vanilla Minecraft
 	public static final Block acacia = new BlockCrop(Strings.Tier1, Mods.VanillaShort, "acacia");
 	public static final Block birch = new BlockCrop(Strings.Tier1, Mods.VanillaShort, "birch");
@@ -80,6 +94,49 @@ public class Crops {
 	public static final Block dragon_egg = new BlockCrop(Strings.Tier6, Mods.VanillaShort, "dragon_egg");
 	public static final Block nether_star = new BlockCrop(Strings.Tier6, Mods.VanillaShort, "nether_star");
 	public static final Block netherite = new BlockCrop(Strings.Tier6, Mods.VanillaShort, "netherite");
+	public static final ItemSeeds acacia_item = itemSetting(acacia, Mods.Vanilla, "acacia", Strings.Tier1);
+	public static final ItemSeeds birch_item = itemSetting(birch, Mods.Vanilla, "birch", Strings.Tier1);
+	public static final ItemSeeds crimson_item = itemSetting(crimson, Mods.Vanilla, "crimson", Strings.Tier1);
+	public static final ItemSeeds dark_oak_item = itemSetting(dark_oak, Mods.Vanilla, "dark_oak", Strings.Tier1);
+	public static final ItemSeeds jungle_item = itemSetting(jungle, Mods.Vanilla, "jungle", Strings.Tier1);
+	public static final ItemSeeds oak_item = itemSetting(oak, Mods.Vanilla, "oak", Strings.Tier1);
+	public static final ItemSeeds spruce_item = itemSetting(spruce, Mods.Vanilla, "spruce", Strings.Tier1);
+	public static final ItemSeeds warped_item = itemSetting(warped, Mods.Vanilla, "warped", Strings.Tier1);
+	public static final ItemSeeds basalt_item = itemSetting(basalt, Mods.Vanilla, "basalt", Strings.Tier1);
+	public static final ItemSeeds blackstone_item = itemSetting(blackstone, Mods.Vanilla, "blackstone", Strings.Tier1);
+	public static final ItemSeeds dirt_item = itemSetting(dirt, Mods.Vanilla, "dirt", Strings.Tier1);
+	public static final ItemSeeds glass_item = itemSetting(glass, Mods.Vanilla, "glass", Strings.Tier1);
+	public static final ItemSeeds sand_item = itemSetting(sand, Mods.Vanilla, "sand", Strings.Tier1);
+	public static final ItemSeeds stone_item = itemSetting(stone, Mods.Vanilla, "stone", Strings.Tier1);
+	
+	public static final ItemSeeds coal_item = itemSetting(coal, Mods.Vanilla, "coal", Strings.Tier2);
+	public static final ItemSeeds end_item = itemSetting(end, Mods.Vanilla, "end", Strings.Tier2);
+	public static final ItemSeeds nether_item = itemSetting(nether, Mods.Vanilla, "nether", Strings.Tier2);
+	
+	public static final ItemSeeds creeper_item = itemSetting(creeper, Mods.Vanilla, "creeper", Strings.Tier3);
+	public static final ItemSeeds glowstone_item = itemSetting(glowstone, Mods.Vanilla, "glowstone", Strings.Tier3);
+	public static final ItemSeeds iron_item = itemSetting(iron, Mods.Vanilla, "iron", Strings.Tier3);
+	public static final ItemSeeds obsidian_item = itemSetting(obsidian, Mods.Vanilla, "obsidian", Strings.Tier3);
+	public static final ItemSeeds phantom_membrane_item = itemSetting(phantom_membrane, Mods.Vanilla, "phantom_membrane", Strings.Tier3);
+	public static final ItemSeeds quartz_item = itemSetting(quartz, Mods.Vanilla, "quartz", Strings.Tier3);
+	public static final ItemSeeds redstone_item = itemSetting(redstone, Mods.Vanilla, "redstone", Strings.Tier3);
+	public static final ItemSeeds skeleton_item = itemSetting(skeleton, Mods.Vanilla, "skeleton", Strings.Tier3);
+	public static final ItemSeeds zombie_item = itemSetting(zombie, Mods.Vanilla, "zombie", Strings.Tier3);
+
+	public static final ItemSeeds blaze_item = itemSetting(blaze, Mods.Vanilla, "blaze", Strings.Tier4);
+	public static final ItemSeeds enderman_item = itemSetting(enderman, Mods.Vanilla, "enderman", Strings.Tier4);
+	public static final ItemSeeds ghast_item = itemSetting(ghast, Mods.Vanilla, "ghast", Strings.Tier4);
+	public static final ItemSeeds gold_item = itemSetting(gold, Mods.Vanilla, "gold", Strings.Tier4);
+	public static final ItemSeeds lapis_item = itemSetting(lapis, Mods.Vanilla, "lapis", Strings.Tier4);
+	public static final ItemSeeds prismarine_item = itemSetting(prismarine, Mods.Vanilla, "prismarine", Strings.Tier4);
+	public static final ItemSeeds wither_skeleton_item = itemSetting(wither_skeleton, Mods.Vanilla, "wither_skeleton", Strings.Tier4);
+
+	public static final ItemSeeds diamond_item = itemSetting(diamond, Mods.Vanilla, "diamond", Strings.Tier5);
+	public static final ItemSeeds emerald_item = itemSetting(emerald, Mods.Vanilla, "emerald", Strings.Tier5);
+	
+	public static final ItemSeeds dragon_egg_item = itemSetting(dragon_egg, Mods.Vanilla, "dragon_egg", Strings.Tier6);
+	public static final ItemSeeds nether_star_item = itemSetting(nether_star, Mods.Vanilla, "nether_star", Strings.Tier6);
+	public static final ItemSeeds netherite_item = itemSetting(netherite, Mods.Vanilla, "netherite", Strings.Tier6);
 	public static final Item essence_acacia = RegisterItem.addEssenceItem(Mods.Vanilla, Mods.VanillaShort, "acacia", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier1, Mods.VanillaShort));
 	public static final Item essence_birch = RegisterItem.addEssenceItem(Mods.Vanilla, Mods.VanillaShort, "birch", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier1, Mods.VanillaShort));
 	public static final Item essence_crimson = RegisterItem.addEssenceItem(Mods.Vanilla, Mods.VanillaShort, "crimson", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier1, Mods.VanillaShort));
@@ -126,6 +183,12 @@ public class Crops {
 	public static final Block fluix = new BlockCrop(Strings.Tier4, Mods.AE2Short, "fluix");
 	public static final Block fluix_pure = new BlockCrop(Strings.Tier5, Mods.AE2Short, "fluix_pure");
 	public static final Block quartz_pure = new BlockCrop(Strings.Tier4, Mods.AE2Short, "quartz_pure");
+	public static final ItemSeeds certus_item = itemSetting(certus, Mods.AE2Short, "certus", Strings.Tier3);
+	public static final ItemSeeds certus_charged_item = itemSetting(certus_charged, Mods.AE2Short, "certus_charged", Strings.Tier3);
+	public static final ItemSeeds certus_pure_item = itemSetting(certus_pure, Mods.AE2Short, "certus_pure", Strings.Tier4);
+	public static final ItemSeeds fluix_item = itemSetting(fluix, Mods.AE2Short, "fluix", Strings.Tier4);
+	public static final ItemSeeds fluix_pure_item = itemSetting(fluix_pure, Mods.AE2Short, "fluix_pure", Strings.Tier5);
+	public static final ItemSeeds quartz_pure_item = itemSetting(quartz_pure, Mods.AE2Short, "quartz_pure", Strings.Tier4);
 	public static final Item essence_certus = RegisterItem.addEssenceItem(Mods.AE2, Mods.AE2Short, "certus", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier3, Mods.AE2Short));
 	public static final Item essence_certus_charged = RegisterItem.addEssenceItem(Mods.AE2, Mods.AE2Short, "certus_charged", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier3, Mods.AE2Short));
 	public static final Item essence_certus_pure = RegisterItem.addEssenceItem(Mods.AE2, Mods.AE2Short, "certus_pure", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier4, Mods.AE2Short));
@@ -161,6 +224,33 @@ public class Crops {
 	public static final Block tungstensteel = new BlockCrop(Strings.Tier2, Mods.TechReborn, "tungstensteel");
 	public static final Block yellow_garnet = new BlockCrop(Strings.Tier2, Mods.TechReborn, "yellow_garnet");
 	public static final Block zinc = new BlockCrop(Strings.Tier2, Mods.TechReborn, "zinc");
+	public static final ItemSeeds advanced_alloy_item = itemSetting(advanced_alloy, Mods.TechReborn, "advanced_alloy", Strings.Tier2);
+	public static final ItemSeeds aluminum_item = itemSetting(aluminum, Mods.TechReborn, "aluminum", Strings.Tier2);
+	public static final ItemSeeds brass_item = itemSetting(brass, Mods.TechReborn, "brass", Strings.Tier2);
+	public static final ItemSeeds bronze_item = itemSetting(bronze, Mods.TechReborn, "bronze", Strings.Tier2);
+	public static final ItemSeeds chrome_item = itemSetting(chrome, Mods.TechReborn, "chrome", Strings.Tier2);
+	public static final ItemSeeds copper_item = itemSetting(copper, Mods.TechReborn, "copper", Strings.Tier2);
+	public static final ItemSeeds electrum_item = itemSetting(electrum, Mods.TechReborn, "electrum", Strings.Tier2);
+	public static final ItemSeeds hot_tungstensteel_item = itemSetting(hot_tungstensteel, Mods.TechReborn, "hot_tungstensteel", Strings.Tier2);
+	public static final ItemSeeds invar_item = itemSetting(invar, Mods.TechReborn, "invar", Strings.Tier2);
+	public static final ItemSeeds iridium_item = itemSetting(iridium, Mods.TechReborn, "iridium", Strings.Tier2);
+	public static final ItemSeeds iridium_alloy_item = itemSetting(iridium_alloy, Mods.TechReborn, "iridium_alloy", Strings.Tier2);
+	public static final ItemSeeds lead_item = itemSetting(lead, Mods.TechReborn, "lead", Strings.Tier2);
+	public static final ItemSeeds nickel_item = itemSetting(nickel, Mods.TechReborn, "nickel", Strings.Tier2);
+	public static final ItemSeeds peridot_item = itemSetting(peridot, Mods.TechReborn, "peridot", Strings.Tier2);
+	public static final ItemSeeds platinum_item = itemSetting(platinum, Mods.TechReborn, "platinum", Strings.Tier2);
+	public static final ItemSeeds red_garnet_item = itemSetting(red_garnet, Mods.TechReborn, "red_garnet", Strings.Tier2);
+	public static final ItemSeeds refined_iron_item = itemSetting(refined_iron, Mods.TechReborn, "refined_iron", Strings.Tier2);
+	public static final ItemSeeds ruby_item = itemSetting(ruby, Mods.TechReborn, "ruby", Strings.Tier2);
+	public static final ItemSeeds sapphire_item = itemSetting(sapphire, Mods.TechReborn, "sapphire", Strings.Tier2);
+	public static final ItemSeeds silver_item = itemSetting(silver, Mods.TechReborn, "silver", Strings.Tier2);
+	public static final ItemSeeds steel_item = itemSetting(steel, Mods.TechReborn, "steel", Strings.Tier2);
+	public static final ItemSeeds tin_item = itemSetting(tin, Mods.TechReborn, "tin", Strings.Tier2);
+	public static final ItemSeeds titanium_item = itemSetting(titanium, Mods.TechReborn, "titanium", Strings.Tier2);
+	public static final ItemSeeds tungsten_item = itemSetting(tungsten, Mods.TechReborn, "tungsten", Strings.Tier2);
+	public static final ItemSeeds tungstensteel_item = itemSetting(tungstensteel, Mods.TechReborn, "tungstensteel", Strings.Tier2);
+	public static final ItemSeeds yellow_garnet_item = itemSetting(yellow_garnet, Mods.TechReborn, "yellow_garnet", Strings.Tier2);
+	public static final ItemSeeds zinc_item = itemSetting(zinc, Mods.TechReborn, "zinc", Strings.Tier2);
 	public static final Item essence_advanced_alloy = RegisterItem.addEssenceItem(Mods.TechReborn, "advanced_alloy", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier1, Mods.TechReborn));
 	public static final Item essence_aluminum = RegisterItem.addEssenceItem(Mods.TechReborn, "aluminum", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier1, Mods.TechReborn));
 	public static final Item essence_brass = RegisterItem.addEssenceItem(Mods.TechReborn, "brass", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier1, Mods.TechReborn));
@@ -192,6 +282,8 @@ public class Crops {
 	//Industrial Revolution
 	public static final Block nikolite = new BlockCrop(Strings.Tier3, Mods.IndustrialRevolutionShort, "nikolite");
 	public static final Block enriched_nikolite = new BlockCrop(Strings.Tier5, Mods.IndustrialRevolutionShort, "enriched_nikolite");
+	public static final ItemSeeds nikolite_item = itemSetting(nikolite, Mods.IndustrialRevolutionShort, "nikolite", Strings.Tier3);
+	public static final ItemSeeds enriched_nikolite_item = itemSetting(enriched_nikolite, Mods.IndustrialRevolutionShort, "enriched_nikolite", Strings.Tier5);
 	public static final Item essence_nikolite = RegisterItem.addEssenceItem(Mods.IndustrialRevolution, Mods.IndustrialRevolutionShort, "nikolite", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier1, Mods.IndustrialRevolutionShort));
 	public static final Item essence_enriched_nikolite = RegisterItem.addEssenceItem(Mods.IndustrialRevolution, Mods.IndustrialRevolutionShort, "enriched_nikolite", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier1, Mods.IndustrialRevolutionShort));
 	
@@ -225,6 +317,35 @@ public class Crops {
 	public static final Block vermiculite = new BlockCrop(Strings.Tier1, Mods.MythicMetals, "vermiculite");
 	public static final Block ur = new BlockCrop(Strings.Tier4, Mods.MythicMetals, "ur");
 	public static final Block metallurgium = new BlockCrop(Strings.Tier5, Mods.MythicMetals, "metallurgium");
+	public static final ItemSeeds adamantite_item = itemSetting(adamantite, Mods.MythicMetals, "adamantite", Strings.Tier3);
+	public static final ItemSeeds aetherium_item = itemSetting(aetherium, Mods.MythicMetals, "aetherium", Strings.Tier3);
+	public static final ItemSeeds aquarium_item = itemSetting(aquarium, Mods.MythicMetals, "aquarium", Strings.Tier3);
+	public static final ItemSeeds argonium_item = itemSetting(argonium, Mods.MythicMetals, "argonium", Strings.Tier3);
+	public static final ItemSeeds banglum_item = itemSetting(banglum, Mods.MythicMetals, "banglum", Strings.Tier3);
+	public static final ItemSeeds carmot_item = itemSetting(carmot, Mods.MythicMetals, "carmot", Strings.Tier3);
+	public static final ItemSeeds celestium_item = itemSetting(celestium, Mods.MythicMetals, "celestium", Strings.Tier3);
+	public static final ItemSeeds discordium_item = itemSetting(discordium, Mods.MythicMetals, "discordium", Strings.Tier3);
+	public static final ItemSeeds durasteel_item = itemSetting(durasteel, Mods.MythicMetals, "durasteel", Strings.Tier3);
+	public static final ItemSeeds etherite_item = itemSetting(etherite, Mods.MythicMetals, "etherite", Strings.Tier3);
+	public static final ItemSeeds hallowed_item = itemSetting(hallowed, Mods.MythicMetals, "hallowed", Strings.Tier3);
+	public static final ItemSeeds kyber_item = itemSetting(kyber, Mods.MythicMetals, "kyber", Strings.Tier3);
+	public static final ItemSeeds manganese_item = itemSetting(manganese, Mods.MythicMetals, "manganese", Strings.Tier3);
+	public static final ItemSeeds midas_gold_item = itemSetting(midas_gold, Mods.MythicMetals, "midas_gold", Strings.Tier3);
+	public static final ItemSeeds mythril_item = itemSetting(mythril, Mods.MythicMetals, "mythril", Strings.Tier3);
+	public static final ItemSeeds orichalcum_item = itemSetting(orichalcum, Mods.MythicMetals, "orichalcum", Strings.Tier3);
+	public static final ItemSeeds prometheum_item = itemSetting(prometheum, Mods.MythicMetals, "prometheum", Strings.Tier3);
+	public static final ItemSeeds quadrillum_item = itemSetting(quadrillum, Mods.MythicMetals, "quadrillum", Strings.Tier3);
+	public static final ItemSeeds quicksilver_item = itemSetting(quicksilver, Mods.MythicMetals, "quicksilver", Strings.Tier3);
+	public static final ItemSeeds runite_item = itemSetting(runite, Mods.MythicMetals, "runite", Strings.Tier3);
+	public static final ItemSeeds slowsilver_item = itemSetting(slowsilver, Mods.MythicMetals, "slowsilver", Strings.Tier3);
+	public static final ItemSeeds starrite_item = itemSetting(starrite, Mods.MythicMetals, "starrite", Strings.Tier3);
+	public static final ItemSeeds stormyx_item = itemSetting(stormyx, Mods.MythicMetals, "stormyx", Strings.Tier3);
+	public static final ItemSeeds tantalite_item = itemSetting(tantalite, Mods.MythicMetals, "tantalite", Strings.Tier3);
+	public static final ItemSeeds truesilver_item = itemSetting(truesilver, Mods.MythicMetals, "truesilver", Strings.Tier3);
+	public static final ItemSeeds unobtainium_item = itemSetting(unobtainium, Mods.MythicMetals, "unobtainium", Strings.Tier3);
+	public static final ItemSeeds vermiculite_item = itemSetting(vermiculite, Mods.MythicMetals, "vermiculite", Strings.Tier3);
+	public static final ItemSeeds ur_item = itemSetting(ur, Mods.MythicMetals, "ur", Strings.Tier4);
+	public static final ItemSeeds metallurgium_item = itemSetting(metallurgium, Mods.MythicMetals, "metallurgium", Strings.Tier5);
 	public static final Item essence_adamantite = RegisterItem.addEssenceItem(Mods.MythicMetals, "adamantite", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier1, Mods.MythicMetals));
 	public static final Item essence_aetherium = RegisterItem.addEssenceItem(Mods.MythicMetals, "aetherium", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier1, Mods.MythicMetals));
 	public static final Item essence_aquarium = RegisterItem.addEssenceItem(Mods.MythicMetals, "aquarium", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier1, Mods.MythicMetals));
@@ -266,6 +387,16 @@ public class Crops {
 	public static final Block stellum = new BlockCrop(Strings.Tier3, Mods.Astromine, "stellum");
 	public static final Block sterling_silver = new BlockCrop(Strings.Tier3, Mods.Astromine, "sterling_silver");
 	public static final Block univite = new BlockCrop(Strings.Tier6, Mods.Astromine, "univite");
+	public static final ItemSeeds asterite_item = itemSetting(asterite, Mods.Astromine, "asterite", Strings.Tier3);
+	public static final ItemSeeds fools_gold_item = itemSetting(fools_gold, Mods.Astromine, "fools_gold", Strings.Tier3);
+	public static final ItemSeeds galaxium_item = itemSetting(galaxium, Mods.Astromine, "galaxium", Strings.Tier3);
+	public static final ItemSeeds lunum_item = itemSetting(lunum, Mods.Astromine, "lunum", Strings.Tier5);
+	public static final ItemSeeds meteoric_steel_item = itemSetting(meteoric_steel, Mods.Astromine, "meteoric_steel", Strings.Tier3);
+	public static final ItemSeeds metite_item = itemSetting(metite, Mods.Astromine, "metite", Strings.Tier3);
+	public static final ItemSeeds rose_gold_item = itemSetting(rose_gold, Mods.Astromine, "rose_gold", Strings.Tier3);
+	public static final ItemSeeds stellum_item = itemSetting(stellum, Mods.Astromine, "stellum", Strings.Tier3);
+	public static final ItemSeeds sterling_silver_item = itemSetting(sterling_silver, Mods.Astromine, "sterling_silver", Strings.Tier3);
+	public static final ItemSeeds univite_item = itemSetting(univite, Mods.Astromine, "univite", Strings.Tier6);
 	public static final Item essence_asterite = RegisterItem.addEssenceItem(Mods.Astromine, "asterite", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier1, Mods.Astromine));
 	public static final Item essence_fools_gold = RegisterItem.addEssenceItem(Mods.Astromine, "fools_gold", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier1, Mods.Astromine));
 	public static final Item essence_galaxium = RegisterItem.addEssenceItem(Mods.Astromine, "galaxium", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier1, Mods.Astromine));
@@ -349,6 +480,77 @@ public class Crops {
 	public static final Block therium = new BlockCrop(Strings.Tier1, Mods.BYG, "therium");
 	public static final Block warped_coral = new BlockCrop(Strings.Tier1, Mods.BYG, "warped_coral");
 	public static final Block white_sand = new BlockCrop(Strings.Tier1, Mods.BYG, "white_sand");
+	public static final ItemSeeds aspen_item = itemSetting(aspen, Mods.BYG, "aspen", Strings.Tier1);
+	public static final ItemSeeds baobab_item = itemSetting(baobab, Mods.BYG, "baobab", Strings.Tier1);
+	public static final ItemSeeds blue_enchanted_log_item = itemSetting(blue_enchanted_log, Mods.BYG, "blue_enchanted_log", Strings.Tier1);
+	public static final ItemSeeds bulbis_item = itemSetting(bulbis, Mods.BYG, "bulbis", Strings.Tier1);
+	public static final ItemSeeds cherry_item = itemSetting(cherry, Mods.BYG, "cherry", Strings.Tier1);
+	public static final ItemSeeds cika_item = itemSetting(cika, Mods.BYG, "cika", Strings.Tier1);
+	public static final ItemSeeds cypress_item = itemSetting(cypress, Mods.BYG, "cypress", Strings.Tier1);
+	public static final ItemSeeds ebony_item = itemSetting(ebony, Mods.BYG, "ebony", Strings.Tier1);
+	public static final ItemSeeds embur_pedu_item = itemSetting(embur_pedu, Mods.BYG, "embur_pedu", Strings.Tier1);
+	public static final ItemSeeds ether_item = itemSetting(ether, Mods.BYG, "ether", Strings.Tier1);
+	public static final ItemSeeds fir_item = itemSetting(fir, Mods.BYG, "fir", Strings.Tier1);
+	public static final ItemSeeds glacial_oak_item = itemSetting(glacial_oak, Mods.BYG, "glacial_oak", Strings.Tier1);
+	public static final ItemSeeds green_enchanted_log_item = itemSetting(green_enchanted_log, Mods.BYG, "green_enchanted_log", Strings.Tier1);
+	public static final ItemSeeds holly_item = itemSetting(holly, Mods.BYG, "holly", Strings.Tier1);
+	public static final ItemSeeds jacaranda_item = itemSetting(jacaranda, Mods.BYG, "jacaranda", Strings.Tier1);
+	public static final ItemSeeds joshua_item = itemSetting(joshua, Mods.BYG, "joshua", Strings.Tier1);
+	public static final ItemSeeds lament_item = itemSetting(lament, Mods.BYG, "lament", Strings.Tier1);
+	public static final ItemSeeds mahogany_item = itemSetting(mahogany, Mods.BYG, "mahogany", Strings.Tier1);
+	public static final ItemSeeds mangrove_item = itemSetting(mangrove, Mods.BYG, "mangrove", Strings.Tier1);
+	public static final ItemSeeds maple_item = itemSetting(maple, Mods.BYG, "maple", Strings.Tier1);
+	public static final ItemSeeds nightshade_item = itemSetting(nightshade, Mods.BYG, "nightshade", Strings.Tier1);
+	public static final ItemSeeds palm_item = itemSetting(palm, Mods.BYG, "palm", Strings.Tier1);
+	public static final ItemSeeds palo_verde_item = itemSetting(palo_verde, Mods.BYG, "palo_verde", Strings.Tier1);
+	public static final ItemSeeds pine_item = itemSetting(pine, Mods.BYG, "pine", Strings.Tier1);
+	public static final ItemSeeds rainbow_eucalyptus_item = itemSetting(rainbow_eucalyptus, Mods.BYG, "rainbow_eucalyptus", Strings.Tier1);
+	public static final ItemSeeds redwood_item = itemSetting(redwood, Mods.BYG, "redwood", Strings.Tier1);
+	public static final ItemSeeds skyris_item = itemSetting(skyris, Mods.BYG, "skyris", Strings.Tier1);
+	public static final ItemSeeds sythian_item = itemSetting(sythian, Mods.BYG, "sythian", Strings.Tier1);
+	public static final ItemSeeds tainted_acacia_item = itemSetting(tainted_acacia, Mods.BYG, "tainted_acacia", Strings.Tier1);
+	public static final ItemSeeds willow_item = itemSetting(willow, Mods.BYG, "willow", Strings.Tier1);
+	public static final ItemSeeds witch_hazel_item = itemSetting(witch_hazel, Mods.BYG, "witch_hazel", Strings.Tier1);
+	public static final ItemSeeds withering_oak_item = itemSetting(withering_oak, Mods.BYG, "withering_oak", Strings.Tier1);
+	public static final ItemSeeds zelkova_item = itemSetting(zelkova, Mods.BYG, "zelkova", Strings.Tier1);
+	public static final ItemSeeds ametrine_item = itemSetting(ametrine, Mods.BYG, "ametrine", Strings.Tier1);
+	public static final ItemSeeds anthracite_item = itemSetting(anthracite, Mods.BYG, "anthracite", Strings.Tier1);
+	public static final ItemSeeds black_ice_item = itemSetting(black_ice, Mods.BYG, "black_ice", Strings.Tier1);
+	public static final ItemSeeds black_sand_item = itemSetting(black_sand, Mods.BYG, "black_sand", Strings.Tier1);
+	public static final ItemSeeds blue_glowcane_item = itemSetting(blue_glowcane, Mods.BYG, "blue_glowcane", Strings.Tier1);
+	public static final ItemSeeds blue_netherrack_item = itemSetting(blue_netherrack, Mods.BYG, "blue_netherrack", Strings.Tier1);
+	public static final ItemSeeds blue_sand_item = itemSetting(blue_sand, Mods.BYG, "blue_sand", Strings.Tier1);
+	public static final ItemSeeds brimstone_item = itemSetting(brimstone, Mods.BYG, "brimstone", Strings.Tier1);
+	public static final ItemSeeds cryptic_stone_item = itemSetting(cryptic_stone, Mods.BYG, "cryptic_stone", Strings.Tier1);
+	public static final ItemSeeds dacite_item = itemSetting(dacite, Mods.BYG, "dacite", Strings.Tier1);
+	public static final ItemSeeds ether_soil_item = itemSetting(ether_soil, Mods.BYG, "ether_soil", Strings.Tier1);
+	public static final ItemSeeds ether_stone_item = itemSetting(ether_stone, Mods.BYG, "ether_stone", Strings.Tier1);
+	public static final ItemSeeds frost_magma_item = itemSetting(frost_magma, Mods.BYG, "frost_magma", Strings.Tier1);
+	public static final ItemSeeds hardened_dirt_item = itemSetting(hardened_dirt, Mods.BYG, "hardened_dirt", Strings.Tier1);
+	public static final ItemSeeds lignite_item = itemSetting(lignite, Mods.BYG, "lignite", Strings.Tier1);
+	public static final ItemSeeds magmatic_stone_item = itemSetting(magmatic_stone, Mods.BYG, "magmatic_stone", Strings.Tier1);
+	public static final ItemSeeds meadow_dirt_item = itemSetting(meadow_dirt, Mods.BYG, "meadow_dirt", Strings.Tier1);
+	public static final ItemSeeds mossy_netherrack_item = itemSetting(mossy_netherrack, Mods.BYG, "mossy_netherrack", Strings.Tier1);
+	public static final ItemSeeds mossy_stone_item = itemSetting(mossy_stone, Mods.BYG, "mossy_stone", Strings.Tier1);
+	public static final ItemSeeds mud_item = itemSetting(mud, Mods.BYG, "mud", Strings.Tier1);
+	public static final ItemSeeds nylium_soul_sand_item = itemSetting(nylium_soul_sand, Mods.BYG, "nylium_soul_sand", Strings.Tier1);
+	public static final ItemSeeds peat_item = itemSetting(peat, Mods.BYG, "peat", Strings.Tier1);
+	public static final ItemSeeds pendorite_item = itemSetting(pendorite, Mods.BYG, "pendorite", Strings.Tier1);
+	public static final ItemSeeds pink_sand_item = itemSetting(pink_sand, Mods.BYG, "pink_sand", Strings.Tier1);
+	public static final ItemSeeds pollen_item = itemSetting(pollen, Mods.BYG, "pollen", Strings.Tier1);
+	public static final ItemSeeds purple_glowcane_item = itemSetting(purple_glowcane, Mods.BYG, "purple_glowcane", Strings.Tier1);
+	public static final ItemSeeds purple_sand_item = itemSetting(purple_sand, Mods.BYG, "purple_sand", Strings.Tier1);
+	public static final ItemSeeds purpur_stone_item = itemSetting(purpur_stone, Mods.BYG, "purpur_stone", Strings.Tier1);
+	public static final ItemSeeds quartzite_sand_item = itemSetting(quartzite_sand, Mods.BYG, "quartzite_sand", Strings.Tier1);
+	public static final ItemSeeds red_glowcane_item = itemSetting(red_glowcane, Mods.BYG, "red_glowcane", Strings.Tier1);
+	public static final ItemSeeds red_rock_item = itemSetting(red_rock, Mods.BYG, "red_rock", Strings.Tier1);
+	public static final ItemSeeds rocky_stone_item = itemSetting(rocky_stone, Mods.BYG, "rocky_stone", Strings.Tier1);
+	public static final ItemSeeds scoria_stone_item = itemSetting(scoria_stone, Mods.BYG, "scoria_stone", Strings.Tier1);
+	public static final ItemSeeds soapstone_item = itemSetting(soapstone, Mods.BYG, "soapstone", Strings.Tier1);
+	public static final ItemSeeds subzero_ash_item = itemSetting(subzero_ash, Mods.BYG, "subzero_ash", Strings.Tier1);
+	public static final ItemSeeds therium_item = itemSetting(therium, Mods.BYG, "therium", Strings.Tier1);
+	public static final ItemSeeds warped_coral_item = itemSetting(warped_coral, Mods.BYG, "warped_coral", Strings.Tier1);
+	public static final ItemSeeds white_sand_item = itemSetting(white_sand, Mods.BYG, "white_sand", Strings.Tier1);
 	public static final Item essence_aspen = RegisterItem.addEssenceItem(Mods.BYG, "aspen", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier1, Mods.BYG));
 	public static final Item essence_baobab = RegisterItem.addEssenceItem(Mods.BYG, "baobab", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier1, Mods.BYG));
 	public static final Item essence_blue_enchanted_log = RegisterItem.addEssenceItem(Mods.BYG, "blue_enchanted_log", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier1, Mods.BYG));
@@ -455,6 +657,39 @@ public class Crops {
 	public static final Block rune_pride = new BlockCropBotaniaRune(Strings.Tier6, Mods.Botania, "rune_pride");
 	public static final Block rune_wrath = new BlockCropBotaniaRune(Strings.Tier6, Mods.Botania, "rune_wrath");
 	public static final Block rune_greed = new BlockCropBotaniaRune(Strings.Tier6, Mods.Botania, "rune_greed");
+	public static final ItemSeeds livingrock_item = itemSetting(livingrock, Mods.Botania, "livingrock", Strings.Tier1);
+	public static final ItemSeeds livingwood_item = itemSetting(livingwood, Mods.Botania, "livingwood", Strings.Tier1);
+	public static final ItemSeeds manasteel_item = itemSetting(manasteel, Mods.Botania, "manasteel", Strings.Tier3);
+	public static final ItemSeeds mana_diamond_item = itemSetting(mana_diamond, Mods.Botania, "mana_diamond", Strings.Tier5);
+	public static final ItemSeeds mana_pearl_item = itemSetting(mana_pearl, Mods.Botania, "mana_pearl", Strings.Tier3);
+	public static final ItemSeeds terrasteel_item = itemSetting(terrasteel, Mods.Botania, "terrasteel", Strings.Tier5);
+	public static final ItemSeeds elementium_item = itemSetting(elementium, Mods.Botania, "elementium", Strings.Tier4);
+	public static final ItemSeeds dragonstone_item = itemSetting(dragonstone, Mods.Botania, "dragonstone", Strings.Tier4);
+	public static final ItemSeeds pixie_dust_item = itemSetting(pixie_dust, Mods.Botania, "pixie_dust", Strings.Tier4);
+	public static final ItemSeeds gaia_spirit_ingot_item = itemSetting(gaia_spirit_ingot, Mods.Botania, "gaia_spirit_ingot", Strings.Tier6);
+	public static final ItemSeeds dreamwood_item = itemSetting(dreamwood, Mods.Botania, "dreamwood", Strings.Tier1);
+	public static final ItemSeeds smokey_quartz_item = itemSetting(smokey_quartz, Mods.Botania, "smokey_quartz", Strings.Tier3);
+	public static final ItemSeeds mana_quartz_item = itemSetting(mana_quartz, Mods.Botania, "mana_quartz", Strings.Tier3);
+	public static final ItemSeeds lavender_quartz_item = itemSetting(lavender_quartz, Mods.Botania, "lavender_quartz", Strings.Tier3);
+	public static final ItemSeeds red_quartz_item = itemSetting(red_quartz, Mods.Botania, "red_quartz", Strings.Tier3);
+	public static final ItemSeeds elven_quartz_item = itemSetting(elven_quartz, Mods.Botania, "elven_quartz", Strings.Tier3);
+	public static final ItemSeeds sunny_quartz_item = itemSetting(sunny_quartz, Mods.Botania, "sunny_quartz", Strings.Tier3);
+	public static final ItemSeeds rune_mana_item = itemSetting(rune_mana, Mods.Botania, "rune_mana", Strings.Tier6);
+	public static final ItemSeeds rune_water_item = itemSetting(rune_water, Mods.Botania, "rune_water", Strings.Tier6);
+	public static final ItemSeeds rune_air_item = itemSetting(rune_air, Mods.Botania, "rune_air", Strings.Tier6);
+	public static final ItemSeeds rune_fire_item = itemSetting(rune_fire, Mods.Botania, "rune_fire", Strings.Tier6);
+	public static final ItemSeeds rune_earth_item = itemSetting(rune_earth, Mods.Botania, "rune_earth", Strings.Tier6);
+	public static final ItemSeeds rune_spring_item = itemSetting(rune_spring, Mods.Botania, "rune_spring", Strings.Tier6);
+	public static final ItemSeeds rune_autumn_item = itemSetting(rune_autumn, Mods.Botania, "rune_autumn", Strings.Tier6);
+	public static final ItemSeeds rune_winter_item = itemSetting(rune_winter, Mods.Botania, "rune_winter", Strings.Tier6);
+	public static final ItemSeeds rune_summer_item = itemSetting(rune_summer, Mods.Botania, "rune_summer", Strings.Tier6);
+	public static final ItemSeeds rune_envy_item = itemSetting(rune_envy, Mods.Botania, "rune_envy", Strings.Tier6);
+	public static final ItemSeeds rune_lust_item = itemSetting(rune_lust, Mods.Botania, "rune_lust", Strings.Tier6);
+	public static final ItemSeeds rune_sloth_item = itemSetting(rune_sloth, Mods.Botania, "rune_sloth", Strings.Tier6);
+	public static final ItemSeeds rune_gluttony_item = itemSetting(rune_gluttony, Mods.Botania, "rune_gluttony", Strings.Tier6);
+	public static final ItemSeeds rune_pride_item = itemSetting(rune_pride, Mods.Botania, "rune_pride", Strings.Tier6);
+	public static final ItemSeeds rune_wrath_item = itemSetting(rune_wrath, Mods.Botania, "rune_wrath", Strings.Tier6);
+	public static final ItemSeeds rune_greed_item = itemSetting(rune_greed, Mods.Botania, "rune_greed", Strings.Tier6);
 	public static final Item essence_livingrock = RegisterItem.addEssenceItem(Mods.Botania, "livingrock", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier1, Mods.Botania));
 	public static final Item essence_livingwood = RegisterItem.addEssenceItem(Mods.Botania, "livingwood", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier1, Mods.Botania));
 	public static final Item essence_manasteel = RegisterItem.addEssenceItem(Mods.Botania, "manasteel", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier3, Mods.Botania));
@@ -495,6 +730,11 @@ public class Crops {
 	public static final Block soul_brick = new BlockCrop(Strings.Tier5, Mods.Conjuring, "soul_brick");
 	public static final Block conjuration_essence = new BlockCrop(Strings.Tier4, Mods.Conjuring, "conjuration_essence");
 	public static final Block conjuration_essence_lesser = new BlockCrop(Strings.Tier3, Mods.Conjuring, "conjuration_essence_lesser");
+	public static final ItemSeeds soul_alloy_item = itemSetting(soul_alloy, Mods.Conjuring, "soul_alloy", Strings.Tier5);
+	public static final ItemSeeds soul_rod_item = itemSetting(soul_rod, Mods.Conjuring, "soul_rod", Strings.Tier5);
+	public static final ItemSeeds soul_brick_item = itemSetting(soul_brick, Mods.Conjuring, "soul_brick", Strings.Tier5);
+	public static final ItemSeeds conjuration_essence_item = itemSetting(conjuration_essence, Mods.Conjuring, "conjuration_essence", Strings.Tier4);
+	public static final ItemSeeds conjuration_essence_lesser_item = itemSetting(conjuration_essence_lesser, Mods.Conjuring, "conjuration_essence_lesser", Strings.Tier3);
 	public static final Item essence_soul_alloy = RegisterItem.addEssenceItem(Mods.Conjuring, "soul_alloy", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier5, Mods.Conjuring));
 	public static final Item essence_soul_brick = RegisterItem.addEssenceItem(Mods.Conjuring, "soul_brick", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier5, Mods.Conjuring));
 	public static final Item essence_soul_rod = RegisterItem.addEssenceItem(Mods.Conjuring, "soul_rod", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier5, Mods.Conjuring));
@@ -525,6 +765,29 @@ public class Crops {
 	public static final Block jellyshroom = new BlockCrop(Strings.Tier1, Mods.BetterEnd, "jellyshroom");
 	public static final Block thallasium = new BlockCrop(Strings.Tier4, Mods.BetterEnd, "thallasium");
 	public static final Block terminite = new BlockCrop(Strings.Tier4, Mods.BetterEnd, "terminite");
+	public static final ItemSeeds ender_shard_item = itemSetting(ender_shard, Mods.BetterEnd, "ender_shard", Strings.Tier4);
+	public static final ItemSeeds aeternium_item  =itemSetting(aeternium, Mods.BetterEnd, "aeternium", Strings.Tier4);
+	public static final ItemSeeds crystal_shard_item = itemSetting(crystal_shard, Mods.BetterEnd, "crystal_shard", Strings.Tier4);
+	public static final ItemSeeds amber_gem_item = itemSetting(amber_gem, Mods.BetterEnd, "amber_gem", Strings.Tier4);
+	public static final ItemSeeds hydralux_petal_item = itemSetting(hydralux_petal, Mods.BetterEnd, "hydralux_petal", Strings.Tier4);
+	public static final ItemSeeds eternal_crystal_item = itemSetting(eternal_crystal, Mods.BetterEnd, "eternal_crystal", Strings.Tier4);
+	public static final ItemSeeds enchanted_petal_item = itemSetting(enchanted_petal, Mods.BetterEnd, "enchanted_petal", Strings.Tier4);
+	public static final ItemSeeds end_stone_dust_item = itemSetting(end_stone_dust, Mods.BetterEnd, "end_stone_dust", Strings.Tier1);
+	public static final ItemSeeds flavolite_item = itemSetting(flavolite, Mods.BetterEnd, "flavolite", Strings.Tier1);
+	public static final ItemSeeds violecite_item = itemSetting(violecite, Mods.BetterEnd, "violecite", Strings.Tier1);
+	public static final ItemSeeds sulfuric_rock_item = itemSetting(sulfuric_rock, Mods.BetterEnd, "sulfuric_rock", Strings.Tier1);
+	public static final ItemSeeds missing_tile_item = itemSetting(missing_tile, Mods.BetterEnd, "missing_tile", Strings.Tier1);
+	public static final ItemSeeds mossy_glowshroom_item = itemSetting(mossy_glowshroom, Mods.BetterEnd, "mossy_glowshroom", Strings.Tier1);
+	public static final ItemSeeds pythadendron_item = itemSetting(pythadendron, Mods.BetterEnd, "pythadendron", Strings.Tier1);
+	public static final ItemSeeds end_lotus_item = itemSetting(end_lotus, Mods.BetterEnd, "end_lotus", Strings.Tier1);
+	public static final ItemSeeds lacugrove_item = itemSetting(lacugrove, Mods.BetterEnd, "lacugrove", Strings.Tier1);
+	public static final ItemSeeds dragon_tree_item = itemSetting(dragon_tree, Mods.BetterEnd, "dragon_tree", Strings.Tier1);
+	public static final ItemSeeds tenanea_item = itemSetting(tenanea, Mods.BetterEnd, "tenanea", Strings.Tier1);
+	public static final ItemSeeds helix_tree_item = itemSetting(helix_tree, Mods.BetterEnd, "helix_tree", Strings.Tier1);
+	public static final ItemSeeds umbrella_tree_item = itemSetting(umbrella_tree, Mods.BetterEnd, "umbrella_tree", Strings.Tier1);
+	public static final ItemSeeds jellyshroom_item = itemSetting(jellyshroom, Mods.BetterEnd, "jellyshroom", Strings.Tier1);
+	public static final ItemSeeds thallasium_item = itemSetting(thallasium, Mods.BetterEnd, "thallasium", Strings.Tier4);
+	public static final ItemSeeds terminite_item = itemSetting(terminite, Mods.BetterEnd, "terminite", Strings.Tier4);
 	public static final Item essence_ender_shard = RegisterItem.addEssenceItem(Mods.BetterEnd, "ender_shard", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier3, Mods.BetterEnd));
 	public static final Item essence_aeternium = RegisterItem.addEssenceItem(Mods.BetterEnd, "aeternium", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier3, Mods.BetterEnd));
 	public static final Item essence_crystal_shard = RegisterItem.addEssenceItem(Mods.BetterEnd, "crystal_shard", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier3, Mods.BetterEnd));
@@ -588,6 +851,45 @@ public class Crops {
 	public static final Block hellfire_light = new BlockCrop(Strings.Tier3, Mods.AetherShort, "hellfire_light");
 	public static final Block sentry = new BlockCrop(Strings.Tier4, Mods.AetherShort, "sentry");
 	public static final Block sentry_light = new BlockCrop(Strings.Tier4, Mods.AetherShort, "sentry_light");
+
+	public static final ItemSeeds aether_dirt_item = itemSetting(aether_dirt, Mods.Aether, "aether_dirt", Strings.Tier1);
+	public static final ItemSeeds holystone_item = itemSetting(holystone, Mods.Aether, "holystone", Strings.Tier1);
+	public static final ItemSeeds holystone_mossy_item = itemSetting(holystone_mossy, Mods.Aether, "holystone_mossy", Strings.Tier1);
+	public static final ItemSeeds icestone_item = itemSetting(icestone, Mods.Aether, "icestone", Strings.Tier1);
+	public static final ItemSeeds quicksoil_item = itemSetting(quicksoil, Mods.Aether, "quicksoil", Strings.Tier1);
+	public static final ItemSeeds quicksoil_glass_item = itemSetting(quicksoil_glass, Mods.Aether, "quicksoil_glass", Strings.Tier1);
+	public static final ItemSeeds skyroot_log_item = itemSetting(skyroot_log, Mods.Aether, "skyroot_log", Strings.Tier1);
+	public static final ItemSeeds golden_oak_item = itemSetting(golden_oak, Mods.Aether, "golden_oak", Strings.Tier1);
+	public static final ItemSeeds crystal_log_item = itemSetting(crystal_log, Mods.Aether, "crystal_log", Strings.Tier1);
+	public static final ItemSeeds wisteria_log_item = itemSetting(wisteria_log, Mods.Aether, "wisteria_log", Strings.Tier1);
+	public static final ItemSeeds aercloud_blue_item = itemSetting(aercloud_blue, Mods.Aether, "aercloud_blue", Strings.Tier1);
+	public static final ItemSeeds aercloud_cold_item = itemSetting(aercloud_cold, Mods.Aether, "aercloud_cold", Strings.Tier1);
+	public static final ItemSeeds aercloud_gold_item = itemSetting(aercloud_gold, Mods.Aether, "aercloud_gold", Strings.Tier1);
+	public static final ItemSeeds aercloud_pink_item = itemSetting(aercloud_pink, Mods.Aether, "aercloud_pink", Strings.Tier1);
+	public static final ItemSeeds aerogel_item = itemSetting(aerogel, Mods.Aether, "aerogel", Strings.Tier1);
+
+	public static final ItemSeeds blue_berry_item = itemSetting(blue_berry, Mods.Aether, "blue_berry", Strings.Tier1);
+	public static final ItemSeeds enchanted_blue_berry_item = itemSetting(enchanted_blue_berry, Mods.Aether, "enchanted_blue_berry", Strings.Tier1);
+	public static final ItemSeeds candy_cane_item = itemSetting(candy_cane, Mods.Aether, "candy_cane", Strings.Tier1);
+	public static final ItemSeeds ginger_bread_man_item = itemSetting(ginger_bread_man, Mods.Aether, "ginger_bread_man", Strings.Tier1);
+	public static final ItemSeeds gummy_swet_blue_item = itemSetting(gummy_swet_blue, Mods.Aether, "gummy_swet_blue", Strings.Tier1);
+	public static final ItemSeeds gummy_swet_gold_item = itemSetting(gummy_swet_gold, Mods.Aether, "gummy_swet_gold", Strings.Tier1);
+	public static final ItemSeeds swet_ball_item = itemSetting(swet_ball, Mods.Aether, "swet_ball", Strings.Tier1);
+	public static final ItemSeeds white_apple_item = itemSetting(white_apple, Mods.Aether, "white_apple", Strings.Tier1);
+	public static final ItemSeeds golden_amber_item = itemSetting(golden_amber, Mods.Aether, "golden_amber", Strings.Tier1);
+	public static final ItemSeeds aechor_petal_item = itemSetting(aechor_petal, Mods.Aether, "aechor_petal", Strings.Tier1);
+
+	public static final ItemSeeds ambrosium_shard_item = itemSetting(ambrosium_shard, Mods.Aether, "ambrosium_shard", Strings.Tier2);
+	public static final ItemSeeds zanite_gemstone_item = itemSetting(zanite_gemstone, Mods.Aether, "zanite_gemstone", Strings.Tier3);
+	public static final ItemSeeds gravitite_gemstone_item = itemSetting(gravitite_gemstone, Mods.Aether, "gravitite_gemstone", Strings.Tier5);
+
+	public static final ItemSeeds angelic_item = itemSetting(angelic, Mods.Aether, "angelic", Strings.Tier2);
+	public static final ItemSeeds angelic_light_item = itemSetting(angelic_light, Mods.Aether, "angelic_light", Strings.Tier2);
+	public static final ItemSeeds carved_item = itemSetting(carved, Mods.Aether, "carved", Strings.Tier2);
+	public static final ItemSeeds hellfire_item = itemSetting(hellfire, Mods.Aether, "hellfire", Strings.Tier3);
+	public static final ItemSeeds hellfire_light_item = itemSetting(hellfire_light, Mods.Aether, "hellfire_light", Strings.Tier3);
+	public static final ItemSeeds sentry_item = itemSetting(sentry, Mods.Aether, "sentry", Strings.Tier4);
+	public static final ItemSeeds sentry_light_item = itemSetting(sentry_light, Mods.Aether, "sentry_light", Strings.Tier4);
 
 	public static final Item essence_aether_dirt = RegisterItem.addEssenceItem(Mods.Aether, Mods.AetherShort, "aether_dirt", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier1, Mods.AetherShort));
 	public static final Item essence_holystone = RegisterItem.addEssenceItem(Mods.Aether, Mods.AetherShort, "holystone", new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupEssence), Strings.Tier1, Mods.AetherShort));

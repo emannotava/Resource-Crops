@@ -1,0 +1,7 @@
+{
+	"parent": "resourcecrops:item/seed_models/seeds_outline",
+	"textures":	{
+		"fill": "resourcecrops:block/essence/tier_4_block",
+		"stroke": "resourcecrops:block/essence/tier_4_dark_block"
+	}
+}

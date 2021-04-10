@@ -1,5 +1,5 @@
 {
-  "parent": "resourcecrops:block/crop_models/crop_log",
+  "parent": "resourcecrops:block/templates/log",
   "textures": {
     "resource": "minecraft:block/dark_oak_log",
     "resource_top": "minecraft:block/dark_oak_log_top"

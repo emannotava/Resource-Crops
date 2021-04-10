@@ -1,5 +1,5 @@
 {
-  "parent": "resourcecrops:block/crop_models/crop_log",
+  "parent": "resourcecrops:block/templates/log",
   "textures": {
     "resource": "minecraft:block/warped_stem",
     "resource_top": "minecraft:block/warped_stem_top",

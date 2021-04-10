@@ -1,5 +1,5 @@
 {
-  "parent": "resourcecrops:block/crop_models/crop_all_sides",
+  "parent": "resourcecrops:block/templates/all",
   "textures": {
     "resource": "byg:block/cryptic_stone"
   }

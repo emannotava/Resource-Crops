@@ -298,7 +298,7 @@
 	"item.resourcecrops.essence_tier_5": "§4Essence Tier §l5", "block.resourcecrops.essence_tier_5_block": "Tier 5 Essence Block",
 	"item.resourcecrops.essence_tier_6": "§5Essence Tier §l6", "block.resourcecrops.essence_tier_6_block": "Tier 6 Essence Block",
 	"item.resourcecrops.essence_tier_creative": "§cC§6r§ee§aa§9t§5i§bv§de §rEssence", "block.resourcecrops.essence_tier_creative_block": "Tier §cC§6r§ee§aa§9t§5i§bv§de §rEssence Block",
-	"item.resourcecrops.essence_tier_infinite": "§k§cI§6n§ef§ai§9n§5i§bt§de §r§l§n§cE§6s§es§ae§9n§5c§be", "block.resourcecrops.essence_tier_infinite_block": "Tier §k§cI§6n§ef§ai§9n§5i§bt§de §r§l§n§cE§6s§es§ae§9n§5c§be §rBlock",
+	"item.resourcecrops.essence_tier_infinity": "§k§cI§6n§ef§ai§9n§5i§bt§de §r§l§n§cE§6s§es§ae§9n§5c§by", "block.resourcecrops.essence_tier_infinity_block": "Tier §k§cI§6n§ef§ai§9n§5i§bt§de §r§l§n§cE§6s§es§ae§9n§5c§by §rBlock",
 
 
 	"itemGroup.resourcecrops.all": "Resource Crops (Main Tab)",
@@ -312,12 +312,12 @@
 	"tooltip.resourcecrops.tier_5": "§4Tier: §l5",
 	"tooltip.resourcecrops.tier_6": "§5Tier: §l6",
 	"tooltip.resourcecrops.tier_creative": "Tier: §cC§6r§ee§aa§9t§5i§bv§de",
-	"tooltip.resourcecrops.tier_infinite": "Tier: §k§cI§6n§ef§ai§9n§5i§bt§de",
-	"tooltip.resourcecrops.tier_ultimate": "§4§lTier: ǝʇɐɯᴉʇl∩",
+	"tooltip.resourcecrops.tier_infinite": "Tier: §k§cI§6n§ef§ai§9n§5i§bt§dy",
+	"tooltip.resourcecrops.tier_ultimate": "§k§4§lTier: §rǝʇɐɯᴉʇl∩",
 	"tooltip.resourcecrops.tier_unknown": "§kTier: Unknown",
 
 	"tooltip.resourcecrops.mod.resourcecrops": "Mod: Resource Crops",
-	"tooltip.resourcecrops.mod.vanilla": "Mod: Vanilla Minecraft",
+	"tooltip.resourcecrops.mod.vanilla": "Mod: Vanilla Minecraft", "tooltip.resourcecrops.mod.minecraft": "Mod: Vanilla Minecraft",
 	"tooltip.resourcecrops.mod.ae2": "Mod: Applied Energistics 2 (AE2)",
 	"tooltip.resourcecrops.mod.techreborn": "Mod: Tech Reborn",
 	"tooltip.resourcecrops.mod.industrialrevolution": "Mod: Industrial Revolution (INDREV)",
@@ -326,6 +326,6 @@
 	"tooltip.resourcecrops.mod.byg": "Mod: Oh The Biomes You'll Go (BYG)",
 	"tooltip.resourcecrops.mod.botania": "Mod: Botania",
 	"tooltip.resourcecrops.mod.conjuring": "Mod: Conjuring",
-	"tooltip.resourcecrops.mod.betterend": "Mod: Better End",
-	"tooltip.resourcecrops.mod.aether": "Mod: The Aether Reborn"
+	"tooltip.resourcecrops.mod.aether": "Mod: The Aether Reborn", "tooltip.resourcecrops.mod.the_aether": "Mod: The Aether Reborn",
+	"tooltip.resourcecrops.mod.betterend": "Mod: Better End"
 }

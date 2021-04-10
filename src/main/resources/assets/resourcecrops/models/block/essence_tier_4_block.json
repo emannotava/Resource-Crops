@@ -1,6 +1,6 @@
 {
 	"parent": "block/cube_all",
 	"textures": {
-		"all": "resourcecrops:block/essence_tier4_block"
+		"all": "resourcecrops:block/essence/tier_4_block"
 	}
 }

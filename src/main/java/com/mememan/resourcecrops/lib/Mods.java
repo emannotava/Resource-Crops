@@ -19,7 +19,7 @@ public class Mods {
 	public static final String IndustrialRevolution = "indrev";
 	public static final String IndustrialRevolutionShort = "industrialrevolution";
 	public static final String MythicMetals = "mythicmetals";
-	public static final String ResourceCrops = "resourcecrops";
+	public static final String ResourceCrops = Strings.modId;
 	public static final String TechReborn = "techreborn";
 	public static final String Vanilla = "minecraft";
 	public static final String VanillaShort = "vanilla";

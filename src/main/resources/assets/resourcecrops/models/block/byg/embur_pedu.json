@@ -1,5 +1,5 @@
 {
-  "parent": "resourcecrops:block/crop_models/crop_log",
+  "parent": "resourcecrops:block/templates/log",
   "textures": {
     "resource": "byg:block/embur_pedu",
     "resource_top": "byg:block/embur_pedu_top"

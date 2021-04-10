@@ -1,5 +1,5 @@
 {
-	"parent": "resourcecrops:block/crop_models/crop_log",
+	"parent": "resourcecrops:block/templates/log",
 	"textures": {
 		"resource": "betterend:block/jellyshroom_log_side",
 		"resource_top": "betterend:block/jellyshroom_log_top"

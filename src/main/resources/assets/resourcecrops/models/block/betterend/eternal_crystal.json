@@ -1,5 +1,5 @@
 {
-	"parent": "resourcecrops:block/crop_models/crop_radial_center",
+	"parent": "resourcecrops:block/templates/radial_center",
 	"textures": {
 		"resource": "resourcecrops:block/betterend/eternal_crystal_block",
 		"resource_center": "resourcecrops:block/betterend/eternal_crystal_block_center",

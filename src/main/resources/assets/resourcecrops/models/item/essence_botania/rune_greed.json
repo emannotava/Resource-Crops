@@ -1,0 +1,7 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "botania:item/rune_greed",
+		"layer1": "resourcecrops:item/sparkles/sparkles_purple"
+	}
+}

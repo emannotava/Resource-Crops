@@ -1,5 +1,5 @@
 {
-	"parent": "resourcecrops:block/crop_models/crop_all_sides",
+	"parent": "resourcecrops:block/templates/all",
   "textures": {
     "resource": "resourcecrops:block/betterend/ender_shard_block",
     "gradient": "resourcecrops:block/narcissus_leaves/teal_half_light_blue"

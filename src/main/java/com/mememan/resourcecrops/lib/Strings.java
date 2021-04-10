@@ -18,5 +18,5 @@ public class Strings {
 	public static final String TierUltimate = "ultimate";
 	public static final String TierUNKNOWN = "unknown";
 	public static final String defaultAltModName = "Meow";
-	public static final int defaultCropAge = 8;
+	public static final int defaultCropAge = 7;
 }
