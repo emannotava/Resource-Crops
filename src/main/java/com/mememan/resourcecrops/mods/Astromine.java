@@ -1,8 +1,7 @@
 package com.mememan.resourcecrops.mods;
 
 import com.mememan.resourcecrops.block.RegisterCrop;
-import com.mememan.resourcecrops.lib.Crops;
-import com.mememan.resourcecrops.lib.Mods;
+import com.mememan.resourcecrops.lib.*;
 
 public class Astromine {
 	public static void init(){
@@ -11,15 +10,15 @@ public class Astromine {
 		if(Mods.checkMod(Mods.Astromine)==false && Mods.checkMod(Mods.AstromineCore)==true){register();}
 	}
 	public static void register(){
-		RegisterCrop.addCrop(Mods.Astromine, "asterite", Crops.asterite, Crops.asterite_item, true);
-		RegisterCrop.addCrop(Mods.Astromine, "fools_gold", Crops.fools_gold, Crops.fools_gold_item, true);
-		RegisterCrop.addCrop(Mods.Astromine, "galaxium", Crops.galaxium, Crops.galaxium_item, true);
-		RegisterCrop.addCrop(Mods.Astromine, "lunum", Crops.lunum, Crops.lunum_item, true);
-		RegisterCrop.addCrop(Mods.Astromine, "meteoric_steel", Crops.meteoric_steel, Crops.meteoric_steel_item, true);
-		RegisterCrop.addCrop(Mods.Astromine, "metite", Crops.metite, Crops.metite_item, true);
-		RegisterCrop.addCrop(Mods.Astromine, "rose_gold", Crops.rose_gold, Crops.rose_gold_item, true);
-		RegisterCrop.addCrop(Mods.Astromine, "stellum", Crops.stellum, Crops.stellum_item, true);
-		RegisterCrop.addCrop(Mods.Astromine, "sterling_silver", Crops.sterling_silver, Crops.sterling_silver_item, true);
-		RegisterCrop.addCrop(Mods.Astromine, "univite", Crops.univite, Crops.univite_item, true);
+		RegisterCrop.addCrop(Mods.Astromine, "asterite", Crops.ASTERITE, Crops.ASTERITE_ITEM, CropModelTypes.ALL, true);
+		RegisterCrop.addCrop(Mods.Astromine, "fools_gold", Crops.FOOLS_GOLD, Crops.FOOLS_GOLD_ITEM, CropModelTypes.ALL, true);
+		RegisterCrop.addCrop(Mods.Astromine, "galaxium", Crops.GALAXIUM, Crops.GALAXIUM_ITEM, CropModelTypes.ALL, true);
+		RegisterCrop.addCrop(Mods.Astromine, "lunum", Crops.LUNUM, Crops.LUNUM_ITEM, CropModelTypes.ALL, true);
+		RegisterCrop.addCrop(Mods.Astromine, "meteoric_steel", Crops.METEORIC_STEEL, Crops.METEORIC_STEEL_ITEM, CropModelTypes.ALL, true);
+		RegisterCrop.addCrop(Mods.Astromine, "metite", Crops.METITE, Crops.METITE_ITEM, CropModelTypes.ALL, true);
+		RegisterCrop.addCrop(Mods.Astromine, "rose_gold", Crops.ROSE_GOLD, Crops.ROSE_GOLD_ITEM, CropModelTypes.ALL, true);
+		RegisterCrop.addCrop(Mods.Astromine, "stellum", Crops.STELLUM, Crops.STELLUM_ITEM, CropModelTypes.ALL, true);
+		RegisterCrop.addCrop(Mods.Astromine, "sterling_silver", Crops.STERLING_SILVER, Crops.STERLING_SILVER_ITEM, CropModelTypes.ALL, true);
+		RegisterCrop.addCrop(Mods.Astromine, "univite", Crops.UNIVITE, Crops.UNIVITE_ITEM, CropModelTypes.ALL, true);
 	}
 }

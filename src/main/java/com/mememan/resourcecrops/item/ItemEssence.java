@@ -2,6 +2,8 @@ package com.mememan.resourcecrops.item;
 
 import java.util.List;
 
+import com.mememan.resourcecrops.util.text.Humanify;
+
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -13,6 +15,7 @@ public class ItemEssence extends Item {
 
 	public String tooltipContent = "Meow";
 	public String tooltipContent2 = "Meow";
+	public String essenceName = "Meow";
 
 	public ItemEssence(Settings settings) {
 		super(settings);
@@ -22,10 +25,23 @@ public class ItemEssence extends Item {
 		super(settings);
 		tooltipContent = tier;
 	}
+
 	public ItemEssence(Settings settings, String tier, String mod) {
 		super(settings);
 		tooltipContent = tier;
 		tooltipContent2 = mod;
+	}
+
+	public ItemEssence(Settings settings, String tier, String mod, String name) {
+		super(settings);
+		tooltipContent = tier;
+		tooltipContent2 = mod;
+		essenceName = name;
+	}
+
+	@Override
+	public String getTranslationKey(){
+		return Humanify.convert(essenceName) + " Essence";
 	}
 
 	@Override

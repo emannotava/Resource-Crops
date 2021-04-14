@@ -2,6 +2,9 @@ package com.mememan.resourcecrops.block;
 
 import java.util.List;
 
+import com.mememan.resourcecrops.item.ItemSeeds;
+import com.mememan.resourcecrops.util.text.Humanify;
+
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.CropBlock;
@@ -9,7 +12,7 @@ import net.minecraft.block.Material;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
+// import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.BlockSoundGroup;
@@ -24,10 +27,10 @@ import net.minecraft.world.World;
 
 public class BlockCrop extends CropBlock {
 
-	public static Item SEED;
+	private static ItemSeeds SEED;
 	public String tooltipContent = "Meow";
 	public String tooltipContent2 = "Meow";
-	public String seedName = "Meow";
+	private String seedName = "Meow";
 	public int maxAge = 8;
 	public static FabricBlockSettings BlockSettings(){
 		return FabricBlockSettings.of(Material.PLANT).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).nonOpaque();
@@ -39,14 +42,18 @@ public class BlockCrop extends CropBlock {
 		seedName = name;
 	}
 
-	public static void setSeedsItem(Item seed){
+	public BlockCrop getSelf(){
+		return this;
+	}
+
+	public void setSeedsItem(ItemSeeds seed){
 		SEED = seed;
 	}
 	
 	@Override
 	public TranslatableText getName() {
-	  return new TranslatableText("resourcecrops.seeds", seedName);
-	}
+	  return new TranslatableText("resourcecrops.seeds", Humanify.convert(seedName));
+	}  
 
 	@Override
 	public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
@@ -75,6 +82,13 @@ public class BlockCrop extends CropBlock {
 		}
 		if(tooltipContent2!="Meow"){
 			tooltip.add(new TranslatableText("tooltip.resourcecrops.mod." + tooltipContent2));
+		}
+	}
+
+
+	public class getSelf {
+		public getSelf get() {
+			return this;
 		}
 	}
 }

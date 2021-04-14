@@ -12,21 +12,21 @@ import net.minecraft.util.registry.Registry;
 
 public class RegisterItem {
 	
-	public static final Item essence_tier_1 = new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupMain), "1");
-	public static final Item essence_tier_2 = new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupMain), "2");
-	public static final Item essence_tier_3 = new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupMain), "3");
-	public static final Item essence_tier_4 = new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupMain), "4");
-	public static final Item essence_tier_5 = new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupMain), "5");
-	public static final Item essence_tier_6 = new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupMain), "6");
-	public static final Item essence_tier_infinity = new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupMain).rarity(Rarity.RARE), "infinity");
-	public static final Item essence_tier_creative = new ItemEssence(new Item.Settings().group(Main.resourcecrops_groupMain).rarity(Rarity.EPIC), "creative");
+	public static final Item essence_tier_1 = new ItemEssence(new Item.Settings().group(Main.GROUPMAIN), "1");
+	public static final Item essence_tier_2 = new ItemEssence(new Item.Settings().group(Main.GROUPMAIN), "2");
+	public static final Item essence_tier_3 = new ItemEssence(new Item.Settings().group(Main.GROUPMAIN), "3");
+	public static final Item essence_tier_4 = new ItemEssence(new Item.Settings().group(Main.GROUPMAIN), "4");
+	public static final Item essence_tier_5 = new ItemEssence(new Item.Settings().group(Main.GROUPMAIN), "5");
+	public static final Item essence_tier_6 = new ItemEssence(new Item.Settings().group(Main.GROUPMAIN), "6");
+	public static final Item essence_tier_infinity = new ItemEssence(new Item.Settings().group(Main.GROUPMAIN).rarity(Rarity.RARE), "infinity");
+	public static final Item essence_tier_creative = new ItemEssence(new Item.Settings().group(Main.GROUPMAIN).rarity(Rarity.EPIC), "creative");
 	
-	public static final Item debug_item = addItem("debug_item", new Item(new Item.Settings().group(Main.resourcecrops_groupMain)));
-	public static final Item nugget_thurston = addItem("nugget_thurston", new Item(new Item.Settings().group(Main.resourcecrops_groupMain)));
-	public static final Item ingot_thurston = addItem("ingot_thurston", new Item(new Item.Settings().group(Main.resourcecrops_groupMain)));
-	public static final Item crafting_seed = addItem("crafting_seed", new Item(new Item.Settings().group(Main.resourcecrops_groupMain)));
-	public static final Item dragon_egg_fragment = addItem("dragon_egg_fragment", new Item(new Item.Settings().group(Main.resourcecrops_groupMain)));
-	public static final Item dragon_egg_piece = addItem("dragon_egg_piece", new Item(new Item.Settings().group(Main.resourcecrops_groupMain)));
+	public static final Item debug_item = addItem("debug_item", new Item(new Item.Settings().group(Main.GROUPMAIN)));
+	public static final Item nugget_thurston = addItem("nugget_thurston", new Item(new Item.Settings().group(Main.GROUPMAIN)));
+	public static final Item ingot_thurston = addItem("ingot_thurston", new Item(new Item.Settings().group(Main.GROUPMAIN)));
+	public static final Item crafting_seed = addItem("crafting_seed", new Item(new Item.Settings().group(Main.GROUPMAIN)));
+	public static final Item dragon_egg_fragment = addItem("dragon_egg_fragment", new Item(new Item.Settings().group(Main.GROUPMAIN)));
+	public static final Item dragon_egg_piece = addItem("dragon_egg_piece", new Item(new Item.Settings().group(Main.GROUPMAIN)));
 	
 	
 	public static void initialize(){

@@ -1,0 +1,6 @@
+{
+  "parent": "resourcecrops:block/templates/machine_frame_empty",
+  "textures": {
+    "frame": "minecraft:block/diamond_block"
+  }
+}

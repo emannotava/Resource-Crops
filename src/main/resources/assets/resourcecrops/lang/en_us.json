@@ -284,8 +284,17 @@
 	"item.resourcecrops.crop_aether.sentry": "Sentry Stone Seeds", "item.resourcecrops.essence_aether.sentry": "Sentry Stone Essence",
 	"item.resourcecrops.crop_aether.sentry_light": "Light Sentry Stone Seeds", "item.resourcecrops.essence_aether.sentry_light": "Light Sentry Stone Essence",
 
+	"block.resourcecrops.machine_frame.coal": "Coal Machine Frame",
+	"block.resourcecrops.machine_frame.diamond": "Diamond Machine Frame",
+	"block.resourcecrops.machine_frame.emerald": "Emerald Machine Frame",
+	"block.resourcecrops.machine_frame.gold": "Golden Machine Frame",
+	"block.resourcecrops.machine_frame.iron": "Iron Machine Frame",
+	"block.resourcecrops.machine_frame.lapis": "Lapis Machine Frame",
+	"block.resourcecrops.machine_frame.netherite": "Netherite Machine Frame",
+	"block.resourcecrops.machine_frame.redstone": "Redstone Machine Frame",
 	
 	"resourcecrops.seeds": "%s Seeds",
+	"resourcecrops.essence": "%s Essence",
 
 	"item.resourcecrops.debug_item": "Debug Item",
 	"item.resourcecrops.crafting_seed": "Crafting Seeds",
@@ -304,6 +313,7 @@
 	"itemGroup.resourcecrops.all": "Resource Crops (Main Tab)",
 	"itemGroup.resourcecrops.seeds": "Resource Crops (Seeds Tab)",
 	"itemGroup.resourcecrops.essence": "Resource Crops (Essence Tab)",
+	"itemGroup.resourcecrops.experimental": "Resource Crops (Experimental Tab)",
 
 	"tooltip.resourcecrops.tier_1": "§aTier: §l1",
 	"tooltip.resourcecrops.tier_2": "§2Tier: §l2",
@@ -313,7 +323,7 @@
 	"tooltip.resourcecrops.tier_6": "§5Tier: §l6",
 	"tooltip.resourcecrops.tier_creative": "Tier: §cC§6r§ee§aa§9t§5i§bv§de",
 	"tooltip.resourcecrops.tier_infinite": "Tier: §k§cI§6n§ef§ai§9n§5i§bt§dy",
-	"tooltip.resourcecrops.tier_ultimate": "§k§4§lTier: §rǝʇɐɯᴉʇl∩",
+	"tooltip.resourcecrops.tier_ultimate": "§k§4§lTier: ǝʇɐɯᴉʇl∩",
 	"tooltip.resourcecrops.tier_unknown": "§kTier: Unknown",
 
 	"tooltip.resourcecrops.mod.resourcecrops": "Mod: Resource Crops",

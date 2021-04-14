@@ -2,6 +2,9 @@ package com.mememan.resourcecrops.block;
 
 import java.util.List;
 
+import com.mememan.resourcecrops.item.ItemSeedsBotaniaRune;
+import com.mememan.resourcecrops.util.text.Humanify;
+
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -9,7 +12,7 @@ import net.minecraft.block.Material;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
+// import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.BlockSoundGroup;
@@ -24,10 +27,10 @@ import net.minecraft.world.World;
 
 public class BlockCropBotaniaRune extends CropBlockBotaniaRune {
 
-	public static Item SEED;
+	private static ItemSeedsBotaniaRune SEED;
 	public String tooltipContent = "Meow";
 	public String tooltipContent2 = "Meow";
-	public String seedName = "Meow";
+	private String seedName = "Meow";
 	public int maxAge = 8;
 	public static FabricBlockSettings BlockSettings(){
 		return FabricBlockSettings.of(Material.PLANT).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).nonOpaque();
@@ -39,13 +42,13 @@ public class BlockCropBotaniaRune extends CropBlockBotaniaRune {
 		seedName = name;
 	}
 
-	public static void setSeedsItem(Item seed){
+	public void setSeedsItem(ItemSeedsBotaniaRune seed){
 		SEED = seed;
 	}
 	
 	@Override
 	public TranslatableText getName() {
-	  return new TranslatableText("resourcecrops.seeds", seedName);
+	  return new TranslatableText("resourcecrops.seeds", Humanify.convert(seedName));
 	}
 
 	@Override

@@ -5,7 +5,7 @@ import com.mememan.resourcecrops.lib.Mods;
 import com.mememan.resourcecrops.lib.Strings;
 // import com.mememan.resourcecrops.loot.RegisterCropLoot;
 import com.mememan.resourcecrops.mods.*;
-import com.mememan.resourcecrops.registry.RegisterLootTables;
+import com.mememan.resourcecrops.registry.*;
 
 import net.minecraft.block.Block;
 import net.minecraft.util.Identifier;
@@ -31,20 +31,21 @@ public class RegisterCrop {
 		TechReborn.init();
 	}
 
-	public static Block addCrop(String modName, String name, Block BlockDeclaration, ItemSeeds ItemDeclaration, Boolean addLootTable) {
-		addCrop(modName, modName, name, BlockDeclaration, ItemDeclaration, addLootTable);
+	public static Block addCrop(String modName, String name, Block BlockDeclaration, ItemSeeds ItemDeclaration, String modelType, Boolean addLootTable) {
+		addCrop(modName, modName, name, BlockDeclaration, ItemDeclaration, modelType, addLootTable);
 		return null;
 	}
 
-	public static Block addCrop(String modName, String modNameShort, String name, Block BlockDeclaration, ItemSeeds ItemDeclaration, Boolean addLootTable) {
+	public static Block addCrop(String modName, String modNameShort, String name, Block BlockDeclaration, ItemSeeds ItemDeclaration, String modelType, Boolean addLootTable) {
 		crops.add(BlockDeclaration);
-		Registry.register(Registry.BLOCK, new Identifier(Strings.modId, "crop_" + modNameShort + "/" + name), BlockDeclaration);
 		Registry.register(Registry.ITEM, new Identifier(Strings.modId, "crop_" + modNameShort + "/" + name), ItemDeclaration);
+		Registry.register(Registry.BLOCK, new Identifier(Strings.modId, "crop_" + modNameShort + "/" + name), BlockDeclaration);
 		if(addLootTable==true){
 			//RegisterCropLoot.addToLootTable(BlockDeclaration, 1, 1, 1F, new Identifier(Strings.modId, "blocks/crop_" + modNameShort + "/" + name));
 			RegisterLootTables.addLootTable(name, modNameShort, Strings.defaultCropAge);
 		}
 		RegisterLootTables.addLootTable("ultimate", Mods.ResourceCrops, Strings.defaultCropAge);
+		RegisterBlockStates.addBlockstate(modNameShort, name, modelType);
 		// RegisterCropLoot.addToLootTable(BlockDeclaration, 1, 1, 1F, new Identifier(Strings.modId, "blocks/crop_" + Strings.modId + "/ultimate"));
 		return BlockDeclaration;
 	}

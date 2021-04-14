@@ -3,10 +3,13 @@ package com.mememan.resourcecrops.item;
 import java.util.List;
 
 import com.mememan.resourcecrops.block.BlockCrop;
-
 import net.minecraft.block.Block;
-import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.AliasedBlockItem;
+// import net.minecraft.item.BlockItem;
+// import net.minecraft.item.Item.Settings;
+import com.mememan.resourcecrops.util.text.Humanify;
+
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
@@ -20,15 +23,15 @@ public class ItemSeeds extends AliasedBlockItem {
 
 	public ItemSeeds(Block block, Settings settings, String tier, String mod, String name) {
 		super(block, settings);
-		BlockCrop.setSeedsItem(this);
+		((BlockCrop) block).setSeedsItem(this);
 		tooltipContent = tier;
 		tooltipContent2 = mod;
 		seedName = name;
 	}
 
 	@Override
-	public Text getName() {
-	  return new TranslatableText("resourcecrops.seeds", seedName);
+	public String getTranslationKey(){
+		return Humanify.convert(seedName) + " Seeds";
 	}
 
 	@Override

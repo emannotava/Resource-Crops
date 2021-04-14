@@ -1,39 +1,38 @@
 package com.mememan.resourcecrops.mods;
 
 import com.mememan.resourcecrops.block.RegisterCrop;
-import com.mememan.resourcecrops.lib.Crops;
-import com.mememan.resourcecrops.lib.Mods;
+import com.mememan.resourcecrops.lib.*;
 
 public class TechReborn {
 	public static void init(){
 		if(Mods.checkMod(Mods.TechReborn)==true){
-			RegisterCrop.addCrop(Mods.TechReborn, "advanced_alloy", Crops.advanced_alloy, Crops.advanced_alloy_item, true);
-			RegisterCrop.addCrop(Mods.TechReborn, "aluminum", Crops.aluminum, Crops.aluminum_item, true);
-			RegisterCrop.addCrop(Mods.TechReborn, "brass", Crops.brass, Crops.brass_item, true);
-			RegisterCrop.addCrop(Mods.TechReborn, "bronze", Crops.bronze, Crops.bronze_item, true);
-			RegisterCrop.addCrop(Mods.TechReborn, "chrome", Crops.chrome, Crops.chrome_item, true);
-			RegisterCrop.addCrop(Mods.TechReborn, "copper", Crops.copper, Crops.copper_item, true);
-			RegisterCrop.addCrop(Mods.TechReborn, "electrum", Crops.electrum, Crops.electrum_item, true);
-			RegisterCrop.addCrop(Mods.TechReborn, "hot_tungstensteel", Crops.hot_tungstensteel, Crops.hot_tungstensteel_item, true);
-			RegisterCrop.addCrop(Mods.TechReborn, "invar", Crops.invar, Crops.invar_item, true);
-			RegisterCrop.addCrop(Mods.TechReborn, "iridium", Crops.iridium, Crops.iridium_item, true);
-			RegisterCrop.addCrop(Mods.TechReborn, "iridium_alloy", Crops.iridium_alloy, Crops.iridium_alloy_item, true);
-			RegisterCrop.addCrop(Mods.TechReborn, "lead", Crops.lead, Crops.lead_item, true);
-			RegisterCrop.addCrop(Mods.TechReborn, "nickel", Crops.nickel, Crops.nickel_item, true);
-			RegisterCrop.addCrop(Mods.TechReborn, "peridot", Crops.peridot, Crops.peridot_item, true);
-			RegisterCrop.addCrop(Mods.TechReborn, "platinum", Crops.platinum, Crops.platinum_item, true);
-			RegisterCrop.addCrop(Mods.TechReborn, "red_garnet", Crops.red_garnet, Crops.red_garnet_item, true);
-			RegisterCrop.addCrop(Mods.TechReborn, "refined_iron", Crops.refined_iron, Crops.refined_iron_item, true);
-			RegisterCrop.addCrop(Mods.TechReborn, "ruby", Crops.ruby, Crops.ruby_item, true);
-			RegisterCrop.addCrop(Mods.TechReborn, "sapphire", Crops.sapphire, Crops.sapphire_item, true);
-			RegisterCrop.addCrop(Mods.TechReborn, "silver", Crops.silver, Crops.silver_item, true);
-			RegisterCrop.addCrop(Mods.TechReborn, "steel", Crops.steel, Crops.steel_item, true);
-			RegisterCrop.addCrop(Mods.TechReborn, "tin", Crops.tin, Crops.tin_item, true);
-			RegisterCrop.addCrop(Mods.TechReborn, "titanium", Crops.titanium, Crops.titanium_item, true);
-			RegisterCrop.addCrop(Mods.TechReborn, "tungsten", Crops.tungsten, Crops.tungsten_item, true);
-			RegisterCrop.addCrop(Mods.TechReborn, "tungstensteel", Crops.tungstensteel, Crops.tungstensteel_item, true);
-			RegisterCrop.addCrop(Mods.TechReborn, "yellow_garnet", Crops.yellow_garnet, Crops.yellow_garnet_item, true);
-			RegisterCrop.addCrop(Mods.TechReborn, "zinc", Crops.zinc, Crops.zinc_item, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "advanced_alloy", Crops.ADVANCED_ALLOY, Crops.ADVANCED_ALLOY_ITEM, CropModelTypes.ALL, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "aluminum", Crops.ALUMINUM, Crops.ALUMINUM_ITEM, CropModelTypes.ALL, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "brass", Crops.BRASS, Crops.BRASS_ITEM, CropModelTypes.ALL, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "bronze", Crops.BRONZE, Crops.BRONZE_ITEM, CropModelTypes.ALL, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "chrome", Crops.CHROME, Crops.CHROME_ITEM, CropModelTypes.ALL, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "copper", Crops.COPPER, Crops.COPPER_ITEM, CropModelTypes.ALL, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "electrum", Crops.ELECTRUM, Crops.ELECTRUM_ITEM, CropModelTypes.ALL, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "hot_tungstensteel", Crops.HOT_TUNGSTENSTEEL, Crops.HOT_TUNGSTENSTEEL_ITEM, CropModelTypes.ALL, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "invar", Crops.INVAR, Crops.INVAR_ITEM, CropModelTypes.ALL, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "iridium", Crops.IRIDIUM, Crops.IRIDIUM_ITEM, CropModelTypes.ALL, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "iridium_alloy", Crops.IRIDIUM_ALLOY, Crops.IRIDIUM_ALLOY_ITEM, CropModelTypes.ALL, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "lead", Crops.LEAD, Crops.LEAD_ITEM, CropModelTypes.ALL, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "nickel", Crops.NICKEL, Crops.NICKEL_ITEM, CropModelTypes.ALL, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "peridot", Crops.PERIDOT, Crops.PERIDOT_ITEM, CropModelTypes.ALL, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "platinum", Crops.PLATINUM, Crops.PLATINUM_ITEM, CropModelTypes.ALL, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "red_garnet", Crops.RED_GARNET, Crops.RED_GARNET_ITEM, CropModelTypes.ALL, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "refined_iron", Crops.REFINED_IRON, Crops.REFINED_IRON_ITEM, CropModelTypes.ALL, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "ruby", Crops.RUBY, Crops.RUBY_ITEM, CropModelTypes.ALL, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "sapphire", Crops.SAPPHIRE, Crops.SAPPHIRE_ITEM, CropModelTypes.ALL, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "silver", Crops.SILVER, Crops.SILVER_ITEM, CropModelTypes.ALL, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "steel", Crops.STEEL, Crops.STEEL_ITEM, CropModelTypes.ALL, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "tin", Crops.TIN, Crops.TIN_ITEM, CropModelTypes.ALL, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "titanium", Crops.TITANIUM, Crops.TITANIUM_ITEM, CropModelTypes.ALL, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "tungsten", Crops.TUNGSTEN, Crops.TUNGSTEN_ITEM, CropModelTypes.ALL, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "tungstensteel", Crops.TUNGSTENSTEEL, Crops.TUNGSTENSTEEL_ITEM, CropModelTypes.ALL, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "yellow_garnet", Crops.YELLOW_GARNET, Crops.YELLOW_GARNET_ITEM, CropModelTypes.ALL, true);
+			RegisterCrop.addCrop(Mods.TechReborn, "zinc", Crops.ZINC, Crops.ZINC_ITEM, CropModelTypes.ALL, true);
 		}
 	}
 }
