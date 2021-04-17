@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "essence",
+  "pattern": [
+    "XXX",
+    "X X",
+    "XXX"
+  ],
+  "key": {
+    "X": { "item": "resourcecrops:essence_conjuring/soul_brick"}
+  },
+  "result": {
+    "item": "conjuring:soul_brick",
+    "count": 4
+  }
+}

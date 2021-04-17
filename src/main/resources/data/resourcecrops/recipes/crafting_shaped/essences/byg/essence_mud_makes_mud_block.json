@@ -1,0 +1,16 @@
+{
+		"type": "minecraft:crafting_shaped",
+		"group": "essence",
+		"pattern": [
+			"XXX",
+			"X X",
+			"XXX"
+		],
+		"key": {
+			"X": { "item": "resourcecrops:essence_byg/mud"}
+		},
+	"result": {
+		"item": "byg:mud_block",
+    "count": 8
+  }
+}

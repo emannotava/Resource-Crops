@@ -2,9 +2,10 @@ package com.mememan.resourcecrops.item;
 
 import java.util.List;
 
-import com.mememan.resourcecrops.block.BlockCrop;
-import net.minecraft.block.Block;
-import net.minecraft.item.AliasedBlockItem;
+// import com.mememan.resourcecrops.block.BlockCrop;
+
+import net.minecraft.item.Item;
+
 // import net.minecraft.item.BlockItem;
 // import net.minecraft.item.Item.Settings;
 import com.mememan.resourcecrops.util.text.Humanify;
@@ -15,15 +16,15 @@ import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.world.World;
 
-public class ItemSeeds extends AliasedBlockItem {
+public class ItemSeeds extends Item {
 
 	public String tooltipContent = "Meow";
 	public String tooltipContent2 = "Meow";
 	public String seedName = "Meow";
 
-	public ItemSeeds(Block block, Settings settings, String tier, String mod, String name) {
-		super(block, settings);
-		((BlockCrop) block).setSeedsItem(this);
+	public ItemSeeds(Settings settings, String tier, String mod, String name) {
+		super(settings);
+		// ((BlockCrop) block).setSeedsItem(this);
 		tooltipContent = tier;
 		tooltipContent2 = mod;
 		seedName = name;

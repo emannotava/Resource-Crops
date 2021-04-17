@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"group": "essence",
+	"ingredients": [
+		{
+			"item": "minecraft:dragon_egg"
+		}
+	],
+	"result": {
+		"item": "resourcecrops:dragon_egg_piece",
+		"count": 4
+	}
+}

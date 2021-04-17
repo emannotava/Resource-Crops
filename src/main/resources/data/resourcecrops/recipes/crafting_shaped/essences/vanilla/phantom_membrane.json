@@ -1,0 +1,16 @@
+ {
+  "type": "minecraft:crafting_shaped",
+  "group": "essence",
+  "pattern": [
+    "XXX",
+    "X X",
+    "XXX"
+  ],
+  "key": {
+    "X": { "item": "resourcecrops:essence_vanilla/phantom_membrane"}
+  },
+  "result": {
+    "item": "minecraft:phantom_membrane",
+    "count": 4
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "essence",
+  "pattern": [
+    " s ",
+    "sws",
+    " s "
+  ],
+  "key": {
+    "s": { "item": "minecraft:stick"},
+    "w": { "item": "minecraft:wheat_seeds"}
+  },
+  "result": {
+    "item": "resourcecrops:crafting_seed"
+  }
+}

@@ -1,6 +1,7 @@
 package com.mememan.resourcecrops.block;
 
 import com.mememan.resourcecrops.Main;
+import com.mememan.resourcecrops.block.machine.MachineFrame;
 import com.mememan.resourcecrops.lib.Sounds;
 import com.mememan.resourcecrops.lib.Strings;
 
@@ -27,14 +28,14 @@ public class RegisterBlock {
 	public static final Block ESSENCE_TIER_CREATIVE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(1.0f));
 	public static final Block ESSENCE_TIER_INFINITY_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(1.0f));
 	
-	public static final Block MACHINE_FRAME_COAL = new Block(FabricBlockSettings.of(Material.STONE).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.STONE));
-	public static final Block MACHINE_FRAME_DIAMOND = new Block(FabricBlockSettings.of(Material.METAL).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.METAL));
-	public static final Block MACHINE_FRAME_EMERALD = new Block(FabricBlockSettings.of(Material.METAL).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.METAL));
-	public static final Block MACHINE_FRAME_GOLD = new Block(FabricBlockSettings.of(Material.METAL).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.METAL));
-	public static final Block MACHINE_FRAME_IRON = new Block(FabricBlockSettings.of(Material.METAL).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.METAL));
-	public static final Block MACHINE_FRAME_LAPIS = new Block(FabricBlockSettings.of(Material.METAL).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.METAL));
-	public static final Block MACHINE_FRAME_NETHERITE = new Block(FabricBlockSettings.of(Material.METAL).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.NETHERITE));
-	public static final Block MACHINE_FRAME_REDSTONE = new Block(FabricBlockSettings.of(Material.METAL).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.METAL));
+	public static final Block MACHINE_FRAME_COAL = new MachineFrame(FabricBlockSettings.of(Material.STONE).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.STONE));
+	public static final Block MACHINE_FRAME_DIAMOND = new MachineFrame(FabricBlockSettings.of(Material.METAL).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.METAL));
+	public static final Block MACHINE_FRAME_EMERALD = new MachineFrame(FabricBlockSettings.of(Material.METAL).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.METAL));
+	public static final Block MACHINE_FRAME_GOLD = new MachineFrame(FabricBlockSettings.of(Material.METAL).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.METAL));
+	public static final Block MACHINE_FRAME_IRON = new MachineFrame(FabricBlockSettings.of(Material.METAL).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.METAL));
+	public static final Block MACHINE_FRAME_LAPIS = new MachineFrame(FabricBlockSettings.of(Material.METAL).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.METAL));
+	public static final Block MACHINE_FRAME_NETHERITE = new MachineFrame(FabricBlockSettings.of(Material.METAL).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.NETHERITE));
+	public static final Block MACHINE_FRAME_REDSTONE = new MachineFrame(FabricBlockSettings.of(Material.METAL).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.METAL));
 
 	public static void initialize(){
 		addBlock("debug_block", DEBUGBLOCK, Main.GROUPMAIN);

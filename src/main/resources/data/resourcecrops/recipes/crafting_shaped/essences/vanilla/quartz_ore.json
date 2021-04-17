@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "essence",
+  "pattern": [
+    "XNX",
+    "NXN",
+    "XNX"
+  ],
+  "key": {
+    "X": { "item": "resourcecrops:essence_vanilla/quartz"},
+    "N": { "item": "resourcecrops:essence_vanilla/nether"}
+  },
+  "result": {
+    "item": "minecraft:nether_quartz_ore",
+    "count": 1
+  }
+}

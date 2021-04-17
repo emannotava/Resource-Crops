@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "essence",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": { "item": "resourcecrops:essence_vanilla/dragon_egg"}
+  },
+  "result": {
+    "item": "resourcecrops:dragon_egg_fragment",
+    "count": 1
+  }
+}

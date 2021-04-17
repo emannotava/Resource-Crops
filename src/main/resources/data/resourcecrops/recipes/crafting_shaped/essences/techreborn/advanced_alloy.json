@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "essence",
+  "pattern": [
+    "XXX",
+    "X X",
+    "XXX"
+  ],
+  "key": {
+    "X": { "item": "resourcecrops:essence_techreborn/advanced_alloy"}
+  },
+  "result": {
+    "item": "techreborn:advanced_alloy_ingot",
+    "count": 8
+  }
+}

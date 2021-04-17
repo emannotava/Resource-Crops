@@ -1,0 +1,16 @@
+{
+		"type": "minecraft:crafting_shaped",
+		"group": "essence",
+		"pattern": [
+			"XXX",
+			"XXX",
+			"XXX"
+		],
+		"key": {
+			"X": { "item": "resourcecrops:essence_mythicmetals/metallurgium"}
+		},
+	"result": {
+		"item": "mythicmetals:metallurgium_ingot",
+    "count": 8
+  }
+}

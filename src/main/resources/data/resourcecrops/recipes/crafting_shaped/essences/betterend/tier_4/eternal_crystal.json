@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "essence",
+	"pattern": [
+		"XXX",
+		"XXX",
+		"XXX"
+	],
+	"key": {
+		"X": {"item": "resourcecrops:essence_betterend/eternal_crystal"}
+	},
+	"result": {
+		"item": "betterend:eternal_crystal",
+		"count": 1
+	}
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "essence",
+  "pattern": [
+    "XXX",
+    "X X",
+    "XXX"
+  ],
+  "key": {
+    "X": { "item": "resourcecrops:essence_techreborn/platinum"}
+  },
+  "result": {
+    "item": "techreborn:platinum_ingot",
+    "count": 8
+  }
+}

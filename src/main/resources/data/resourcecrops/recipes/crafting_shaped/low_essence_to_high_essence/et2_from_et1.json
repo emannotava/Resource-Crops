@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "essence",
+  "pattern": [
+    " x ",
+    "x x",
+    " x "
+  ],
+  "key": {
+    "x": { "item": "resourcecrops:essence_tier_1"}
+  },
+  "result": {
+    "item": "resourcecrops:essence_tier_2",
+    "count": 1
+  }
+}

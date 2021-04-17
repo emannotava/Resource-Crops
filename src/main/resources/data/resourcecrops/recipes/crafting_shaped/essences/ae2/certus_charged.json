@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "essence",
+  "pattern": [
+    "XXX",
+    "X X",
+    "XXX"
+  ],
+  "key": {
+    "X": { "item": "resourcecrops:essence_ae2/certus_charged"}
+  },
+  "result": {
+    "item": "appliedenergistics2:charged_certus_quartz_crystal",
+    "count": 4
+  }
+}

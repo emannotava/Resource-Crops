@@ -1,0 +1,16 @@
+{
+		"type": "minecraft:crafting_shaped",
+		"group": "essence",
+		"pattern": [
+			"XXX",
+			"X X",
+			"XXX"
+		],
+		"key": {
+			"X": { "item": "resourcecrops:essence_byg/warped_coral"}
+		},
+	"result": {
+		"item": "byg:warped_coral_block",
+    "count": 8
+  }
+}

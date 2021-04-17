@@ -41,6 +41,13 @@ public class BlockCrop extends CropBlock {
 		tooltipContent2 = mod;
 		seedName = name;
 	}
+	public BlockCrop(String tier, String mod, String name, ItemSeeds seed) {
+		super(BlockSettings());
+		tooltipContent = tier;
+		tooltipContent2 = mod;
+		setSeedsItem(seed);
+		seedName = name;
+	}
 
 	public BlockCrop getSelf(){
 		return this;

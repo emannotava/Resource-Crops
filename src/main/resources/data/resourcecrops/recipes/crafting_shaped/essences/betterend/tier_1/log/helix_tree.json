@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "essence",
+	"pattern": [
+		"XXX",
+		"X X",
+		"XXX"
+	],
+	"key": {
+		"X": {"item": "resourcecrops:essence_betterend/helix_tree"}
+	},
+	"result": {
+		"item": "betterend:helix_tree_log",
+		"count": 8
+	}
+}

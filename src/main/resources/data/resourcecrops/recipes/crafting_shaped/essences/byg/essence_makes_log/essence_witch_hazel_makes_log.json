@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "essence",
+  "pattern": [
+    "XXX",
+    "X X",
+    "XXX"
+  ],
+  "key": {
+    "X": { "item": "resourcecrops:essence_byg/witch_hazel"}
+  },
+  "result": {
+    "item": "byg:witch_hazel_log",
+    "count": 8
+  }
+}

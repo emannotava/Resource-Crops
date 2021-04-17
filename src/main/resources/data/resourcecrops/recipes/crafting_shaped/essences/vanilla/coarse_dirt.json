@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "essence",
+  "pattern": [
+    "XG",
+    "GX"
+  ],
+  "key": {
+    "X": { "item": "resourcecrops:essence_vanilla/dirt"},
+    "G": { "item": "minecraft:gravel"}
+  },
+  "result": {
+    "item": "minecraft:coarse_dirt",
+    "count": 8
+  }
+}

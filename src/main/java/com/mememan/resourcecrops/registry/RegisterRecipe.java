@@ -1,6 +1,5 @@
 package com.mememan.resourcecrops.registry;
 
-import com.mememan.resourcecrops.lib.ASCII;
 import com.mememan.resourcecrops.lib.Mods;
 
 import net.devtech.arrp.json.recipe.JIngredient;
@@ -21,11 +20,11 @@ public class RegisterRecipe {
 		/*8 Logs -> 4 Chests*/ assets.addRecipe(new Identifier("arrp", "8logs_to_4chests"), JRecipe.shaped(pattern(squareHollow), JKeys.keys().key("X", JIngredient.ingredient().item("minecraft:oak_log").item("minecraft:birch_log").item("minecraft:spruce_log").item("minecraft:jungle_log").item("minecraft:acacia_log").item("minecraft:dark_oak_log").item("minecraft:warped_stem").item("minecraft:crimson_stem")), output(Mods.Vanilla, "chest", 4)));
 	}
 
-	public static JIngredient input(String itemModID, String itemName, Boolean useTag){
+	public static JIngredient input(String item, Boolean useTag){
 		if(useTag==false){
-			return JIngredient.ingredient().item(itemModID + ":" + itemName);
+			return JIngredient.ingredient().item(item);
 		}else{
-			return JIngredient.ingredient().tag(itemModID + ":" + itemName);
+			return JIngredient.ingredient().tag(item);
 		}
 	}
 
@@ -46,25 +45,11 @@ public class RegisterRecipe {
 		}
 	}
 
-	public static void addSeedRecipe(String[] output, String[] modIDs, String[] input, Boolean[] useTag){
-		String modID1 = "minecraft";
-		String modID2 = "minecraft";
-		String modID3 = "minecraft";
-		if(modIDs.length==1){
-			modID1 = modIDs[0]; modID2 = modIDs[0]; modID3 = modIDs[0];
-		}else if(modIDs.length==2){
-			modID1 = modIDs[0]; modID2 = modIDs[1]; modID3 = modIDs[1];
-		}else if(modIDs.length==3){
-			modID1 = modIDs[0]; modID2 = modIDs[1]; modID3 = modIDs[2];
-		}else if (modIDs.length > 3 || input.length > 3) {
-			System.out.println("Mate, you realize vanilla recipes are only 3x3 right?");
-			System.out.println("Yes this is a VERY large message to log which is VERY annoying,\nso fix your recipe as soon as possible!");
-			ASCII.logASCII(ASCII.pepeKek);
-		}
+	public static void addSeedRecipe(String[] output, String[] input, Boolean useTag){
 		assets.addRecipe(new Identifier("arrp", output[1]), JRecipe.shaped(pattern(seedPattern), JKeys.keys()
-		.key("I", input(modID1, input[0], useTag[0]))
-		.key("E", input(modID2, input[1], useTag[1]))
-		.key("S", input(modID3, input[2], useTag[2]))
+		.key("I", input(input[0], useTag))
+		.key("E", input(input[1], false))
+		.key("S", input(input[2], false))
 		, output(output[0], output[1])));
 	}
 }

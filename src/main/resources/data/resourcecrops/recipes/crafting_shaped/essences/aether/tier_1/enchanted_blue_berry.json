@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "essence",
+	"pattern": [
+		"XXX",
+		"X X",
+		"XXX"
+	],
+	"key": {
+		"X": {"item": "resourcecrops:essence_aether/enchanted_blue_berry"}
+	},
+	"result": {
+		"item": "the_aether:enchanted_blueberry",
+		"count": 8
+	}
+}

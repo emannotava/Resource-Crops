@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ingot_thurston",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "resourcecrops:nugget_thurston"
+    }
+  },
+  "result": {
+    "item": "resourcecrops:ingot_thurston"
+  }
+}

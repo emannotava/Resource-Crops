@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "essence",
+  "pattern": [
+    "XXX",
+    "X X",
+    "XXX"
+  ],
+  "key": {
+    "X": { "item": "resourcecrops:essence_byg/nightshade"}
+  },
+  "result": {
+    "item": "byg:nightshade_log",
+    "count": 8
+  }
+}

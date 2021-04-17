@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "essence",
+  "pattern": [
+    " G ",
+    "FBF",
+    " G "
+  ],
+  "key": {
+    "G": { "item": "minecraft:gunpowder"},
+    "F": { "item": "minecraft:rotten_flesh"},
+    "B": { "item": "minecraft:bone_meal"}
+  },
+  "result": {
+    "item": "resourcecrops:essence_tier_1",
+    "count": 8
+  }
+}
