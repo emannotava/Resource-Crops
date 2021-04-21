@@ -1,6 +1,0 @@
-{
-  "parent": "resourcecrops:block/templates/all",
-  "textures": {
-    "resource": "minecraft:block/quartz_block_side"
-  }
-}

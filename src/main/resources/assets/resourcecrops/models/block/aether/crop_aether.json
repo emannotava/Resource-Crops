@@ -1,9 +1,0 @@
-{
-	"parent": "resourcecrops:block/templates/all",
-	"textures": {
-		"plant_leaves": "resourcecrops:block/aether/plant_leaves",
-		"plant_stem": "resourcecrops:block/aether/plant_stem",
-		"gradient": "resourcecrops:block/narcissus_leaves/white",
-		"particle": "resourcecrops:block/aether/plant_stem"
-	}
-}

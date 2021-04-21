@@ -4,10 +4,14 @@ import net.fabricmc.loader.api.FabricLoader;
 
 public class Mods {
 	public static final String COMMON = "c";
+	public static final String CottonResources = "cotton-resources";
+	public static final String COMMON_RESOURCES = CottonResources;
 	public static final String Aether = "the_aether";
 	public static final String AetherShort = "aether";
 	public static final String AE2 = "appliedenergistics2";
 	public static final String AE2Short = "ae2";
+	public static final String Biomemakeover = "biomemakeover";
+	public static final String Bewitchment = "bewitchment";
 	public static final String Astromine = "astromine";
 	public static final String AstromineCore = "astromine-core";
 	public static final String BYG = "byg"; //Oh The Biome's You'll Go
@@ -16,6 +20,7 @@ public class Mods {
 	public static final String Blockus = "blockus";
 	public static final String Botania = "botania";
 	public static final String Conjuring = "conjuring";
+	public static final String DeepMobLearning = "dml-refabricated";
 	public static final String IndustrialRevolution = "indrev";
 	public static final String IndustrialRevolutionShort = "industrialrevolution";
 	public static final String MythicMetals = "mythicmetals";

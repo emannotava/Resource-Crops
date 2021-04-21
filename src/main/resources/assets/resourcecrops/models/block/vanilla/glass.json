@@ -1,7 +1,0 @@
-{
-  "parent": "resourcecrops:block/templates/all",
-  "textures": {
-    "resource": "minecraft:block/glass",
-    "gradient": "resourcecrops:block/narcissus_leaves/doubled_white"
-  }
-}

@@ -1,7 +1,0 @@
-{
-  "parent": "resourcecrops:block/templates/log",
-  "textures": {
-    "resource": "byg:block/baobab_log",
-    "resource_top": "byg:block/baobab_log_top"
-  }
-}

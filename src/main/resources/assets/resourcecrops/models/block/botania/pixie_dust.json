@@ -1,6 +1,0 @@
-{
-	"parent": "resourcecrops:block/templates/all",
-  "textures": {
-    "resource": "resourcecrops:block/botania/pixie_dust_block"
-  }
-}

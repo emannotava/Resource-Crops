@@ -39,5 +39,8 @@ public class SimpleTimeClient implements ITimeClient {
 	public static void main(String... args) {
 		ITimeClient myTimeClient = new SimpleTimeClient();
 		System.out.println(myTimeClient.toString());
+		// String resourceTex = "skyroot_log_side";
+		// String modifiedString = resourceTex.substring(resourceTex.length()-4, resourceTex.length());
+		// System.out.println("-X-X-X-" + modifiedString + "-X-X-X-");
 	}
 }

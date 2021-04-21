@@ -1,7 +1,0 @@
-{
-	"parent": "resourcecrops:block/templates/log",
-	"textures": {
-		"resource": "betterend:block/tenanea_log_side",
-		"resource_top": "betterend:block/tenanea_log_top"
-	}
-}

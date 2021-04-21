@@ -3,11 +3,13 @@ package com.mememan.resourcecrops.block;
 import com.mememan.resourcecrops.item.ItemSeeds;
 import com.mememan.resourcecrops.lib.Mods;
 import com.mememan.resourcecrops.lib.Strings;
+import com.mememan.resourcecrops.loot.RegisterCropLoot;
 // import com.mememan.resourcecrops.loot.RegisterCropLoot;
 import com.mememan.resourcecrops.mods.*;
 import com.mememan.resourcecrops.registry.*;
 
 import net.minecraft.block.Block;
+// import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -19,27 +21,32 @@ public class RegisterCrop {
 	public static void initialize() {
 		ResourceCrops.init();
 		Vanilla.init();
+		Common.init();
 		AE2.init();
 		Aether.init();
 		Astromine.init();
 		BetterEnd.init();
+		Bewitchment.init();
+		Biomemakeover.init();
+		Blockus.init();
 		Botania.init();
 		BYG.init();
 		Conjuring.init();
+		DeepMobLearning.init();
 		IndustrialRevolution.init();
 		MythicMetals.init();
 		TechReborn.init();
 	}
 
-	public static Block addCrop(String modName, String name, Block blockDeclaration, ItemSeeds itemDeclaration, String modelType, Boolean[] addRecipe, String[] ingredients, Boolean addLootTable) {
-		addCrop(modName, modName, name, blockDeclaration, itemDeclaration, modelType, addRecipe, ingredients, addLootTable);
+	public static Block addCrop(String modName, String name, Block blockDeclaration, ItemSeeds itemDeclaration, String[] resourceTex, String modelType, Boolean[] addRecipe, String[] ingredients, Boolean addLootTable) {
+		addCrop(modName, modName, name, blockDeclaration, itemDeclaration, resourceTex, modelType, addRecipe, ingredients, addLootTable);
 		return null;
 	}
 
-	public static Block addCrop(String modName, String modNameShort, String name, Block blockDeclaration, ItemSeeds itemDeclaration, String modelType, Boolean[] addRecipe, String[] ingredients, Boolean addLootTable) {
+	public static Block addCrop(String modName, String modNameShort, String name, Block blockDeclaration, ItemSeeds itemDeclaration, String[] resourceTex, String modelType, Boolean[] addRecipe, String[] ingredients, Boolean addLootTable) {
 		crops.add(blockDeclaration);
-		Registry.register(Registry.ITEM, new Identifier(Strings.modId, "crop_" + modNameShort + "/" + name), itemDeclaration);
 		Registry.register(Registry.BLOCK, new Identifier(Strings.modId, "crop_" + modNameShort + "/" + name), blockDeclaration);
+		Registry.register(Registry.ITEM, new Identifier(Strings.modId, "crop_" + modNameShort + "/" + name), itemDeclaration);
 		if(addLootTable==true){
 			//RegisterCropLoot.addToLootTable(blockDeclaration, 1, 1, 1F, new Identifier(Strings.modId, "blocks/crop_" + modNameShort + "/" + name));
 			RegisterLootTables.addLootTable(name, modNameShort, Strings.defaultCropAge);
@@ -71,18 +78,18 @@ public class RegisterCrop {
 					addRecipe[1]);
 			}
 		}
-		RegisterLootTables.addLootTable("ultimate", Mods.ResourceCrops, Strings.defaultCropAge);
-		RegisterBlockStates.addBlockstate(modNameShort, name, modelType);
-		// RegisterCropLoot.addToLootTable(blockDeclaration, 1, 1, 1F, new Identifier(Strings.modId, "blocks/crop_" + Strings.modId + "/ultimate"));
+		// RegisterLootTables.addLootTable("ultimate", Mods.ResourceCrops, Strings.defaultCropAge);
+		RegisterBlockStates.addBlockstate(modNameShort, name);
+		if(resourceTex.length==1){
+			RegisterBlockModel.registerCropModel(modName, name, resourceTex[0], modelType);
+		}else if(resourceTex.length==2){
+			RegisterBlockModel.registerCropModel(modName, name, resourceTex[0], resourceTex[1], modelType);
+		}else if(resourceTex.length==3){
+			RegisterBlockModel.registerCropModel(modName, name, resourceTex[0], resourceTex[1], resourceTex[2], modelType);
+		}else{
+			RegisterBlockModel.registerCropModel(modName, name, resourceTex[0], resourceTex[1], resourceTex[2], resourceTex[3], modelType);
+		}
+		RegisterCropLoot.addToLootTable(blockDeclaration, 1, 1, 1F, new Identifier(Strings.modId, "blocks/crop_" + Strings.modId + "/ultimate"));
 		return blockDeclaration;
 	}
-
-	// public static Block addCrop(String modNameShort, String name, Block[] blockDeclaration, int arrayEntry) {
-	// 	crops.add(blockDeclaration[arrayEntry]);
-	// 	Registry.register(Registry.BLOCK, new Identifier(Strings.modId, "crop_" + modNameShort + "/" + name), blockDeclaration[arrayEntry]);
-	// 	Registry.register(Registry.ITEM, new Identifier(Strings.modId, "crop_" + modNameShort + "/" + name), new BlockItem(blockDeclaration[arrayEntry], new FabricItemSettings().group(Main.resourcecrops_groupSeeds)));
-	// 	RegisterCropLoot.addToLootTable(blockDeclaration[arrayEntry], 1, 1, 1F, new Identifier(Strings.modId, "blocks/crop_" + modNameShort + "/" + name));
-	// 	RegisterCropLoot.addToLootTable(blockDeclaration[arrayEntry], 1, 1, 1F, new Identifier(Strings.modId, "blocks/crop_" + Strings.modId + "/ultimate"));
-	// 	return blockDeclaration[arrayEntry];
-	// }
 }

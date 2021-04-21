@@ -1,6 +1,0 @@
-{
-	"parent": "resourcecrops:block/templates/all",
-  "textures": {
-    "resource": "botania:block/elf_quartz_side"
-  }
-}

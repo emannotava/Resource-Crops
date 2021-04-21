@@ -1,4 +1,5 @@
 {
+	"parent": "block/cube_all",
 	"credit": "Made with Blockbench, by Annabel-Chan",
 	"textures": {
 		"frame": "resourcecrops:block/debug_block"

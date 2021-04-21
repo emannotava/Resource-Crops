@@ -13,30 +13,58 @@ import net.minecraft.world.World;
 
 public class ItemEssence extends Item {
 
-	public String tooltipContent = "Meow";
-	public String tooltipContent2 = "Meow";
+	public String TOOLTIP_TIER = "Meow";
+	public String TOOLTIP_MOD = "Meow";
 	public String essenceName = "Meow";
+	public Boolean glintState;
 
 	public ItemEssence(Settings settings) {
 		super(settings);
+		glintState = false;
+		hasGlint(new ItemStack(this));
 	}
 
 	public ItemEssence(Settings settings, String tier) {
 		super(settings);
-		tooltipContent = tier;
+		TOOLTIP_TIER = tier;
+		glintState = false;
+		hasGlint(new ItemStack(this));
 	}
 
 	public ItemEssence(Settings settings, String tier, String mod) {
 		super(settings);
-		tooltipContent = tier;
-		tooltipContent2 = mod;
+		TOOLTIP_TIER = tier;
+		TOOLTIP_MOD = mod;
+		glintState = false;
+		hasGlint(new ItemStack(this));
 	}
 
 	public ItemEssence(Settings settings, String tier, String mod, String name) {
 		super(settings);
-		tooltipContent = tier;
-		tooltipContent2 = mod;
+		TOOLTIP_TIER = tier;
+		TOOLTIP_MOD = mod;
 		essenceName = name;
+		glintState = false;
+		hasGlint(new ItemStack(this));
+	}
+
+	public ItemEssence(Settings settings, String tier, String mod, String name, Boolean enableGlint) {
+		super(settings);
+		TOOLTIP_TIER = tier;
+		TOOLTIP_MOD = mod;
+		essenceName = name;
+		if(enableGlint){
+			glintState = true;
+			hasGlint(new ItemStack(this));
+		}else {
+			glintState = false;
+			hasGlint(new ItemStack(this));
+		}
+	}
+
+	@Override
+	public boolean hasGlint(ItemStack stack) {
+		return glintState;
 	}
 
 	@Override
@@ -46,11 +74,11 @@ public class ItemEssence extends Item {
 
 	@Override
 	public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
-		if(tooltipContent!="Meow"){
-			tooltip.add(new TranslatableText("tooltip.resourcecrops.tier_" + tooltipContent));
+		if(TOOLTIP_TIER!="Meow"){
+			tooltip.add(new TranslatableText("tooltip.tier_" + TOOLTIP_TIER));
 		}
-		if(tooltipContent2!="Meow"){
-			tooltip.add(new TranslatableText("tooltip.resourcecrops.mod." + tooltipContent2));
+		if(TOOLTIP_MOD!="Meow"){
+			tooltip.add(new TranslatableText("tooltip.mod." + TOOLTIP_MOD));
 		}
 	}
 	

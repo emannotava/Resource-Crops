@@ -1,6 +1,0 @@
-{
-	"parent": "resourcecrops:block/templates/all",
-  "textures": {
-    "resource": "betterend:block/hydralux_petal_block"
-  }
-}

@@ -1,6 +1,0 @@
-{
-	"parent": "resourcecrops:block/templates/all",
-	"textures": {
-		"resource": "mythicmetals:blocks/tantalite_block"
-	}
-}

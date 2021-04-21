@@ -1,6 +1,0 @@
-{
-  "parent": "resourcecrops:block/templates/all",
-  "textures": {
-    "resource": "techreborn:block/storage/sapphire_storage_block"
-  }
-}

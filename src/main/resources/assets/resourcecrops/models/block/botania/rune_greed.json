@@ -1,8 +1,0 @@
-{
-  "parent": "resourcecrops:block/templates/botania_gradient_overlay",
-  "textures": {
-    "resource": "botania:block/livingrock",
-    "rune": "botania:item/rune_greed",
-    "gradient": "resourcecrops:block/narcissus_leaves/white"
-  }
-}

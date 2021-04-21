@@ -4,13 +4,13 @@
   "version": "${version}",
 
   "name": "Resource Crops",
-  "description": "This is a bare-bones replica of Mystical Agriculture only meant as a temporary replacement\nIf Mystical Agriculture gets updated to work with Fabric, this mod will probably be discontinued",
+  "description": "This is a bare-bones replica of Mystical Agriculture only meant as a temporary replacement\nIf Mystical Agriculture gets updated to work with Fabric, this mod might be discontinued",
   "authors": [
     "meme_man_not_ava"
   ],
   "contact": {
     "homepage": "http://www.themostamazingwebsiteontheinternet.com/",
-    "sources": "I'll add a link here when I have one"
+    "sources": "https://github.com/emannotava/Resource-Crops"
   },
 
   "license": "MIT",
@@ -26,7 +26,7 @@
     ]
   },
   "mixins": [
-    
+	"resourcecrops.mixin.json"
   ],
 
   "depends": {

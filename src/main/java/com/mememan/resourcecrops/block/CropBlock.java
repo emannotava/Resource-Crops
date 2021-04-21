@@ -29,28 +29,37 @@ import net.minecraft.world.WorldView;
 public class CropBlock extends PlantBlock implements Fertilizable {
    public static IntProperty AGE = IntProperty.of("age", 0, 7);
    private static final VoxelShape[] AGE_TO_SHAPE;
-   public static int maxAge = 8;
+   public static int maxAge = 7;
 
-   public static Block requiredBlock = Blocks.FARMLAND;
+   public static Block requiredBlock;
 
-   public CropBlock(AbstractBlock.Settings settings, Block farmland, int age) {
+   public CropBlock(AbstractBlock.Settings settings, Block soil) {
       super(settings);
-      AGE = IntProperty.of("age", 0, (age - 1));
-      maxAge = (age - 1);
       this.setDefaultState((BlockState)((BlockState)this.stateManager.getDefaultState()).with(this.getAgeProperty(), 0));
-      requiredBlock = farmland;
+      requiredBlock = soil;
+   }
+
+   public CropBlock(AbstractBlock.Settings settings) {
+      super(settings);
+      this.setDefaultState((BlockState)((BlockState)this.stateManager.getDefaultState()).with(this.getAgeProperty(), 0));
+      requiredBlock = Blocks.FARMLAND;
    }
 
    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
       return AGE_TO_SHAPE[(Integer)state.get(this.getAgeProperty())];
    }
 
+   @Override
    public boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
       return floor.isOf(requiredBlock);
    }
 
    public IntProperty getAgeProperty() {
       return AGE;
+   }
+
+   public int getMaxAge() {
+      return 7;
    }
 
    protected int getAge(BlockState state) {

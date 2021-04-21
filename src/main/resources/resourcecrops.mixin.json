@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "party.lemons.sub_tabs.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "client.CreativeInventoryScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

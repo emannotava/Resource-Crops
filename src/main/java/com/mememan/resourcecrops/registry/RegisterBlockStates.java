@@ -14,7 +14,7 @@ public class RegisterBlockStates {
 		
 	}
 
-	public static void addBlockstate(String modName, String cropName, String cropModelType){
+	public static void addBlockstate(String modName, String cropName){
 		JState Fred = JState.state(
 			cropVariant(
 				JState.model("resourcecrops:block/crop_generic/crop_stage0"),
@@ -24,7 +24,8 @@ public class RegisterBlockStates {
 				JState.model("resourcecrops:block/crop_generic/crop_stage4"),
 				JState.model("resourcecrops:block/crop_generic/crop_stage5"),
 				JState.model("resourcecrops:block/crop_generic/crop_stage6"),
-				JState.model("resourcecrops:block/templates/" + cropModelType)
+				JState.model("resourcecrops:block/crop_" + modName + "/" + cropName)
+				// JState.model("resourcecrops:block/templates/" + cropModelType)
 			)
 		);
 		assets.addBlockState(Fred, new Identifier(Strings.modId, "crop_" + modName + "/" + cropName));

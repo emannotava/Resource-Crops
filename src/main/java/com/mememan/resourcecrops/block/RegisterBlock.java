@@ -38,33 +38,32 @@ public class RegisterBlock {
 	public static final Block MACHINE_FRAME_REDSTONE = new MachineFrame(FabricBlockSettings.of(Material.METAL).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.METAL));
 
 	public static void initialize(){
-		addBlock("debug_block", DEBUGBLOCK, Main.GROUPMAIN);
-		addBlock("ore_thurston", ORE_THURSTON, Main.GROUPMAIN);
-		addBlock("essence_tier_1_block", ESSENCE_TIER_1_BLOCK, Main.GROUPMAIN);
-		addBlock("essence_tier_2_block", ESSENCE_TIER_2_BLOCK, Main.GROUPMAIN);
-		addBlock("essence_tier_3_block", ESSENCE_TIER_3_BLOCK, Main.GROUPMAIN);
-		addBlock("essence_tier_4_block", ESSENCE_TIER_4_BLOCK, Main.GROUPMAIN);
-		addBlock("essence_tier_5_block", ESSENCE_TIER_5_BLOCK, Main.GROUPMAIN);
-		addBlock("essence_tier_6_block", ESSENCE_TIER_6_BLOCK, Main.GROUPMAIN);
-		addBlock("essence_tier_creative_block", ESSENCE_TIER_CREATIVE_BLOCK, Main.GROUPMAIN);
-		addBlock("essence_tier_infinity_block", ESSENCE_TIER_INFINITY_BLOCK, Main.GROUPMAIN);
-		addBlock("machine_frame/coal", MACHINE_FRAME_COAL, Main.GROUPEXPERIMENTAL);
-		addBlock("machine_frame/diamond", MACHINE_FRAME_DIAMOND, Main.GROUPEXPERIMENTAL);
-		addBlock("machine_frame/emerald", MACHINE_FRAME_EMERALD, Main.GROUPEXPERIMENTAL);
-		addBlock("machine_frame/gold", MACHINE_FRAME_GOLD, Main.GROUPEXPERIMENTAL);
-		addBlock("machine_frame/iron", MACHINE_FRAME_IRON, Main.GROUPEXPERIMENTAL);
-		addBlock("machine_frame/lapis", MACHINE_FRAME_LAPIS, Main.GROUPEXPERIMENTAL);
-		addBlock("machine_frame/netherite", MACHINE_FRAME_NETHERITE, Main.GROUPEXPERIMENTAL);
-		addBlock("machine_frame/redstone", MACHINE_FRAME_REDSTONE, Main.GROUPEXPERIMENTAL);
+		addBlock("debug_block", DEBUGBLOCK, Main.GROUP_MAIN);
+		addBlock("ore_thurston", ORE_THURSTON, Main.GROUP_MAIN);
+		addBlock("essence_tier_1_block", ESSENCE_TIER_1_BLOCK, Main.GROUP_MAIN);
+		addBlock("essence_tier_2_block", ESSENCE_TIER_2_BLOCK, Main.GROUP_MAIN);
+		addBlock("essence_tier_3_block", ESSENCE_TIER_3_BLOCK, Main.GROUP_MAIN);
+		addBlock("essence_tier_4_block", ESSENCE_TIER_4_BLOCK, Main.GROUP_MAIN);
+		addBlock("essence_tier_5_block", ESSENCE_TIER_5_BLOCK, Main.GROUP_MAIN);
+		addBlock("essence_tier_6_block", ESSENCE_TIER_6_BLOCK, Main.GROUP_MAIN);
+		addBlock("essence_tier_creative_block", ESSENCE_TIER_CREATIVE_BLOCK, Main.GROUP_MAIN);
+		addBlock("essence_tier_infinity_block", ESSENCE_TIER_INFINITY_BLOCK, Main.GROUP_MAIN);
+		addBlock("machine_frame/coal", MACHINE_FRAME_COAL, Main.GROUP_EXPERIMENTAL);
+		addBlock("machine_frame/diamond", MACHINE_FRAME_DIAMOND, Main.GROUP_EXPERIMENTAL);
+		addBlock("machine_frame/emerald", MACHINE_FRAME_EMERALD, Main.GROUP_EXPERIMENTAL);
+		addBlock("machine_frame/gold", MACHINE_FRAME_GOLD, Main.GROUP_EXPERIMENTAL);
+		addBlock("machine_frame/iron", MACHINE_FRAME_IRON, Main.GROUP_EXPERIMENTAL);
+		addBlock("machine_frame/lapis", MACHINE_FRAME_LAPIS, Main.GROUP_EXPERIMENTAL);
+		addBlock("machine_frame/netherite", MACHINE_FRAME_NETHERITE, Main.GROUP_EXPERIMENTAL);
+		addBlock("machine_frame/redstone", MACHINE_FRAME_REDSTONE, Main.GROUP_EXPERIMENTAL);
 	}
 
-	public static void addBlock(String blockName, Block BlockDeclaration, ItemGroup creativeTab){
-		Registry.register(Registry.BLOCK, new Identifier(Strings.modId, blockName), BlockDeclaration);
-		Registry.register(Registry.ITEM, new Identifier(Strings.modId, blockName), new BlockItem(BlockDeclaration, new FabricItemSettings().group(creativeTab)));
+	public static void addBlock(String blockName, Block blockDeclaration, ItemGroup creativeTab){
+		Registry.register(Registry.BLOCK, new Identifier(Strings.modId, blockName), blockDeclaration);
+		Registry.register(Registry.ITEM, new Identifier(Strings.modId, blockName), new BlockItem(blockDeclaration, new FabricItemSettings().group(creativeTab)));
 	}
 
-	public static void addBlock(String blockName, Block BlockDeclaration){
-		Registry.register(Registry.BLOCK, new Identifier(Strings.modId, blockName), BlockDeclaration);
-		Registry.register(Registry.ITEM, new Identifier(Strings.modId, blockName), new BlockItem(BlockDeclaration, new FabricItemSettings()));
+	public static void addBlock(String blockName, Block blockDeclaration){
+		addBlock(blockName, blockDeclaration, Main.GROUP_MAIN);
 	}
 }

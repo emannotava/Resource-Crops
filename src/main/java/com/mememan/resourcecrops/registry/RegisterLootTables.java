@@ -1,6 +1,7 @@
 package com.mememan.resourcecrops.registry;
 
 import net.devtech.arrp.json.loot.JLootTable;
+import net.devtech.arrp.json.loot.JRoll;
 import net.minecraft.util.Identifier;
 
 // import net.minecraft.util.Identifier;
@@ -71,15 +72,18 @@ public class RegisterLootTables {
         blockState.add("properties", properties);
 
 		return JLootTable.loot("minecraft:block").pool(
-			pool().rolls(0).entry(
+			pool().rolls(new JRoll(0, 2)).entry(
 				entry().type("minecraft:item").condition(
 					predicate("minecraft:block_state_property"
 				).set(blockState)).name(Strings.modId + ":essence_" + modId + "/" + outputEssence)
 			)
 		).pool(
-			pool().rolls(1).entry(
+			pool().rolls(new JRoll(0, 1)).entry(
 				entry().type("minecraft:item").name(Strings.modId + ":crop_" + modId + "/" + seedItem)
 			)
 		);
     }
 }
+
+
+

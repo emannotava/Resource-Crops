@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "resourcecrops:block/vanilla/crop_end/stage1"
-  }
-}

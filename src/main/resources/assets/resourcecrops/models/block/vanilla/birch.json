@@ -1,7 +1,0 @@
-{
-  "parent": "resourcecrops:block/templates/log",
-  "textures": {
-    "resource": "minecraft:block/birch_log",
-    "resource_top": "minecraft:block/birch_log_top"
-  }
-}

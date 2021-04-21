@@ -1,7 +1,0 @@
-{
-  "parent": "resourcecrops:block/templates/all",
-  "textures": {
-    "resource": "resourcecrops:block/essence/tier_1_block",
-    "gradient": "resourcecrops:block/narcissus_leaves/green"
-  }
-}

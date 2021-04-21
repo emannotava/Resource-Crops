@@ -6,8 +6,10 @@ import com.mememan.resourcecrops.item.ItemSeeds;
 import com.mememan.resourcecrops.util.text.Humanify;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.CropBlock;
+import net.minecraft.block.Blocks;
+// import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
@@ -25,41 +27,88 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
-public class BlockCrop extends CropBlock {
+public class BlockCrop extends net.minecraft.block.CropBlock {
 
 	private static ItemSeeds SEED;
-	public String tooltipContent = "Meow";
-	public String tooltipContent2 = "Meow";
-	private String seedName = "Meow";
+	public static String TOOLTIP_TIER = "Meow";
+	public static String TOOLTIP_MOD = "Meow";
+	public static String SEED_NAME = "Meow";
 	public int maxAge = 8;
+	public static Block REQUIRED_SOIL = Blocks.FARMLAND;
 	public static FabricBlockSettings BlockSettings(){
 		return FabricBlockSettings.of(Material.PLANT).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).nonOpaque();
 	}
-	public BlockCrop(String tier, String mod, String name) {
+	public BlockCrop(String tier, String mod, String name){
 		super(BlockSettings());
-		tooltipContent = tier;
-		tooltipContent2 = mod;
-		seedName = name;
+		// setSoilBlockBlock(Blocks.FARMLAND);
+		TOOLTIP_TIER = tier;
+		TOOLTIP_MOD = mod;
+		// ItemSeeds.setCropBlock(this);
+		SEED_NAME = name;
 	}
-	public BlockCrop(String tier, String mod, String name, ItemSeeds seed) {
+	public BlockCrop(String tier, String mod, String name, ItemSeeds seed){
 		super(BlockSettings());
-		tooltipContent = tier;
-		tooltipContent2 = mod;
+		// setSoilBlockBlock(Blocks.FARMLAND);
+		TOOLTIP_TIER = tier;
+		TOOLTIP_MOD = mod;
 		setSeedsItem(seed);
-		seedName = name;
+		// ItemSeeds.setCropBlock(this);
+		SEED_NAME = name;
+	}
+	public BlockCrop(String tier, String mod, String name, ItemSeeds seed, Block soil){
+		super(BlockSettings());
+		setSoilBlock(soil);
+		TOOLTIP_TIER = tier;
+		TOOLTIP_MOD = mod;
+		setSeedsItem(seed);
+		// ItemSeeds.setCropBlock(this);
+		SEED_NAME = name;
+	}
+	public BlockCrop(String tier, String mod, String name, Block soil){
+		super(BlockSettings());
+		setSoilBlock(soil);
+		TOOLTIP_TIER = tier;
+		TOOLTIP_MOD = mod;
+		// ItemSeeds.setCropBlock(this);
+		SEED_NAME = name;
+	}
+	public BlockCrop(){
+		super(BlockSettings());
 	}
 
-	public BlockCrop getSelf(){
-		return this;
+	public String setName(String input){
+		SEED_NAME = input;
+		return input;
 	}
 
-	public void setSeedsItem(ItemSeeds seed){
+	public String setTier(String input){
+		TOOLTIP_TIER = input;
+		return input;
+	}
+
+	public static String setMod(String input){
+		TOOLTIP_MOD = input;
+		return input;
+	}
+
+
+	public Block setSoilBlock(Block soil){
+		REQUIRED_SOIL = soil;
+		return REQUIRED_SOIL;
+	}
+
+	// @Override
+	public boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
+	   return floor.isOf(setSoilBlock(REQUIRED_SOIL));
+	}
+	
+	public static void setSeedsItem(ItemSeeds seed){
 		SEED = seed;
 	}
 	
 	@Override
 	public TranslatableText getName() {
-	  return new TranslatableText("resourcecrops.seeds", Humanify.convert(seedName));
+	  return new TranslatableText("resourcecrops.seeds", Humanify.convert(SEED_NAME));
 	}  
 
 	@Override
@@ -77,25 +126,18 @@ public class BlockCrop extends CropBlock {
 	}
 
 	@Override
-	protected ItemConvertible getSeedsItem() {
+	public ItemConvertible getSeedsItem() {
 		return SEED;
 	}
 
 
 	@Override
 	public void appendTooltip(ItemStack itemStack, BlockView world, List<Text> tooltip, TooltipContext tooltipContext) {
-		if(tooltipContent!="Meow"){
-			tooltip.add(new TranslatableText("tooltip.resourcecrops.tier_" + tooltipContent));
+		if(TOOLTIP_TIER!="Meow"){
+			tooltip.add(new TranslatableText("tooltip.tier_" + TOOLTIP_TIER));
 		}
-		if(tooltipContent2!="Meow"){
-			tooltip.add(new TranslatableText("tooltip.resourcecrops.mod." + tooltipContent2));
-		}
-	}
-
-
-	public class getSelf {
-		public getSelf get() {
-			return this;
+		if(TOOLTIP_MOD!="Meow"){
+			tooltip.add(new TranslatableText("tooltip.mod." + TOOLTIP_MOD));
 		}
 	}
 }

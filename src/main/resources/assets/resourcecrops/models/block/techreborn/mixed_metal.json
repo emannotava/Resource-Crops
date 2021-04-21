@@ -1,8 +1,0 @@
-{
-  "parent": "resourcecrops:block/crop_models/crop_3_layer_block_model",
-  "textures": {
-    "resource1": "techreborn:block/storage/invar_storage_block",
-    "resource2": "techreborn:block/storage/bronze_storage_block",
-    "resource3": "techreborn:block/storage/zinc_storage_block"
-  }
-}

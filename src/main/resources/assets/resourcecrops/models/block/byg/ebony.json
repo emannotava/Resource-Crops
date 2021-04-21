@@ -1,7 +1,0 @@
-{
-  "parent": "resourcecrops:block/templates/log",
-  "textures": {
-    "resource": "byg:block/ebony_log",
-    "resource_top": "byg:block/ebony_log_top"
-  }
-}

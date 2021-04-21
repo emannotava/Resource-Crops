@@ -1,7 +1,0 @@
-{
-  "parent": "resourcecrops:block/templates/log",
-  "textures": {
-    "resource": "byg:block/rainbow_eucalyptus_log",
-    "resource_top": "byg:block/rainbow_eucalyptus_log_top"
-  }
-}

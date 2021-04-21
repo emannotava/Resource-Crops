@@ -1,9 +1,0 @@
-{
-  "parent": "resourcecrops:block/templates/log",
-  "textures": {
-    "resource": "minecraft:block/warped_stem",
-    "resource_top": "minecraft:block/warped_stem_top",
-    "0": "resourcecrops:block/vanilla/crop_nether",
-    "gradient": "resourcecrops:block/narcissus_leaves/teal_half_light_blue"
-  }
-}

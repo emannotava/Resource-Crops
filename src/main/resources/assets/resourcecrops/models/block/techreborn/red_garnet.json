@@ -1,6 +1,0 @@
-{
-  "parent": "resourcecrops:block/templates/all",
-  "textures": {
-    "resource": "techreborn:block/storage/red_garnet_storage_block"
-  }
-}

@@ -1,7 +1,0 @@
-{
-	"parent": "resourcecrops:block/templates/all",
-  "textures": {
-    "resource": "appliedenergistics2:block/quartz_block",
-    "gradient": "resourcecrops:block/narcissus_leaves/white"
-  }
-}

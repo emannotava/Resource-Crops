@@ -1,8 +1,0 @@
-{
-	"parent": "resourcecrops:block/templates/radial_center",
-	"textures": {
-		"resource": "resourcecrops:block/betterend/eternal_crystal_block",
-		"resource_center": "resourcecrops:block/betterend/eternal_crystal_block_center",
-		"gradient": "resourcecrops:block/narcissus_leaves/white"
-	}
-}
