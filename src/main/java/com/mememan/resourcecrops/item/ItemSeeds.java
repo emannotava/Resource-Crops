@@ -3,12 +3,8 @@ package com.mememan.resourcecrops.item;
 import java.util.List;
 
 import net.minecraft.item.AliasedBlockItem;
-// import net.minecraft.item.Item;
-
 import com.mememan.resourcecrops.block.BlockCrop;
 import com.mememan.resourcecrops.util.text.Humanify;
-
-import net.minecraft.block.Block;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
@@ -18,25 +14,27 @@ import net.minecraft.world.World;
 public class ItemSeeds extends AliasedBlockItem {
 	public String TOOLTIP_TIER = "Meow";
 	public String TOOLTIP_MOD = "Meow";
-	public String SEEDNAME = "Meow";
+	public String SEED_NAME = "Meow";
 	public Boolean GLINTSTATE;
 
-	public ItemSeeds(Block block, Settings settings, String tier, String mod, String name) {
+	public ItemSeeds(BlockCrop block, Settings settings, String tier, String mod, String name) {
 		super(block, settings);
-		BlockCrop.setSeedsItem(this);
+		// BlockCrop.setSeedsItem(this);
+		block.setSeedsItem(this);
 		TOOLTIP_TIER = tier;
 		TOOLTIP_MOD = mod;
-		SEEDNAME = name;
+		SEED_NAME = name;
 		GLINTSTATE = false;
 		hasGlint(new ItemStack(this));
 	}
-
-	public ItemSeeds(Block block, Settings settings, String tier, String mod, String name, Boolean enableGlint) {
+	
+	public ItemSeeds(BlockCrop block, Settings settings, String tier, String mod, String name, Boolean enableGlint) {
 		super(block, settings);
-		BlockCrop.setSeedsItem(this);
+		// BlockCrop.setSeedsItem(this);
+		block.setSeedsItem(this);
 		TOOLTIP_TIER = tier;
 		TOOLTIP_MOD = mod;
-		SEEDNAME = name;
+		SEED_NAME = name;
 		if(enableGlint){
 			GLINTSTATE = true;
 			hasGlint(new ItemStack(this));
@@ -52,7 +50,7 @@ public class ItemSeeds extends AliasedBlockItem {
 
 	@Override
 	public String getTranslationKey(){
-		return Humanify.convert(SEEDNAME) + " Seeds";
+		return Humanify.convert(SEED_NAME) + " Seeds";
 	}
 
 	@Override

@@ -9,43 +9,60 @@ import com.mememan.resourcecrops.item.ItemSeeds;
 import com.mememan.resourcecrops.item.RegisterItem;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.util.Rarity;
 
 public class Crops {
 	
 
-	public static ItemSeeds itemSetting(Block block, String Mod, String name, String tier){
-		return new ItemSeeds(block,
+	public static ItemSeeds itemSetting(BlockCrop block, String Mod, String name, String tier){
+		if(Mods.checkDevEnv()){
+			return new ItemSeeds(block,
 			new FabricItemSettings().group(Main.GROUP),
 			tier,
 			Mod,
 			name
 		);
+		}else{
+			return new ItemSeeds(block,
+			new FabricItemSettings().group(Main.GROUP_SEEDS),
+			tier,
+			Mod,
+			name
+		);
+		}
 	}
 
-	public static ItemSeeds itemSetting(Block block, String Mod, String name, String tier, Boolean enableGlint){
-		return new ItemSeeds(block,
+	public static ItemSeeds itemSetting(BlockCrop block, String Mod, String name, String tier, Boolean enableGlint){
+		if(Mods.checkDevEnv()){
+			return new ItemSeeds(block,
 			new FabricItemSettings().group(Main.GROUP),
 			tier,
 			Mod,
 			name,
 			enableGlint
 		);
+		}else{
+			return new ItemSeeds(block,
+			new FabricItemSettings().group(Main.GROUP_SEEDS),
+			tier,
+			Mod,
+			name,
+			enableGlint
+		);
+		}
 	}
 
 	//Resource Crops
-	public static final Block ESSENCE_TIER_1;
-	public static final Block ESSENCE_TIER_2;
-	public static final Block ESSENCE_TIER_3;
-	public static final Block ESSENCE_TIER_4;
-	public static final Block ESSENCE_TIER_5;
-	public static final Block ESSENCE_TIER_6;
-	public static final Block ESSENCE_TIER_INFINITY;
-	public static final Block ESSENCE_TIER_CREATIVE;
-	public static final Block ULTIMATE;
+	public static final BlockCrop ESSENCE_TIER_1;
+	public static final BlockCrop ESSENCE_TIER_2;
+	public static final BlockCrop ESSENCE_TIER_3;
+	public static final BlockCrop ESSENCE_TIER_4;
+	public static final BlockCrop ESSENCE_TIER_5;
+	public static final BlockCrop ESSENCE_TIER_6;
+	public static final BlockCrop ESSENCE_TIER_INFINITY;
+	public static final BlockCrop ESSENCE_TIER_CREATIVE;
+	public static final BlockCrop ULTIMATE;
 	public static final ItemSeeds ESSENCE_TIER_1_ITEM;
 	public static final ItemSeeds ESSENCE_TIER_2_ITEM;
 	public static final ItemSeeds ESSENCE_TIER_3_ITEM;
@@ -85,55 +102,57 @@ public class Crops {
 	public static final Item ESSENCE_ESSENCE_TIER_CREATIVE = RegisterItem.addEssenceItem(Mods.ResourceCrops, "tier_creative", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE).rarity(Rarity.EPIC), Strings.TierCreative, Mods.ResourceCrops, "tier_creative", true));
 
 	//Vanilla Minecraft
-	public static final Block ACACIA;
-	public static final Block BASALT;
-	public static final Block BIRCH;
-	public static final Block BLACKSTONE;
-	public static final Block BLAZE;
-	public static final Block BRAIN_CORAL;
-	public static final Block BUBBLE_CORAL;
-	public static final Block COAL;
-	public static final Block CREEPER;
-	public static final Block CRIMSON;
-	public static final Block DARK_OAK;
-	public static final Block DEAD_BRAIN_CORAL;
-	public static final Block DEAD_BUBBLE_CORAL;
-	public static final Block DEAD_FIRE_CORAL;
-	public static final Block DEAD_HORN_CORAL;
-	public static final Block DEAD_TUBE_CORAL;
-	public static final Block DIAMOND;
-	public static final Block DIRT;
-	public static final Block DRAGON_EGG;
-	public static final Block EMERALD;
-	public static final Block END;
-	public static final Block ENDERMAN;
-	public static final Block FIRE_CORAL;
-	public static final Block GHAST;
-	public static final Block GLASS;
-	public static final Block GLOWSTONE;
-	public static final Block GOLD;
-	public static final Block HORN_CORAL;
-	public static final Block IRON;
-	public static final Block JUNGLE;
-	public static final Block LAPIS;
-	public static final Block NETHER;
-	public static final Block NETHERITE;
-	public static final Block NETHER_STAR;
-	public static final Block OAK;
-	public static final Block OBSIDIAN;
-	public static final Block PHANTOM;
-	public static final Block PRISMARINE;
-	public static final Block QUARTZ;
-	public static final Block REDSTONE;
-	public static final Block SAND;
-	public static final Block SKELETON;
-	public static final Block SPRUCE;
-	public static final Block STONE;
-	public static final Block TUBE_CORAL;
-	public static final Block WARPED;
-	public static final Block WITHER_SKELETON;
-	public static final Block ZOMBIE;
-	public static final ItemSeeds ACACIA_ITEM;
+	public static final BlockCrop ACACIA = new BlockCrop(Strings.Tier1, Mods.VanillaShort, "acacia");
+	// public static final BlockCrop ACACIA;
+	public static final BlockCrop BASALT;
+	public static final BlockCrop BIRCH;
+	public static final BlockCrop BLACKSTONE;
+	public static final BlockCrop BLAZE;
+	public static final BlockCrop BRAIN_CORAL;
+	public static final BlockCrop BUBBLE_CORAL;
+	public static final BlockCrop COAL;
+	public static final BlockCrop CREEPER;
+	public static final BlockCrop CRIMSON;
+	public static final BlockCrop DARK_OAK;
+	public static final BlockCrop DEAD_BRAIN_CORAL;
+	public static final BlockCrop DEAD_BUBBLE_CORAL;
+	public static final BlockCrop DEAD_FIRE_CORAL;
+	public static final BlockCrop DEAD_HORN_CORAL;
+	public static final BlockCrop DEAD_TUBE_CORAL;
+	public static final BlockCrop DIAMOND;
+	public static final BlockCrop DIRT;
+	public static final BlockCrop DRAGON_EGG;
+	public static final BlockCrop EMERALD;
+	public static final BlockCrop END;
+	public static final BlockCrop ENDERMAN;
+	public static final BlockCrop FIRE_CORAL;
+	public static final BlockCrop GHAST;
+	public static final BlockCrop GLASS;
+	public static final BlockCrop GLOWSTONE;
+	public static final BlockCrop GOLD;
+	public static final BlockCrop HORN_CORAL;
+	public static final BlockCrop IRON;
+	public static final BlockCrop JUNGLE;
+	public static final BlockCrop LAPIS;
+	public static final BlockCrop NETHER;
+	public static final BlockCrop NETHERITE;
+	public static final BlockCrop NETHER_STAR;
+	public static final BlockCrop OAK;
+	public static final BlockCrop OBSIDIAN;
+	public static final BlockCrop PHANTOM;
+	public static final BlockCrop PRISMARINE;
+	public static final BlockCrop QUARTZ;
+	public static final BlockCrop REDSTONE;
+	public static final BlockCrop SAND;
+	public static final BlockCrop SKELETON;
+	public static final BlockCrop SPRUCE;
+	public static final BlockCrop STONE;
+	public static final BlockCrop TUBE_CORAL;
+	public static final BlockCrop WARPED;
+	public static final BlockCrop WITHER_SKELETON;
+	public static final BlockCrop ZOMBIE;
+	// public static final ItemSeeds ACACIA_ITEM;
+	public static final ItemSeeds ACACIA_ITEM = new ItemSeeds(ACACIA, new FabricItemSettings().group(Main.GROUP), Strings.Tier1, Mods.Vanilla, "acacia");
 	public static final ItemSeeds BASALT_ITEM;
 	public static final ItemSeeds BIRCH_ITEM;
 	public static final ItemSeeds BLACKSTONE_ITEM;
@@ -185,7 +204,7 @@ public class Crops {
 	//TEST ME
 	// public static final Item ROOTLING_SEEDS = new AliasedBlockItem(BMBlocks.ROOTLING_CROP, settings());
 	static{
-		ACACIA = new BlockCrop(Strings.Tier1, Mods.VanillaShort, "acacia");
+		// ACACIA = new BlockCrop(Strings.Tier1, Mods.VanillaShort, "acacia");
 		BASALT = new BlockCrop(Strings.Tier1, Mods.VanillaShort, "basalt");
 		BIRCH = new BlockCrop(Strings.Tier1, Mods.VanillaShort, "birch");
 		BLACKSTONE = new BlockCrop(Strings.Tier1, Mods.VanillaShort, "blackstone");
@@ -235,7 +254,8 @@ public class Crops {
 		WARPED = new BlockCrop(Strings.Tier1, Mods.VanillaShort, "warped");
 		WITHER_SKELETON = new BlockCrop(Strings.Tier4, Mods.VanillaShort, "wither_skeleton");
 		ZOMBIE = new BlockCrop(Strings.Tier3, Mods.VanillaShort, "zombie");
-		ACACIA_ITEM = itemSetting(ACACIA, Mods.Vanilla, "acacia", Strings.Tier1);
+		// ACACIA_ITEM = itemSetting(ACACIA, Mods.Vanilla, "acacia", Strings.Tier1);
+		// public static final Item ROOTLING_SEEDS = new AliasedBlockItem(BMBlocks.ROOTLING_CROP, settings());
 		BASALT_ITEM = itemSetting(BASALT, Mods.Vanilla, "basalt", Strings.Tier1);
 		BIRCH_ITEM = itemSetting(BIRCH, Mods.Vanilla, "birch", Strings.Tier1);
 		BLACKSTONE_ITEM = itemSetting(BLACKSTONE, Mods.Vanilla, "blackstone", Strings.Tier1);
@@ -266,8 +286,8 @@ public class Crops {
 		IRON_ITEM = itemSetting(IRON, Mods.Vanilla, "iron", Strings.Tier3);
 		JUNGLE_ITEM = itemSetting(JUNGLE, Mods.Vanilla, "jungle", Strings.Tier1);
 		LAPIS_ITEM = itemSetting(LAPIS, Mods.Vanilla, "lapis", Strings.Tier4);
-		NETHERITE_ITEM = itemSetting(NETHER, Mods.Vanilla, "netherite", Strings.Tier2);
-		NETHER_ITEM = itemSetting(NETHERITE, Mods.Vanilla, "nether", Strings.Tier6);
+		NETHERITE_ITEM = itemSetting(NETHERITE, Mods.Vanilla, "netherite", Strings.Tier2);
+		NETHER_ITEM = itemSetting(NETHER, Mods.Vanilla, "nether", Strings.Tier6);
 		NETHER_STAR_ITEM = itemSetting(NETHER_STAR, Mods.Vanilla, "nether_star", Strings.Tier6, true);
 		OAK_ITEM = itemSetting(OAK, Mods.Vanilla, "oak", Strings.Tier1);
 		OBSIDIAN_ITEM = itemSetting(OBSIDIAN, Mods.Vanilla, "obsidian", Strings.Tier3);
@@ -334,12 +354,12 @@ public class Crops {
 	public static final Item ESSENCE_ZOMBIE = RegisterItem.addEssenceItem(Mods.Vanilla, Mods.VanillaShort, "zombie", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier3, Mods.VanillaShort, "zombie"));
 	
 	//AE2
-	public static final Block CERTUS;
-	public static final Block CERTUS_CHARGED;
-	public static final Block CERTUS_PURE;
-	public static final Block FLUIX;
-	public static final Block FLUIX_PURE;
-	public static final Block QUARTZ_PURE;
+	public static final BlockCrop CERTUS;
+	public static final BlockCrop CERTUS_CHARGED;
+	public static final BlockCrop CERTUS_PURE;
+	public static final BlockCrop FLUIX;
+	public static final BlockCrop FLUIX_PURE;
+	public static final BlockCrop QUARTZ_PURE;
 	public static final ItemSeeds CERTUS_ITEM;
 	public static final ItemSeeds CERTUS_CHARGED_ITEM;
 	public static final ItemSeeds CERTUS_PURE_ITEM;
@@ -368,16 +388,16 @@ public class Crops {
 	public static final Item ESSENCE_QUARTZ_PURE = RegisterItem.addEssenceItem(Mods.AE2, Mods.AE2Short, "quartz_pure", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier4, Mods.AE2Short, "quartz_pure"));
 	
 	//Bewitchment
-	public static final Block ALCHEMIST_WOOL;
-	public static final Block BESMIRCHED_WOOL;
-	public static final Block BLESSED_STONE;
-	public static final Block LOG_CYPRESS;
-	public static final Block LOG_DRAGONS_BLOOD;
-	public static final Block DRAGONS_BLOOD_RESIN;
-	public static final Block LOG_ELDER;
-	public static final Block HEDGEWITCH_WOOL;
-	public static final Block LOG_JUNIPER;
-	public static final Block SALT;
+	public static final BlockCrop ALCHEMIST_WOOL;
+	public static final BlockCrop BESMIRCHED_WOOL;
+	public static final BlockCrop BLESSED_STONE;
+	public static final BlockCrop LOG_CYPRESS;
+	public static final BlockCrop LOG_DRAGONS_BLOOD;
+	public static final BlockCrop DRAGONS_BLOOD_RESIN;
+	public static final BlockCrop LOG_ELDER;
+	public static final BlockCrop HEDGEWITCH_WOOL;
+	public static final BlockCrop LOG_JUNIPER;
+	public static final BlockCrop SALT;
 	public static final ItemSeeds ALCHEMIST_WOOL_ITEM;
 	public static final ItemSeeds BESMIRCHED_WOOL_ITEM;
 	public static final ItemSeeds BLESSED_STONE_ITEM;
@@ -423,17 +443,17 @@ public class Crops {
 	
 
 	//Biomemakeover
-	public static final Block LOG_ANCIENT_OAK;
-	public static final Block LOG_BLIGHTED_BALSA;
-	public static final Block BLIGHTED_COBBLESTONE;
-	public static final Block CLADDED_STONE;
-	public static final Block GLOWSHROOM_STEM;
-	public static final Block ILLUNITE_BLOCK;
-	public static final Block MESMERITE;
-	public static final Block ORANGE_GLOWSHROOM_BLOCK;
-	public static final Block PURPLE_GLOWSHROOM_BLOCK;
-	public static final Block LOG_SWAMP_CYPRESS;
-	public static final Block LOG_WILLOW;
+	public static final BlockCrop LOG_ANCIENT_OAK;
+	public static final BlockCrop LOG_BLIGHTED_BALSA;
+	public static final BlockCrop BLIGHTED_COBBLESTONE;
+	public static final BlockCrop CLADDED_STONE;
+	public static final BlockCrop GLOWSHROOM_STEM;
+	public static final BlockCrop ILLUNITE_BLOCK;
+	public static final BlockCrop MESMERITE;
+	public static final BlockCrop ORANGE_GLOWSHROOM_BLOCK;
+	public static final BlockCrop PURPLE_GLOWSHROOM_BLOCK;
+	public static final BlockCrop LOG_SWAMP_CYPRESS;
+	public static final BlockCrop LOG_WILLOW;
 	public static final ItemSeeds LOG_ANCIENT_OAK_ITEM;
 	public static final ItemSeeds LOG_BLIGHTED_BALSA_ITEM;
 	public static final ItemSeeds BLIGHTED_COBBLESTONE_ITEM;
@@ -482,83 +502,83 @@ public class Crops {
 	public static final Item ESSENCE_LOG_WILLOW = RegisterItem.addEssenceItem(Mods.Biomemakeover, "willow_log", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier1, Mods.Biomemakeover, "willow_log"));
 
 
-	public static final Block ASPHALT;
-	public static final Block ASPHALT_BLUE;
-	public static final Block ASPHALT_BROWN;
-	public static final Block ASPHALT_CYAN;
-	public static final Block ASPHALT_GRAY;
-	public static final Block ASPHALT_GREEN;
-	public static final Block ASPHALT_LIGHT_BLUE;
-	public static final Block ASPHALT_LIGHT_GRAY;
-	public static final Block ASPHALT_LIME;
-	public static final Block ASPHALT_MAGENTA;
-	public static final Block ASPHALT_ORANGE;
-	public static final Block ASPHALT_PINK;
-	public static final Block ASPHALT_PURPLE;
-	public static final Block ASPHALT_RED;
-	public static final Block ASPHALT_WHITE;
-	public static final Block ASPHALT_YELLOW;
-	public static final Block SHINGLES_BLACK;
-	public static final Block SHINGLES_BROWN;
-	public static final Block SHINGLES_CYAN;
-	public static final Block SHINGLES_GRAY;
-	public static final Block SHINGLES_GREEN;
-	public static final Block SHINGLES_LIGHT_BLUE;
-	public static final Block SHINGLES_LIGHT_GRAY;
-	public static final Block SHINGLES_LIME;
-	public static final Block SHINGLES_MAGENTA;
-	public static final Block SHINGLES_ORANGE;
-	public static final Block SHINGLES_PINK;
-	public static final Block SHINGLES_PURPLE;
-	public static final Block SHINGLES_RED;
-	public static final Block SHINGLES;
-	public static final Block SHINGLES_WHITE;
-	public static final Block SHINGLES_YELLOW;
-	public static final Block FUTURNEO_BLACK;
-	public static final Block FUTURNEO_BLUE;
-	public static final Block FUTURNEO_BROWN;
-	public static final Block FUTURNEO_CYAN;
-	public static final Block FUTURNEO_GRAY_BRIGHT;
-	public static final Block FUTURNEO_GRAY;
-	public static final Block FUTURNEO_GREEN;
-	public static final Block FUTURNEO_LIGHT_BLUE;
-	public static final Block FUTURNEO_LIGHT_GRAY;
-	public static final Block FUTURNEO_LIME;
-	public static final Block FUTURNEO_MAGENTA;
-	public static final Block FUTURNEO_ORANGE;
-	public static final Block FUTURNEO_PINK;
-	public static final Block FUTURNEO_PURPLE;
-	public static final Block FUTURNEO_RED;
-	public static final Block FUTURNEO_WHITE;
-	public static final Block FUTURNEO_YELLOW;
-	public static final Block BLUESTONE;
-	public static final Block GLOWING_OBSIDIAN;
-	public static final Block LEGACY_BRICKS;
-	public static final Block LEGACY_COAL_BLOCK;
-	public static final Block LEGACY_COBBLESTONE;
-	public static final Block LEGACY_CRYING_OBSIDIAN;
-	public static final Block LEGACY_DIAMOND_BLOCK;
-	public static final Block LEGACY_EXPLOSION_PROOF_GOLD_BLOCK;
-	public static final Block LEGACY_FIRST_COBBLESTONE;
-	public static final Block LEGACY_FIRST_GRASS_BLOCK;
-	public static final Block LEGACY_GLOWING_OBSIDIAN;
-	public static final Block LEGACY_GLOWSTONE;
-	public static final Block LEGACY_GOLD_BLOCK;
-	public static final Block LEGACY_GRASS_BLOCK;
-	public static final Block LEGACY_GRAVEL;
-	public static final Block LEGACY_IRON_BLOCK;
-	public static final Block LEGACY_LAPIS_BLOCK;
-	public static final Block LEGACY_LEAVES;
-	public static final Block LEGACY_MOSSY_COBBLESTONE;
-	public static final Block LEGACY_NETHER_REACTOR_CORE;
-	public static final Block LEGACY_PLANKS;
-	public static final Block LEGACY_SPONGE;
-	public static final Block LIMESTONE;
-	public static final Block MARBLE;
-	public static final Block RAINBOW_BLOCK;
-	public static final Block REDSTONE_SAND;
-	public static final Block STARS_BLOCK;
-	public static final Block LOG_WHITE_OAK;
+	public static final BlockCrop ASPHALT;
+	public static final BlockCrop ASPHALT_BLUE;
+	public static final BlockCrop ASPHALT_BROWN;
+	public static final BlockCrop ASPHALT_CYAN;
+	public static final BlockCrop ASPHALT_GRAY;
+	public static final BlockCrop ASPHALT_GREEN;
+	public static final BlockCrop ASPHALT_LIGHT_BLUE;
+	public static final BlockCrop ASPHALT_LIGHT_GRAY;
+	public static final BlockCrop ASPHALT_LIME;
+	public static final BlockCrop ASPHALT_MAGENTA;
+	public static final BlockCrop ASPHALT_ORANGE;
+	public static final BlockCrop ASPHALT_PINK;
+	public static final BlockCrop ASPHALT_PURPLE;
+	public static final BlockCrop ASPHALT_RED;
+	public static final BlockCrop ASPHALT_WHITE;
+	public static final BlockCrop ASPHALT_YELLOW;
+	public static final BlockCrop SHINGLES_BLACK;
+	public static final BlockCrop SHINGLES_BROWN;
+	public static final BlockCrop SHINGLES_CYAN;
+	public static final BlockCrop SHINGLES_GRAY;
+	public static final BlockCrop SHINGLES_GREEN;
+	public static final BlockCrop SHINGLES_LIGHT_BLUE;
+	public static final BlockCrop SHINGLES_LIGHT_GRAY;
+	public static final BlockCrop SHINGLES_LIME;
+	public static final BlockCrop SHINGLES_MAGENTA;
+	public static final BlockCrop SHINGLES_ORANGE;
+	public static final BlockCrop SHINGLES_PINK;
+	public static final BlockCrop SHINGLES_PURPLE;
+	public static final BlockCrop SHINGLES_RED;
+	public static final BlockCrop SHINGLES;
+	public static final BlockCrop SHINGLES_WHITE;
+	public static final BlockCrop SHINGLES_YELLOW;
+	public static final BlockCrop FUTURNEO_BLACK;
+	public static final BlockCrop FUTURNEO_BLUE;
+	public static final BlockCrop FUTURNEO_BROWN;
+	public static final BlockCrop FUTURNEO_CYAN;
+	public static final BlockCrop FUTURNEO_GRAY_BRIGHT;
+	public static final BlockCrop FUTURNEO_GRAY;
+	public static final BlockCrop FUTURNEO_GREEN;
+	public static final BlockCrop FUTURNEO_LIGHT_BLUE;
+	public static final BlockCrop FUTURNEO_LIGHT_GRAY;
+	public static final BlockCrop FUTURNEO_LIME;
+	public static final BlockCrop FUTURNEO_MAGENTA;
+	public static final BlockCrop FUTURNEO_ORANGE;
+	public static final BlockCrop FUTURNEO_PINK;
+	public static final BlockCrop FUTURNEO_PURPLE;
+	public static final BlockCrop FUTURNEO_RED;
+	public static final BlockCrop FUTURNEO_WHITE;
+	public static final BlockCrop FUTURNEO_YELLOW;
+	public static final BlockCrop BLUESTONE;
+	public static final BlockCrop GLOWING_OBSIDIAN;
+	public static final BlockCrop LEGACY_BRICKS;
+	public static final BlockCrop LEGACY_COAL_BLOCK;
+	public static final BlockCrop LEGACY_COBBLESTONE;
+	public static final BlockCrop LEGACY_CRYING_OBSIDIAN;
+	public static final BlockCrop LEGACY_DIAMOND_BLOCK;
+	public static final BlockCrop LEGACY_EXPLOSION_PROOF_GOLD_BLOCK;
+	public static final BlockCrop LEGACY_FIRST_COBBLESTONE;
+	public static final BlockCrop LEGACY_FIRST_GRASS_BLOCK;
+	public static final BlockCrop LEGACY_GLOWING_OBSIDIAN;
+	public static final BlockCrop LEGACY_GLOWSTONE;
+	public static final BlockCrop LEGACY_GOLD_BLOCK;
+	public static final BlockCrop LEGACY_GRASS_BLOCK;
+	public static final BlockCrop LEGACY_GRAVEL;
+	public static final BlockCrop LEGACY_IRON_BLOCK;
+	public static final BlockCrop LEGACY_LAPIS_BLOCK;
+	public static final BlockCrop LEGACY_LEAVES;
+	public static final BlockCrop LEGACY_MOSSY_COBBLESTONE;
+	public static final BlockCrop LEGACY_NETHER_REACTOR_CORE;
+	public static final BlockCrop LEGACY_PLANKS;
+	public static final BlockCrop LEGACY_SPONGE;
+	public static final BlockCrop LIMESTONE;
+	public static final BlockCrop MARBLE;
+	public static final BlockCrop RAINBOW_BLOCK;
+	public static final BlockCrop REDSTONE_SAND;
+	public static final BlockCrop STARS_BLOCK;
+	public static final BlockCrop LOG_WHITE_OAK;
 	public static final ItemSeeds ASPHALT_ITEM;
 	public static final ItemSeeds ASPHALT_BLUE_ITEM;
 	public static final ItemSeeds ASPHALT_BROWN_ITEM;
@@ -872,16 +892,16 @@ public class Crops {
 
 
 	//Tech Reborn
-	public static final Block ADVANCED_ALLOY;
-	public static final Block BRONZE;
-	public static final Block CHROME;
-	public static final Block HOT_TUNGSTENSTEEL;
-	public static final Block INVAR;
-	public static final Block NICKEL;
-	public static final Block RED_GARNET;
-	public static final Block REFINED_IRON;
-	public static final Block TUNGSTENSTEEL;
-	public static final Block YELLOW_GARNET;
+	public static final BlockCrop ADVANCED_ALLOY;
+	public static final BlockCrop BRONZE;
+	public static final BlockCrop CHROME;
+	public static final BlockCrop HOT_TUNGSTENSTEEL;
+	public static final BlockCrop INVAR;
+	public static final BlockCrop NICKEL;
+	public static final BlockCrop RED_GARNET;
+	public static final BlockCrop REFINED_IRON;
+	public static final BlockCrop TUNGSTENSTEEL;
+	public static final BlockCrop YELLOW_GARNET;
 	public static final ItemSeeds ADVANCED_ALLOY_ITEM;
 	public static final ItemSeeds BRONZE_ITEM;
 	public static final ItemSeeds CHROME_ITEM;
@@ -926,31 +946,31 @@ public class Crops {
 	public static final Item ESSENCE_YELLOW_GARNET = RegisterItem.addEssenceItem(Mods.TechReborn, "yellow_garnet", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier3, Mods.TechReborn, "yellow_garnet"));
 
 	//Common / Cotton Resources
-	public static final Block ALUMINUM;
-	public static final Block BRASS;
-	public static final Block COPPER;
-	public static final Block ELECTRUM;
-	public static final Block IRIDIUM;
-	public static final Block LEAD;
-	public static final Block PERIDOT;
-	public static final Block PLATINUM;
-	public static final Block RUBY;
-	public static final Block SAPPHIRE;
-	public static final Block SILVER;
-	public static final Block STEEL;
-	public static final Block TIN;
-	public static final Block TITANIUM;
-	public static final Block TUNGSTEN;
-	public static final Block ZINC;
-	public static final Block AMETHYST;
-	public static final Block COAL_COKE;
-	public static final Block COBALT;
-	public static final Block OSMIUM;
-	public static final Block PALLADIUM;
-	public static final Block PLUTONIUM;
-	public static final Block THORIUM;
-	public static final Block TOPAZ;
-	public static final Block URANIUM;
+	public static final BlockCrop ALUMINUM;
+	public static final BlockCrop BRASS;
+	public static final BlockCrop COPPER;
+	public static final BlockCrop ELECTRUM;
+	public static final BlockCrop IRIDIUM;
+	public static final BlockCrop LEAD;
+	public static final BlockCrop PERIDOT;
+	public static final BlockCrop PLATINUM;
+	public static final BlockCrop RUBY;
+	public static final BlockCrop SAPPHIRE;
+	public static final BlockCrop SILVER;
+	public static final BlockCrop STEEL;
+	public static final BlockCrop TIN;
+	public static final BlockCrop TITANIUM;
+	public static final BlockCrop TUNGSTEN;
+	public static final BlockCrop ZINC;
+	public static final BlockCrop AMETHYST;
+	public static final BlockCrop COAL_COKE;
+	public static final BlockCrop COBALT;
+	public static final BlockCrop OSMIUM;
+	public static final BlockCrop PALLADIUM;
+	public static final BlockCrop PLUTONIUM;
+	public static final BlockCrop THORIUM;
+	public static final BlockCrop TOPAZ;
+	public static final BlockCrop URANIUM;
 	public static final ItemSeeds ALUMINUM_ITEM;
 	public static final ItemSeeds BRASS_ITEM;
 	public static final ItemSeeds COPPER_ITEM;
@@ -1055,8 +1075,8 @@ public class Crops {
 	public static final Item ESSENCE_URANIUM = RegisterItem.addEssenceItem(Mods.CottonResources, "uranium", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier3, Mods.COMMON, "uranium"));
 	
 	//Industrial Revolution
-	public static final Block NIKOLITE;
-	public static final Block ENRICHED_NIKOLITE;
+	public static final BlockCrop NIKOLITE;
+	public static final BlockCrop ENRICHED_NIKOLITE;
 	public static final ItemSeeds NIKOLITE_ITEM;
 	public static final ItemSeeds ENRICHED_NIKOLITE_ITEM;
 	static{
@@ -1069,35 +1089,35 @@ public class Crops {
 	public static final Item ESSENCE_ENRICHED_NIKOLITE = RegisterItem.addEssenceItem(Mods.IndustrialRevolution, Mods.IndustrialRevolutionShort, "enriched_nikolite", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier1, Mods.IndustrialRevolutionShort, "enriched_nikolite", true));
 	
 	//Mythic Metals
-	public static final Block ADAMANTITE;
-	public static final Block AETHERIUM;
-	public static final Block AQUARIUM;
-	public static final Block ARGONIUM;
-	public static final Block BANGLUM;
-	public static final Block CARMOT;
-	public static final Block CELESTIUM;
-	public static final Block DISCORDIUM;
-	public static final Block DURASTEEL;
-	public static final Block ETHERITE;
-	public static final Block HALLOWED;
-	public static final Block KYBER;
-	public static final Block MANGANESE;
-	public static final Block MIDAS_GOLD;
-	public static final Block MYTHRIL;
-	public static final Block ORICHALCUM;
-	public static final Block PROMETHEUM;
-	public static final Block QUADRILLUM;
-	public static final Block QUICKSILVER;
-	public static final Block RUNITE;
-	public static final Block SLOWSILVER;
-	public static final Block STARRITE;
-	public static final Block STORMYX;
-	public static final Block TANTALITE;
-	public static final Block TRUESILVER;
-	public static final Block UNOBTAINIUM;
-	public static final Block VERMICULITE;
-	public static final Block UR;
-	public static final Block METALLURGIUM;
+	public static final BlockCrop ADAMANTITE;
+	public static final BlockCrop AETHERIUM;
+	public static final BlockCrop AQUARIUM;
+	public static final BlockCrop ARGONIUM;
+	public static final BlockCrop BANGLUM;
+	public static final BlockCrop CARMOT;
+	public static final BlockCrop CELESTIUM;
+	public static final BlockCrop DISCORDIUM;
+	public static final BlockCrop DURASTEEL;
+	public static final BlockCrop ETHERITE;
+	public static final BlockCrop HALLOWED;
+	public static final BlockCrop KYBER;
+	public static final BlockCrop MANGANESE;
+	public static final BlockCrop MIDAS_GOLD;
+	public static final BlockCrop MYTHRIL;
+	public static final BlockCrop ORICHALCUM;
+	public static final BlockCrop PROMETHEUM;
+	public static final BlockCrop QUADRILLUM;
+	public static final BlockCrop QUICKSILVER;
+	public static final BlockCrop RUNITE;
+	public static final BlockCrop SLOWSILVER;
+	public static final BlockCrop STARRITE;
+	public static final BlockCrop STORMYX;
+	public static final BlockCrop TANTALITE;
+	public static final BlockCrop TRUESILVER;
+	public static final BlockCrop UNOBTAINIUM;
+	public static final BlockCrop VERMICULITE;
+	public static final BlockCrop UR;
+	public static final BlockCrop METALLURGIUM;
 	public static final ItemSeeds ADAMANTITE_ITEM;
 	public static final ItemSeeds AETHERIUM_ITEM;
 	public static final ItemSeeds AQUARIUM_ITEM;
@@ -1218,16 +1238,16 @@ public class Crops {
 	public static final Item ESSENCE_METALLURGIUM = RegisterItem.addEssenceItem(Mods.MythicMetals, "metallurgium", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier5, Mods.MythicMetals, "metallurgium"));
 
 	//AstroMine
-	public static final Block ASTERITE;
-	public static final Block FOOLS_GOLD;
-	public static final Block GALAXIUM;
-	public static final Block LUNUM;
-	public static final Block METEORIC_STEEL;
-	public static final Block METITE;
-	public static final Block ROSE_GOLD;
-	public static final Block STELLUM;
-	public static final Block STERLING_SILVER;
-	public static final Block UNIVITE;
+	public static final BlockCrop ASTERITE;
+	public static final BlockCrop FOOLS_GOLD;
+	public static final BlockCrop GALAXIUM;
+	public static final BlockCrop LUNUM;
+	public static final BlockCrop METEORIC_STEEL;
+	public static final BlockCrop METITE;
+	public static final BlockCrop ROSE_GOLD;
+	public static final BlockCrop STELLUM;
+	public static final BlockCrop STERLING_SILVER;
+	public static final BlockCrop UNIVITE;
 	public static final ItemSeeds ASTERITE_ITEM;
 	public static final ItemSeeds FOOLS_GOLD_ITEM;
 	public static final ItemSeeds GALAXIUM_ITEM;
@@ -1272,77 +1292,77 @@ public class Crops {
 	public static final Item ESSENCE_UNIVITE = RegisterItem.addEssenceItem(Mods.Astromine, "univite", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier1, Mods.Astromine, "univite", true));
 	
 	//Oh The Biomes You'll Go (BYG)
-	public static final Block ASPEN;
-	public static final Block BAOBAB;
-	public static final Block BLUE_ENCHANTED_LOG;
-	public static final Block BULBIS;
-	public static final Block CHERRY;
-	public static final Block CIKA;
-	public static final Block CYPRESS;
-	public static final Block EBONY;
-	public static final Block EMBUR_PEDU;
-	public static final Block ETHER;
-	public static final Block FIR;
-	public static final Block GLACIAL_OAK;
-	public static final Block GREEN_ENCHANTED_LOG;
-	public static final Block HOLLY;
-	public static final Block JACARANDA;
-	public static final Block JOSHUA;
-	public static final Block LAMENT;
-	public static final Block MAHOGANY;
-	public static final Block MANGROVE;
-	public static final Block MAPLE;
-	public static final Block NIGHTSHADE;
-	public static final Block PALM;
-	public static final Block PALO_VERDE;
-	public static final Block PINE;
-	public static final Block RAINBOW_EUCALYPTUS;
-	public static final Block REDWOOD;
-	public static final Block SKYRIS;
-	public static final Block SYTHIAN;
-	public static final Block TAINTED_ACACIA;
-	public static final Block WILLOW;
-	public static final Block WITCH_HAZEL;
-	public static final Block WITHERING_OAK;
-	public static final Block ZELKOVA;
-	public static final Block AMETRINE;
-	public static final Block ANTHRACITE;
-	public static final Block BLACK_ICE;
-	public static final Block BLACK_SAND;
-	public static final Block BLUE_GLOWCANE;
-	public static final Block BLUE_NETHERRACK;
-	public static final Block BLUE_SAND;
-	public static final Block BRIMSTONE;
-	public static final Block CRYPTIC_STONE;
-	public static final Block DACITE;
-	public static final Block ETHER_SOIL;
-	public static final Block ETHER_STONE;
-	public static final Block FROST_MAGMA;
-	public static final Block HARDENED_DIRT;
-	public static final Block LIGNITE;
-	public static final Block MAGMATIC_STONE;
-	public static final Block MEADOW_DIRT;
-	public static final Block MOSSY_NETHERRACK;
-	public static final Block MOSSY_STONE;
-	public static final Block MUD;
-	public static final Block NYLIUM_SOUL_SAND;
-	public static final Block PEAT;
-	public static final Block PENDORITE;
-	public static final Block PINK_SAND;
-	public static final Block POLLEN;
-	public static final Block PURPLE_GLOWCANE;
-	public static final Block PURPLE_SAND;
-	public static final Block PURPUR_STONE;
-	public static final Block QUARTZITE_SAND;
-	public static final Block RED_GLOWCANE;
-	public static final Block RED_ROCK;
-	public static final Block ROCKY_STONE;
-	public static final Block SCORIA_STONE;
-	public static final Block SOAPSTONE;
-	public static final Block SUBZERO_ASH;
-	public static final Block THERIUM;
-	public static final Block WARPED_CORAL;
-	public static final Block WHITE_SAND;
+	public static final BlockCrop ASPEN;
+	public static final BlockCrop BAOBAB;
+	public static final BlockCrop BLUE_ENCHANTED_LOG;
+	public static final BlockCrop BULBIS;
+	public static final BlockCrop CHERRY;
+	public static final BlockCrop CIKA;
+	public static final BlockCrop CYPRESS;
+	public static final BlockCrop EBONY;
+	public static final BlockCrop EMBUR_PEDU;
+	public static final BlockCrop ETHER;
+	public static final BlockCrop FIR;
+	public static final BlockCrop GLACIAL_OAK;
+	public static final BlockCrop GREEN_ENCHANTED_LOG;
+	public static final BlockCrop HOLLY;
+	public static final BlockCrop JACARANDA;
+	public static final BlockCrop JOSHUA;
+	public static final BlockCrop LAMENT;
+	public static final BlockCrop MAHOGANY;
+	public static final BlockCrop MANGROVE;
+	public static final BlockCrop MAPLE;
+	public static final BlockCrop NIGHTSHADE;
+	public static final BlockCrop PALM;
+	public static final BlockCrop PALO_VERDE;
+	public static final BlockCrop PINE;
+	public static final BlockCrop RAINBOW_EUCALYPTUS;
+	public static final BlockCrop REDWOOD;
+	public static final BlockCrop SKYRIS;
+	public static final BlockCrop SYTHIAN;
+	public static final BlockCrop TAINTED_ACACIA;
+	public static final BlockCrop WILLOW;
+	public static final BlockCrop WITCH_HAZEL;
+	public static final BlockCrop WITHERING_OAK;
+	public static final BlockCrop ZELKOVA;
+	public static final BlockCrop AMETRINE;
+	public static final BlockCrop ANTHRACITE;
+	public static final BlockCrop BLACK_ICE;
+	public static final BlockCrop BLACK_SAND;
+	public static final BlockCrop BLUE_GLOWCANE;
+	public static final BlockCrop BLUE_NETHERRACK;
+	public static final BlockCrop BLUE_SAND;
+	public static final BlockCrop BRIMSTONE;
+	public static final BlockCrop CRYPTIC_STONE;
+	public static final BlockCrop DACITE;
+	public static final BlockCrop ETHER_SOIL;
+	public static final BlockCrop ETHER_STONE;
+	public static final BlockCrop FROST_MAGMA;
+	public static final BlockCrop HARDENED_DIRT;
+	public static final BlockCrop LIGNITE;
+	public static final BlockCrop MAGMATIC_STONE;
+	public static final BlockCrop MEADOW_DIRT;
+	public static final BlockCrop MOSSY_NETHERRACK;
+	public static final BlockCrop MOSSY_STONE;
+	public static final BlockCrop MUD;
+	public static final BlockCrop NYLIUM_SOUL_SAND;
+	public static final BlockCrop PEAT;
+	public static final BlockCrop PENDORITE;
+	public static final BlockCrop PINK_SAND;
+	public static final BlockCrop POLLEN;
+	public static final BlockCrop PURPLE_GLOWCANE;
+	public static final BlockCrop PURPLE_SAND;
+	public static final BlockCrop PURPUR_STONE;
+	public static final BlockCrop QUARTZITE_SAND;
+	public static final BlockCrop RED_GLOWCANE;
+	public static final BlockCrop RED_ROCK;
+	public static final BlockCrop ROCKY_STONE;
+	public static final BlockCrop SCORIA_STONE;
+	public static final BlockCrop SOAPSTONE;
+	public static final BlockCrop SUBZERO_ASH;
+	public static final BlockCrop THERIUM;
+	public static final BlockCrop WARPED_CORAL;
+	public static final BlockCrop WHITE_SAND;
 	public static final ItemSeeds ASPEN_ITEM;
 	public static final ItemSeeds BAOBAB_ITEM;
 	public static final ItemSeeds BLUE_ENCHANTED_LOG_ITEM;
@@ -1631,23 +1651,23 @@ public class Crops {
 	public static final Item ESSENCE_WHITE_SAND = RegisterItem.addEssenceItem(Mods.BYG, "white_sand", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier1, Mods.BYG, "white_sand"));
 	
 	//Botania
-	public static final Block LIVINGROCK;
-	public static final Block LIVINGWOOD;
-	public static final Block MANASTEEL;
-	public static final Block MANA_DIAMOND;
-	public static final Block MANA_PEARL;
-	public static final Block TERRASTEEL;
-	public static final Block ELEMENTIUM;
-	public static final Block DRAGONSTONE;
-	public static final Block PIXIE_DUST;
-	public static final Block GAIA_SPIRIT_INGOT;
-	public static final Block DREAMWOOD;
-	public static final Block SMOKEY_QUARTZ;
-	public static final Block MANA_QUARTZ;
-	public static final Block LAVENDER_QUARTZ;
-	public static final Block RED_QUARTZ;
-	public static final Block ELVEN_QUARTZ;
-	public static final Block SUNNY_QUARTZ;
+	public static final BlockCrop LIVINGROCK;
+	public static final BlockCrop LIVINGWOOD;
+	public static final BlockCrop MANASTEEL;
+	public static final BlockCrop MANA_DIAMOND;
+	public static final BlockCrop MANA_PEARL;
+	public static final BlockCrop TERRASTEEL;
+	public static final BlockCrop ELEMENTIUM;
+	public static final BlockCrop DRAGONSTONE;
+	public static final BlockCrop PIXIE_DUST;
+	public static final BlockCrop GAIA_SPIRIT_INGOT;
+	public static final BlockCrop DREAMWOOD;
+	public static final BlockCrop SMOKEY_QUARTZ;
+	public static final BlockCrop MANA_QUARTZ;
+	public static final BlockCrop LAVENDER_QUARTZ;
+	public static final BlockCrop RED_QUARTZ;
+	public static final BlockCrop ELVEN_QUARTZ;
+	public static final BlockCrop SUNNY_QUARTZ;
 	public static final ItemSeeds LIVINGROCK_ITEM;
 	public static final ItemSeeds LIVINGWOOD_ITEM;
 	public static final ItemSeeds MANASTEEL_ITEM;
@@ -1720,11 +1740,11 @@ public class Crops {
 	public static final Item ESSENCE_SUNNY_QUARTZ = RegisterItem.addEssenceItem(Mods.Botania, "sunny_quartz", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier3, Mods.Botania, "sunny_quartz"));
 	
 	//Conjuring
-	public static final Block SOUL_ALLOY;
-	public static final Block SOUL_ROD;
-	public static final Block SOUL_BRICK;
-	public static final Block CONJURATION_ESSENCE;
-	public static final Block CONJURATION_ESSENCE_LESSER;
+	public static final BlockCrop SOUL_ALLOY;
+	public static final BlockCrop SOUL_ROD;
+	public static final BlockCrop SOUL_BRICK;
+	public static final BlockCrop CONJURATION_ESSENCE;
+	public static final BlockCrop CONJURATION_ESSENCE_LESSER;
 	public static final ItemSeeds SOUL_ALLOY_ITEM;
 	public static final ItemSeeds SOUL_ROD_ITEM;
 	public static final ItemSeeds SOUL_BRICK_ITEM;
@@ -1749,8 +1769,8 @@ public class Crops {
 	public static final Item ESSENCE_CONJURATION_ESSENCE_LESSER = RegisterItem.addEssenceItem(Mods.Conjuring, "conjuration_essence_lesser", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier3, Mods.Conjuring, "conjuration_essence_lesser"));
 
 	//Deep Mob Learning: Refabricated
-	public static final Block SOOT_COVERED_REDSTONE;
-	public static final Block GLITCH_INGOT;
+	public static final BlockCrop SOOT_COVERED_REDSTONE;
+	public static final BlockCrop GLITCH_INGOT;
 	public static final ItemSeeds SOOT_COVERED_REDSTONE_ITEM;
 	public static final ItemSeeds GLITCH_INGOT_ITEM;
 	static{
@@ -1763,29 +1783,29 @@ public class Crops {
 	public static final Item ESSENCE_GLITCH_INGOT = RegisterItem.addEssenceItem(Mods.DeepMobLearning, "glitch_ingot", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier6, Mods.DeepMobLearning, "glitch_ingot"));
 
 	//BetterEnd
-	public static final Block ENDER_SHARD;
-	public static final Block AETERNIUM;
-	public static final Block CRYSTAL_SHARD;
-	public static final Block AMBER_GEM;
-	public static final Block HYDRALUX_PETAL;
-	public static final Block ETERNAL_CRYSTAL;
-	public static final Block ENCHANTED_PETAL;
-	public static final Block END_STONE_DUST;
-	public static final Block FLAVOLITE;
-	public static final Block VIOLECITE;
-	public static final Block SULFURIC_ROCK;
-	public static final Block MISSING_TILE;
-	public static final Block MOSSY_GLOWSHROOM;
-	public static final Block PYTHADENDRON;
-	public static final Block END_LOTUS;
-	public static final Block LACUGROVE;
-	public static final Block DRAGON_TREE;
-	public static final Block TENANEA;
-	public static final Block HELIX_TREE;
-	public static final Block UMBRELLA_TREE;
-	public static final Block JELLYSHROOM;
-	public static final Block THALLASIUM;
-	public static final Block TERMINITE;
+	public static final BlockCrop ENDER_SHARD;
+	public static final BlockCrop AETERNIUM;
+	public static final BlockCrop CRYSTAL_SHARD;
+	public static final BlockCrop AMBER_GEM;
+	public static final BlockCrop HYDRALUX_PETAL;
+	public static final BlockCrop ETERNAL_CRYSTAL;
+	public static final BlockCrop ENCHANTED_PETAL;
+	public static final BlockCrop END_STONE_DUST;
+	public static final BlockCrop FLAVOLITE;
+	public static final BlockCrop VIOLECITE;
+	public static final BlockCrop SULFURIC_ROCK;
+	public static final BlockCrop MISSING_TILE;
+	public static final BlockCrop MOSSY_GLOWSHROOM;
+	public static final BlockCrop PYTHADENDRON;
+	public static final BlockCrop END_LOTUS;
+	public static final BlockCrop LACUGROVE;
+	public static final BlockCrop DRAGON_TREE;
+	public static final BlockCrop TENANEA;
+	public static final BlockCrop HELIX_TREE;
+	public static final BlockCrop UMBRELLA_TREE;
+	public static final BlockCrop JELLYSHROOM;
+	public static final BlockCrop THALLASIUM;
+	public static final BlockCrop TERMINITE;
 	public static final ItemSeeds ENDER_SHARD_ITEM;
 	public static final ItemSeeds AETERNIUM_ITEM;
 	public static final ItemSeeds CRYSTAL_SHARD_ITEM;
@@ -1882,41 +1902,41 @@ public class Crops {
 	public static final Item ESSENCE_TERMINITE = RegisterItem.addEssenceItem(Mods.BetterEnd, "terminite", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier1, Mods.BetterEnd, "terminite"));
 	
 	//The Aether Reborn
-	public static final Block AETHER_DIRT;
-	public static final Block HOLYSTONE;
-	public static final Block HOLYSTONE_MOSSY;
-	public static final Block ICESTONE;
-	public static final Block QUICKSOIL;
-	public static final Block QUICKSOIL_GLASS;
-	public static final Block SKYROOT_LOG;
-	public static final Block GOLDEN_OAK;
-	public static final Block CRYSTAL_LOG;
-	public static final Block WISTERIA_LOG;
-	public static final Block AERCLOUD_BLUE;
-	public static final Block AERCLOUD_COLD;
-	public static final Block AERCLOUD_GOLD;
-	public static final Block AERCLOUD_PINK;
-	public static final Block AEROGEL;
-	public static final Block BLUE_BERRY;
-	public static final Block ENCHANTED_BLUE_BERRY;
-	public static final Block CANDY_CANE;
-	public static final Block GINGER_BREAD_MAN;
-	public static final Block GUMMY_SWET_BLUE;
-	public static final Block GUMMY_SWET_GOLD;
-	public static final Block SWET_BALL;
-	public static final Block WHITE_APPLE;
-	public static final Block GOLDEN_AMBER;
-	public static final Block AECHOR_PETAL;
-	public static final Block AMBROSIUM_SHARD;
-	public static final Block ZANITE_GEMSTONE;
-	public static final Block GRAVITITE_GEMSTONE;
-	public static final Block ANGELIC;
-	public static final Block ANGELIC_LIGHT;
-	public static final Block CARVED;
-	public static final Block HELLFIRE;
-	public static final Block HELLFIRE_LIGHT;
-	public static final Block SENTRY;
-	public static final Block SENTRY_LIGHT;
+	public static final BlockCrop AETHER_DIRT;
+	public static final BlockCrop HOLYSTONE;
+	public static final BlockCrop HOLYSTONE_MOSSY;
+	public static final BlockCrop ICESTONE;
+	public static final BlockCrop QUICKSOIL;
+	public static final BlockCrop QUICKSOIL_GLASS;
+	public static final BlockCrop SKYROOT_LOG;
+	public static final BlockCrop GOLDEN_OAK;
+	public static final BlockCrop CRYSTAL_LOG;
+	public static final BlockCrop WISTERIA_LOG;
+	public static final BlockCrop AERCLOUD_BLUE;
+	public static final BlockCrop AERCLOUD_COLD;
+	public static final BlockCrop AERCLOUD_GOLD;
+	public static final BlockCrop AERCLOUD_PINK;
+	public static final BlockCrop AEROGEL;
+	public static final BlockCrop BLUE_BERRY;
+	public static final BlockCrop ENCHANTED_BLUE_BERRY;
+	public static final BlockCrop CANDY_CANE;
+	public static final BlockCrop GINGER_BREAD_MAN;
+	public static final BlockCrop GUMMY_SWET_BLUE;
+	public static final BlockCrop GUMMY_SWET_GOLD;
+	public static final BlockCrop SWET_BALL;
+	public static final BlockCrop WHITE_APPLE;
+	public static final BlockCrop GOLDEN_AMBER;
+	public static final BlockCrop AECHOR_PETAL;
+	public static final BlockCrop AMBROSIUM_SHARD;
+	public static final BlockCrop ZANITE_GEMSTONE;
+	public static final BlockCrop GRAVITITE_GEMSTONE;
+	public static final BlockCrop ANGELIC;
+	public static final BlockCrop ANGELIC_LIGHT;
+	public static final BlockCrop CARVED;
+	public static final BlockCrop HELLFIRE;
+	public static final BlockCrop HELLFIRE_LIGHT;
+	public static final BlockCrop SENTRY;
+	public static final BlockCrop SENTRY_LIGHT;
 	public static final ItemSeeds AETHER_DIRT_ITEM;
 	public static final ItemSeeds HOLYSTONE_ITEM;
 	public static final ItemSeeds HOLYSTONE_MOSSY_ITEM;
@@ -2060,7 +2080,7 @@ public class Crops {
 	public static final Item ESSENCE_SENTRY = RegisterItem.addEssenceItem(Mods.Aether, Mods.AetherShort, "sentry", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier4, Mods.AetherShort, "sentry"));
 	public static final Item ESSENCE_SENTRY_LIGHT = RegisterItem.addEssenceItem(Mods.Aether, Mods.AetherShort, "sentry_light", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier4, Mods.AetherShort, "sentry_light"));
 
-	public static final Block PLACEHOLDER_404;
+	public static final BlockCrop PLACEHOLDER_404;
 	public static final ItemSeeds PLACEHOLDER_404_ITEM;
 	static{
 		PLACEHOLDER_404 = new BlockCrop(Strings.TierUNKNOWN, Mods.ResourceCrops, "404");
