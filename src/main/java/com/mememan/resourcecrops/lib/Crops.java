@@ -63,12 +63,12 @@ public class Crops {
 	public static final BlockCrop ESSENCE_TIER_INFINITY;
 	public static final BlockCrop ESSENCE_TIER_CREATIVE;
 	public static final BlockCrop ULTIMATE;
-	public static final ItemSeeds ESSENCE_TIER_1_ITEM;
-	public static final ItemSeeds ESSENCE_TIER_2_ITEM;
-	public static final ItemSeeds ESSENCE_TIER_3_ITEM;
-	public static final ItemSeeds ESSENCE_TIER_4_ITEM;
-	public static final ItemSeeds ESSENCE_TIER_5_ITEM;
-	public static final ItemSeeds ESSENCE_TIER_6_ITEM;
+	public static final ItemSeeds ESSENCE_TIER_1_ITEM; //Singlium
+	public static final ItemSeeds ESSENCE_TIER_2_ITEM; //Doublium
+	public static final ItemSeeds ESSENCE_TIER_3_ITEM; //Triplium
+	public static final ItemSeeds ESSENCE_TIER_4_ITEM; //Quadrium
+	public static final ItemSeeds ESSENCE_TIER_5_ITEM; //Quintium
+	public static final ItemSeeds ESSENCE_TIER_6_ITEM; //Sixtuplium
 	public static final ItemSeeds ESSENCE_TIER_INFINITY_ITEM;
 	public static final ItemSeeds ESSENCE_TIER_CREATIVE_ITEM;
 	public static final ItemSeeds ULTIMATE_ITEM;
@@ -92,14 +92,24 @@ public class Crops {
 		ESSENCE_TIER_CREATIVE_ITEM = itemSetting(ESSENCE_TIER_CREATIVE, Mods.ResourceCrops, "Essence Tier Creative", Strings.TierCreative, true);
 		ULTIMATE_ITEM = itemSetting(ULTIMATE, Mods.ResourceCrops, "Ultimate", Strings.TierUltimate, true);
 	}
-	public static final Item ESSENCE_ESSENCE_TIER_1 = RegisterItem.addEssenceItem(Mods.ResourceCrops, "tier_1", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier1, Mods.ResourceCrops, "tier_1"));
-	public static final Item ESSENCE_ESSENCE_TIER_2 = RegisterItem.addEssenceItem(Mods.ResourceCrops, "tier_2", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier2, Mods.ResourceCrops, "tier_2"));
-	public static final Item ESSENCE_ESSENCE_TIER_3 = RegisterItem.addEssenceItem(Mods.ResourceCrops, "tier_3", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier3, Mods.ResourceCrops, "tier_3"));
-	public static final Item ESSENCE_ESSENCE_TIER_4 = RegisterItem.addEssenceItem(Mods.ResourceCrops, "tier_4", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier4, Mods.ResourceCrops, "tier_4"));
-	public static final Item ESSENCE_ESSENCE_TIER_5 = RegisterItem.addEssenceItem(Mods.ResourceCrops, "tier_5", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier5, Mods.ResourceCrops, "tier_5"));
-	public static final Item ESSENCE_ESSENCE_TIER_6 = RegisterItem.addEssenceItem(Mods.ResourceCrops, "tier_6", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier6, Mods.ResourceCrops, "tier_6"));
-	public static final Item ESSENCE_ESSENCE_TIER_INFINITY = RegisterItem.addEssenceItem(Mods.ResourceCrops, "tier_infinity", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE).rarity(Rarity.RARE), Strings.TierInfinity, Mods.ResourceCrops, "tier_infinity", true));
-	public static final Item ESSENCE_ESSENCE_TIER_CREATIVE = RegisterItem.addEssenceItem(Mods.ResourceCrops, "tier_creative", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE).rarity(Rarity.EPIC), Strings.TierCreative, Mods.ResourceCrops, "tier_creative", true));
+	public static final Item ESSENCE_ESSENCE_TIER_1 = new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier1, Mods.ResourceCrops, "tier_1");
+	public static final Item ESSENCE_ESSENCE_TIER_2 = new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier2, Mods.ResourceCrops, "tier_2");
+	public static final Item ESSENCE_ESSENCE_TIER_3 = new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier3, Mods.ResourceCrops, "tier_3");
+	public static final Item ESSENCE_ESSENCE_TIER_4 = new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier4, Mods.ResourceCrops, "tier_4");
+	public static final Item ESSENCE_ESSENCE_TIER_5 = new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier5, Mods.ResourceCrops, "tier_5");
+	public static final Item ESSENCE_ESSENCE_TIER_6 = new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier6, Mods.ResourceCrops, "tier_6");
+	public static final Item ESSENCE_ESSENCE_TIER_INFINITY = new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE).rarity(Rarity.RARE), Strings.TierInfinity, Mods.ResourceCrops, "tier_infinity", true);
+	public static final Item ESSENCE_ESSENCE_TIER_CREATIVE = new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE).rarity(Rarity.EPIC), Strings.TierCreative, Mods.ResourceCrops, "tier_creative", true);
+	static{
+		RegisterItem.addEssenceItem(Mods.ResourceCrops, "tier_1", ESSENCE_ESSENCE_TIER_1);
+		RegisterItem.addEssenceItem(Mods.ResourceCrops, "tier_2", ESSENCE_ESSENCE_TIER_2);
+		RegisterItem.addEssenceItem(Mods.ResourceCrops, "tier_3", ESSENCE_ESSENCE_TIER_3);
+		RegisterItem.addEssenceItem(Mods.ResourceCrops, "tier_4", ESSENCE_ESSENCE_TIER_4);
+		RegisterItem.addEssenceItem(Mods.ResourceCrops, "tier_5", ESSENCE_ESSENCE_TIER_5);
+		RegisterItem.addEssenceItem(Mods.ResourceCrops, "tier_6", ESSENCE_ESSENCE_TIER_6);
+		RegisterItem.addEssenceItem(Mods.ResourceCrops, "tier_infinity", ESSENCE_ESSENCE_TIER_INFINITY);
+		RegisterItem.addEssenceItem(Mods.ResourceCrops, "tier_creative", ESSENCE_ESSENCE_TIER_CREATIVE);
+	}
 
 	//Vanilla Minecraft
 	public static final BlockCrop ACACIA = new BlockCrop(Strings.Tier1, Mods.VanillaShort, "acacia");
@@ -433,12 +443,12 @@ public class Crops {
 	public static final Item ESSENCE_ALCHEMIST_WOOL = RegisterItem.addEssenceItem(Mods.Bewitchment, "alchemist_wool", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier3, Mods.Bewitchment, "alchemist_wool"));
 	public static final Item ESSENCE_BESMIRCHED_WOOL = RegisterItem.addEssenceItem(Mods.Bewitchment, "besmirched_wool", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier3, Mods.Bewitchment, "besmirched_wool"));
 	public static final Item ESSENCE_BLESSED_STONE = RegisterItem.addEssenceItem(Mods.Bewitchment, "blessed_stone", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier3, Mods.Bewitchment, "blessed_stone"));
-	public static final Item ESSENCE_LOG_CYPRESS = RegisterItem.addEssenceItem(Mods.Bewitchment, "log_cypress", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier3, Mods.Bewitchment, "cypress_log"));
-	public static final Item ESSENCE_LOG_DRAGONS_BLOOD = RegisterItem.addEssenceItem(Mods.Bewitchment, "log_dragons_blood", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier3, Mods.Bewitchment, "dragons_blood_log"));
+	public static final Item ESSENCE_LOG_CYPRESS = RegisterItem.addEssenceItem(Mods.Bewitchment, "log_cypress", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier3, Mods.Bewitchment, "log_cypress"));
+	public static final Item ESSENCE_LOG_DRAGONS_BLOOD = RegisterItem.addEssenceItem(Mods.Bewitchment, "log_dragons_blood", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier3, Mods.Bewitchment, "log_dragons_blood"));
 	public static final Item ESSENCE_DRAGONS_BLOOD_RESIN = RegisterItem.addEssenceItem(Mods.Bewitchment, "dragons_blood_resin", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier3, Mods.Bewitchment, "dragons_blood_resin"));
-	public static final Item ESSENCE_LOG_ELDER = RegisterItem.addEssenceItem(Mods.Bewitchment, "log_elder", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier3, Mods.Bewitchment, "elder_log"));
+	public static final Item ESSENCE_LOG_ELDER = RegisterItem.addEssenceItem(Mods.Bewitchment, "log_elder", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier3, Mods.Bewitchment, "log_elder"));
 	public static final Item ESSENCE_HEDGEWITCH_WOOL = RegisterItem.addEssenceItem(Mods.Bewitchment, "hedgewitch_wool", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier3, Mods.Bewitchment, "hedgewitch_wool"));
-	public static final Item ESSENCE_LOG_JUNIPER = RegisterItem.addEssenceItem(Mods.Bewitchment, "log_juniper", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier3, Mods.Bewitchment, "juniper_log"));
+	public static final Item ESSENCE_LOG_JUNIPER = RegisterItem.addEssenceItem(Mods.Bewitchment, "log_juniper", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier3, Mods.Bewitchment, "log_juniper"));
 	public static final Item ESSENCE_SALT = RegisterItem.addEssenceItem(Mods.Bewitchment, "salt", new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), Strings.Tier3, Mods.Bewitchment, "salt"));
 	
 

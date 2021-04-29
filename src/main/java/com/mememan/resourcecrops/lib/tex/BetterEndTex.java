@@ -4,11 +4,11 @@ import com.mememan.resourcecrops.lib.Mods;
 
 public class BetterEndTex {
 
-	public static final String ENDER_SHARD_BLOCK = ResourceCropsTex.mod("betterend/ender_shard_block");
-	public static final String CRYSTAL_SHARD_BLOCK = ResourceCropsTex.mod("betterend/crystal_shard_block");
-	public static final String CRYSTAL_SHARD_BLOCK_CENTER = ResourceCropsTex.mod("betterend/crystal_shard_block_center");
-	public static final String ETERNAL_CRYSTAL_BLOCK = ResourceCropsTex.mod("betterend/eternal_crystal_block");
-	public static final String ETERNAL_CRYSTAL_BLOCK_CENTER = ResourceCropsTex.mod("betterend/eternal_crystal_block_center");
+	public static final String ENDER_SHARD_BLOCK = ResourceCropsTex.block("betterend/ender_shard_block");
+	public static final String CRYSTAL_SHARD_BLOCK = ResourceCropsTex.block("betterend/crystal_shard_block");
+	public static final String CRYSTAL_SHARD_BLOCK_CENTER = ResourceCropsTex.block("betterend/crystal_shard_block_center");
+	public static final String ETERNAL_CRYSTAL_BLOCK = ResourceCropsTex.block("betterend/eternal_crystal_block");
+	public static final String ETERNAL_CRYSTAL_BLOCK_CENTER = ResourceCropsTex.block("betterend/eternal_crystal_block_center");
 
 	public static final String AMARANITA_HYPHAE_SIDE = mod("amaranita_hyphae_side");
 	public static final String AMBER_MOSS_SIDE_1 = mod("amber_moss_side_1");

@@ -79,7 +79,7 @@ public class RegisterCrop {
 			}
 		}
 		// RegisterLootTables.addLootTable("ultimate", Mods.ResourceCrops, Strings.defaultCropAge);
-		RegisterBlockStates.addBlockstate(modNameShort, name);
+		RegisterBlockStates.addCropBlockstate(modNameShort, name);
 		if(resourceTex.length==1){
 			RegisterBlockModel.registerCropModel(modName, name, resourceTex[0], modelType);
 		}else if(resourceTex.length==2){

@@ -8,9 +8,7 @@ import static com.mememan.resourcecrops.lib.ingredient.CommonIngredient.*;
 
 public class Common {
 	public static void init(){
-		if(Mods.checkMod(Mods.CottonResources)==true){
-
-			//TODO Add individual checks per crop for each mod that contains its resource material
+		if(Mods.checkMod(Mods.ResourceCrops)==true){
 			RegisterCrop.addCrop(Mods.COMMON, "aluminum", Crops.ALUMINUM, Crops.ALUMINUM_ITEM, new String[]{CommonTex.ALUMINUM_BLOCK}, CropModelTypes.ALL, new Boolean[]{true, true}, new String[]{ALUMINUM_INGOT, Strings.Tier3}, true);
 			RegisterCrop.addCrop(Mods.COMMON, "brass", Crops.BRASS, Crops.BRASS_ITEM, new String[]{CommonTex.BRASS_BLOCK}, CropModelTypes.ALL, new Boolean[]{true, true}, new String[]{BRASS_INGOT, Strings.Tier3}, true);
 			RegisterCrop.addCrop(Mods.COMMON, "copper", Crops.COPPER, Crops.COPPER_ITEM, new String[]{CommonTex.COPPER_BLOCK}, CropModelTypes.ALL, new Boolean[]{true, true}, new String[]{COPPER_INGOT, Strings.Tier3}, true);

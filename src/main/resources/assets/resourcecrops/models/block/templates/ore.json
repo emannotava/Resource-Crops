@@ -1,0 +1,37 @@
+{
+	"parent": "minecraft:block/block",
+	"credit": "Made with Blockbench, by Annabel-Chan",
+	"textures": {
+		"base": "minecraft:block/stone",
+		"resource": "resourcecrops:block/ore/tier_1",
+		"particle": "minecraft:block/stone"
+	},
+	"elements": [
+		{
+			"name": "base",
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#base"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#base"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#base"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#base"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#base"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#base"}
+			}
+		},
+		{
+			"name": "resource",
+			"from": [-0.01, -0.01, -0.01],
+			"to": [16.01, 16.01, 16.01],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#resource"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#resource"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#resource"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#resource"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#resource"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#resource"}
+			}
+		}
+	]
+}

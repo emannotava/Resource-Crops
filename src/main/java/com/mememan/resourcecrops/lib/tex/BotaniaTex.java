@@ -3,9 +3,9 @@ package com.mememan.resourcecrops.lib.tex;
 import com.mememan.resourcecrops.lib.Mods;
 
 public class BotaniaTex {
-	public static final String MANA_PEARL_BLOCK = ResourceCropsTex.mod("botania/mana_pearl_block");
-	public static final String PIXIE_DUST_BLOCK = ResourceCropsTex.mod("botania/pixie_dust_block");
-	public static final String GAIA_SPIRIT_INGOT_BLOCK = ResourceCropsTex.mod("botania/gaia_spirit_ingot_block");
+	public static final String MANA_PEARL_BLOCK = ResourceCropsTex.block("botania/mana_pearl_block");
+	public static final String PIXIE_DUST_BLOCK = ResourceCropsTex.block("botania/pixie_dust_block");
+	public static final String GAIA_SPIRIT_INGOT_BLOCK = ResourceCropsTex.block("botania/gaia_spirit_ingot_block");
 
 	public static final String ABSTRUSE_PLATFORM = mod("abstruse_platform");
 	public static final String AGRICARNATION = mod("agricarnation");

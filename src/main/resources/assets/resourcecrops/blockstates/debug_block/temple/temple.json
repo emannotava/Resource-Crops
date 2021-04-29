@@ -1,0 +1,12 @@
+{
+  "multipart": [
+	{
+	  "apply": [
+		{ "model": "resourcecrops:block/myron_tests/temple/temple.obj" },
+		{ "model": "resourcecrops:block/myron_tests/temple/temple.obj", "y": 90 },
+		{ "model": "resourcecrops:block/myron_tests/temple/temple.obj", "y": 180 },
+		{ "model": "resourcecrops:block/myron_tests/temple/temple.obj", "y": 270 }
+	  ]
+	}
+  ]
+}

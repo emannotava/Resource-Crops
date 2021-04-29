@@ -19,6 +19,7 @@ repositories {
 	maven {
 		url = 'https://raw.githubusercontent.com/Devan-Kerman/Devan-Repo/master/'
 	}
+	 maven { url = "https://hephaestus.dev/release" }
 }
 
 dependencies {
@@ -30,6 +31,9 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	modImplementation group: 'net.devtech', name: 'arrp', version: '0.3.11'
+	include(modImplementation('net.devtech:arrp:0.3.11'))
+	modImplementation "dev.monarkhes:myron:1.6.0"
+	include(modImplementation('dev.monarkhes:myron:1.6.0'))
 
 	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
 	// You may need to force-disable transitiveness on them.

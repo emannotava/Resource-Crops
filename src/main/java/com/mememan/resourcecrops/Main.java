@@ -10,8 +10,13 @@ import com.mememan.resourcecrops.lib.Crops;
 import com.mememan.resourcecrops.lib.Mods;
 import com.mememan.resourcecrops.lib.Strings;
 import com.mememan.resourcecrops.loot.RegisterEntityLoot;
+import com.mememan.resourcecrops.registry.RegisterBlockModel;
+import com.mememan.resourcecrops.registry.RegisterBlockStates;
 import com.mememan.resourcecrops.registry.RegisterLootTables;
 import com.mememan.resourcecrops.registry.RegisterRecipe;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import net.devtech.arrp.api.RRPCallback;
 import net.devtech.arrp.api.RuntimeResourcePack;
@@ -24,8 +29,12 @@ import net.minecraft.util.Identifier;
 
 public class Main implements ModInitializer {
 
+	public static final Logger LOGGER = LogManager.getLogger("Resource Crops");
 	public static ArrayList<Block> crops = new ArrayList<>();
-	public static final RuntimeResourcePack assets = RuntimeResourcePack.create(Strings.modId + ":arrp");
+	public static ArrayList<Block> ores = new ArrayList<>();
+	public static ArrayList<Block> machines = new ArrayList<>();
+	public static ArrayList<Block> cutOutBlocks = new ArrayList<>();
+	public static final RuntimeResourcePack ASSETS = RuntimeResourcePack.create(Strings.modId + ":arrp");
 
 	public static ItemGroup GROUP;
 	public static final ItemGroup GROUP_MAIN = FabricItemGroupBuilder.build(new Identifier(Strings.modId, "all"), () -> new ItemStack(Crops.ESSENCE_ESSENCE_TIER_CREATIVE));
@@ -38,6 +47,8 @@ public class Main implements ModInitializer {
 		if(Mods.checkDevEnv()){
 			GROUP = new CreativeTab(new Identifier(Strings.modId, Strings.modId));
 		}
+		RegisterBlockStates.initialize();
+		RegisterBlockModel.initialize();
 		RegisterItem.initialize();
 		RegisterBlock.initialize();
 		RegisterCrop.initialize();
@@ -45,8 +56,9 @@ public class Main implements ModInitializer {
 		RegisterLootTables.initialize();
 		RegisterEntityLoot.initialize();
 		// test = Blocks.register("test", new CropBlock(AbstractBlock.Settings.of(Material.PLANT).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP)));
-		RRPCallback.EVENT.register(a -> a.add(assets));
+		RRPCallback.EVENT.register(a -> a.add(ASSETS));
 		System.out.println("Resource Crops(Server-Side) has been initialized!");
+		LOGGER.info("Resource Crops(Server-Side) has been initialized!");
 	}
 	
 }

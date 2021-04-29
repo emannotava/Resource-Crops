@@ -43,23 +43,23 @@ public class CreativeTab extends TabbedItemGroup
 	@Override
 	public void initTabs(List<ItemTab> tabs)
 	{
-		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUGBLOCK), "resourcecrops", RESOURCECROPS));
-		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUGBLOCK), "vanilla", VANILLA));
-		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUGBLOCK), "ae2", AE2));
-		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUGBLOCK), "techreborn", TECHREBORN));
-		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUGBLOCK), "industrialrevolution", INDUSTRIALREVOLUTION));
-		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUGBLOCK), "mythicmetals", MYTHICMETALS));
-		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUGBLOCK), "astromine", ASTROMINE));
-		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUGBLOCK), "byg", BYG));
-		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUGBLOCK), "botania", BOTANIA));
-		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUGBLOCK), "blockus", BLOCKUS));
-		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUGBLOCK), "biomemakeover", BIOMEMAKEOVER));
-		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUGBLOCK), "bewitchment", BEWITCHMENT));
-		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUGBLOCK), "betterend", BETTEREND));
-		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUGBLOCK), "c", C));
-		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUGBLOCK), "conjuring", CONJURING));
-		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUGBLOCK), "dml-refabricated", DML_REFABRICATED));
-		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUGBLOCK), "aether", AETHER));
+		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUG_BLOCK), "resourcecrops", RESOURCECROPS));
+		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUG_BLOCK), "vanilla", VANILLA));
+		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUG_BLOCK), "ae2", AE2));
+		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUG_BLOCK), "techreborn", TECHREBORN));
+		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUG_BLOCK), "industrialrevolution", INDUSTRIALREVOLUTION));
+		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUG_BLOCK), "mythicmetals", MYTHICMETALS));
+		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUG_BLOCK), "astromine", ASTROMINE));
+		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUG_BLOCK), "byg", BYG));
+		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUG_BLOCK), "botania", BOTANIA));
+		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUG_BLOCK), "blockus", BLOCKUS));
+		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUG_BLOCK), "biomemakeover", BIOMEMAKEOVER));
+		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUG_BLOCK), "bewitchment", BEWITCHMENT));
+		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUG_BLOCK), "betterend", BETTEREND));
+		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUG_BLOCK), "c", C));
+		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUG_BLOCK), "conjuring", CONJURING));
+		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUG_BLOCK), "dml-refabricated", DML_REFABRICATED));
+		tabs.add(new ItemTab(new ItemStack(RegisterBlock.DEBUG_BLOCK), "aether", AETHER));
 	}
 
 	@Override

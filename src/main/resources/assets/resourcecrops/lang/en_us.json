@@ -6,7 +6,7 @@
 	"item.resourcecrops.crop_resourcecrops.essence_tier5": "§4Tier §4§l5 §r§4Essence Seeds",
 	"item.resourcecrops.crop_resourcecrops.essence_tier6": "§5Tier §5§l6 §r§5Essence Seeds",
 	"item.resourcecrops.crop_resourcecrops.essence_tiercreative": "§lTier §cC§6r§ee§aa§9t§5i§bv§de §rEssence Seeds",
-	"item.resourcecrops.crop_resourcecrops.essence_tierinfinite": "§lTier §k§cI§6n§ef§ai§9n§5i§bt§de §r§l§n§cE§6s§es§ae§9n§5c§be §rSeeds",
+	"item.resourcecrops.crop_resourcecrops.essence_tierinfinity": "§lTier §k§cI§6n§ef§ai§9n§5i§bt§de §r§l§n§cE§6s§es§ae§9n§5c§be §rSeeds",
 	"item.resourcecrops.crop_resourcecrops.ultimate": "§4§lspǝǝS ǝʇɐɯᴉʇl∩",
 
 	"item.resourcecrops.crop_vanilla.acacia": "Acacia Seeds",
@@ -571,7 +571,7 @@
 	"item.resourcecrops.essence_tier_5": "§4Essence Tier §l5", "block.resourcecrops.essence_tier_5_block": "Tier 5 Essence Block",
 	"item.resourcecrops.essence_tier_6": "§5Essence Tier §l6", "block.resourcecrops.essence_tier_6_block": "Tier 6 Essence Block",
 	"item.resourcecrops.essence_tier_creative": "§cC§6r§ee§aa§9t§5i§bv§de §rEssence", "block.resourcecrops.essence_tier_creative_block": "Tier §cC§6r§ee§aa§9t§5i§bv§de §rEssence Block",
-	"item.resourcecrops.essence_tier_infinity": "§k§cI§6n§ef§ai§9n§5i§bt§de §r§l§n§cE§6s§es§ae§9n§5c§by", "block.resourcecrops.essence_tier_infinity_block": "Tier §k§cI§6n§ef§ai§9n§5i§bt§de §r§l§n§cE§6s§es§ae§9n§5c§by §rBlock",
+	"item.resourcecrops.essence_tier_infinity": "§k§cI§6n§ef§ai§9n§5i§bt§dy §r§l§n§cE§6s§es§ae§9n§5c§be", "block.resourcecrops.essence_tier_infinity_block": "Tier §k§cI§6n§ef§ai§9n§5i§bt§dy §r§l§n§cE§6s§es§ae§9n§5c§be §rBlock",
 
 
 	"itemGroup.resourcecrops.all": "Resource Crops (Main Tab)",

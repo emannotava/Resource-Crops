@@ -1,0 +1,6 @@
+{
+	"parent": "resourcecrops:block/myron_tests/crop/obj/stage_6",
+	"textures": {
+		"tex": "resourcecrops:block/debug_block_crop/lol"
+	}
+}

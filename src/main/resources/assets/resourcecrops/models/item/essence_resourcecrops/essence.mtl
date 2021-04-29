@@ -1,0 +1,39 @@
+newmtl essence_tier_1
+map_Kd resourcecrops:shared/fog/tier_1
+newmtl essence_tier_2
+map_Kd resourcecrops:shared/fog/tier_2
+newmtl essence_tier_3
+map_Kd resourcecrops:shared/fog/tier_3
+newmtl essence_tier_4
+map_Kd resourcecrops:shared/fog/tier_4
+newmtl essence_tier_5
+map_Kd resourcecrops:shared/fog/tier_5
+newmtl essence_tier_6
+map_Kd resourcecrops:shared/fog/tier_6
+newmtl essence_tier_infinity
+map_Kd resourcecrops:shared/fog/tier_infinity
+newmtl essence_tier_creative
+map_Kd resourcecrops:shared/fog/tier_creative
+
+newmtl glass
+map_Kd resourcecrops:shared/glass/glass
+
+newmtl glass_tier_1
+map_Kd resourcecrops:shared/glass/tier_1
+newmtl glass_tier_2
+map_Kd resourcecrops:shared/glass/tier_2
+newmtl glass_tier_3
+map_Kd resourcecrops:shared/glass/tier_3
+newmtl glass_tier_4
+map_Kd resourcecrops:shared/glass/tier_4
+newmtl glass_tier_5
+map_Kd resourcecrops:shared/glass/tier_5
+newmtl glass_tier_6
+map_Kd resourcecrops:shared/glass/tier_6
+newmtl glass_tier_infinity
+map_Kd resourcecrops:shared/glass/tier_infinity
+newmtl glass_tier_creative
+map_Kd resourcecrops:shared/glass/tier_creative
+
+newmtl lid
+map_Kd resourcecrops:shared/misc/lid

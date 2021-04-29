@@ -18,27 +18,6 @@ public class ItemEssence extends Item {
 	public String essenceName = "Meow";
 	public Boolean glintState;
 
-	public ItemEssence(Settings settings) {
-		super(settings);
-		glintState = false;
-		hasGlint(new ItemStack(this));
-	}
-
-	public ItemEssence(Settings settings, String tier) {
-		super(settings);
-		TOOLTIP_TIER = tier;
-		glintState = false;
-		hasGlint(new ItemStack(this));
-	}
-
-	public ItemEssence(Settings settings, String tier, String mod) {
-		super(settings);
-		TOOLTIP_TIER = tier;
-		TOOLTIP_MOD = mod;
-		glintState = false;
-		hasGlint(new ItemStack(this));
-	}
-
 	public ItemEssence(Settings settings, String tier, String mod, String name) {
 		super(settings);
 		TOOLTIP_TIER = tier;

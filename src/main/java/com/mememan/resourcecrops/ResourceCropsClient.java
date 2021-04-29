@@ -8,8 +8,14 @@ import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
 
 import static com.mememan.resourcecrops.Main.crops;
+import static com.mememan.resourcecrops.Main.ores;
 
 import com.mememan.resourcecrops.block.RegisterBlock;
+
+import static com.mememan.resourcecrops.Main.machines;
+import static com.mememan.resourcecrops.Main.cutOutBlocks;
+
+// import com.mememan.resourcecrops.block.RegisterBlock;
 
 @Environment(EnvType.CLIENT)
 public class ResourceCropsClient implements ClientModInitializer{
@@ -17,14 +23,17 @@ public class ResourceCropsClient implements ClientModInitializer{
 	@Override
     public void onInitializeClient() {
         crops.forEach(this::registerTranslucentRender);
-		registerCutOutRender(RegisterBlock.MACHINE_FRAME_COAL);
-		registerCutOutRender(RegisterBlock.MACHINE_FRAME_DIAMOND);
-		registerCutOutRender(RegisterBlock.MACHINE_FRAME_EMERALD);
-		registerCutOutRender(RegisterBlock.MACHINE_FRAME_GOLD);
-		registerCutOutRender(RegisterBlock.MACHINE_FRAME_IRON);
-		registerCutOutRender(RegisterBlock.MACHINE_FRAME_LAPIS);
-		registerCutOutRender(RegisterBlock.MACHINE_FRAME_NETHERITE);
-		registerCutOutRender(RegisterBlock.MACHINE_FRAME_REDSTONE);
+        ores.forEach(this::registerCutOutRender);
+        machines.forEach(this::registerCutOutRender);
+        cutOutBlocks.forEach(this::registerCutOutRender);
+		registerTranslucentRender(RegisterBlock.ESSENCE_TIER_1_BLOCK);
+		registerTranslucentRender(RegisterBlock.ESSENCE_TIER_2_BLOCK);
+		registerTranslucentRender(RegisterBlock.ESSENCE_TIER_3_BLOCK);
+		registerTranslucentRender(RegisterBlock.ESSENCE_TIER_4_BLOCK);
+		registerTranslucentRender(RegisterBlock.ESSENCE_TIER_5_BLOCK);
+		registerTranslucentRender(RegisterBlock.ESSENCE_TIER_6_BLOCK);
+		registerTranslucentRender(RegisterBlock.ESSENCE_TIER_INFINITY_BLOCK);
+		registerTranslucentRender(RegisterBlock.ESSENCE_TIER_CREATIVE_BLOCK);
 		System.out.println("Resource Crops(Client-Side) has been initialized!");
     }
 

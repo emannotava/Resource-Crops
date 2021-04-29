@@ -1,8 +1,6 @@
 package com.mememan.resourcecrops.loot;
 
-//import java.lang.reflect.Array;
-
-import com.mememan.resourcecrops.item.RegisterItem;
+import com.mememan.resourcecrops.lib.Crops;
 import com.mememan.resourcecrops.lib.Entities;
 
 import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
@@ -23,20 +21,20 @@ public class RegisterEntityLoot {
 
 	public static void initVanilla(){
 		//Passive
-		loopThroughArrays(RegisterItem.essence_tier_1, 1, 5, 5F, Entities.vanillaPassive);
+		loopThroughArrays(Crops.ESSENCE_ESSENCE_TIER_1, 1, 5, 5F, Entities.vanillaPassive);
 
 		//Neutral
-		loopThroughArrays(RegisterItem.essence_tier_1, 1, 5, 5F, Entities.vanillaNeutral);
-		loopThroughArrays(RegisterItem.essence_tier_2, 1, 5, 1F, Entities.vanillaNeutral);
+		loopThroughArrays(Crops.ESSENCE_ESSENCE_TIER_1, 1, 5, 5F, Entities.vanillaNeutral);
+		loopThroughArrays(Crops.ESSENCE_ESSENCE_TIER_2, 1, 5, 1F, Entities.vanillaNeutral);
 		
 		//Hostile
-		loopThroughArrays(RegisterItem.essence_tier_1, 1, 5, 5.3F, Entities.vanillaHostile);
-		loopThroughArrays(RegisterItem.essence_tier_2, 1, 5, 1F, Entities.vanillaHostile);
-		loopThroughArrays(RegisterItem.essence_tier_3, 1, 5, 0.1F, Entities.vanillaHostile);
+		loopThroughArrays(Crops.ESSENCE_ESSENCE_TIER_1, 1, 5, 5.3F, Entities.vanillaHostile);
+		loopThroughArrays(Crops.ESSENCE_ESSENCE_TIER_2, 1, 5, 1F, Entities.vanillaHostile);
+		loopThroughArrays(Crops.ESSENCE_ESSENCE_TIER_3, 1, 5, 0.1F, Entities.vanillaHostile);
 
 		//Boss
-		loopThroughArrays(RegisterItem.essence_tier_5, Entities.vanillaBoss);
-		loopThroughArrays(RegisterItem.essence_tier_6, 3, 9, 0.1F, Entities.vanillaBoss);
+		loopThroughArrays(Crops.ESSENCE_ESSENCE_TIER_5, Entities.vanillaBoss);
+		loopThroughArrays(Crops.ESSENCE_ESSENCE_TIER_6, 3, 9, 0.1F, Entities.vanillaBoss);
 	}
 
 

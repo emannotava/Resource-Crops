@@ -3,22 +3,22 @@ package com.mememan.resourcecrops.lib.tex;
 import com.mememan.resourcecrops.lib.Mods;
 
 public class AetherTex {
-	public static final String AECHOR_PETAL_BLOCK = ResourceCropsTex.mod("aether/aechor_petal_block");
-	public static final String AMBROSIUM_BLOCK = ResourceCropsTex.mod("aether/ambrosium_block");
-	public static final String BLUE_BERRY_BLOCK = ResourceCropsTex.mod("aether/blue_berry_block");
-	public static final String CANDY_CANE_BLOCK = ResourceCropsTex.mod("aether/candy_cane_block");
-	public static final String CANDY_CANE_BLOCK_CENTER = ResourceCropsTex.mod("aether/candy_cane_block_center");
-	public static final String ENCHANTED_BLUE_BERRY_BLOCK = ResourceCropsTex.mod("aether/enchanted_blue_berry_block");
-	public static final String GINGER_BREAD_MAN_BLOCK = ResourceCropsTex.mod("aether/ginger_bread_man_block");
-	public static final String GINGER_BREAD_MAN_BLOCK_ALT = ResourceCropsTex.mod("aether/ginger_bread_man_block_alt");
-	public static final String GINGER_BREAD_MAN_BLOCK_ALT2 = ResourceCropsTex.mod("aether/ginger_bread_man_block_alt2");
-	public static final String GINGER_BREAD_MAN_BLOCK_CENTER = ResourceCropsTex.mod("aether/ginger_bread_man_block_center");
-	public static final String GOLDEN_AMBER_BLOCK = ResourceCropsTex.mod("aether/golden_amber_block");
-	public static final String GRAVITITE_BLOCK = ResourceCropsTex.mod("aether/gravitite_block");
-	public static final String GUMMY_SWET_BLUE = ResourceCropsTex.mod("aether/gummy_swet_blue");
-	public static final String GUMMY_SWET_GOLD = ResourceCropsTex.mod("aether/gummy_swet_gold");
-	public static final String SWET_BALL_BLOCK = ResourceCropsTex.mod("aether/swet_ball_block");
-	public static final String WHITE_APPLE_BLOCK = ResourceCropsTex.mod("aether/white_apple_block");
+	public static final String AECHOR_PETAL_BLOCK = ResourceCropsTex.block("aether/aechor_petal_block");
+	public static final String AMBROSIUM_BLOCK = ResourceCropsTex.block("aether/ambrosium_block");
+	public static final String BLUE_BERRY_BLOCK = ResourceCropsTex.block("aether/blue_berry_block");
+	public static final String CANDY_CANE_BLOCK = ResourceCropsTex.block("aether/candy_cane_block");
+	public static final String CANDY_CANE_BLOCK_CENTER = ResourceCropsTex.block("aether/candy_cane_block_center");
+	public static final String ENCHANTED_BLUE_BERRY_BLOCK = ResourceCropsTex.block("aether/enchanted_blue_berry_block");
+	public static final String GINGER_BREAD_MAN_BLOCK = ResourceCropsTex.block("aether/ginger_bread_man_block");
+	public static final String GINGER_BREAD_MAN_BLOCK_ALT = ResourceCropsTex.block("aether/ginger_bread_man_block_alt");
+	public static final String GINGER_BREAD_MAN_BLOCK_ALT2 = ResourceCropsTex.block("aether/ginger_bread_man_block_alt2");
+	public static final String GINGER_BREAD_MAN_BLOCK_CENTER = ResourceCropsTex.block("aether/ginger_bread_man_block_center");
+	public static final String GOLDEN_AMBER_BLOCK = ResourceCropsTex.block("aether/golden_amber_block");
+	public static final String GRAVITITE_BLOCK = ResourceCropsTex.block("aether/gravitite_block");
+	public static final String GUMMY_SWET_BLUE = ResourceCropsTex.block("aether/gummy_swet_blue");
+	public static final String GUMMY_SWET_GOLD = ResourceCropsTex.block("aether/gummy_swet_gold");
+	public static final String SWET_BALL_BLOCK = ResourceCropsTex.block("aether/swet_ball_block");
+	public static final String WHITE_APPLE_BLOCK = ResourceCropsTex.block("aether/white_apple_block");
 	
 
 	public static final String AEROGEL = mod("aerogel");

@@ -33,15 +33,18 @@ public class BlockCrop extends net.minecraft.block.CropBlock {
 	public String SEED_NAME = "Meow";
 	public int maxAge = 8;
 	public static Block REQUIRED_SOIL = Blocks.FARMLAND;
+
 	public static FabricBlockSettings BLOCK_SETTINGS(){
 		return FabricBlockSettings.of(Material.PLANT).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).nonOpaque();
 	}
+
 	public BlockCrop(String tier, String mod, String name){
 		super(BLOCK_SETTINGS());
 		TOOLTIP_TIER = tier;
 		TOOLTIP_MOD = mod;
 		SEED_NAME = name;
 	}
+	
 	public BlockCrop(String tier, String mod, String name, Block soil){
 		super(BLOCK_SETTINGS());
 		setSoilBlock(soil);

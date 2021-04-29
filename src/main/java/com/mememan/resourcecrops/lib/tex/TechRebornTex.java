@@ -3,8 +3,8 @@ package com.mememan.resourcecrops.lib.tex;
 import com.mememan.resourcecrops.lib.Mods;
 
 public class TechRebornTex {
-	public static final String ADVANCED_ALLOY_BLOCK = ResourceCropsTex.mod("techreborn/advanced_alloy_block");
-	public static final String HOT_TUNGSTENSTEEL_BLOCK = ResourceCropsTex.mod("techreborn/hot_tungstensteel_block");
+	public static final String ADVANCED_ALLOY_BLOCK = ResourceCropsTex.block("techreborn/advanced_alloy_block");
+	public static final String HOT_TUNGSTENSTEEL_BLOCK = ResourceCropsTex.block("techreborn/hot_tungstensteel_block");
 
 	// public static final String ALUMINUM_BLOCK = mod("storage/aluminum_storage_block");
 	// public static final String BRASS_BLOCK = mod("storage/brass_storage_block");
