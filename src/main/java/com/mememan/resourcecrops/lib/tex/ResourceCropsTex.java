@@ -9,6 +9,7 @@ public class ResourceCropsTex {
 	public static final String GRADIENT_DARK_RED = block("gradient/dark_red");
 	public static final String GRADIENT_DARK_TEAL_HALF_LIGHT_BLUE = block("gradient/dark_teal_half_light_blue");
 	public static final String GRADIENT_DOUBLE_WHITE = block("gradient/doubled_white");
+	public static final String GRADIENT_LIGHT_BEIGE = block("gradient/light_beige");
 	public static final String GRADIENT_BEIGE = block("gradient/beige");
 	public static final String GRADIENT_BLACK = block("gradient/black");
 	public static final String GRADIENT_BLUE = block("gradient/blue");
@@ -56,12 +57,13 @@ public class ResourceCropsTex {
 	public static final String TIER_5_DARK_BLOCK = block("essence/tier_5_dark_block");
 	public static final String TIER_6_BLOCK = block("essence/tier_6_block");
 	public static final String TIER_6_DARK_BLOCK = block("essence/tier_6_dark_block");
-	public static final String TIER_CREATIVE_BLOCK = block("essence/tier_creative_block");
-	public static final String TIER_CREATIVE_DARK_BLOCK = block("essence/tier_creative_dark_block");
-	public static final String TIER_INFINITY_BLOCK = block("essence/tier_infinity_block");
-	public static final String TIER_INFINITY_DARK_BLOCK = block("essence/tier_infinity_dark_block");
+	public static final String TIER_CREATIVE_BLOCK = block("essence/TIER_CREATIVE_block");
+	public static final String TIER_CREATIVE_DARK_BLOCK = block("essence/TIER_CREATIVE_dark_block");
+	public static final String TIER_INFINITY_BLOCK = block("essence/TIER_INFINITY_block");
+	public static final String TIER_INFINITY_DARK_BLOCK = block("essence/TIER_INFINITY_dark_block");
 	public static final String ULTIMATE_BLOCK = block("debug_block");
 	public static final String BLOCK_404 = block("404");
+	public static final String ORE_OVERLAY = block("ore/overlay");
 	public static final String ORE_TIER_1 = block("ore/tier_1");
 	public static final String ORE_TIER_2 = block("ore/tier_2");
 	public static final String ORE_TIER_3 = block("ore/tier_3");
@@ -71,6 +73,9 @@ public class ResourceCropsTex {
 	public static final String COMMON_METAL_SIDE = block("common/metal/side");
 	public static final String COMMON_METAL_TOP = block("common/metal/top");
 	public static final String COMMON_METAL_BOTTOM = block("common/metal/bottom");
+	public static final String FOG = shared("fog/fog");
+	public static final String FOG_TIER_INFINITY = shared("fog/TIER_INFINITY");
+	public static final String FOG_TIER_CREATIVE = shared("fog/TIER_CREATIVE");
 	public static final String SPARKLES_TIER_1 = item("sparkles/tier_1");
 	public static final String SPARKLES_TIER_2 = item("sparkles/tier_2");
 	public static final String SPARKLES_TIER_3 = item("sparkles/tier_3");
@@ -79,8 +84,12 @@ public class ResourceCropsTex {
 	public static final String SPARKLES_TIER_6 = item("sparkles/tier_6");
 	public static final String METALLIC_ESSENCE_INGOT = item("ingot_metallic_essence");
 	
+	public static final String JEB_WOOL = block("vanilla/jeb_wool");
 	
 
+	public static String shared(String input){
+		return Mods.ResourceCrops + ":shared/" + input;
+	}
 	public static String block(String input){
 		return Mods.ResourceCrops + ":block/" + input;
 	}

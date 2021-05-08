@@ -1,7 +1,0 @@
-{
-	"parent": "item/generated",
-	"textures": {
-		"layer0": "byg:item/ametrine_gems",
-		"layer1": "resourcecrops:item/sparkles/sparkles_light_blue"
-	}
-}

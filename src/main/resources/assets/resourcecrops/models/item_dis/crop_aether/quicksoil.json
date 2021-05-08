@@ -1,7 +1,0 @@
-{
-  "parent": "resourcecrops:item/seed_models/seeds_all",
-  "textures": {
-    "fill": "the_aether:block/quicksoil",
-    "gradient": "resourcecrops:block/narcissus_leaves/white"
-  }
-}

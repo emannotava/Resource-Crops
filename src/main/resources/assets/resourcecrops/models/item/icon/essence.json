@@ -1,0 +1,7 @@
+{
+	"parent": "item/generated",
+	"textures":	{
+		"layer0": "resourcecrops:item/essence/tier_1",
+		"layer1": "resourcecrops:item/sparkles/tier_1"
+	}
+}

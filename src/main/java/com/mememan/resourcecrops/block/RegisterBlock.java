@@ -45,7 +45,7 @@ public class RegisterBlock {
 	public static final Block ESSENCE_TIER_6_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(1.0f));
 	public static final Block ESSENCE_TIER_CREATIVE_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(1.0f));
 	public static final Block ESSENCE_TIER_INFINITY_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).strength(1.0f));
-
+	
 	public static final Block METALLIC_ESSENCE_TIER_1_BLOCK = new BlockMetallicEssence("metallic_essence_block", "1", HexColors.TIER_1, 2.0F);
 	public static final Block METALLIC_ESSENCE_TIER_2_BLOCK = new BlockMetallicEssence("metallic_essence_block", "2", HexColors.TIER_2, 4.0F);
 	public static final Block METALLIC_ESSENCE_TIER_3_BLOCK = new BlockMetallicEssence("metallic_essence_block", "3", HexColors.TIER_3, 6.0F);
@@ -53,6 +53,8 @@ public class RegisterBlock {
 	public static final Block METALLIC_ESSENCE_TIER_5_BLOCK = new BlockMetallicEssence("metallic_essence_block", "5", HexColors.TIER_5, 10.0F);
 	public static final Block METALLIC_ESSENCE_TIER_6_BLOCK = new BlockMetallicEssence("metallic_essence_block", "6", HexColors.TIER_6, 12.0F);
 	
+	public static final Block JEB_WOOL = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds(BlockSoundGroup.WOOL));
+
 	public static final Block MACHINE_FRAME_COAL = new MachineFrame(FabricBlockSettings.of(Material.STONE).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.STONE));
 	public static final Block MACHINE_FRAME_DIAMOND = new MachineFrame(FabricBlockSettings.of(Material.METAL).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.METAL));
 	public static final Block MACHINE_FRAME_EMERALD = new MachineFrame(FabricBlockSettings.of(Material.METAL).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.METAL));
@@ -62,96 +64,51 @@ public class RegisterBlock {
 	public static final Block MACHINE_FRAME_NETHERITE = new MachineFrame(FabricBlockSettings.of(Material.METAL).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.NETHERITE));
 	public static final Block MACHINE_FRAME_REDSTONE = new MachineFrame(FabricBlockSettings.of(Material.METAL).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.METAL));
 
-	public static final Block COMMON_ALUMINIUM_BLOCK = new BlockCommonMetal("aluminium", HexColors.METALS.ALUMINIUM);
-	public static final Block COMMON_BERYLLIUM_BLOCK = new BlockCommonMetal("beryllium", HexColors.METALS.BERYLLIUM);
-	public static final Block COMMON_BISMUTH_BLOCK = new BlockCommonMetal("bismuth", HexColors.METALS.BISMUTH);
-	public static final Block COMMON_CHROMIUM_BLOCK = new BlockCommonMetal("chromium", HexColors.METALS.CHROMIUM);
-	public static final Block COMMON_COBALT_BLOCK = new BlockCommonMetal("cobalt", HexColors.METALS.COBALT);
-	// public static final Block COMMON_COPPER_BLOCK = new BlockCommonMetal("copper", HexColors.METALS.COPPER);
-	public static final Block COMMON_IRIDIUM_BLOCK = new BlockCommonMetal("iridium", HexColors.METALS.IRIDIUM);
-	public static final Block COMMON_BRASS_BLOCK = new BlockCommonMetal("brass", HexColors.METALS.BRASS);
-	public static final Block COMMON_BRONZE_BLOCK = new BlockCommonMetal("bronze", HexColors.METALS.BRONZE);
-	public static final Block COMMON_GALLIUM_BLOCK = new BlockCommonMetal("gallium", HexColors.METALS.GALLIUM);
-	public static final Block COMMON_INDIUM_BLOCK = new BlockCommonMetal("indium", HexColors.METALS.INDIUM);
-	public static final Block COMMON_LEAD_BLOCK = new BlockCommonMetal("lead", HexColors.METALS.LEAD);
-	public static final Block COMMON_MAGNESIUM_BLOCK = new BlockCommonMetal("magnesium", HexColors.METALS.MAGNESIUM);
-	public static final Block COMMON_MANGANESE_BLOCK = new BlockCommonMetal("manganese", HexColors.METALS.MANGANESE);
-	public static final Block COMMON_MERCURY_BLOCK = new BlockCommonMetal("mercury", HexColors.METALS.MERCURY);
-	public static final Block COMMON_NICKEL_BLOCK = new BlockCommonMetal("nickel", HexColors.METALS.NICKEL);
-	public static final Block COMMON_PLUTONIUM_BLOCK = new BlockCommonMetal("plutonium", HexColors.METALS.PLUTONIUM);
-	public static final Block COMMON_POTASSIUM_BLOCK = new BlockCommonMetal("potassium", HexColors.METALS.POTASSIUM);
-	public static final Block COMMON_RHODIUM_BLOCK = new BlockCommonMetal("rhodium", HexColors.METALS.RHODIUM);
-	public static final Block COMMON_SAMARIUM_BLOCK = new BlockCommonMetal("samarium", HexColors.METALS.SAMARIUM);
-	public static final Block COMMON_SCANDIUM_BLOCK = new BlockCommonMetal("scandium", HexColors.METALS.SCANDIUM);
-	public static final Block COMMON_SILVER_BLOCK = new BlockCommonMetal("silver", HexColors.METALS.SILVER);
-	public static final Block COMMON_SODIUM_BLOCK = new BlockCommonMetal("sodium", HexColors.METALS.SODIUM);
-	public static final Block COMMON_TITANIUM_BLOCK = new BlockCommonMetal("titanium", HexColors.METALS.TITANIUM);
-	public static final Block COMMON_TIN_BLOCK = new BlockCommonMetal("tin", HexColors.METALS.TIN);
-	public static final Block COMMON_URANIUM_BLOCK = new BlockCommonMetal("uranium", HexColors.METALS.URANIUM);
-	public static final Block COMMON_ZINC_BLOCK = new BlockCommonMetal("zinc", HexColors.METALS.ZINC);
+	public static final Object ALUMINIUM = createMetal("aluminium", HexColors.METALS.ALUMINIUM);
+	public static final Object BERYLLIUM = createMetal("beryllium", HexColors.METALS.BERYLLIUM);
+	public static final Object BISMUTH = createMetal("bismuth", HexColors.METALS.BISMUTH);
+	public static final Object CHROMIUM = createMetal("chromium", HexColors.METALS.CHROMIUM);
+	public static final Object COBALT = createMetal("cobalt", HexColors.METALS.COBALT);
+	public static final Object COPPER = createMetal("copper", HexColors.METALS.COPPER);
+	public static final Object IRIDIUM = createMetal("iridium", HexColors.METALS.IRIDIUM);
+	public static final Object BRASS = createMetal("brass", HexColors.METALS.BRASS);
+	public static final Object BRONZE = createMetal("bronze", HexColors.METALS.BRONZE);
+	public static final Object GALLIUM = createMetal("gallium", HexColors.METALS.GALLIUM);
+	public static final Object INDIUM = createMetal("indium", HexColors.METALS.INDIUM);
+	public static final Object LEAD = createMetal("lead", HexColors.METALS.LEAD);
+	public static final Object MAGNESIUM = createMetal("magnesium", HexColors.METALS.MAGNESIUM);
+	public static final Object MANGANESE = createMetal("manganese", HexColors.METALS.MANGANESE);
+	public static final Object MERCURY = createMetal("mercury", HexColors.METALS.MERCURY);
+	public static final Object NICKEL = createMetal("nickel", HexColors.METALS.NICKEL);
+	public static final Object PLUTONIUM = createMetal("plutonium", HexColors.METALS.PLUTONIUM);
+	public static final Object POTASSIUM = createMetal("potassium", HexColors.METALS.POTASSIUM);
+	public static final Object RHODIUM = createMetal("rhodium", HexColors.METALS.RHODIUM);
+	public static final Object SAMARIUM = createMetal("samarium", HexColors.METALS.SAMARIUM);
+	public static final Object SCANDIUM = createMetal("scandium", HexColors.METALS.SCANDIUM);
+	public static final Object SILVER = createMetal("silver", HexColors.METALS.SILVER);
+	public static final Object SODIUM = createMetal("sodium", HexColors.METALS.SODIUM);
+	public static final Object TITANIUM = createMetal("titanium", HexColors.METALS.TITANIUM);
+	public static final Object TIN = createMetal("tin", HexColors.METALS.TIN);
+	public static final Object URANIUM = createMetal("uranium", HexColors.METALS.URANIUM);
+	public static final Object ZINC = createMetal("zinc", HexColors.METALS.ZINC);
 
-	public static final Item COMMON_ALUMINIUM_INGOT = new IngotCommonMetal("aluminium", HexColors.METALS.ALUMINIUM);
-	public static final Item COMMON_BERYLLIUM_INGOT = new IngotCommonMetal("beryllium", HexColors.METALS.BERYLLIUM);
-	public static final Item COMMON_BISMUTH_INGOT = new IngotCommonMetal("bismuth", HexColors.METALS.BISMUTH);
-	public static final Item COMMON_CHROMIUM_INGOT = new IngotCommonMetal("chromium", HexColors.METALS.CHROMIUM);
-	public static final Item COMMON_COBALT_INGOT = new IngotCommonMetal("cobalt", HexColors.METALS.COBALT);
-	// public static final Item COMMON_COPPER_INGOT = new IngotCommonMetal("copper", HexColors.METALS.COPPER);
-	public static final Item COMMON_IRIDIUM_INGOT = new IngotCommonMetal("iridium", HexColors.METALS.IRIDIUM);
-	public static final Item COMMON_BRASS_INGOT = new IngotCommonMetal("brass", HexColors.METALS.BRASS);
-	public static final Item COMMON_BRONZE_INGOT = new IngotCommonMetal("bronze", HexColors.METALS.BRONZE);
-	public static final Item COMMON_GALLIUM_INGOT = new IngotCommonMetal("gallium", HexColors.METALS.GALLIUM);
-	public static final Item COMMON_INDIUM_INGOT = new IngotCommonMetal("indium", HexColors.METALS.INDIUM);
-	public static final Item COMMON_LEAD_INGOT = new IngotCommonMetal("lead", HexColors.METALS.LEAD);
-	public static final Item COMMON_MAGNESIUM_INGOT = new IngotCommonMetal("magnesium", HexColors.METALS.MAGNESIUM);
-	public static final Item COMMON_MANGANESE_INGOT = new IngotCommonMetal("manganese", HexColors.METALS.MANGANESE);
-	public static final Item COMMON_MERCURY_INGOT = new IngotCommonMetal("mercury", HexColors.METALS.MERCURY);
-	public static final Item COMMON_NICKEL_INGOT = new IngotCommonMetal("nickel", HexColors.METALS.NICKEL);
-	public static final Item COMMON_PLUTONIUM_INGOT = new IngotCommonMetal("plutonium", HexColors.METALS.PLUTONIUM);
-	public static final Item COMMON_POTASSIUM_INGOT = new IngotCommonMetal("potassium", HexColors.METALS.POTASSIUM);
-	public static final Item COMMON_RHODIUM_INGOT = new IngotCommonMetal("rhodium", HexColors.METALS.RHODIUM);
-	public static final Item COMMON_SAMARIUM_INGOT = new IngotCommonMetal("samarium", HexColors.METALS.SAMARIUM);
-	public static final Item COMMON_SCANDIUM_INGOT = new IngotCommonMetal("scandium", HexColors.METALS.SCANDIUM);
-	public static final Item COMMON_SILVER_INGOT = new IngotCommonMetal("silver", HexColors.METALS.SILVER);
-	public static final Item COMMON_SODIUM_INGOT = new IngotCommonMetal("sodium", HexColors.METALS.SODIUM);
-	public static final Item COMMON_TITANIUM_INGOT = new IngotCommonMetal("titanium", HexColors.METALS.TITANIUM);
-	public static final Item COMMON_TIN_INGOT = new IngotCommonMetal("tin", HexColors.METALS.TIN);
-	public static final Item COMMON_URANIUM_INGOT = new IngotCommonMetal("uranium", HexColors.METALS.URANIUM);
-	public static final Item COMMON_ZINC_INGOT = new IngotCommonMetal("zinc", HexColors.METALS.ZINC);
+	public static final Object createMetal(String name, int color){
+		nuggetMetal(name, color);
+		ingotMetal(name, color);
+		blockMetal(name, color);
+		return null;
+	}
 
-	public static final Item COMMON_ALUMINIUM_NUGGET = new NuggetCommonMetal("aluminium", HexColors.METALS.ALUMINIUM);
-	public static final Item COMMON_BERYLLIUM_NUGGET = new NuggetCommonMetal("beryllium", HexColors.METALS.BERYLLIUM);
-	public static final Item COMMON_BISMUTH_NUGGET = new NuggetCommonMetal("bismuth", HexColors.METALS.BISMUTH);
-	public static final Item COMMON_CHROMIUM_NUGGET = new NuggetCommonMetal("chromium", HexColors.METALS.CHROMIUM);
-	public static final Item COMMON_COBALT_NUGGET = new NuggetCommonMetal("cobalt", HexColors.METALS.COBALT);
-	// public static final Item COMMON_COPPER_NUGGET = new NuggetCommonMetal("copper", HexColors.METALS.COPPER);
-	public static final Item COMMON_IRIDIUM_NUGGET = new NuggetCommonMetal("iridium", HexColors.METALS.IRIDIUM);
-	public static final Item COMMON_BRASS_NUGGET = new NuggetCommonMetal("brass", HexColors.METALS.BRASS);
-	public static final Item COMMON_BRONZE_NUGGET = new NuggetCommonMetal("bronze", HexColors.METALS.BRONZE);
-	public static final Item COMMON_GALLIUM_NUGGET = new NuggetCommonMetal("gallium", HexColors.METALS.GALLIUM);
-	public static final Item COMMON_INDIUM_NUGGET = new NuggetCommonMetal("indium", HexColors.METALS.INDIUM);
-	public static final Item COMMON_LEAD_NUGGET = new NuggetCommonMetal("lead", HexColors.METALS.LEAD);
-	public static final Item COMMON_MAGNESIUM_NUGGET = new NuggetCommonMetal("magnesium", HexColors.METALS.MAGNESIUM);
-	public static final Item COMMON_MANGANESE_NUGGET = new NuggetCommonMetal("manganese", HexColors.METALS.MANGANESE);
-	public static final Item COMMON_MERCURY_NUGGET = new NuggetCommonMetal("mercury", HexColors.METALS.MERCURY);
-	public static final Item COMMON_NICKEL_NUGGET = new NuggetCommonMetal("nickel", HexColors.METALS.NICKEL);
-	public static final Item COMMON_PLUTONIUM_NUGGET = new NuggetCommonMetal("plutonium", HexColors.METALS.PLUTONIUM);
-	public static final Item COMMON_POTASSIUM_NUGGET = new NuggetCommonMetal("potassium", HexColors.METALS.POTASSIUM);
-	public static final Item COMMON_RHODIUM_NUGGET = new NuggetCommonMetal("rhodium", HexColors.METALS.RHODIUM);
-	public static final Item COMMON_SAMARIUM_NUGGET = new NuggetCommonMetal("samarium", HexColors.METALS.SAMARIUM);
-	public static final Item COMMON_SCANDIUM_NUGGET = new NuggetCommonMetal("scandium", HexColors.METALS.SCANDIUM);
-	public static final Item COMMON_SILVER_NUGGET = new NuggetCommonMetal("silver", HexColors.METALS.SILVER);
-	public static final Item COMMON_SODIUM_NUGGET = new NuggetCommonMetal("sodium", HexColors.METALS.SODIUM);
-	public static final Item COMMON_TITANIUM_NUGGET = new NuggetCommonMetal("titanium", HexColors.METALS.TITANIUM);
-	public static final Item COMMON_TIN_NUGGET = new NuggetCommonMetal("tin", HexColors.METALS.TIN);
-	public static final Item COMMON_URANIUM_NUGGET = new NuggetCommonMetal("uranium", HexColors.METALS.URANIUM);
-	public static final Item COMMON_ZINC_NUGGET = new NuggetCommonMetal("zinc", HexColors.METALS.ZINC);
-	
-	class COPPER{
-		String NAME = "copper";
-		int COLOR = HexColors.METALS.COPPER;
-		public Block BLOCK = new BlockCommonMetal(NAME, COLOR);
-		public Item INGOT = new IngotCommonMetal(NAME, COLOR);
-		public Item NUGGET = new NuggetCommonMetal(NAME, COLOR);
+	public static Block blockMetal(String name, int color){
+		return new BlockCommonMetal(name, color);
+	}
+
+	public static Item ingotMetal(String name, int color){
+		return new IngotCommonMetal(name, color);
+	}
+
+	public static Item nuggetMetal(String name, int color){
+		return new NuggetCommonMetal(name, color);
 	}
 	
 	public static void initialize(){
@@ -173,14 +130,15 @@ public class RegisterBlock {
 		addOreBlock(Mods.VanillaShort, "netherrack", Main.GROUP_MAIN);
 		addOreBlock(Mods.VanillaShort, "end_stone", Main.GROUP_MAIN);
 		addOreBlock(Mods.AetherShort, "holystone", Main.GROUP_MAIN);
-		addBlock("essence_tier_1_block", ESSENCE_TIER_1_BLOCK, Main.GROUP_MAIN);
-		addBlock("essence_tier_2_block", ESSENCE_TIER_2_BLOCK, Main.GROUP_MAIN);
-		addBlock("essence_tier_3_block", ESSENCE_TIER_3_BLOCK, Main.GROUP_MAIN);
-		addBlock("essence_tier_4_block", ESSENCE_TIER_4_BLOCK, Main.GROUP_MAIN);
-		addBlock("essence_tier_5_block", ESSENCE_TIER_5_BLOCK, Main.GROUP_MAIN);
-		addBlock("essence_tier_6_block", ESSENCE_TIER_6_BLOCK, Main.GROUP_MAIN);
-		addBlock("essence_tier_creative_block", ESSENCE_TIER_CREATIVE_BLOCK, Main.GROUP_MAIN);
-		addBlock("essence_tier_infinity_block", ESSENCE_TIER_INFINITY_BLOCK, Main.GROUP_MAIN);
+		addBlock("essence_tier_" + Strings.TIER_1 + "_block", ESSENCE_TIER_1_BLOCK, Main.GROUP_MAIN);
+		addBlock("essence_tier_" + Strings.TIER_2 + "_block", ESSENCE_TIER_2_BLOCK, Main.GROUP_MAIN);
+		addBlock("essence_tier_" + Strings.TIER_3 + "_block", ESSENCE_TIER_3_BLOCK, Main.GROUP_MAIN);
+		addBlock("essence_tier_" + Strings.TIER_4 + "_block", ESSENCE_TIER_4_BLOCK, Main.GROUP_MAIN);
+		addBlock("essence_tier_" + Strings.TIER_5 + "_block", ESSENCE_TIER_5_BLOCK, Main.GROUP_MAIN);
+		addBlock("essence_tier_" + Strings.TIER_6 + "_block", ESSENCE_TIER_6_BLOCK, Main.GROUP_MAIN);
+		addBlock("essence_tier_" + Strings.TIER_INFINITY + "_block", ESSENCE_TIER_INFINITY_BLOCK, Main.GROUP_MAIN);
+		addBlock("essence_tier_" + Strings.TIER_CREATIVE + "_block", ESSENCE_TIER_CREATIVE_BLOCK, Main.GROUP_MAIN);
+		addBlock("jeb_wool", JEB_WOOL, ItemGroup.BUILDING_BLOCKS);
 		addMachineBlock("machine_frame/coal", MACHINE_FRAME_COAL, Main.GROUP_EXPERIMENTAL);
 		addMachineBlock("machine_frame/diamond", MACHINE_FRAME_DIAMOND, Main.GROUP_EXPERIMENTAL);
 		addMachineBlock("machine_frame/emerald", MACHINE_FRAME_EMERALD, Main.GROUP_EXPERIMENTAL);
@@ -201,25 +159,19 @@ public class RegisterBlock {
 	}
 
 	public static void addOreBlock(String modName, String baseName, ItemGroup creativeTab){
-		Block ORE_1 = new BlockOre(Strings.Tier1, 2.0F); ores.add(ORE_1);
-		Block ORE_2 = new BlockOre(Strings.Tier2, 4.0F); ores.add(ORE_2);
-		Block ORE_3 = new BlockOre(Strings.Tier3, 6.0F); ores.add(ORE_3);
-		Block ORE_4 = new BlockOre(Strings.Tier4, 8.0F); ores.add(ORE_4);
-		Block ORE_5 = new BlockOre(Strings.Tier5, 10.0F); ores.add(ORE_5);
-		Block ORE_6 = new BlockOre(Strings.Tier6, 12.0F); ores.add(ORE_6);
+		Block ORE_1 = new BlockOre(Strings.TIER_1, 2.0F, HexColors.TIER_1); ores.add(ORE_1);
+		Block ORE_2 = new BlockOre(Strings.TIER_2, 4.0F, HexColors.TIER_2); ores.add(ORE_2);
+		Block ORE_3 = new BlockOre(Strings.TIER_3, 6.0F, HexColors.TIER_3); ores.add(ORE_3);
+		Block ORE_4 = new BlockOre(Strings.TIER_4, 8.0F, HexColors.TIER_4); ores.add(ORE_4);
+		Block ORE_5 = new BlockOre(Strings.TIER_5, 10.0F, HexColors.TIER_5); ores.add(ORE_5);
+		Block ORE_6 = new BlockOre(Strings.TIER_6, 12.0F, HexColors.TIER_6); ores.add(ORE_6);
 
-		Registry.register(Registry.BLOCK, new Identifier(Strings.modId, "ore/" + modName + "/" + baseName + "_tier_1"), ORE_1);
-		Registry.register(Registry.BLOCK, new Identifier(Strings.modId, "ore/" + modName + "/" + baseName + "_tier_2"), ORE_2);
-		Registry.register(Registry.BLOCK, new Identifier(Strings.modId, "ore/" + modName + "/" + baseName + "_tier_3"), ORE_3);
-		Registry.register(Registry.BLOCK, new Identifier(Strings.modId, "ore/" + modName + "/" + baseName + "_tier_4"), ORE_4);
-		Registry.register(Registry.BLOCK, new Identifier(Strings.modId, "ore/" + modName + "/" + baseName + "_tier_5"), ORE_5);
-		Registry.register(Registry.BLOCK, new Identifier(Strings.modId, "ore/" + modName + "/" + baseName + "_tier_6"), ORE_6);
-		Registry.register(Registry.ITEM, new Identifier(Strings.modId, "ore/" + modName + "/" + baseName + "_tier_1"), new BlockItem(ORE_1, new FabricItemSettings().group(creativeTab)));
-		Registry.register(Registry.ITEM, new Identifier(Strings.modId, "ore/" + modName + "/" + baseName + "_tier_2"), new BlockItem(ORE_2, new FabricItemSettings().group(creativeTab)));
-		Registry.register(Registry.ITEM, new Identifier(Strings.modId, "ore/" + modName + "/" + baseName + "_tier_3"), new BlockItem(ORE_3, new FabricItemSettings().group(creativeTab)));
-		Registry.register(Registry.ITEM, new Identifier(Strings.modId, "ore/" + modName + "/" + baseName + "_tier_4"), new BlockItem(ORE_4, new FabricItemSettings().group(creativeTab)));
-		Registry.register(Registry.ITEM, new Identifier(Strings.modId, "ore/" + modName + "/" + baseName + "_tier_5"), new BlockItem(ORE_5, new FabricItemSettings().group(creativeTab)));
-		Registry.register(Registry.ITEM, new Identifier(Strings.modId, "ore/" + modName + "/" + baseName + "_tier_6"), new BlockItem(ORE_6, new FabricItemSettings().group(creativeTab)));
+		Registry.register(Registry.BLOCK, new Identifier(Mods.ResourceCrops, "ore/" + modName + "/" + baseName + "_tier_1"), ORE_1); Registry.register(Registry.ITEM, new Identifier(Mods.ResourceCrops, "ore/" + modName + "/" + baseName + "_tier_1"), new BlockItem(ORE_1, new FabricItemSettings().group(creativeTab)));
+		Registry.register(Registry.BLOCK, new Identifier(Mods.ResourceCrops, "ore/" + modName + "/" + baseName + "_tier_2"), ORE_2); Registry.register(Registry.ITEM, new Identifier(Mods.ResourceCrops, "ore/" + modName + "/" + baseName + "_tier_2"), new BlockItem(ORE_2, new FabricItemSettings().group(creativeTab)));
+		Registry.register(Registry.BLOCK, new Identifier(Mods.ResourceCrops, "ore/" + modName + "/" + baseName + "_tier_3"), ORE_3); Registry.register(Registry.ITEM, new Identifier(Mods.ResourceCrops, "ore/" + modName + "/" + baseName + "_tier_3"), new BlockItem(ORE_3, new FabricItemSettings().group(creativeTab)));
+		Registry.register(Registry.BLOCK, new Identifier(Mods.ResourceCrops, "ore/" + modName + "/" + baseName + "_tier_4"), ORE_4); Registry.register(Registry.ITEM, new Identifier(Mods.ResourceCrops, "ore/" + modName + "/" + baseName + "_tier_4"), new BlockItem(ORE_4, new FabricItemSettings().group(creativeTab)));
+		Registry.register(Registry.BLOCK, new Identifier(Mods.ResourceCrops, "ore/" + modName + "/" + baseName + "_tier_5"), ORE_5); Registry.register(Registry.ITEM, new Identifier(Mods.ResourceCrops, "ore/" + modName + "/" + baseName + "_tier_5"), new BlockItem(ORE_5, new FabricItemSettings().group(creativeTab)));
+		Registry.register(Registry.BLOCK, new Identifier(Mods.ResourceCrops, "ore/" + modName + "/" + baseName + "_tier_6"), ORE_6); Registry.register(Registry.ITEM, new Identifier(Mods.ResourceCrops, "ore/" + modName + "/" + baseName + "_tier_6"), new BlockItem(ORE_6, new FabricItemSettings().group(creativeTab)));
 	}
 
 	public static void addBlock(String blockName, Block blockDeclaration){

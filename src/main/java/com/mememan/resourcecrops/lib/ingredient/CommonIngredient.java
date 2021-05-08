@@ -3,11 +3,15 @@ package com.mememan.resourcecrops.lib.ingredient;
 import com.mememan.resourcecrops.lib.Mods;
 
 public class CommonIngredient {
-	public static final String ALUMINUM = mod("aluminum_ingots");
-	public static final String ALUMINUM_INGOT = ALUMINUM;
+	public static final String ALUMINIUM = mod("aluminium_ingots");
+	public static final String ALUMINIUM_INGOT = ALUMINIUM;
 	public static final String AMETHYST = mod("amethysts");
 	public static final String BRASS = mod("brass_ingots");
 	public static final String BRASS_INGOT = BRASS;
+	public static final String BRONZE = mod("bronze_ingots");
+	public static final String BRONZE_INGOT = BRONZE;
+	public static final String CHROME = mod("chrome_ingots");
+	public static final String CHROME_INGOT = CHROME;
 	public static final String COAL_COKE = mod("coal_cokes");
 	public static final String COBALT = mod("cobalt_ingots");
 	public static final String COBALT_INGOT = COBALT;
@@ -15,10 +19,14 @@ public class CommonIngredient {
 	public static final String COPPER_INGOT = COPPER;
 	public static final String ELECTRUM = mod("electrum_ingots");
 	public static final String ELECTRUM_INGOT = ELECTRUM;
+	public static final String INVAR = mod("invar_ingots");
+	public static final String INVAR_INGOT = INVAR;
 	public static final String IRIDIUM = mod("iridium_ingots");
 	public static final String IRIDIUM_INGOT = IRIDIUM;
 	public static final String LEAD = mod("lead_ingots");
 	public static final String LEAD_INGOT = LEAD;
+	public static final String NICKEL = mod("nickel_ingots");
+	public static final String NICKEL_INGOT = NICKEL;
 	public static final String OSMIUM = mod("osmium_ingots");
 	public static final String OSMIUM_INGOT = OSMIUM;
 	public static final String PALLADIUM = mod("palladium_ingots");
@@ -51,6 +59,7 @@ public class CommonIngredient {
 	public static final String URANIUM_INGOT = URANIUM;
 	public static final String ZINC = mod("zinc_ingots");
 	public static final String ZINC_INGOT = ZINC;
+
 
 	public static String mod(String input){
 		return (Mods.COMMON + ":" + input);

@@ -1,7 +1,0 @@
-{
-	"parent": "resourcecrops:item/seed_models/seeds_outline",
-  "textures": {
-    "stroke": "byg:block/glacial_oak_log",
-    "fill": "byg:block/glacial_oak_log_top"
-  }
-}

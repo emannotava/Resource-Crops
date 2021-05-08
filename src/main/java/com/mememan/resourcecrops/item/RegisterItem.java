@@ -27,8 +27,11 @@ public class RegisterItem {
 	public static final Item METALLIC_ESSENCE_INGOT_TIER_5 = new ItemMetallicEssenceIngot("metallic_essence_ingot", "5", HexColors.TIER_5);
 	public static final Item METALLIC_ESSENCE_INGOT_TIER_6 = new ItemMetallicEssenceIngot("metallic_essence_ingot", "6", HexColors.TIER_6);
 	
-	// //Logo's
-	// public static final Item RESOURCECROPS_ICON = addItem("resourcecrops_icon", new Item(new Item.Settings()));
+	//Logo's
+	public static final Item RESOURCECROPS_MAIN_ICON = addItem("icon/main", new Item(new Item.Settings()));
+	public static final Item RESOURCECROPS_SEEDS_ICON = addItem("icon/seeds", new Item(new Item.Settings()));
+	public static final Item RESOURCECROPS_ESSENCE_ICON = addItem("icon/essence", new Item(new Item.Settings()));
+	public static final Item RESOURCECROPS_EXPERIMENTAL_ICON = addItem("icon/experimental", new Item(new Item.Settings()));
 	// public static final Item VANILLA_ICON = addItem("vanilla_icon", new Item(new Item.Settings()));
 	// public static final Item AE2_ICON = addItem("ae2_icon", new Item(new Item.Settings()));
 	// public static final Item TECHREBORN_ICON = addItem("techreborn_icon", new Item(new Item.Settings()));
@@ -52,11 +55,11 @@ public class RegisterItem {
 	}
 
 	public static Item addItem(String itemName, Item ItemDeclaration){
-		return Registry.register(Registry.ITEM, new Identifier(Strings.modId, itemName), ItemDeclaration);
+		return Registry.register(Registry.ITEM, new Identifier(Strings.modId, itemName.toLowerCase()), ItemDeclaration);
 	}
 
 	public static Item addEssenceItem(String modNameShort, String itemName, Item ItemDeclaration){
-		addEssenceItem(modNameShort, modNameShort, itemName, ItemDeclaration);
+		addEssenceItem(modNameShort, modNameShort, itemName.toLowerCase(), ItemDeclaration);
 		return null;
 	}
 
@@ -64,19 +67,19 @@ public class RegisterItem {
 		if(Mods.checkMod(modNameFull)==true){
 			// RegisterCropLoot.addToLootTable(ItemDeclaration, 1, 2, 1F, new Identifier(Strings.modId, "blocks/crop_" + modNameShort + "/" + itemName));
 			RegisterCropLoot.addToLootTable(ItemDeclaration, 1, 2, 1F, new Identifier(Strings.modId, "blocks/crop_" + Strings.modId + "/ultimate"));
-			return Registry.register(Registry.ITEM, new Identifier(Strings.modId, "essence_" + modNameShort + "/" + itemName), ItemDeclaration);
+			return Registry.register(Registry.ITEM, new Identifier(Strings.modId, "essence_" + modNameShort + "/" + itemName.toLowerCase()), ItemDeclaration);
 		}else if(modNameShort==Mods.BetterEnd && Mods.checkMod(Mods.BetterEnd)==false && Mods.checkDevEnv()==true){
 			// RegisterCropLoot.addToLootTable(ItemDeclaration, 1, 2, 1F, new Identifier(Strings.modId, "blocks/crop_" + modNameShort + "/" + itemName));
 			RegisterCropLoot.addToLootTable(ItemDeclaration, 1, 2, 1F, new Identifier(Strings.modId, "blocks/crop_" + Strings.modId + "/ultimate"));
-			return Registry.register(Registry.ITEM, new Identifier(Strings.modId, "essence_" + modNameShort + "/" + itemName), ItemDeclaration);
+			return Registry.register(Registry.ITEM, new Identifier(Strings.modId, "essence_" + modNameShort + "/" + itemName.toLowerCase()), ItemDeclaration);
 		}
 		
 		else if(modNameShort==Mods.Astromine && Mods.checkMod(Mods.Astromine)==true && Mods.checkMod(Mods.AstromineCore)==true){
-			return Registry.register(Registry.ITEM, new Identifier(Strings.modId, "essence_" + modNameShort + "/" + itemName), ItemDeclaration);
+			return Registry.register(Registry.ITEM, new Identifier(Strings.modId, "essence_" + modNameShort + "/" + itemName.toLowerCase()), ItemDeclaration);
 		}else if(modNameShort==Mods.Astromine && Mods.checkMod(Mods.Astromine)==true && Mods.checkMod(Mods.AstromineCore)==false){
-			return Registry.register(Registry.ITEM, new Identifier(Strings.modId, "essence_" + modNameShort + "/" + itemName), ItemDeclaration);
+			return Registry.register(Registry.ITEM, new Identifier(Strings.modId, "essence_" + modNameShort + "/" + itemName.toLowerCase()), ItemDeclaration);
 		}else if(modNameShort==Mods.Astromine && Mods.checkMod(Mods.Astromine)==false && Mods.checkMod(Mods.AstromineCore)==true){
-			return Registry.register(Registry.ITEM, new Identifier(Strings.modId, "essence_" + modNameShort + "/" + itemName), ItemDeclaration);
+			return Registry.register(Registry.ITEM, new Identifier(Strings.modId, "essence_" + modNameShort + "/" + itemName.toLowerCase()), ItemDeclaration);
 		}
 		
 		else{

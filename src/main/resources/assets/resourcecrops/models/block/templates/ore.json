@@ -3,7 +3,7 @@
 	"credit": "Made with Blockbench, by Annabel-Chan",
 	"textures": {
 		"base": "minecraft:block/stone",
-		"resource": "resourcecrops:block/ore/tier_1",
+		"overlay": "resourcecrops:block/ore/overlay",
 		"particle": "minecraft:block/stone"
 	},
 	"elements": [
@@ -21,16 +21,16 @@
 			}
 		},
 		{
-			"name": "resource",
+			"name": "overlay",
 			"from": [-0.01, -0.01, -0.01],
 			"to": [16.01, 16.01, 16.01],
 			"faces": {
-				"north": {"uv": [0, 0, 16, 16], "texture": "#resource"},
-				"east": {"uv": [0, 0, 16, 16], "texture": "#resource"},
-				"south": {"uv": [0, 0, 16, 16], "texture": "#resource"},
-				"west": {"uv": [0, 0, 16, 16], "texture": "#resource"},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#resource"},
-				"down": {"uv": [0, 0, 16, 16], "texture": "#resource"}
+				"north": {"uv": [0, 0, 16, 16], "texture": "#overlay", "tintindex": 0},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#overlay", "tintindex": 0},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#overlay", "tintindex": 0},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#overlay", "tintindex": 0},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#overlay", "tintindex": 0},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#overlay", "tintindex": 0}
 			}
 		}
 	]

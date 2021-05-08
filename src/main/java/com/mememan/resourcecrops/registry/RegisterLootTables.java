@@ -8,6 +8,7 @@ import net.minecraft.util.Identifier;
 import static net.devtech.arrp.json.loot.JLootTable.*;
 
 import com.google.gson.JsonObject;
+import com.mememan.resourcecrops.Main;
 // import com.mememan.resourcecrops.lib.Crops;
 import com.mememan.resourcecrops.lib.Strings;
 
@@ -27,13 +28,15 @@ public class RegisterLootTables {
 	}
 
 	public static void addLootTable(String name, String modId, int maxAge){
-		addLootTable(name, modId, modId, maxAge);
+		addLootTable(name.toLowerCase(), modId, modId, maxAge);
 	}
 
 	public static void addLootTable(String name, String modId, String modIdShort, int maxAge){
-		JLootTable lootTable;
-		lootTable = lootTableCrop(name, maxAge, name, name, modIdShort);
-		ASSETS.addLootTable(new Identifier(Strings.modId, "blocks/crop_" + modIdShort + "/" + name), lootTable);
+		if(Main.ENABLE_SELF){
+			JLootTable lootTable;
+			lootTable = lootTableCrop(name.toLowerCase(), maxAge, name, name, modIdShort);
+			ASSETS.addLootTable(new Identifier(Strings.modId, "blocks/crop_" + modIdShort + "/" + name.toLowerCase()), lootTable);
+		}
 	}
 
 
@@ -60,18 +63,18 @@ public class RegisterLootTables {
         properties.addProperty("age", maxAge);
 
         JsonObject blockState = new JsonObject();
-        blockState.addProperty("block", Strings.modId + ":crop_" + modId + "/" + cropBlock);
+        blockState.addProperty("block", Strings.modId + ":crop_" + modId + "/" + cropBlock.toLowerCase());
         blockState.add("properties", properties);
 
 		return JLootTable.loot("minecraft:block").pool(
 			pool().rolls(new JRoll(0, 2)).entry(
 				entry().type("minecraft:item").condition(
 					predicate("minecraft:block_state_property"
-				).set(blockState)).name(Strings.modId + ":essence_" + modId + "/" + outputEssence)
+				).set(blockState)).name(Strings.modId + ":essence_" + modId + "/" + outputEssence.toLowerCase())
 			)
 		).pool(
 			pool().rolls(new JRoll(0, 1)).entry(
-				entry().type("minecraft:item").name(Strings.modId + ":crop_" + modId + "/" + seedItem)
+				entry().type("minecraft:item").name(Strings.modId + ":crop_" + modId + "/" + seedItem.toLowerCase())
 			)
 		);
     }

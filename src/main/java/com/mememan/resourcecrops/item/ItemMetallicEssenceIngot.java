@@ -8,7 +8,7 @@ import com.mememan.resourcecrops.lib.tex.VanillaTex;
 import com.mememan.resourcecrops.util.text.Humanify;
 
 import net.devtech.arrp.json.models.JModel;
-import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+// import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -36,7 +36,7 @@ public class ItemMetallicEssenceIngot extends Item {
 		TIER = tier;
 		addItem(name + "_" + tier, this);
 		ASSETS.addModel(JModel.modelKeepElements("minecraft:item/generated").textures(JModel.textures().var("layer0", VanillaTex.IRON_INGOT)), new Identifier(Mods.ResourceCrops, "item/" + name + "_" + tier));
-		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> hex, this);
+		// ColorProviderRegistry.ITEM.register((stack, tintIndex) -> hex, this);
 	}
 
 	@Override

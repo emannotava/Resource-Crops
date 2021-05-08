@@ -5,6 +5,8 @@ import java.util.List;
 import net.minecraft.item.AliasedBlockItem;
 import com.mememan.resourcecrops.block.BlockCrop;
 import com.mememan.resourcecrops.util.text.Humanify;
+
+import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
@@ -43,6 +45,36 @@ public class ItemSeeds extends AliasedBlockItem {
 			hasGlint(new ItemStack(this));
 		}
 	}
+
+	public ItemSeeds(BlockCrop block, Settings settings, String tier, String mod, String name, int hex) {
+		super(block, settings);
+		// BlockCrop.setSeedsItem(this);
+		block.setSeedsItem(this);
+		TOOLTIP_TIER = tier;
+		TOOLTIP_MOD = mod;
+		SEED_NAME = name;
+		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> hex, this);
+		GLINTSTATE = false;
+		hasGlint(new ItemStack(this));
+	}
+	
+	public ItemSeeds(BlockCrop block, Settings settings, String tier, String mod, String name, Boolean enableGlint, int hex) {
+		super(block, settings);
+		// BlockCrop.setSeedsItem(this);
+		block.setSeedsItem(this);
+		TOOLTIP_TIER = tier;
+		TOOLTIP_MOD = mod;
+		SEED_NAME = name;
+		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> hex, this);
+		if(enableGlint){
+			GLINTSTATE = true;
+			hasGlint(new ItemStack(this));
+		}else {
+			GLINTSTATE = false;
+			hasGlint(new ItemStack(this));
+		}
+	}
+
 	@Override
 	public boolean hasGlint(ItemStack stack) {
 		return GLINTSTATE;

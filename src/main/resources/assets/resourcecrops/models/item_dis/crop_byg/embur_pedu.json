@@ -1,7 +1,0 @@
-{
-	"parent": "resourcecrops:item/seed_models/seeds_outline",
-  "textures": {
-    "stroke": "byg:block/embur_pedu",
-    "fill": "byg:block/embur_pedu_top"
-  }
-}

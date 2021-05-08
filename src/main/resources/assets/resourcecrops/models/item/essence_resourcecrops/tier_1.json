@@ -1,4 +1,6 @@
 {
-	"model": "resourcecrops:item/crop_resourcecrops/essence_tier_1.obj",
-	"gui_light": "side"
+	"parent": "item/generated",
+	"textures":	{
+		"layer0": "resourcecrops:item/essence/tier_1"
+	}
 }

@@ -1,7 +1,7 @@
 package com.mememan.resourcecrops.loot;
 
-import com.mememan.resourcecrops.lib.Crops;
-import com.mememan.resourcecrops.lib.Entities;
+// import com.mememan.resourcecrops.lib.Crops;
+// import com.mememan.resourcecrops.lib.Entities;
 
 import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
 import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
@@ -21,20 +21,9 @@ public class RegisterEntityLoot {
 
 	public static void initVanilla(){
 		//Passive
-		loopThroughArrays(Crops.ESSENCE_ESSENCE_TIER_1, 1, 5, 5F, Entities.vanillaPassive);
-
 		//Neutral
-		loopThroughArrays(Crops.ESSENCE_ESSENCE_TIER_1, 1, 5, 5F, Entities.vanillaNeutral);
-		loopThroughArrays(Crops.ESSENCE_ESSENCE_TIER_2, 1, 5, 1F, Entities.vanillaNeutral);
-		
 		//Hostile
-		loopThroughArrays(Crops.ESSENCE_ESSENCE_TIER_1, 1, 5, 5.3F, Entities.vanillaHostile);
-		loopThroughArrays(Crops.ESSENCE_ESSENCE_TIER_2, 1, 5, 1F, Entities.vanillaHostile);
-		loopThroughArrays(Crops.ESSENCE_ESSENCE_TIER_3, 1, 5, 0.1F, Entities.vanillaHostile);
-
 		//Boss
-		loopThroughArrays(Crops.ESSENCE_ESSENCE_TIER_5, Entities.vanillaBoss);
-		loopThroughArrays(Crops.ESSENCE_ESSENCE_TIER_6, 3, 9, 0.1F, Entities.vanillaBoss);
 	}
 
 

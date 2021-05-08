@@ -1,7 +1,0 @@
-{
-	"parent": "item/generated",
-	"textures": {
-		"layer0": "mythicmetals:items/prometheum_ingot",
-		"layer1": "resourcecrops:item/sparkles/sparkles_light_blue"
-	}
-}

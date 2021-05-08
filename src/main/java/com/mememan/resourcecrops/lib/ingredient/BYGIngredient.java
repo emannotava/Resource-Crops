@@ -161,7 +161,7 @@ public class BYGIngredient {
 	public static final String FROST_MAGMA = mod("frost_magma");
 	public static final String LIGNITE = mod("lignite");
 	public static final String MEADOW_DIRT = mod("meadow_dirt");
-	public static final String MUD_BLOCK = mod("mud_block");
+	public static final String MUD = mod("mud_block");
 	public static final String PEAT = mod("peat");
 	public static final String PENDORITE_SCRAPS = mod("pendorite_scraps");
 	public static final String POLLEN_DUST = mod("pollen_dust");

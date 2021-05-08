@@ -17,6 +17,7 @@ public class AetherIngredient {
 	public static final String BLUE_BERRY = mod("blue_berry");
 	public static final String BLUE_CLOAK = mod("blue_cape");
 	public static final String BLUE_GUMMY_SWET = mod("blue_gummy_swet");
+	public static final String GOLDEN_GUMMY_SWET = mod("golden_gummy_swet");
 	public static final String BLUE_MOA_EGG = mod("blue_moa_egg");
 	public static final String BRONZE_KEY = mod("bronze_key");
 	public static final String CANDY_CANE = mod("candy_cane");
@@ -38,7 +39,6 @@ public class AetherIngredient {
 	public static final String GOLDEN_DART_SHOOTER = mod("golden_dart_shooter");
 	public static final String GOLDEN_FEATHER = mod("golden_feather");
 	public static final String GOLDEN_GLOVES = mod("golden_gloves");
-	public static final String GOLDEN_GUMMY_SWET = mod("golden_gummy_swet");
 	public static final String GOLDEN_KEY = mod("golden_key");
 	public static final String GOLDEN_PARACHUTE = mod("golden_parachute");
 	public static final String GOLDEN_PENDANT = mod("golden_pendant");
@@ -175,6 +175,7 @@ public class AetherIngredient {
 	public static final String CARVED_SLAB = mod("carved_slab");
 	public static final String CARVED_STAIRS = mod("carved_stairs");
 	public static final String CARVED_STONE = mod("carved_stone");
+	public static final String LIGHT_CARVED_STONE = mod("light_carved_stone");
 	public static final String CARVED_WALL = mod("carved_wall");
 	public static final String CHEST_MIMIC = mod("chest_mimic");
 	public static final String COLD_AERCLOUD = mod("cold_aercloud");

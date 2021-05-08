@@ -1,7 +1,0 @@
-{
-	"parent": "resourcecrops:item/seed_models/seeds_outline",
-	"textures": {
-		"fill": "betterend:block/lacugrove_log_side",
-		"stroke": "betterend:block/lacugrove_log_top"
-	}
-}

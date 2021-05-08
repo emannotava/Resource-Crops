@@ -1,7 +1,0 @@
-{
-	"parent": "resourcecrops:item/seed_models/seeds_outline",
-  "textures": {
-    "stroke": "byg:block/blue_enchanted_log",
-    "fill": "byg:block/blue_enchanted_log_top"
-  }
-}

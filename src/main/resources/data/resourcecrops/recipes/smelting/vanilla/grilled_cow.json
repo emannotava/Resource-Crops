@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "resourcecrops:crop_minecraft/cow"
+  },
+  "result": "resourcecrops:crop_minecraft/grilled_cow",
+  "experience": 0.7,
+  "cookingtime": 200
+}

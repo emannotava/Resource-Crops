@@ -1,7 +1,0 @@
-{
-	"parent": "resourcecrops:item/seed_models/seeds_outline",
-	"textures":	{
-		"fill": "minecraft:block/beacon",
-		"stroke": "minecraft:block/white_concrete"
-	}
-}

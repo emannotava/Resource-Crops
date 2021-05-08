@@ -1,6 +1,0 @@
-# Made in Blockbench 3.1.1
-newmtl 0
-map_Kd crop_empty.png 
-newmtl 1
-map_Kd gold_block.png 
-newmtl none

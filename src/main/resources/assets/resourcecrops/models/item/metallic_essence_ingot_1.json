@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "resourcecrops:item/metallic_essence/ingot_metallic_singlium"
+  }
+}

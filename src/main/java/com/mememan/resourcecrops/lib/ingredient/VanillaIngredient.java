@@ -146,6 +146,7 @@ public class VanillaIngredient {
 	public static final String GREEN_DYE = mod("green_dye");
 	public static final String COCOA_BEANS = mod("cocoa_beans");
 	public static final String LAPIS_LAZULI = mod("lapis_lazuli");
+	public static final String LAPIS = LAPIS_LAZULI;
 	public static final String PURPLE_DYE = mod("purple_dye");
 	public static final String CYAN_DYE = mod("cyan_dye");
 	public static final String LIGHT_GRAY_DYE = mod("light_gray_dye");
@@ -271,6 +272,7 @@ public class VanillaIngredient {
 	public static final String LEATHER_HORSE_ARMOR = mod("leather_horse_armor");
 	public static final String PRISMARINE_SHARD = mod("prismarine_shard");
 	public static final String PRISMARINE_CRYSTALS = mod("prismarine_crystals");
+	public static final String PRISMARINE_CRYSTAL = PRISMARINE_CRYSTALS;
 	public static final String CHORUS_FRUIT = mod("chorus_fruit");
 	public static final String POPPED_CHORUS_FRUIT = mod("popped_chorus_fruit");
 	public static final String BEETROOT = mod("beetroot");
@@ -1030,6 +1032,10 @@ public class VanillaIngredient {
 	public static final String WHITE_BED = mod("white_bed");
 	public static final String REDSTONE_REPEATER = mod("repeater");
 	public static final String REDSTONE_COMPARATOR = mod("comparator");
+	
+	public static class TAGS{
+		public static final String WOOL = mod("wool");
+	}
 
 	public static String mod(String input){
 		return (Mods.Vanilla + ":" + input);

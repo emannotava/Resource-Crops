@@ -24,6 +24,7 @@ public class Entities {
 		new Identifier(Mods.Vanilla, "entities/zombified_piglin")
 	};	
 	public static Identifier vanillaPassive[] = {
+		new Identifier(Mods.ResourceCrops, "entity/rainbow_chicken"), new Identifier(Mods.ResourceCrops, "entity/golden_rainbow_chicken"),
 		new Identifier(Mods.Vanilla, "entities/bat"), new Identifier(Mods.Vanilla, "entities/cat"),
 		new Identifier(Mods.Vanilla, "entities/chicken"), new Identifier(Mods.Vanilla, "entities/cod"),
 		new Identifier(Mods.Vanilla, "entities/cow"), new Identifier(Mods.Vanilla, "entities/dolphin"),

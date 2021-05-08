@@ -1,7 +1,0 @@
-{
-	"parent": "resourcecrops:item/seed_models/seeds_outline",
-  "textures": {
-    "stroke": "byg:block/baobab_log",
-    "fill": "byg:block/baobab_log_top"
-  }
-}

@@ -9,6 +9,7 @@ public class AE2Ingredient {
 	public static final String FLUIX_CRYSTAL = mod("fluix_crystal");
 	public static final String PURE_FLUIX_CRYSTAL = mod("purified_fluix_crystal");
 	public static final String PURE_NETHER_QUARTZ_CRYSTAL = mod("purified_nether_quartz_crystal");
+	public static final String PURE_QUARTZ_CRYSTAL = PURE_NETHER_QUARTZ_CRYSTAL;
 
 	public static String mod(String input){
 		return (Mods.AE2 + ":" + input);

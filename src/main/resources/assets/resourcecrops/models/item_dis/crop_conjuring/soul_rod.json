@@ -1,6 +1,0 @@
-{
-	"parent": "resourcecrops:item/seed_models/seeds_all",
-	"textures":	{
-		"fill": "resourcecrops:block/misc/soul_rod_block"
-	}
-}

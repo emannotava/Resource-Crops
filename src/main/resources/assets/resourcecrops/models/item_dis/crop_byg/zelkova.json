@@ -1,7 +1,0 @@
-{
-	"parent": "resourcecrops:item/seed_models/seeds_outline",
-  "textures": {
-    "stroke": "byg:block/zelkova_log",
-    "fill": "byg:block/zelkova_log_top"
-  }
-}

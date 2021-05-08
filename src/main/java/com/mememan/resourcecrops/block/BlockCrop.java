@@ -5,6 +5,7 @@ import java.util.List;
 import com.mememan.resourcecrops.item.ItemSeeds;
 import com.mememan.resourcecrops.util.text.Humanify;
 
+import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -31,6 +32,7 @@ public class BlockCrop extends net.minecraft.block.CropBlock {
 	public String TOOLTIP_TIER = "Meow";
 	public String TOOLTIP_MOD = "Meow";
 	public String SEED_NAME = "Meow";
+	// public int HEX_TINT;
 	public int maxAge = 8;
 	public static Block REQUIRED_SOIL = Blocks.FARMLAND;
 
@@ -40,43 +42,40 @@ public class BlockCrop extends net.minecraft.block.CropBlock {
 
 	public BlockCrop(String tier, String mod, String name){
 		super(BLOCK_SETTINGS());
-		TOOLTIP_TIER = tier;
-		TOOLTIP_MOD = mod;
-		SEED_NAME = name;
+		setVars(tier, mod, name);
 	}
 	
 	public BlockCrop(String tier, String mod, String name, Block soil){
 		super(BLOCK_SETTINGS());
-		setSoilBlock(soil);
+		setVars(tier, mod, name, soil);
+	}
+
+	public BlockCrop(String tier, String mod, String name, int hex){
+		super(BLOCK_SETTINGS());
+		setVars(tier, mod, name);
+		ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> hex, this);
+	}
+	
+	public BlockCrop(String tier, String mod, String name, Block soil, int hex){
+		super(BLOCK_SETTINGS());
+		setVars(tier, mod, name, soil);
+		ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> hex, this);
+	}
+
+	public void setVars(String tier, String mod, String name){
 		TOOLTIP_TIER = tier;
 		TOOLTIP_MOD = mod;
 		SEED_NAME = name;
 	}
-
-	public String setName(String input){
-		SEED_NAME = input;
-		return input;
+	public void setVars(String tier, String mod, String name, Block soil){
+		setSoilBlock(soil);
+		setVars(tier, mod, name);
 	}
 
-	public String setTier(String input){
-		TOOLTIP_TIER = input;
-		return input;
-	}
-
-	public String setMod(String input){
-		TOOLTIP_MOD = input;
-		return input;
-	}
-
-
-	public Block setSoilBlock(Block soil){
-		REQUIRED_SOIL = soil;
-		return REQUIRED_SOIL;
-	}
-	public Block setSoil(Block soil){
-		REQUIRED_SOIL = soil;
-		return REQUIRED_SOIL;
-	}
+	public String setName(String input){SEED_NAME = input; return input;}
+	public String setTier(String input){TOOLTIP_TIER = input; return input;}
+	public String setMod(String input){TOOLTIP_MOD = input; return input;}
+	public Block setSoilBlock(Block soil){REQUIRED_SOIL = soil; return REQUIRED_SOIL;}
 
 	// @Override
 	public boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
@@ -86,15 +85,11 @@ public class BlockCrop extends net.minecraft.block.CropBlock {
 	public void setSeedsItem(ItemSeeds seed){
 		SEED = seed;
 	}
-	
-	// @Override
-	// public TranslatableText getName() {
-	//   return new TranslatableText("resourcecrops.seeds", Humanify.convert(SEED_NAME));
-	// }
+
 	@Override
 	public String getTranslationKey() {
 		return Humanify.convert(SEED_NAME) + " Seeds";
-	} 
+	}
 
 	@Override
 	public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
@@ -114,7 +109,6 @@ public class BlockCrop extends net.minecraft.block.CropBlock {
 	public ItemConvertible getSeedsItem() {
 		return SEED;
 	}
-
 
 	@Override
 	public void appendTooltip(ItemStack itemStack, BlockView world, List<Text> tooltip, TooltipContext tooltipContext) {

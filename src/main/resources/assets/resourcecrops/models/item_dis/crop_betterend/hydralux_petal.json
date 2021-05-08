@@ -1,6 +1,0 @@
-{
-	"parent": "resourcecrops:item/seed_models/seeds_all",
-  "textures": {
-    "fill": "betterend:block/hydralux_petal_block"
-  }
-}

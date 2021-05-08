@@ -1,7 +1,0 @@
-{
-  "parent": "resourcecrops:item/seed_models/seeds_all",
-  "textures": {
-    "fill": "the_aether:block/angelic_stone",
-    "gradient": "resourcecrops:block/narcissus_leaves/white"
-  }
-}

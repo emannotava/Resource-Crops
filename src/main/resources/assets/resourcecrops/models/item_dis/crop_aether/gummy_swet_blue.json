@@ -1,7 +1,0 @@
-{
-  "parent": "resourcecrops:item/seed_models/seeds_all",
-  "textures": {
-    "fill": "resourcecrops:block/aether/gummy_swet_blue",
-    "gradient": "resourcecrops:block/narcissus_leaves/white"
-  }
-}

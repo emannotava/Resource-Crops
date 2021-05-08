@@ -1,7 +1,0 @@
-{
-	"parent": "item/generated",
-	"textures": {
-		"layer0": "botania:item/dragonstone",
-		"layer1": "resourcecrops:item/sparkles/sparkles_purple"
-	}
-}

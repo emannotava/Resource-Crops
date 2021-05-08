@@ -1,7 +1,0 @@
-{
-	"parent": "item/generated",
-	"textures": {
-		"layer0": "byg:block/mangrove_sapling",
-		"layer1": "resourcecrops:item/sparkles/sparkles_light_blue"
-	}
-}

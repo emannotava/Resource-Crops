@@ -14,6 +14,11 @@ public class VanillaTex {
 	public static final String SKELETON = ResourceCropsTex.block("vanilla/entity/skeleton");
 	public static final String WITHER_SKELETON = ResourceCropsTex.block("vanilla/entity/wither_skeleton");
 	public static final String ZOMBIE = ResourceCropsTex.block("vanilla/entity/zombie");
+	public static final String SPIDER = ResourceCropsTex.block("vanilla/entity/spider");
+	public static final String CHICKEN = ResourceCropsTex.block("vanilla/entity/chicken");
+	public static final String BBQ_CHICKEN = ResourceCropsTex.block("vanilla/entity/bbq_chicken");
+	public static final String COW = ResourceCropsTex.block("vanilla/entity/cow");
+	public static final String GRILLED_COW = ResourceCropsTex.block("vanilla/entity/grilled_cow");
 
 
 	public static final String BRAIN_CORAL = block("brain_coral");
@@ -47,23 +52,23 @@ public class VanillaTex {
 	public static final String TUBE_CORAL_BLOCK = block("tube_coral_block");
 	public static final String TUBE_CORAL_FAN = block("tube_coral_fan");
 
-	public static final String LOG_ACACIA = block("acacia_log");
-	public static final String LOG_ACACIA_TOP = block("acacia_log_top");
-	public static final String LOG_BIRCH = block("birch_log");
-	public static final String LOG_BIRCH_TOP = block("birch_log_top");
-	public static final String LOG_CAMPFIRE = block("campfire_log");
-	public static final String LOG_DARK_OAK = block("dark_oak_log");
-	public static final String LOG_DARK_OAK_TOP = block("dark_oak_log_top");
-	public static final String LOG_JUNGLE = block("jungle_log");
-	public static final String LOG_JUNGLE_TOP = block("jungle_log_top");
-	public static final String LOG_OAK = block("oak_log");
-	public static final String LOG_OAK_TOP = block("oak_log_top");
-	public static final String LOG_SPRUCE = block("spruce_log");
-	public static final String LOG_SPRUCE_TOP = block("spruce_log_top");
-	public static final String LOG_WARPED = block("warped_stem");
-	public static final String LOG_WARPED_TOP = block("warped_stem_top");
-	public static final String LOG_CRIMSON = block("crimson_stem");
-	public static final String LOG_CRIMSON_TOP = block("crimson_stem_top");
+	public static final String ACACIA_LOG = block("acacia_log");
+	public static final String ACACIA_LOG_TOP = block("acacia_log_top");
+	public static final String BIRCH_LOG = block("birch_log");
+	public static final String BIRCH_LOG_TOP = block("birch_log_top");
+	public static final String CAMPFIRE_LOG = block("campfire_log");
+	public static final String DARK_OAK_LOG = block("dark_oak_log");
+	public static final String DARK_OAK_LOG_TOP = block("dark_oak_log_top");
+	public static final String JUNGLE_LOG = block("jungle_log");
+	public static final String JUNGLE_LOG_TOP = block("jungle_log_top");
+	public static final String OAK_LOG = block("oak_log");
+	public static final String OAK_LOG_TOP = block("oak_log_top");
+	public static final String SPRUCE_LOG = block("spruce_log");
+	public static final String SPRUCE_LOG_TOP = block("spruce_log_top");
+	public static final String WARPED_STEM = block("warped_stem");
+	public static final String WARPED_STEM_TOP = block("warped_stem_top");
+	public static final String CRIMSON_STEM = block("crimson_stem");
+	public static final String CRIMSON_STEM_TOP = block("crimson_stem_top");
 	public static final String SAPLING_ACACIA = block("acacia_sapling");
 	public static final String SAPLING_BIRCH = block("birch_sapling");
 	public static final String SAPLING_DARK_OAK = block("dark_oak_sapling");
@@ -229,8 +234,6 @@ public class VanillaTex {
 	public static final String CRIMSON_NYLIUM_SIDE = block("crimson_nylium_side");
 	public static final String CRIMSON_ROOTS = block("crimson_roots");
 	public static final String CRIMSON_ROOTS_POT = block("crimson_roots_pot");
-	public static final String CRIMSON_STEM = block("crimson_stem");
-	public static final String CRIMSON_STEM_TOP = block("crimson_stem_top");
 	public static final String CRYING_OBSIDIAN = block("crying_obsidian");
 	public static final String CUT_RED_SANDSTONE = block("cut_red_sandstone");
 	public static final String CUT_SANDSTONE = block("cut_sandstone");
@@ -622,8 +625,6 @@ public class VanillaTex {
 	public static final String WARPED_NYLIUM_SIDE = block("warped_nylium_side");
 	public static final String WARPED_ROOTS = block("warped_roots");
 	public static final String WARPED_ROOTS_POT = block("warped_roots_pot");
-	public static final String WARPED_STEM = block("warped_stem");
-	public static final String WARPED_STEM_TOP = block("warped_stem_top");
 	public static final String WARPED_WART_BLOCK = block("warped_wart_block");
 	public static final String WATER_FLOW = block("water_flow");
 	public static final String WATER_OVERLAY = block("water_overlay");

@@ -9,12 +9,12 @@
     "meme_man_not_ava"
   ],
   "contact": {
-    "homepage": "http://www.themostamazingwebsiteontheinternet.com/",
+    "homepage": "",
     "sources": "https://github.com/emannotava/Resource-Crops"
   },
 
   "license": "MIT",
-  "icon": "assets/resourcecrops/icon.png",
+  "icon": "assets/resourcecrops/textures/shared/icon_main.png",
 
   "environment": "*",
   "entrypoints": {

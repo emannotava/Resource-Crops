@@ -39,8 +39,15 @@ public class SimpleTimeClient implements ITimeClient {
 	public static void main(String... args) {
 		ITimeClient myTimeClient = new SimpleTimeClient();
 		System.out.println(myTimeClient.toString());
-		// String resourceTex = "skyroot_log_side";
-		// String modifiedString = resourceTex.substring(resourceTex.length()-4, resourceTex.length());
+		String resourceTex = "skyroot_log_side";
+		String hasSide = resourceTex.substring(resourceTex.length()-4, resourceTex.length());
+		String removeSideFromNameAndAddTopToTheName = resourceTex.substring(0, resourceTex.length()-4) + "top";
+		System.out.println("Input String: \"" + resourceTex + "\"");
+		System.out.println("detection substring result: \"" + hasSide + "\"");
+		System.out.println("modifying substring result: \"" + removeSideFromNameAndAddTopToTheName + "\"");
+		System.out.println("-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-");
+		System.out.println("using .toLowerCase() on the string \"BBQ_chicken\" results in: " + "BBQ_chicken".toLowerCase());
+		System.out.println("-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-");
 		// System.out.println("-X-X-X-" + modifiedString + "-X-X-X-");
 	}
 }

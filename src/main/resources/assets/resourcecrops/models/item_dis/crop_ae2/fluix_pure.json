@@ -1,7 +1,0 @@
-{
-	"parent": "resourcecrops:item/seed_models/seeds_outline",
-	"textures":	{
-		"fill": "appliedenergistics2:block/fluix_block",
-		"stroke": "minecraft:block/black_concrete"
-	}
-}
