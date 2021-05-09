@@ -1,10 +1,17 @@
 package com.mememan.resourcecrops.block;
 
+import java.util.List;
+
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
+import net.minecraft.client.item.TooltipContext;
+import net.minecraft.item.ItemStack;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.text.Text;
+import net.minecraft.text.TranslatableText;
+import net.minecraft.world.BlockView;
 
 public class BlockOre extends Block{
 	
@@ -24,6 +31,12 @@ public class BlockOre extends Block{
 	@Override
 	public String getTranslationKey() {
 		return "Essence Tier " + ORE_NAME + " Ore";
-	} 
+	}
+
+	@Override
+	public void appendTooltip(ItemStack itemStack, BlockView world, List<Text> tooltip, TooltipContext tooltipContext) {
+		tooltip.add(new TranslatableText("warning.resourcecrops.unobtainable.0"));
+		tooltip.add(new TranslatableText("warning.resourcecrops.unobtainable.1"));
+	}
 	
 }

@@ -2,7 +2,7 @@ package com.mememan.resourcecrops.lib;
 
 public class Strings {
 	public static final String modId = "resourcecrops";
-	public static final String version = "1.0.9";
+	public static final String version = "1.1.0";
 	public static final String[] versionSplit = version.split(".");
 	public static final String majorID = versionSplit[0];
 	public static final String minorID = versionSplit[1];

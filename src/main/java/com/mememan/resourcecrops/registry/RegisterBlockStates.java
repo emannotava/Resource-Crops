@@ -42,41 +42,19 @@ public class RegisterBlockStates {
 	}
 
 	public static void addCropBlockstate(String modName, String cropName){
-		if(Main.ENABLE_SELF){
-			JState Fred = JState.state(
-				cropVariant(
-					JState.model("resourcecrops:block/crop_generic/crop_stage0"),
-					JState.model("resourcecrops:block/crop_generic/crop_stage1"),
-					JState.model("resourcecrops:block/crop_generic/crop_stage2"),
-					JState.model("resourcecrops:block/crop_generic/crop_stage3"),
-					JState.model("resourcecrops:block/crop_generic/crop_stage4"),
-					JState.model("resourcecrops:block/crop_generic/crop_stage5"),
-					JState.model("resourcecrops:block/crop_generic/crop_stage6"),
-					JState.model("resourcecrops:block/crop_" + modName.toLowerCase() + "/" + cropName.toLowerCase())
-					// JState.model("resourcecrops:block/templates/" + cropModelType)
-				)
-			);
-			ASSETS.addBlockState(Fred, new Identifier(Strings.modId, "crop_" + modName + "/" + cropName));
-		}
-	}
-
-	public static void addCropBlockstateNew(String modName, String cropName){
-		if(Main.ENABLE_SELF){
-			JState Fred = JState.state(
-				cropVariant(
-					JState.model("resourcecrops:block/crop_generic/crop_stage0"),
-					JState.model("resourcecrops:block/crop_generic/crop_stage1"),
-					JState.model("resourcecrops:block/crop_generic/crop_stage2"),
-					JState.model("resourcecrops:block/crop_generic/crop_stage3"),
-					JState.model("resourcecrops:block/crop_generic/crop_stage4"),
-					JState.model("resourcecrops:block/crop_generic/crop_stage5"),
-					JState.model("resourcecrops:block/crop_" + modName.toLowerCase() + "/" + cropName.toLowerCase() + "_stage_6"),
-					JState.model("resourcecrops:block/crop_" + modName.toLowerCase() + "/" + cropName.toLowerCase() + "_stage_7")
-					// JState.model("resourcecrops:block/templates/" + cropModelType)
-				)
-			);
-			ASSETS.addBlockState(Fred, new Identifier(Strings.modId, "crop_" + modName + "/" + cropName));
-		}
+		JState Fred = JState.state(
+			cropVariant(
+				JState.model("resourcecrops:block/crop_" + modName.toLowerCase() + "/" + cropName.toLowerCase() + "_stage_0"),
+				JState.model("resourcecrops:block/crop_" + modName.toLowerCase() + "/" + cropName.toLowerCase() + "_stage_1"),
+				JState.model("resourcecrops:block/crop_" + modName.toLowerCase() + "/" + cropName.toLowerCase() + "_stage_2"),
+				JState.model("resourcecrops:block/crop_" + modName.toLowerCase() + "/" + cropName.toLowerCase() + "_stage_3"),
+				JState.model("resourcecrops:block/crop_" + modName.toLowerCase() + "/" + cropName.toLowerCase() + "_stage_4"),
+				JState.model("resourcecrops:block/crop_" + modName.toLowerCase() + "/" + cropName.toLowerCase() + "_stage_5"),
+				JState.model("resourcecrops:block/crop_" + modName.toLowerCase() + "/" + cropName.toLowerCase() + "_stage_6"),
+				JState.model("resourcecrops:block/crop_" + modName.toLowerCase() + "/" + cropName.toLowerCase() + "_stage_7")
+			)
+		);
+		ASSETS.addBlockState(Fred, new Identifier(Strings.modId, "crop_" + modName + "/" + cropName));
 	}
 
 	public static JVariant cropVariant(JBlockModel age0, JBlockModel age1, JBlockModel age2, JBlockModel age3, JBlockModel age4, JBlockModel age5, JBlockModel age6, JBlockModel age7){

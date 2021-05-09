@@ -1,7 +1,7 @@
 {
 	"variants": {
 		"": {
-			"model": "resourcecrops:block/tier_1_block.obj"
+			"model": "resourcecrops:block/tier_1_block"
 		}
 	}
 }

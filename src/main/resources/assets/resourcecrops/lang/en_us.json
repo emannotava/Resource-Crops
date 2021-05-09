@@ -11,6 +11,13 @@
 
 	"__comment": "Thanks to some adivce from @Haven King, I was able to remove 537 Entries from this lang file",
 
+	"entity.resourcecrops.rainbow_chicken": "Rainbow Chicken",
+	"entity.resourcecrops.golden_rainbow_chicken": "Golden Rainbow Chicken",
+	"item.resourcecrops.raw_rainbow_chicken": "Raw Rainbow Chicken",
+	"item.resourcecrops.bbq_rainbow_chicken": "BBQ Rainbow Chicken",
+	"item.resourcecrops.raw_golden_rainbow_chicken": "Raw Golden Rainbow Chicken",
+	"item.resourcecrops.bbq_golden_rainbow_chicken": "BBQ Golden Rainbow Chicken",
+
 	"block.resourcecrops.machine_frame.coal": "Coal Machine Frame",
 	"block.resourcecrops.machine_frame.diamond": "Diamond Machine Frame",
 	"block.resourcecrops.machine_frame.emerald": "Emerald Machine Frame",
@@ -99,5 +106,8 @@
 	"warning.resourcecrops.experimental.3": "It might take several updates before",
 	"warning.resourcecrops.experimental.4": "this becomes functional.",
 	"warning.resourcecrops.experimental.5": "§mIt's either that or it's removed",
-	"warning.resourcecrops.experimental.6": "§mbefore it was ever even functional at all."
+	"warning.resourcecrops.experimental.6": "§mbefore it was ever even functional at all.",
+
+	"warning.resourcecrops.unobtainable.0": "This item was recently added but CAN'T be obtained yet",
+	"warning.resourcecrops.unobtainable.1": "Will be fully implemented in a future update"
 }

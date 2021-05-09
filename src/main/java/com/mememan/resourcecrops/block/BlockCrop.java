@@ -11,6 +11,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
+import net.minecraft.block.ShapeContext;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -23,6 +24,7 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
@@ -33,6 +35,7 @@ public class BlockCrop extends net.minecraft.block.CropBlock {
 	public String TOOLTIP_MOD = "Meow";
 	public String SEED_NAME = "Meow";
 	// public int HEX_TINT;
+	private static final VoxelShape[] AGE_TO_SHAPE;
 	public int maxAge = 8;
 	public static Block REQUIRED_SOIL = Blocks.FARMLAND;
 
@@ -118,5 +121,23 @@ public class BlockCrop extends net.minecraft.block.CropBlock {
 		if(TOOLTIP_MOD!="Meow"){
 			tooltip.add(new TranslatableText("tooltip.mod." + TOOLTIP_MOD));
 		}
+	}
+
+	@Override
+	public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+		return AGE_TO_SHAPE[(Integer)state.get(this.getAgeProperty())];
+	}
+
+	static{
+		AGE_TO_SHAPE = new VoxelShape[]{
+			Block.createCuboidShape(6, 0, 6, 10, 4, 10),
+			Block.createCuboidShape(5, 0, 5, 11, 6, 11),
+			Block.createCuboidShape(4, 0, 4, 12, 6, 12),
+			Block.createCuboidShape(4, 0, 4, 12, 7, 12),
+			Block.createCuboidShape(3, 0, 3, 13, 7, 13),
+			Block.createCuboidShape(2, 0, 2, 14, 9, 14),
+			Block.createCuboidShape(2, 0, 2, 14, 12, 14),
+			Block.createCuboidShape(0, 0, 0, 16, 16, 16)
+		};
 	}
 }

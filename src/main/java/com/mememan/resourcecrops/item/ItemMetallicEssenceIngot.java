@@ -10,9 +10,12 @@ import com.mememan.resourcecrops.util.text.Humanify;
 import net.devtech.arrp.json.models.JModel;
 // import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.text.Text;
+import net.minecraft.text.TranslatableText;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Identifier;
@@ -21,6 +24,8 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 
 import static com.mememan.resourcecrops.Main.ASSETS;
+
+import java.util.List;
 
 public class ItemMetallicEssenceIngot extends Item {
 
@@ -52,5 +57,10 @@ public class ItemMetallicEssenceIngot extends Item {
 	
 	public static Item addItem(String itemName, Item ItemDeclaration){
 		return Registry.register(Registry.ITEM, new Identifier(Strings.modId, itemName), ItemDeclaration);
+	}
+	@Override
+	public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
+		tooltip.add(new TranslatableText("warning.resourcecrops.unobtainable.0"));
+		tooltip.add(new TranslatableText("warning.resourcecrops.unobtainable.1"));
 	}
 }

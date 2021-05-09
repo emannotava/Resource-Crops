@@ -1,7 +1,6 @@
 package com.mememan.resourcecrops.block;
 
 import com.mememan.resourcecrops.item.ItemSeeds;
-import com.mememan.resourcecrops.lib.CropModelTypes;
 import com.mememan.resourcecrops.lib.Mods;
 import com.mememan.resourcecrops.lib.Strings;
 import com.mememan.resourcecrops.loot.RegisterCropLoot;
@@ -81,11 +80,7 @@ public class RegisterCrop {
 			}
 		}
 		// RegisterLootTables.addLootTable("ultimate", Mods.ResourceCrops, Strings.defaultCropAge);
-		if(modelType!=CropModelTypes.ALL){
-			RegisterBlockStates.addCropBlockstate(modNameShort, name);
-		}else{
-			RegisterBlockStates.addCropBlockstateNew(modNameShort, name);
-		}
+		RegisterBlockStates.addCropBlockstate(modNameShort, name);
 		if(resourceTex.length==1){
 			RegisterBlockModel.registerCropModel(modName, NAME_LOWERCASE, resourceTex[0], modelType);
 		}else if(resourceTex.length==2){

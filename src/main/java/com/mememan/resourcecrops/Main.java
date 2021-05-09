@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import com.mememan.resourcecrops.block.RegisterBlock;
 import com.mememan.resourcecrops.block.RegisterCrop;
+import com.mememan.resourcecrops.item.RegisterFood;
 import com.mememan.resourcecrops.item.RegisterItem;
 import com.mememan.resourcecrops.itemgroup.CreativeTab;
 import com.mememan.resourcecrops.lib.Crops;
@@ -77,6 +78,7 @@ public class Main implements ModInitializer {
 			RegisterBlockModel.initialize();
 			Crops.initialize();
 			RegisterItem.initialize();
+			RegisterFood.initialize();
 			RegisterBlock.initialize();
 			RegisterCrop.initialize();
 			RegisterRecipe.initialize();

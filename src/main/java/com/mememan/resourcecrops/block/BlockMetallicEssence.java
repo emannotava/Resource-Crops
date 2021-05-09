@@ -14,13 +14,20 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.text.Text;
+import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.world.BlockView;
 
 import static com.mememan.resourcecrops.Main.ASSETS;
+
+import java.util.List;
 
 public class BlockMetallicEssence extends Block{
 
@@ -55,6 +62,12 @@ public class BlockMetallicEssence extends Block{
 	public static void addBlock(String blockName, Block blockDeclaration, ItemGroup creativeTab){
 		Registry.register(Registry.BLOCK, new Identifier(Strings.modId, blockName), blockDeclaration);
 		Registry.register(Registry.ITEM, new Identifier(Strings.modId, blockName), new BlockItem(blockDeclaration, new FabricItemSettings().group(creativeTab)));
+	}
+
+	@Override
+	public void appendTooltip(ItemStack itemStack, BlockView world, List<Text> tooltip, TooltipContext tooltipContext) {
+		tooltip.add(new TranslatableText("warning.resourcecrops.unobtainable.0"));
+		tooltip.add(new TranslatableText("warning.resourcecrops.unobtainable.1"));
 	}
 	
 }
