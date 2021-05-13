@@ -4,12 +4,15 @@ import java.util.List;
 
 import com.mememan.resourcecrops.lib.Mods;
 import com.mememan.resourcecrops.registry.RegisterRecipe;
+import com.mememan.resourcecrops.util.color.Color;
 import com.mememan.resourcecrops.util.text.Humanify;
 
 import net.devtech.arrp.json.recipe.JIngredient;
 import net.devtech.arrp.json.recipe.JKeys;
 import net.devtech.arrp.json.recipe.JRecipe;
-import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+// import net.fabricmc.api.EnvType;
+// import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+// import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -37,23 +40,25 @@ public class ItemEssence extends Item {
 		doStuff(mod, tier, name, pattern, outputItem, outputAmount, enableGlint, hex);
 	}
 	
-	public ItemEssence(Settings settings, String tier, String mod, String name, String[] pattern, String outputItem, int outputAmount) {
+	public ItemEssence(Settings settings, String tier, String modNameToCheck, String modNameToLabel, String name, String[] pattern, String outputItem, int outputAmount) {
 		super(settings);
-		doStuff(mod, tier, name, pattern, outputItem, outputAmount, false);
+		doStuff(modNameToCheck, modNameToLabel, tier, name, pattern, outputItem, outputAmount, false);
 	}
-	public ItemEssence(Settings settings, String tier, String mod, String name, Boolean enableGlint, String[] pattern, String outputItem, int outputAmount) {
+	public ItemEssence(Settings settings, String tier, String modNameToCheck, String modNameToLabel, String name, Boolean enableGlint, String[] pattern, String outputItem, int outputAmount) {
 		super(settings);
-		doStuff(mod, tier, name, pattern, outputItem, outputAmount, enableGlint);
+		doStuff(modNameToCheck, modNameToLabel, tier, name, pattern, outputItem, outputAmount, enableGlint);
 	}
 	
 
-	public void doStuff(String mod, String tier, String name, String[] pattern, String outputItem, int outputAmount, Boolean enableGlint){
-		setVariables(tier, mod, name, enableGlint);
-		addRecipe(mod, tier, name, pattern, outputItem, outputAmount);
+	public void doStuff(String modNameToCheck, String modNameToLabel, String tier, String name, String[] pattern, String outputItem, int outputAmount, Boolean enableGlint){
+		setVariables(tier, modNameToLabel, name, enableGlint);
+		// if(Mods.checkMod(modNameToCheck)){
+		// 	addRecipe(modNameToLabel, tier, name, pattern, outputItem, outputAmount);
+		// }
 	}
 	public void doStuff(String mod, String tier, String name, String[] pattern, String outputItem, int outputAmount, Boolean enableGlint, int hex){
-		doStuff(mod, tier, name, pattern, outputItem, outputAmount, enableGlint);
-		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> hex, this);
+		doStuff(mod, mod, tier, name, pattern, outputItem, outputAmount, enableGlint);
+		Color.setItemColor(hex, this);
 	}
 	
 	public static void addRecipe(String mod, String tier, String name, String[] pattern, String outputItem, int outputAmount){

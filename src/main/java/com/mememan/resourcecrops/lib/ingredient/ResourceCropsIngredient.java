@@ -10,6 +10,7 @@ public class ResourceCropsIngredient {
 	public static final String DRAGON_EGG_PIECE = mod("dragon_egg_piece");
 	
 	public static final String JEB_WOOL = mod("jeb_wool");
+	public static final String JEB_WOOL_CARPET = mod("jeb_wool_carpet");
 
 	public static final String ESSENCE_TIER_1_BLOCK = mod("essence_tier_" + Strings.TIER_1 + "_block");
 	public static final String ESSENCE_TIER_2_BLOCK = mod("essence_tier_" + Strings.TIER_2 + "_block");

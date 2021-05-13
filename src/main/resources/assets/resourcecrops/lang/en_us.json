@@ -28,8 +28,10 @@
 	"block.resourcecrops.machine_frame.redstone": "Redstone Machine Frame",
 	
 	"block.resourcecrops.jeb_wool": "Jeb Wool",
+	"block.resourcecrops.jeb_wool_carpet": "Jeb Wool Carpet",
 
 	"resourcecrops.seeds": "%s Seeds",
+	"resourcecrops.infusion_gemstone": "%s Infusion Gemstone",
 	"resourcecrops.essence": "%s Essence",
 
 	"item.resourcecrops.debug_item": "Debug Item",

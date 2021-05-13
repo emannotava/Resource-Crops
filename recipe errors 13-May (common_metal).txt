@@ -1,0 +1,416 @@
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/bismuth_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/bismuth_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/brass_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/brass_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/manganese_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/manganese_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/platinum_makes_common_metal/platinum_ingot
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/platinum_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/gallium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/gallium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/amethyst_makes_common_metal/amethyst
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/amethyst'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/bismuth_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/bismuth_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/magnesium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/magnesium_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/chromium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/chromium_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/lead_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/lead_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/beryllium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/beryllium_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/chromium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/chromium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_jewel/topaz_gem
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/topaz_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/tin_makes_common_metal/tungsten_ingot
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/tungsten_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/chrome_makes_common_metal/chrome_ingot
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/chrome_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/magnesium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/magnesium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_jewel/sapphire_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/sapphire_gem'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/gallium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/gallium_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/iridium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/iridium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/palladium_makes_common_metal/palladium_ingot
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/palladium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/manganese_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/manganese_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/cobalt_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/cobalt_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/beryllium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/beryllium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/tin_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/tin_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/coal_coke_makes_common_metal/coal_coke
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/coal_coke'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/chromium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/chromium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/copper_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/copper_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/gallium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/gallium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/bronze_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/bronze_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/titanium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/titanium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/samarium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/samarium_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/tungsten_makes_common_metal/rubie
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/rubie'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/silver_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/silver_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/copper_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/copper_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/nickel_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/nickel_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/iridium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/iridium_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/indium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/indium_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/rhodium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/rhodium_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/tin_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/tin_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/silver_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/silver_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_jewel/sapphire_gem
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/sapphire_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/indium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/indium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/tin_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/tin_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/bronze_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/bronze_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/bismuth_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/bismuth_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/titanium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/titanium_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/aluminium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/aluminium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_jewel/amethyst_gem
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/amethyst_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/iridium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/iridium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/nickel_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/nickel_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/electrum_makes_common_metal/electrum_ingot
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/electrum_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/sapphire_makes_common_metal/steel_ingot
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/steel_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_jewel/amethyst_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/amethyst_gem'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/titanium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/titanium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/meow
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/topaz_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/brass_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/brass_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/brass_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/brass_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/uranium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/uranium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/thorium_makes_common_metal/thorium_ingot
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/thorium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/mercury_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/mercury_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/manganese_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/manganese_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/sodium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/sodium_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/cobalt_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/cobalt_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/plutonium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/plutonium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/lead_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/lead_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/samarium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/samarium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_jewel/topaz_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/topaz_gem'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/zinc_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/zinc_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/rhodium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/rhodium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/nickel_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/nickel_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/mercury_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/mercury_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/topaz_makes_common_metal/topaze
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/topaze'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/scandium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/scandium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/lead_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/lead_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/magnesium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/magnesium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/sodium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/sodium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/potassium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/potassium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/uranium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/uranium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/invar_makes_common_metal/invar_ingot
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/invar_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/plutonium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/plutonium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/samarium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/samarium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/uranium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/uranium_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/copper_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/copper_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/potassium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/potassium_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/bronze_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/bronze_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/aluminium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/aluminium_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_jewel/ruby_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/ruby_gem'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/indium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/indium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_jewel/ruby_gem
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/ruby_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/osmium_makes_common_metal/osmium_ingot
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/osmium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/potassium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/potassium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/zinc_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/zinc_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/mercury_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/mercury_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/cobalt_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/cobalt_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/beryllium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/beryllium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/zinc_makes_common_metal/sapphire
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/sapphire'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/rhodium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/rhodium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/zinc_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/zinc_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/scandium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/scandium_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/silver_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/silver_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/plutonium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/plutonium_block'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/scandium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/scandium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/aluminium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/aluminium_ingot'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/sodium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/sodium_ingot'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/bismuth_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/bismuth_block'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/brass_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/brass_ingot'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/manganese_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/manganese_ingot'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/platinum_makes_common_metal/platinum_ingot
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/platinum_ingot'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/gallium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/gallium_ingot'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/amethyst_makes_common_metal/amethyst
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/amethyst'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/bismuth_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/bismuth_ingot'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/magnesium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/magnesium_block'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/chromium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/chromium_block'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/lead_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/lead_ingot'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/beryllium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/beryllium_block'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/chromium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/chromium_ingot'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_jewel/topaz_gem
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/topaz_block'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/tin_makes_common_metal/tungsten_ingot
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/tungsten_ingot'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/chrome_makes_common_metal/chrome_ingot
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/chrome_ingot'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/magnesium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/magnesium_ingot'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_jewel/sapphire_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/sapphire_gem'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/gallium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/gallium_block'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/iridium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/iridium_ingot'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/palladium_makes_common_metal/palladium_ingot
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/palladium_ingot'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/manganese_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/manganese_block'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/cobalt_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/cobalt_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/beryllium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/beryllium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/tin_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/tin_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/coal_coke_makes_common_metal/coal_coke
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/coal_coke'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/chromium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/chromium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/copper_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/copper_block'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/gallium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/gallium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/bronze_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/bronze_block'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/titanium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/titanium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/samarium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/samarium_block'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/tungsten_makes_common_metal/rubie
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/rubie'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/silver_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/silver_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/copper_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/copper_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/nickel_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/nickel_block'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/iridium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/iridium_block'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/indium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/indium_block'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/rhodium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/rhodium_block'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/tin_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/tin_block'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/silver_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/silver_block'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_jewel/sapphire_gem
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/sapphire_block'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/indium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/indium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/tin_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/tin_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/bronze_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/bronze_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/bismuth_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/bismuth_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/titanium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/titanium_block'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/aluminium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/aluminium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_jewel/amethyst_gem
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/amethyst_block'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/iridium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/iridium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/nickel_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/nickel_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/electrum_makes_common_metal/electrum_ingot
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/electrum_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/sapphire_makes_common_metal/steel_ingot
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/steel_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_jewel/amethyst_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/amethyst_gem'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/titanium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/titanium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/meow
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/topaz_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/brass_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/brass_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/brass_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/brass_block'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/uranium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/uranium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/thorium_makes_common_metal/thorium_ingot
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/thorium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/mercury_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/mercury_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/manganese_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/manganese_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/sodium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/sodium_block'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/cobalt_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/cobalt_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/plutonium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/plutonium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/lead_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/lead_block'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/samarium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/samarium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_jewel/topaz_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/topaz_gem'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/zinc_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/zinc_block'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/rhodium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/rhodium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/nickel_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/nickel_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/mercury_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/mercury_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/topaz_makes_common_metal/topaze
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/topaze'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/scandium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/scandium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/lead_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/lead_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/magnesium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/magnesium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/sodium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/sodium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/potassium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/potassium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/uranium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/uranium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/invar_makes_common_metal/invar_ingot
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/invar_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/plutonium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/plutonium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/samarium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/samarium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/uranium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/uranium_block'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/copper_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/copper_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/potassium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/potassium_block'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/bronze_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/bronze_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/aluminium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/aluminium_block'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_jewel/ruby_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/ruby_gem'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/indium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/indium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_jewel/ruby_gem
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/ruby_block'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/osmium_makes_common_metal/osmium_ingot
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/osmium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/potassium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/potassium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/zinc_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/zinc_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/mercury_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/mercury_block'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/cobalt_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/cobalt_block'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/beryllium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/beryllium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_c/zinc_makes_common_metal/sapphire
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:common_metal/sapphire'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/rhodium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/rhodium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/zinc_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/zinc_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/scandium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/scandium_block'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/silver_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/silver_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/plutonium_ingot
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/plutonium_block'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/scandium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/scandium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/aluminium_block
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/aluminium_ingot'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:auto_tag_recipes/common_metal/sodium_nugget
+com.google.gson.JsonSyntaxException: Unknown item tag 'resourcecrops:common_metal/sodium_ingot'

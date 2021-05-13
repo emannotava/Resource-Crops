@@ -1,5 +1,6 @@
 package com.mememan.resourcecrops.lib.ingredient;
 
+import com.mememan.resourcecrops.Main;
 import com.mememan.resourcecrops.lib.Mods;
 
 public class CommonIngredient {
@@ -63,5 +64,20 @@ public class CommonIngredient {
 
 	public static String mod(String input){
 		return (Mods.COMMON + ":" + input);
+	}
+
+	public static String convertTagToCommonMetalItem(String input){
+		String[] split = input.split(":");
+		String localInput = split[1].substring(0, split[1].length()-"s".length());
+		String finalString = Mods.ResourceCrops + ":common_metal/" + localInput;
+		Main.logDebugMessage("\"" + input + "\" was converted to " + "\"" + finalString + "\"");
+		return finalString;
+	}
+	public static String convertCommonMetalItemToTag(String input){
+		String[] split = input.split(":");
+		String[] split2 = split[1].split("/");
+		String finalString = Mods.COMMON + ":" + split2[1] + "s";
+		Main.logDebugMessage("\"" + input + "\" was converted to " + "\"" + finalString + "\"");
+		return finalString;
 	}
 }

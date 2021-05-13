@@ -7,11 +7,14 @@ import com.mememan.resourcecrops.lib.tex.ResourceCropsTex;
 import com.mememan.resourcecrops.registry.RegisterBlockStates;
 import com.mememan.resourcecrops.registry.RegisterRecipe;
 import com.mememan.resourcecrops.registry.RegisterTags;
+import com.mememan.resourcecrops.util.color.Color;
 import com.mememan.resourcecrops.util.text.Humanify;
 
 import net.devtech.arrp.json.blockstate.JState;
 import net.devtech.arrp.json.models.JModel;
-import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+// import net.fabricmc.api.EnvType;
+// import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+// import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -46,11 +49,12 @@ public class BlockCommonMetal extends Block{
 		ASSETS.addBlockState(blockstate, new Identifier(Strings.modId, NAME));
 		ASSETS.addModel(JModel.modelKeepElements(Strings.modId + ":block/templates/tinted_top_down_block").textures(JModel.textures().var("side", ResourceCropsTex.COMMON_METAL_SIDE).var("top", ResourceCropsTex.COMMON_METAL_TOP).var("bottom", ResourceCropsTex.COMMON_METAL_BOTTOM).var("particle", ResourceCropsTex.COMMON_METAL_SIDE)), new Identifier(Mods.ResourceCrops, "block/" + NAME));
 		ASSETS.addModel(JModel.modelKeepElements(Mods.ResourceCrops + ":block/" + NAME), new Identifier(Mods.ResourceCrops + ":item/" + NAME));
-		ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> hex, this);
-		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> hex, this);
+		Color.setBlockColor(hex, this);
+		Color.setItemColor(hex, this);
 		RegisterRecipe.addIngotToBlockRecipe(Mods.ResourceCrops + ":" + NAME, new String[]{"c:" + name + "_ingots"});
 		RegisterRecipe.addBlockToIngotRecipe(Mods.ResourceCrops + ":" + NAME_INGOT, new String[]{"c:" + name + "_blocks"});
 		RegisterTags.addToTag("c:" + name + "_block", Mods.ResourceCrops + ":" + NAME);
+		RegisterTags.addToTag("c:" + name + "_blocks", Mods.ResourceCrops + ":" + NAME);
 	}
 
 	@Override

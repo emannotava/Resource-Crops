@@ -6,10 +6,13 @@ import com.mememan.resourcecrops.lib.Strings;
 
 import com.mememan.resourcecrops.lib.tex.VanillaTex;
 import com.mememan.resourcecrops.registry.RegisterTags;
+import com.mememan.resourcecrops.util.color.Color;
 import com.mememan.resourcecrops.util.text.Humanify;
 
 import net.devtech.arrp.json.models.JModel;
-import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+// import net.fabricmc.api.EnvType;
+// import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+// import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
@@ -31,8 +34,9 @@ public class NuggetCommonMetal extends Item {
 		NAME_HUMANIFY = name;
 		addItem(NAME, this);
 		ASSETS.addModel(JModel.modelKeepElements("minecraft:item/generated").textures(JModel.textures().var("layer0", VanillaTex.IRON_NUGGET)), new Identifier(Mods.ResourceCrops, "item/" + NAME));
-		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> hex, this);
+		Color.setItemColor(hex, this);
 		RegisterTags.addToTag("c:" + name + "_nugget", Mods.ResourceCrops + ":" + NAME);
+		RegisterTags.addToTag("c:" + name + "_nuggets", Mods.ResourceCrops + ":" + NAME);
 	}
 
 	@Override

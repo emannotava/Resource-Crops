@@ -1,7 +1,7 @@
 {
 	"variants": {
 		"": {
-			"model": "resourcecrops:block/tier_4_block"
+			"model": "resourcecrops:block/essence_tier_4_block"
 		}
 	}
 }

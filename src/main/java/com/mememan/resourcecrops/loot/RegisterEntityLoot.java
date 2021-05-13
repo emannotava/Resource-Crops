@@ -1,5 +1,7 @@
 package com.mememan.resourcecrops.loot;
 
+import com.mememan.resourcecrops.item.ItemEssence;
+
 // import com.mememan.resourcecrops.lib.Crops;
 // import com.mememan.resourcecrops.lib.Entities;
 
@@ -87,6 +89,18 @@ public class RegisterEntityLoot {
 	}
 
 	public static void addToLootTable(Item item, int minRoll, int maxRoll, float changeForRollToOccur, Identifier identifier) {
+		float localFloat = ((1.0F / 100F) * changeForRollToOccur);
+		LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, supplier, setter) -> {
+			if (identifier.equals(id)) {
+				FabricLootPoolBuilder builder = FabricLootPoolBuilder.builder();
+				builder.rolls(UniformLootTableRange.between(minRoll, maxRoll));
+				builder.conditionally(RandomChanceLootCondition.builder(localFloat));
+				builder.with(ItemEntry.builder(item));
+				supplier.pool(builder);
+			}
+		});
+	}
+	public static void addToLootTable(ItemEssence item, int minRoll, int maxRoll, float changeForRollToOccur, Identifier identifier) {
 		float localFloat = ((1.0F / 100F) * changeForRollToOccur);
 		LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, supplier, setter) -> {
 			if (identifier.equals(id)) {

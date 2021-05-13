@@ -2,6 +2,10 @@ package com.mememan.resourcecrops.builder.test;
 
 import java.time.*;
 
+import com.mememan.resourcecrops.lib.Mods;
+import com.mememan.resourcecrops.lib.Strings;
+import com.mememan.resourcecrops.lib.ingredient.CommonIngredient;
+
 public class SimpleTimeClient implements ITimeClient {
 	
 	private LocalDateTime dateAndTime;
@@ -48,6 +52,16 @@ public class SimpleTimeClient implements ITimeClient {
 		System.out.println("-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-");
 		System.out.println("using .toLowerCase() on the string \"BBQ_chicken\" results in: " + "BBQ_chicken".toLowerCase());
 		System.out.println("-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-");
+		
+		convertTagToItem(CommonIngredient.TIN_INGOT);
+		System.out.println(Strings.NEW_TIERS(Strings.TIER_1));
 		// System.out.println("-X-X-X-" + modifiedString + "-X-X-X-");
+	}
+	public static String convertTagToItem(String input){
+		String[] split = input.split(":");
+		String localInput = split[1].substring(0, split[1].length()-1);
+		String finalString = Mods.ResourceCrops + ":" + localInput;
+		System.out.println("\"" + input + "\" was converted to " + "\"" + finalString + "\"");
+		return finalString;
 	}
 }

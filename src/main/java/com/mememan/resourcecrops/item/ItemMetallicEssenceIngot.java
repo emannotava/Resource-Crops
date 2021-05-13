@@ -5,6 +5,7 @@ import com.mememan.resourcecrops.lib.Sounds;
 import com.mememan.resourcecrops.lib.Strings;
 
 import com.mememan.resourcecrops.lib.tex.VanillaTex;
+import com.mememan.resourcecrops.util.color.Color;
 import com.mememan.resourcecrops.util.text.Humanify;
 
 import net.devtech.arrp.json.models.JModel;
@@ -41,7 +42,7 @@ public class ItemMetallicEssenceIngot extends Item {
 		TIER = tier;
 		addItem(name + "_" + tier, this);
 		ASSETS.addModel(JModel.modelKeepElements("minecraft:item/generated").textures(JModel.textures().var("layer0", VanillaTex.IRON_INGOT)), new Identifier(Mods.ResourceCrops, "item/" + name + "_" + tier));
-		// ColorProviderRegistry.ITEM.register((stack, tintIndex) -> hex, this);
+		Color.setItemColor(hex, this);
 	}
 
 	@Override

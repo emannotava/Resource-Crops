@@ -1,0 +1,12 @@
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_minecraft/dirt_makes_coarse_dirt
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_minecraft/meow'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_minecraft/dirt_makes_crimson_nylium
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_minecraft/crimson'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_minecraft/dirt_makes_warped_nylium
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_minecraft/warped'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_minecraft/dirt_makes_coarse_dirt
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_minecraft/meow'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_minecraft/dirt_makes_crimson_nylium
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_minecraft/crimson'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_minecraft/dirt_makes_warped_nylium
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_minecraft/warped'

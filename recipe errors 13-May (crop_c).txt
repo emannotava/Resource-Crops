@@ -1,0 +1,112 @@
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/electrum
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:electrum_ingots'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/uranium
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:uranium_ingots'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/aluminium
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:aluminium_ingots'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/steel
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:steel_ingots'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/tin
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:tin_ingots'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/bronze
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:bronze_ingots'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/cobalt
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:cobalt_ingots'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/amethyst
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:amethysts'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/silver
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:silver_ingots'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/coal_coke
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:coal_cokes'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/osmium
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:osmium_ingots'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/sapphire
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:sapphires'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/platinum
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:platinum_ingots'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/zinc
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:zinc_ingots'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/thorium
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:thorium_ingots'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/tungsten
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:tungsten_ingots'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/palladium
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:palladium_ingots'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/ruby
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:rubies'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/iridium
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:iridium_ingots'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/copper
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:copper_ingots'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/titanium
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:titanium_ingots'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/lead
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:lead_ingots'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/invar
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:invar_ingots'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/brass
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:brass_ingots'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/nickel
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:nickel_ingots'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/chrome
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:chrome_ingots'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/topaz
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:topazes'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/plutonium
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:plutonium_ingots'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/electrum
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:electrum_ingots'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/uranium
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:uranium_ingots'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/aluminium
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:aluminium_ingots'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/steel
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:steel_ingots'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/tin
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:tin_ingots'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/bronze
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:bronze_ingots'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/cobalt
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:cobalt_ingots'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/amethyst
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:amethysts'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/silver
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:silver_ingots'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/coal_coke
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:coal_cokes'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/osmium
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:osmium_ingots'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/sapphire
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:sapphires'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/platinum
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:platinum_ingots'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/zinc
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:zinc_ingots'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/thorium
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:thorium_ingots'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/tungsten
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:tungsten_ingots'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/palladium
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:palladium_ingots'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/ruby
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:rubies'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/iridium
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:iridium_ingots'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/copper
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:copper_ingots'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/titanium
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:titanium_ingots'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/lead
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:lead_ingots'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/invar
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:invar_ingots'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/brass
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:brass_ingots'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/nickel
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:nickel_ingots'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/chrome
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:chrome_ingots'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/topaz
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:topazes'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:crop_c/plutonium
+com.google.gson.JsonSyntaxException: Unknown item tag 'c:plutonium_ingots'

@@ -4,9 +4,12 @@ import java.util.List;
 
 import net.minecraft.item.AliasedBlockItem;
 import com.mememan.resourcecrops.block.BlockCrop;
+import com.mememan.resourcecrops.util.color.Color;
 import com.mememan.resourcecrops.util.text.Humanify;
 
-import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+// import net.fabricmc.api.EnvType;
+// import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+// import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
@@ -53,7 +56,7 @@ public class ItemSeeds extends AliasedBlockItem {
 		TOOLTIP_TIER = tier;
 		TOOLTIP_MOD = mod;
 		SEED_NAME = name;
-		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> hex, this);
+		Color.setItemColor(hex, this);
 		GLINTSTATE = false;
 		hasGlint(new ItemStack(this));
 	}
@@ -65,7 +68,7 @@ public class ItemSeeds extends AliasedBlockItem {
 		TOOLTIP_TIER = tier;
 		TOOLTIP_MOD = mod;
 		SEED_NAME = name;
-		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> hex, this);
+		Color.setItemColor(hex, this);
 		if(enableGlint){
 			GLINTSTATE = true;
 			hasGlint(new ItemStack(this));

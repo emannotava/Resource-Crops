@@ -5,11 +5,14 @@ import com.mememan.resourcecrops.lib.Mods;
 import com.mememan.resourcecrops.lib.Strings;
 import com.mememan.resourcecrops.lib.tex.VanillaTex;
 import com.mememan.resourcecrops.registry.RegisterBlockStates;
+import com.mememan.resourcecrops.util.color.Color;
 import com.mememan.resourcecrops.util.text.Humanify;
 
 import net.devtech.arrp.json.blockstate.JState;
 import net.devtech.arrp.json.models.JModel;
-import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+// import net.fabricmc.api.EnvType;
+// import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+// import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -49,9 +52,8 @@ public class BlockMetallicEssence extends Block{
 		ASSETS.addBlockState(blockstate, new Identifier(Strings.modId, name + "_" + tier));
 		ASSETS.addModel(JModel.modelKeepElements(Strings.modId + ":block/templates/tinted_block").textures(JModel.textures().var("all", VanillaTex.IRON_BLOCK)), new Identifier(Mods.ResourceCrops, "block/" + name + "_" + tier));
 		ASSETS.addModel(JModel.modelKeepElements(Mods.ResourceCrops + ":block/" + name + "_" + tier), new Identifier(Mods.ResourceCrops + ":item/" + name + "_" + tier));
-		ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> hex, this);
-		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> hex, this);
-
+		Color.setBlockColor(hex, this);
+		Color.setItemColor(hex, this);
 	}
 
 	@Override

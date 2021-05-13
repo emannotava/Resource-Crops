@@ -57,16 +57,9 @@ public class RegisterBlockModel{
 		return input.substring(0, input.length()-4) + "top";
 	}
 
-	public static final String blockPath_stage_0 = Mods.ResourceCrops + ":block/templates/crop/narcissus/all/stage_0";
-	public static final String blockPath_stage_1 = Mods.ResourceCrops + ":block/templates/crop/narcissus/all/stage_1";
-	public static final String blockPath_stage_2 = Mods.ResourceCrops + ":block/templates/crop/narcissus/all/stage_2";
-	public static final String blockPath_stage_3 = Mods.ResourceCrops + ":block/templates/crop/narcissus/all/stage_3";
-	public static final String blockPath_stage_4 = Mods.ResourceCrops + ":block/templates/crop/narcissus/all/stage_4";
-	public static final String blockPath_stage_5 = Mods.ResourceCrops + ":block/templates/crop/narcissus/all/stage_5";
-	public static final String blockPath_stage_6 = Mods.ResourceCrops + ":block/templates/crop/narcissus/all/stage_6";
-	public static final String blockPath_stage_7 = Mods.ResourceCrops + ":block/templates/crop/narcissus/all/stage_7";
-	public static final String blockPath_radial_stage_7 = Mods.ResourceCrops + ":block/templates/crop/narcissus/radial/stage_7";
-	public static final String blockPath_log_stage_7 = Mods.ResourceCrops + ":block/templates/crop/narcissus/log/stage_7";
+	public static final String BP_ALL = Mods.ResourceCrops + ":block/templates/crop/narcissus/all/stage_";
+	public static final String BP_RADIAL = Mods.ResourceCrops + ":block/templates/crop/narcissus/radial/stage_";
+	public static final String BP_LOG = Mods.ResourceCrops + ":block/templates/crop/narcissus/log/stage_";
 
 	public static void registerCropModel(String modName, String cropName, String resourceTex, String gradientTex, String plantLeavesTex, String plantStemTex, String parentPath) {
 		if(Main.ENABLE_SELF){
@@ -122,40 +115,40 @@ public class RegisterBlockModel{
 	}
 
 	public static void addAllCropStageModels(String modName, String cropName, String resourceTex, String gradientTex, String plantLeavesTex, String plantStemTex){
-		ASSETS.addModel(JModel.modelKeepElements(blockPath_stage_0).textures(JModel.textures().var("resource", resourceTex).var("resource_center", resourceTex + "_center").var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
-		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_0"));		
-		ASSETS.addModel(JModel.modelKeepElements(blockPath_stage_1).textures(JModel.textures().var("resource", resourceTex).var("resource_center", resourceTex + "_center").var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
+		ASSETS.addModel(JModel.modelKeepElements(BP_ALL+"0").textures(JModel.textures().var("resource", resourceTex).var("resource_center", resourceTex).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
+		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_0"));
+		ASSETS.addModel(JModel.modelKeepElements(BP_ALL+"1").textures(JModel.textures().var("resource", resourceTex).var("resource_center", resourceTex).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
 		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_1"));
-		ASSETS.addModel(JModel.modelKeepElements(blockPath_stage_2).textures(JModel.textures().var("resource", resourceTex).var("resource_center", resourceTex + "_center").var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
+		ASSETS.addModel(JModel.modelKeepElements(BP_ALL+"2").textures(JModel.textures().var("resource", resourceTex).var("resource_center", resourceTex).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
 		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_2"));
-		ASSETS.addModel(JModel.modelKeepElements(blockPath_stage_3).textures(JModel.textures().var("resource", resourceTex).var("resource_center", resourceTex + "_center").var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
+		ASSETS.addModel(JModel.modelKeepElements(BP_ALL+"3").textures(JModel.textures().var("resource", resourceTex).var("resource_center", resourceTex).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
 		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_3"));
-		ASSETS.addModel(JModel.modelKeepElements(blockPath_stage_4).textures(JModel.textures().var("resource", resourceTex).var("resource_center", resourceTex + "_center").var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
-		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_4"));		
-		ASSETS.addModel(JModel.modelKeepElements(blockPath_stage_5).textures(JModel.textures().var("resource", resourceTex).var("resource_center", resourceTex + "_center").var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
+		ASSETS.addModel(JModel.modelKeepElements(BP_ALL+"4").textures(JModel.textures().var("resource", resourceTex).var("resource_center", resourceTex).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
+		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_4"));
+		ASSETS.addModel(JModel.modelKeepElements(BP_ALL+"5").textures(JModel.textures().var("resource", resourceTex).var("resource_center", resourceTex).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
 		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_5"));
-		ASSETS.addModel(JModel.modelKeepElements(blockPath_stage_6).textures(JModel.textures().var("resource", resourceTex).var("resource_center", resourceTex + "_center").var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
+		ASSETS.addModel(JModel.modelKeepElements(BP_ALL+"6").textures(JModel.textures().var("resource", resourceTex).var("resource_center", resourceTex).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
 		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_6"));
-		ASSETS.addModel(JModel.modelKeepElements(blockPath_stage_7).textures(JModel.textures().var("resource", resourceTex).var("resource_center", resourceTex + "_center").var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
+		ASSETS.addModel(JModel.modelKeepElements(BP_ALL+"7").textures(JModel.textures().var("resource", resourceTex).var("resource_center", resourceTex).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
 		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_7"));
 	}
 
 	public static void addRadialCropStageModels(String modName, String cropName, String resourceTex, String gradientTex, String plantLeavesTex, String plantStemTex){
-		ASSETS.addModel(JModel.modelKeepElements(blockPath_stage_0).textures(JModel.textures().var("resource", resourceTex).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
-		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_0"));		
-		ASSETS.addModel(JModel.modelKeepElements(blockPath_stage_1).textures(JModel.textures().var("resource", resourceTex).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
+		ASSETS.addModel(JModel.modelKeepElements(BP_RADIAL+"0").textures(JModel.textures().var("resource", resourceTex).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
+		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_0"));
+		ASSETS.addModel(JModel.modelKeepElements(BP_RADIAL+"1").textures(JModel.textures().var("resource", resourceTex).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
 		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_1"));
-		ASSETS.addModel(JModel.modelKeepElements(blockPath_stage_2).textures(JModel.textures().var("resource", resourceTex).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
+		ASSETS.addModel(JModel.modelKeepElements(BP_RADIAL+"2").textures(JModel.textures().var("resource", resourceTex).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
 		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_2"));
-		ASSETS.addModel(JModel.modelKeepElements(blockPath_stage_3).textures(JModel.textures().var("resource", resourceTex).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
+		ASSETS.addModel(JModel.modelKeepElements(BP_RADIAL+"3").textures(JModel.textures().var("resource", resourceTex).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
 		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_3"));
-		ASSETS.addModel(JModel.modelKeepElements(blockPath_stage_4).textures(JModel.textures().var("resource", resourceTex).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
-		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_4"));		
-		ASSETS.addModel(JModel.modelKeepElements(blockPath_stage_5).textures(JModel.textures().var("resource", resourceTex).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
+		ASSETS.addModel(JModel.modelKeepElements(BP_RADIAL+"4").textures(JModel.textures().var("resource", resourceTex).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
+		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_4"));
+		ASSETS.addModel(JModel.modelKeepElements(BP_RADIAL+"5").textures(JModel.textures().var("resource", resourceTex).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
 		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_5"));
-		ASSETS.addModel(JModel.modelKeepElements(blockPath_stage_6).textures(JModel.textures().var("resource", resourceTex).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
+		ASSETS.addModel(JModel.modelKeepElements(BP_RADIAL+"6").textures(JModel.textures().var("resource", resourceTex).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
 		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_6"));
-		ASSETS.addModel(JModel.modelKeepElements(blockPath_radial_stage_7).textures(JModel.textures().var("resource", resourceTex).var("resource_center", resourceTex + "_center").var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
+		ASSETS.addModel(JModel.modelKeepElements(BP_RADIAL+"7").textures(JModel.textures().var("resource", resourceTex).var("resource_center", resourceTex + "_center").var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
 		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_7"));
 	}
 
@@ -168,21 +161,21 @@ public class RegisterBlockModel{
 	}
 
 	public static void addLogCropStageModels(String modName, String cropName, String resourceTex, String gradientTex, String plantLeavesTex, String plantStemTex, Boolean isSideIncludeInLogTexName){
-		ASSETS.addModel(JModel.modelKeepElements(blockPath_stage_0).textures(JModel.textures().var("resource", resourceTex).var("resource_top", executeLogCheck(resourceTex, isSideIncludeInLogTexName)).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
-		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_0"));		
-		ASSETS.addModel(JModel.modelKeepElements(blockPath_stage_1).textures(JModel.textures().var("resource", resourceTex).var("resource_top", executeLogCheck(resourceTex, isSideIncludeInLogTexName)).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
+		ASSETS.addModel(JModel.modelKeepElements(BP_LOG+"0").textures(JModel.textures().var("resource", resourceTex).var("resource_top", executeLogCheck(resourceTex, isSideIncludeInLogTexName)).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
+		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_0"));
+		ASSETS.addModel(JModel.modelKeepElements(BP_LOG+"1").textures(JModel.textures().var("resource", resourceTex).var("resource_top", executeLogCheck(resourceTex, isSideIncludeInLogTexName)).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
 		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_1"));
-		ASSETS.addModel(JModel.modelKeepElements(blockPath_stage_2).textures(JModel.textures().var("resource", resourceTex).var("resource_top", executeLogCheck(resourceTex, isSideIncludeInLogTexName)).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
+		ASSETS.addModel(JModel.modelKeepElements(BP_LOG+"2").textures(JModel.textures().var("resource", resourceTex).var("resource_top", executeLogCheck(resourceTex, isSideIncludeInLogTexName)).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
 		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_2"));
-		ASSETS.addModel(JModel.modelKeepElements(blockPath_stage_3).textures(JModel.textures().var("resource", resourceTex).var("resource_top", executeLogCheck(resourceTex, isSideIncludeInLogTexName)).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
+		ASSETS.addModel(JModel.modelKeepElements(BP_LOG+"3").textures(JModel.textures().var("resource", resourceTex).var("resource_top", executeLogCheck(resourceTex, isSideIncludeInLogTexName)).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
 		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_3"));
-		ASSETS.addModel(JModel.modelKeepElements(blockPath_stage_4).textures(JModel.textures().var("resource", resourceTex).var("resource_top", executeLogCheck(resourceTex, isSideIncludeInLogTexName)).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
-		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_4"));		
-		ASSETS.addModel(JModel.modelKeepElements(blockPath_stage_5).textures(JModel.textures().var("resource", resourceTex).var("resource_top", executeLogCheck(resourceTex, isSideIncludeInLogTexName)).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
+		ASSETS.addModel(JModel.modelKeepElements(BP_LOG+"4").textures(JModel.textures().var("resource", resourceTex).var("resource_top", executeLogCheck(resourceTex, isSideIncludeInLogTexName)).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
+		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_4"));
+		ASSETS.addModel(JModel.modelKeepElements(BP_LOG+"5").textures(JModel.textures().var("resource", resourceTex).var("resource_top", executeLogCheck(resourceTex, isSideIncludeInLogTexName)).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
 		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_5"));
-		ASSETS.addModel(JModel.modelKeepElements(blockPath_stage_6).textures(JModel.textures().var("resource", resourceTex).var("resource_top", executeLogCheck(resourceTex, isSideIncludeInLogTexName)).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
+		ASSETS.addModel(JModel.modelKeepElements(BP_LOG+"6").textures(JModel.textures().var("resource", resourceTex).var("resource_top", executeLogCheck(resourceTex, isSideIncludeInLogTexName)).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
 		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_6"));
-		ASSETS.addModel(JModel.modelKeepElements(blockPath_log_stage_7).textures(JModel.textures().var("resource", resourceTex).var("resource_top", executeLogCheck(resourceTex, isSideIncludeInLogTexName)).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
+		ASSETS.addModel(JModel.modelKeepElements(BP_LOG+"7").textures(JModel.textures().var("resource", resourceTex).var("resource_top", executeLogCheck(resourceTex, isSideIncludeInLogTexName)).var("plant_leaves", plantLeavesTex).var("plant_stem", plantStemTex).var("gradient", gradientTex)
 		), new Identifier(Mods.ResourceCrops, "block/crop_" + modName + "/" + cropName.toLowerCase() + "_stage_7"));
 	}
 

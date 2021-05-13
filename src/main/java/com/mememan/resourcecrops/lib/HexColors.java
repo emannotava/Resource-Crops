@@ -12,10 +12,9 @@ public class HexColors {
 	public static final int TIER_INFINITY = 0xFFFFFF;
 	public static final int TIER_CREATIVE = 0xFFFFFF;
 
-	public class METALS{
+	public class Metals{
 		public static final int ALUMINIUM = 0x7A828B;
 		public static final int ALUMINUM = ALUMINIUM;
-		public static final int AMETHYST = 0x875FB4;
 		public static final int BERYLLIUM = 0x716F6C;
 		public static final int BISMUTH = 0x958D69;
 		public static final int BRASS = 0xEDBC80;
@@ -41,9 +40,7 @@ public class HexColors {
 		public static final int PLUTONIUM = 0x7C0B04;
 		public static final int POTASSIUM = 0x7C8479;
 		public static final int RHODIUM = 0x7E7A76;
-		public static final int RUBY = 0xEE0713;
 		public static final int SAMARIUM = 0xE9FCA4;
-		public static final int SAPPHIRE = 0x0922E0;
 		public static final int SCANDIUM = 0x908B6C;
 		public static final int SILVER = 0xBFC5C7;
 		public static final int SODIUM = 0xB8B9F3;
@@ -51,9 +48,14 @@ public class HexColors {
 		public static final int THORIUM = 0xB4E4FC;
 		public static final int TIN = 0x9AB7D1;
 		public static final int TITANIUM = 0x1C5198;
-		public static final int TOPAZ = 0xF6F11A;
 		public static final int TUNGSTEN = 0x868886;
 		public static final int URANIUM = 0x1DDC56;
 		public static final int ZINC = 0xD3B849;
+	}
+	public class Jewels{
+		public static final int AMETHYST = 0x875FB4;
+		public static final int RUBY = 0xEE0713;
+		public static final int SAPPHIRE = 0x0922E0;
+		public static final int TOPAZ = 0xF6F11A;
 	}
 }

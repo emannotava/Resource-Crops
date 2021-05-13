@@ -2,8 +2,6 @@ package com.mememan.resourcecrops.block;
 
 import com.mememan.resourcecrops.Main;
 import com.mememan.resourcecrops.block.machine.MachineFrame;
-import com.mememan.resourcecrops.item.IngotCommonMetal;
-import com.mememan.resourcecrops.item.NuggetCommonMetal;
 import com.mememan.resourcecrops.lib.HexColors;
 import com.mememan.resourcecrops.lib.Mods;
 import com.mememan.resourcecrops.lib.Sounds;
@@ -14,7 +12,6 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
@@ -54,7 +51,8 @@ public class RegisterBlock {
 	public static final Block METALLIC_ESSENCE_TIER_6_BLOCK = new BlockMetallicEssence("metallic_essence_block", "6", HexColors.TIER_6, 12.0F);
 	
 	public static final Block JEB_WOOL = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds(BlockSoundGroup.WOOL));
-
+	public static final Block JEB_WOOL_CARPET = new CarpetBlock(FabricBlockSettings.of(Material.WOOL).strength(0.8f).sounds(BlockSoundGroup.WOOL).nonOpaque());
+	
 	public static final Block MACHINE_FRAME_COAL = new MachineFrame(FabricBlockSettings.of(Material.STONE).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.STONE));
 	public static final Block MACHINE_FRAME_DIAMOND = new MachineFrame(FabricBlockSettings.of(Material.METAL).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.METAL));
 	public static final Block MACHINE_FRAME_EMERALD = new MachineFrame(FabricBlockSettings.of(Material.METAL).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.METAL));
@@ -63,65 +61,20 @@ public class RegisterBlock {
 	public static final Block MACHINE_FRAME_LAPIS = new MachineFrame(FabricBlockSettings.of(Material.METAL).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.METAL));
 	public static final Block MACHINE_FRAME_NETHERITE = new MachineFrame(FabricBlockSettings.of(Material.METAL).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.NETHERITE));
 	public static final Block MACHINE_FRAME_REDSTONE = new MachineFrame(FabricBlockSettings.of(Material.METAL).strength(14.0f).nonOpaque().sounds(BlockSoundGroup.METAL));
-
-	public static final Object ALUMINIUM = createMetal("aluminium", HexColors.METALS.ALUMINIUM);
-	public static final Object BERYLLIUM = createMetal("beryllium", HexColors.METALS.BERYLLIUM);
-	public static final Object BISMUTH = createMetal("bismuth", HexColors.METALS.BISMUTH);
-	public static final Object CHROMIUM = createMetal("chromium", HexColors.METALS.CHROMIUM);
-	public static final Object COBALT = createMetal("cobalt", HexColors.METALS.COBALT);
-	public static final Object COPPER = createMetal("copper", HexColors.METALS.COPPER);
-	public static final Object IRIDIUM = createMetal("iridium", HexColors.METALS.IRIDIUM);
-	public static final Object BRASS = createMetal("brass", HexColors.METALS.BRASS);
-	public static final Object BRONZE = createMetal("bronze", HexColors.METALS.BRONZE);
-	public static final Object GALLIUM = createMetal("gallium", HexColors.METALS.GALLIUM);
-	public static final Object INDIUM = createMetal("indium", HexColors.METALS.INDIUM);
-	public static final Object LEAD = createMetal("lead", HexColors.METALS.LEAD);
-	public static final Object MAGNESIUM = createMetal("magnesium", HexColors.METALS.MAGNESIUM);
-	public static final Object MANGANESE = createMetal("manganese", HexColors.METALS.MANGANESE);
-	public static final Object MERCURY = createMetal("mercury", HexColors.METALS.MERCURY);
-	public static final Object NICKEL = createMetal("nickel", HexColors.METALS.NICKEL);
-	public static final Object PLUTONIUM = createMetal("plutonium", HexColors.METALS.PLUTONIUM);
-	public static final Object POTASSIUM = createMetal("potassium", HexColors.METALS.POTASSIUM);
-	public static final Object RHODIUM = createMetal("rhodium", HexColors.METALS.RHODIUM);
-	public static final Object SAMARIUM = createMetal("samarium", HexColors.METALS.SAMARIUM);
-	public static final Object SCANDIUM = createMetal("scandium", HexColors.METALS.SCANDIUM);
-	public static final Object SILVER = createMetal("silver", HexColors.METALS.SILVER);
-	public static final Object SODIUM = createMetal("sodium", HexColors.METALS.SODIUM);
-	public static final Object TITANIUM = createMetal("titanium", HexColors.METALS.TITANIUM);
-	public static final Object TIN = createMetal("tin", HexColors.METALS.TIN);
-	public static final Object URANIUM = createMetal("uranium", HexColors.METALS.URANIUM);
-	public static final Object ZINC = createMetal("zinc", HexColors.METALS.ZINC);
-
-	public static final Object createMetal(String name, int color){
-		nuggetMetal(name, color);
-		ingotMetal(name, color);
-		blockMetal(name, color);
-		return null;
-	}
-
-	public static Block blockMetal(String name, int color){
-		return new BlockCommonMetal(name, color);
-	}
-
-	public static Item ingotMetal(String name, int color){
-		return new IngotCommonMetal(name, color);
-	}
-
-	public static Item nuggetMetal(String name, int color){
-		return new NuggetCommonMetal(name, color);
-	}
 	
 	public static void initialize(){
-		addBlock("debug_block/debug_block", DEBUG_BLOCK, Main.GROUP_EXPERIMENTAL);
-		// addBlock("debug_block/temple/temple", DEBUG_BLOCK_TEMPLE, Main.GROUP_EXPERIMENTAL);
-		addCutOutBlock("debug_block/crop/stage_0", DEBUG_BLOCK_CROP_STAGE_0, Main.GROUP_EXPERIMENTAL);
-		addCutOutBlock("debug_block/crop/stage_1", DEBUG_BLOCK_CROP_STAGE_1, Main.GROUP_EXPERIMENTAL);
-		addCutOutBlock("debug_block/crop/stage_2", DEBUG_BLOCK_CROP_STAGE_2, Main.GROUP_EXPERIMENTAL);
-		addCutOutBlock("debug_block/crop/stage_3", DEBUG_BLOCK_CROP_STAGE_3, Main.GROUP_EXPERIMENTAL);
-		addCutOutBlock("debug_block/crop/stage_4", DEBUG_BLOCK_CROP_STAGE_4, Main.GROUP_EXPERIMENTAL);
-		addCutOutBlock("debug_block/crop/stage_5", DEBUG_BLOCK_CROP_STAGE_5, Main.GROUP_EXPERIMENTAL);
-		addCutOutBlock("debug_block/crop/stage_6", DEBUG_BLOCK_CROP_STAGE_6, Main.GROUP_EXPERIMENTAL);
-		addCutOutBlock("debug_block/crop/stage_7", DEBUG_BLOCK_CROP_STAGE_7, Main.GROUP_EXPERIMENTAL);
+		if(Mods.checkDevEnv()){
+			addBlock("debug_block/debug_block", DEBUG_BLOCK, Main.GROUP_EXPERIMENTAL);
+			// addBlock("debug_block/temple/temple", DEBUG_BLOCK_TEMPLE, Main.GROUP_EXPERIMENTAL);
+			addCutOutBlock("debug_block/crop/stage_0", DEBUG_BLOCK_CROP_STAGE_0, Main.GROUP_EXPERIMENTAL);
+			addCutOutBlock("debug_block/crop/stage_1", DEBUG_BLOCK_CROP_STAGE_1, Main.GROUP_EXPERIMENTAL);
+			addCutOutBlock("debug_block/crop/stage_2", DEBUG_BLOCK_CROP_STAGE_2, Main.GROUP_EXPERIMENTAL);
+			addCutOutBlock("debug_block/crop/stage_3", DEBUG_BLOCK_CROP_STAGE_3, Main.GROUP_EXPERIMENTAL);
+			addCutOutBlock("debug_block/crop/stage_4", DEBUG_BLOCK_CROP_STAGE_4, Main.GROUP_EXPERIMENTAL);
+			addCutOutBlock("debug_block/crop/stage_5", DEBUG_BLOCK_CROP_STAGE_5, Main.GROUP_EXPERIMENTAL);
+			addCutOutBlock("debug_block/crop/stage_6", DEBUG_BLOCK_CROP_STAGE_6, Main.GROUP_EXPERIMENTAL);
+			addCutOutBlock("debug_block/crop/stage_7", DEBUG_BLOCK_CROP_STAGE_7, Main.GROUP_EXPERIMENTAL);
+		}
 		addBlock("ore_thurston", ORE_THURSTON, Main.GROUP_MAIN);
 		addOreBlock(Mods.VanillaShort, "stone", Main.GROUP_MAIN);
 		addOreBlock(Mods.VanillaShort, "diorite", Main.GROUP_MAIN);
@@ -129,7 +82,9 @@ public class RegisterBlock {
 		addOreBlock(Mods.VanillaShort, "granite", Main.GROUP_MAIN);
 		addOreBlock(Mods.VanillaShort, "netherrack", Main.GROUP_MAIN);
 		addOreBlock(Mods.VanillaShort, "end_stone", Main.GROUP_MAIN);
-		addOreBlock(Mods.AetherShort, "holystone", Main.GROUP_MAIN);
+		if(Mods.checkMod(Mods.Aether)){
+			addOreBlock(Mods.AetherShort, "holystone", Main.GROUP_MAIN);
+		}
 		addBlock("essence_tier_" + Strings.TIER_1 + "_block", ESSENCE_TIER_1_BLOCK, Main.GROUP_MAIN);
 		addBlock("essence_tier_" + Strings.TIER_2 + "_block", ESSENCE_TIER_2_BLOCK, Main.GROUP_MAIN);
 		addBlock("essence_tier_" + Strings.TIER_3 + "_block", ESSENCE_TIER_3_BLOCK, Main.GROUP_MAIN);
@@ -139,6 +94,7 @@ public class RegisterBlock {
 		addBlock("essence_tier_" + Strings.TIER_INFINITY + "_block", ESSENCE_TIER_INFINITY_BLOCK, Main.GROUP_MAIN);
 		addBlock("essence_tier_" + Strings.TIER_CREATIVE + "_block", ESSENCE_TIER_CREATIVE_BLOCK, Main.GROUP_MAIN);
 		addBlock("jeb_wool", JEB_WOOL, ItemGroup.BUILDING_BLOCKS);
+		addCutOutBlock("jeb_wool_carpet", JEB_WOOL_CARPET, ItemGroup.DECORATIONS);
 		addMachineBlock("machine_frame/coal", MACHINE_FRAME_COAL, Main.GROUP_EXPERIMENTAL);
 		addMachineBlock("machine_frame/diamond", MACHINE_FRAME_DIAMOND, Main.GROUP_EXPERIMENTAL);
 		addMachineBlock("machine_frame/emerald", MACHINE_FRAME_EMERALD, Main.GROUP_EXPERIMENTAL);

@@ -2,7 +2,11 @@ package com.mememan.resourcecrops.block;
 
 import java.util.List;
 
-import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+import com.mememan.resourcecrops.util.color.Color;
+
+// import net.fabricmc.api.EnvType;
+// import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+// import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
@@ -24,8 +28,8 @@ public class BlockOre extends Block{
 	public BlockOre(String name, float strength, int hex) {
 		super(BLOCK_SETTINGS(strength));
 		ORE_NAME = name;
-		ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> hex, this);
-		ColorProviderRegistry.ITEM.register((stack, tintIndex) -> hex, this);
+		Color.setBlockColor(hex, this);
+		Color.setItemColor(hex, this);
 	}
 
 	@Override

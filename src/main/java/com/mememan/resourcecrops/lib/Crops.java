@@ -11,12 +11,16 @@ import com.mememan.resourcecrops.item.RegisterItem;
 import com.mememan.resourcecrops.lib.ingredient.*;
 import com.mememan.resourcecrops.lib.tex.*;
 // import com.mememan.resourcecrops.loot.RegisterEntityLoot;
+// import com.mememan.resourcecrops.loot.RegisterEntityLoot;
+// import com.mememan.resourcecrops.registry.RegisterRecipe.Essence;
+import com.mememan.resourcecrops.registry.RegisterRecipe;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 
 import static com.mememan.resourcecrops.registry.RegisterRecipe.Essence.*;
+import static com.mememan.resourcecrops.registry.RegisterRecipe.cat;
 import static com.mememan.resourcecrops.config.ConfigDevEnv.MOD_SUPPORT.*;
 
 public class Crops{
@@ -265,34 +269,35 @@ public class Crops{
 		
 		//Common Metals
 		if(Common){
-			createCropTinted("aluminium", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.ALUMINIUM_INGOT, TIER_3}, true, HexColors.METALS.ALUMINIUM, SQUARE_HOLLOW, CommonIngredient.ALUMINIUM_INGOT, 8);
-			createCropTinted("brass", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.BRASS_INGOT, TIER_3}, true, HexColors.METALS.BRASS, SQUARE_HOLLOW, CommonIngredient.BRASS_INGOT, 8);
-			createCropTinted("bronze", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.BRONZE_INGOT, TIER_3}, true, HexColors.METALS.BRONZE, SQUARE_HOLLOW, CommonIngredient.BRONZE_INGOT, 8);
-			createCropTinted("chrome", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.CHROME_INGOT, TIER_3}, true, HexColors.METALS.CHROME, SQUARE_HOLLOW, CommonIngredient.CHROME_INGOT, 8);
-			createCropTinted("copper", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.COPPER_INGOT, TIER_3}, true, HexColors.METALS.COPPER, SQUARE_HOLLOW, CommonIngredient.COPPER_INGOT, 8);
-			createCropTinted("electrum", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.ELECTRUM_INGOT, TIER_3}, true, HexColors.METALS.ELECTRUM, SQUARE_HOLLOW, CommonIngredient.ELECTRUM_INGOT, 8);
-			createCropTinted("invar", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.INVAR_INGOT, TIER_3}, true, HexColors.METALS.INVAR, SQUARE_HOLLOW, CommonIngredient.INVAR_INGOT, 8);
-			createCropTinted("iridium", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.IRIDIUM_INGOT, TIER_3}, true, HexColors.METALS.IRIDIUM, SQUARE_HOLLOW, CommonIngredient.IRIDIUM_INGOT, 8);
-			createCropTinted("lead", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.LEAD_INGOT, TIER_3}, true, HexColors.METALS.LEAD, SQUARE_HOLLOW, CommonIngredient.LEAD_INGOT, 8);
-			createCropTinted("nickel", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.NICKEL_INGOT, TIER_3}, true, HexColors.METALS.NICKEL, SQUARE_HOLLOW, CommonIngredient.NICKEL_INGOT, 8);
-			createCropTinted("platinum", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.PLATINUM_INGOT, TIER_3}, true, HexColors.METALS.PLATINUM, SQUARE_HOLLOW, CommonIngredient.PLATINUM_INGOT, 8);
-			createCropTinted("ruby", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.SILVER_INGOT, TIER_3}, true, HexColors.METALS.RUBY, SQUARE_HOLLOW, CommonIngredient.SILVER_INGOT, 8);
-			createCropTinted("sapphire", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.STEEL_INGOT, TIER_3}, true, HexColors.METALS.SAPPHIRE, SQUARE_HOLLOW, CommonIngredient.STEEL_INGOT, 8);
-			createCropTinted("silver", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.TIN_INGOT, TIER_3}, true, HexColors.METALS.SILVER, SQUARE_HOLLOW, CommonIngredient.TIN_INGOT, 8);
-			createCropTinted("steel", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.TITANIUM_INGOT, TIER_3}, true, HexColors.METALS.STEEL, SQUARE_HOLLOW, CommonIngredient.TITANIUM_INGOT, 8);
-			createCropTinted("tin", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.TUNGSTEN_INGOT, TIER_3}, true, HexColors.METALS.TIN, SQUARE_HOLLOW, CommonIngredient.TUNGSTEN_INGOT, 8);
-			createCropTinted("titanium", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.ZINC_INGOT, TIER_3}, true, HexColors.METALS.TITANIUM, SQUARE_HOLLOW, CommonIngredient.ZINC_INGOT, 8);
-			createCropTinted("tungsten", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.RUBY_GEM, TIER_3}, true, HexColors.METALS.TUNGSTEN, SQUARE_HOLLOW, CommonIngredient.RUBY_GEM, 8);
-			createCropTinted("zinc", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.SAPPHIRE_GEM, TIER_3}, true, HexColors.METALS.ZINC, SQUARE_HOLLOW, CommonIngredient.SAPPHIRE_GEM, 8);
-			createCropTinted("amethyst", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.AMETHYST, TIER_3}, true, HexColors.METALS.AMETHYST, SQUARE_HOLLOW, CommonIngredient.AMETHYST, 8);
-			createCropTinted("coal_coke", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.COAL_COKE, TIER_3}, true, HexColors.METALS.COAL_COKE, SQUARE_HOLLOW, CommonIngredient.COAL_COKE, 8);
-			createCropTinted("cobalt", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.COBALT_INGOT, TIER_3}, true, HexColors.METALS.COBALT, SQUARE_HOLLOW, CommonIngredient.COBALT_INGOT, 8);
-			createCropTinted("osmium", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.OSMIUM_INGOT, TIER_3}, true, HexColors.METALS.OSMIUM, SQUARE_HOLLOW, CommonIngredient.OSMIUM_INGOT, 8);
-			createCropTinted("palladium", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.PALLADIUM_INGOT, TIER_3}, true, HexColors.METALS.PALLADIUM, SQUARE_HOLLOW, CommonIngredient.PALLADIUM_INGOT, 8);
-			createCropTinted("plutonium", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.PLUTONIUM_INGOT, TIER_3}, true, HexColors.METALS.PLUTONIUM, SQUARE_HOLLOW, CommonIngredient.PLUTONIUM_INGOT, 8);
-			createCropTinted("thorium", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.THORIUM_INGOT, TIER_3}, true, HexColors.METALS.THORIUM, SQUARE_HOLLOW, CommonIngredient.THORIUM_INGOT, 8);
-			createCropTinted("topaz", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.TOPAZ_GEM, TIER_3}, true, HexColors.METALS.TOPAZ, SQUARE_HOLLOW, CommonIngredient.TOPAZ_GEM, 8);
-			createCropTinted("uranium", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.URANIUM_INGOT, TIER_3}, true, HexColors.METALS.URANIUM, SQUARE_HOLLOW, CommonIngredient.URANIUM_INGOT, 8);
+			createCropTinted("aluminium", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.ALUMINIUM_INGOT, TIER_3}, true, HexColors.Metals.ALUMINIUM, SQUARE_HOLLOW, CommonIngredient.ALUMINIUM_INGOT, 8);
+			createCropTinted("brass", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.BRASS_INGOT, TIER_3}, true, HexColors.Metals.BRASS, SQUARE_HOLLOW, CommonIngredient.BRASS_INGOT, 8);
+			createCropTinted("bronze", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.BRONZE_INGOT, TIER_3}, true, HexColors.Metals.BRONZE, SQUARE_HOLLOW, CommonIngredient.BRONZE_INGOT, 8);
+			createCropTinted("chrome", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.CHROME_INGOT, TIER_3}, true, HexColors.Metals.CHROME, SQUARE_HOLLOW, CommonIngredient.CHROME_INGOT, 8);
+			createCropTinted("copper", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.COPPER_INGOT, TIER_3}, true, HexColors.Metals.COPPER, SQUARE_HOLLOW, CommonIngredient.COPPER_INGOT, 8);
+			createCropTinted("electrum", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.ELECTRUM_INGOT, TIER_3}, true, HexColors.Metals.ELECTRUM, SQUARE_HOLLOW, CommonIngredient.ELECTRUM_INGOT, 8);
+			createCropTinted("invar", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.INVAR_INGOT, TIER_3}, true, HexColors.Metals.INVAR, SQUARE_HOLLOW, CommonIngredient.INVAR_INGOT, 8);
+			createCropTinted("iridium", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.IRIDIUM_INGOT, TIER_3}, true, HexColors.Metals.IRIDIUM, SQUARE_HOLLOW, CommonIngredient.IRIDIUM_INGOT, 8);
+			createCropTinted("lead", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.LEAD_INGOT, TIER_3}, true, HexColors.Metals.LEAD, SQUARE_HOLLOW, CommonIngredient.LEAD_INGOT, 8);
+			createCropTinted("nickel", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.NICKEL_INGOT, TIER_3}, true, HexColors.Metals.NICKEL, SQUARE_HOLLOW, CommonIngredient.NICKEL_INGOT, 8);
+			createCropTinted("platinum", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.PLATINUM_INGOT, TIER_3}, true, HexColors.Metals.PLATINUM, SQUARE_HOLLOW, CommonIngredient.PLATINUM_INGOT, 8);
+			createCropTinted("silver", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.SILVER_INGOT, TIER_3}, true, HexColors.Metals.SILVER, SQUARE_HOLLOW, CommonIngredient.SILVER_INGOT, 8);
+			createCropTinted("steel", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.STEEL_INGOT, TIER_3}, true, HexColors.Metals.STEEL, SQUARE_HOLLOW, CommonIngredient.STEEL_INGOT, 8);
+			createCropTinted("tin", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.TIN_INGOT, TIER_3}, true, HexColors.Metals.TIN, SQUARE_HOLLOW, CommonIngredient.TIN_INGOT, 8);
+			createCropTinted("titanium", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.TITANIUM_INGOT, TIER_3}, true, HexColors.Metals.TITANIUM, SQUARE_HOLLOW, CommonIngredient.TITANIUM_INGOT, 8);
+			createCropTinted("tungsten", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.TUNGSTEN_INGOT, TIER_3}, true, HexColors.Metals.TUNGSTEN, SQUARE_HOLLOW, CommonIngredient.TUNGSTEN_INGOT, 8);
+			createCropTinted("zinc", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.ZINC_INGOT, TIER_3}, true, HexColors.Metals.ZINC, SQUARE_HOLLOW, CommonIngredient.ZINC_INGOT, 8);
+			createCropTinted("coal_coke", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.COAL_COKE, TIER_3}, true, HexColors.Metals.COAL_COKE, SQUARE_HOLLOW, CommonIngredient.COAL_COKE, 8);
+			createCropTinted("cobalt", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.COBALT_INGOT, TIER_3}, true, HexColors.Metals.COBALT, SQUARE_HOLLOW, CommonIngredient.COBALT_INGOT, 8);
+			createCropTinted("osmium", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.OSMIUM_INGOT, TIER_3}, true, HexColors.Metals.OSMIUM, SQUARE_HOLLOW, CommonIngredient.OSMIUM_INGOT, 8);
+			createCropTinted("palladium", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.PALLADIUM_INGOT, TIER_3}, true, HexColors.Metals.PALLADIUM, SQUARE_HOLLOW, CommonIngredient.PALLADIUM_INGOT, 8);
+			createCropTinted("plutonium", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.PLUTONIUM_INGOT, TIER_3}, true, HexColors.Metals.PLUTONIUM, SQUARE_HOLLOW, CommonIngredient.PLUTONIUM_INGOT, 8);
+			createCropTinted("thorium", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.THORIUM_INGOT, TIER_3}, true, HexColors.Metals.THORIUM, SQUARE_HOLLOW, CommonIngredient.THORIUM_INGOT, 8);
+			createCropTinted("uranium", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_METAL_SIDE}, TAG_RECIPE, new String[]{CommonIngredient.URANIUM_INGOT, TIER_3}, true, HexColors.Metals.URANIUM, SQUARE_HOLLOW, CommonIngredient.URANIUM_INGOT, 8);
+
+			createCropTinted("ruby", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_JEWEL_BLOCK}, TAG_RECIPE, new String[]{CommonIngredient.RUBY_GEM, TIER_3}, true, HexColors.Jewels.RUBY, SQUARE_HOLLOW, CommonIngredient.SILVER_INGOT, 8);
+			createCropTinted("sapphire", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_JEWEL_BLOCK}, TAG_RECIPE, new String[]{CommonIngredient.SAPPHIRE_GEM, TIER_3}, true, HexColors.Jewels.SAPPHIRE, SQUARE_HOLLOW, CommonIngredient.STEEL_INGOT, 8);
+			createCropTinted("amethyst", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_JEWEL_BLOCK}, TAG_RECIPE, new String[]{CommonIngredient.AMETHYST, TIER_3}, true, HexColors.Jewels.AMETHYST, SQUARE_HOLLOW, CommonIngredient.AMETHYST, 8);
+			createCropTinted("topaz", TIER_3, Mods.ResCrop, Mods.C, CMT_ALL, new String[]{ResourceCropsTex.COMMON_JEWEL_BLOCK}, TAG_RECIPE, new String[]{CommonIngredient.TOPAZ_GEM, TIER_3}, true, HexColors.Jewels.TOPAZ, SQUARE_HOLLOW, CommonIngredient.TOPAZ_GEM, 8);
 		}
 		
 		//Industrial Revolution
@@ -575,11 +580,12 @@ public class Crops{
 		ItemSeeds WILMA = seeds(cropName, tier, modNameToCheck, modNameToLabel, FRED);
 		essence(cropName, tier, modNameToCheck, modNameToLabel, pattern, outputItem, outputAmount);
 		if(modNameToCheck==Mods.Astromine || modNameToCheck==Mods.AstromineCore){
-			if(Mods.checkMod(Mods.Astromine)==true && Mods.checkMod(Mods.AstromineCore)==true){RegisterCrop.addCrop(Mods.Astro, cropName.toLowerCase(), FRED, WILMA, resourceTex, cropModelType, addRecipe, ingredients, addLootTable);}
-			if(Mods.checkMod(Mods.Astromine)==true && Mods.checkMod(Mods.AstromineCore)==false){RegisterCrop.addCrop(Mods.Astro, cropName.toLowerCase(), FRED, WILMA, resourceTex, cropModelType, addRecipe, ingredients, addLootTable);}
-			if(Mods.checkMod(Mods.Astromine)==false && Mods.checkMod(Mods.AstromineCore)==true){RegisterCrop.addCrop(Mods.Astro, cropName.toLowerCase(), FRED, WILMA, resourceTex, cropModelType, addRecipe, ingredients, addLootTable);}
+			if(Mods.checkMod(Mods.Astromine)==true && Mods.checkMod(Mods.AstromineCore)==true){RegisterCrop.addCrop(Mods.Astro, cropName.toLowerCase(), FRED, WILMA, resourceTex, cropModelType, addRecipe, ingredients, addLootTable); RegisterRecipe.add1KeyEssenceRecipe(cat(modNameToLabel, cropName), pattern, outputItem, outputAmount);}
+			if(Mods.checkMod(Mods.Astromine)==true && Mods.checkMod(Mods.AstromineCore)==false){RegisterCrop.addCrop(Mods.Astro, cropName.toLowerCase(), FRED, WILMA, resourceTex, cropModelType, addRecipe, ingredients, addLootTable); RegisterRecipe.add1KeyEssenceRecipe(cat(modNameToLabel, cropName), pattern, outputItem, outputAmount);}
+			if(Mods.checkMod(Mods.Astromine)==false && Mods.checkMod(Mods.AstromineCore)==true){RegisterCrop.addCrop(Mods.Astro, cropName.toLowerCase(), FRED, WILMA, resourceTex, cropModelType, addRecipe, ingredients, addLootTable); RegisterRecipe.add1KeyEssenceRecipe(cat(modNameToLabel, cropName), pattern, outputItem, outputAmount);}
 		}else{
 			if(Mods.checkMod(modNameToCheck)){
+				RegisterRecipe.add1KeyEssenceRecipe(cat(modNameToLabel, cropName.toLowerCase()), pattern, outputItem, outputAmount);
 				Main.logDebugMessage(modNameToCheck + " detected, now registering BlockCrop: " + Mods.ResCrop + ":crop_" + modNameToLabel + "/" + cropName.toLowerCase() + ", using model: CropModelTypes." + cropModelType.toUpperCase());
 				RegisterCrop.addCrop(modNameToLabel, cropName.toLowerCase(), FRED, WILMA, resourceTex, cropModelType, addRecipe, ingredients, addLootTable);
 			}
@@ -608,7 +614,7 @@ public class Crops{
 		return seeds(cropName, tier, modNameToCheck, modNameToLabel, block, false);
 	}
 	public static Item essence(String cropName, String tier, String modNameToCheck, String modNameToLabel, String[] pattern, String outputItem, int outputAmount){
-		Item ITEM_DECLARATION = new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), tier, modNameToLabel, cropName, pattern, outputItem, outputAmount);
+		Item ITEM_DECLARATION = new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), tier, modNameToCheck, modNameToLabel, cropName, pattern, outputItem, outputAmount);
 		RegisterItem.addEssenceItem(modNameToCheck, modNameToLabel, cropName, ITEM_DECLARATION);
 		return null;
 	}
@@ -616,8 +622,9 @@ public class Crops{
 	public static final Object createCropInternal(String cropName, String tier, String modName, String cropModelType, String[] resourceTex, Boolean[] addRecipe, String[] ingredients, Boolean addLootTable, int hex, String[] pattern, String outputItem, int outputAmount){
 		Block FRED = cropTinted(cropName.toLowerCase(), tier, modName, modName, hex);
 		ItemSeeds WILMA = seedsTinted(cropName.toLowerCase(), tier, modName, modName, FRED, hex);
-		essence(cropName.toLowerCase(), tier, modName, modName, pattern, outputItem, outputAmount);
-		// Item DINO = essence(cropName.toLowerCase(), tier, modName, modName);
+		essence(cropName, tier, modName, modName, pattern, outputItem, outputAmount);
+		RegisterRecipe.add1KeyEssenceRecipe(cat(modName, cropName), pattern, outputItem, outputAmount);
+		// Item DINO = (ItemEssence) essence(cropName, tier, modName, modName, pattern, outputItem, outputAmount);
 		Main.logDebugMessage(modName + " detected, now registering Internal BlockCrop: " + Mods.ResCrop + ":crop_" + modName + "/" + cropName.toLowerCase() + ", using model: CropModelTypes." + cropModelType.toUpperCase());
 		RegisterCrop.addCrop(modName, cropName.toLowerCase(), FRED, WILMA, resourceTex, cropModelType, addRecipe, ingredients, addLootTable);
 		
@@ -643,10 +650,15 @@ public class Crops{
 		ItemSeeds WILMA = seedsTinted(cropName.toLowerCase(), tier, modNameToCheck, modNameToLabel, FRED, hex);
 		essenceTinted(cropName.toLowerCase(), tier, modNameToCheck, modNameToLabel, hex, pattern, outputItem, outputAmount);
 		if(modNameToCheck==Mods.Astromine || modNameToCheck==Mods.AstromineCore){
-			if(Mods.checkMod(Mods.Astromine)==true && Mods.checkMod(Mods.AstromineCore)==true){RegisterCrop.addCrop(Mods.Astro, cropName.toLowerCase(), FRED, WILMA, resourceTex, cropModelType, addRecipe, ingredients, addLootTable);}
-			if(Mods.checkMod(Mods.Astromine)==true && Mods.checkMod(Mods.AstromineCore)==false){RegisterCrop.addCrop(Mods.Astro, cropName.toLowerCase(), FRED, WILMA, resourceTex, cropModelType, addRecipe, ingredients, addLootTable);}
-			if(Mods.checkMod(Mods.Astromine)==false && Mods.checkMod(Mods.AstromineCore)==true){RegisterCrop.addCrop(Mods.Astro, cropName.toLowerCase(), FRED, WILMA, resourceTex, cropModelType, addRecipe, ingredients, addLootTable);}
+			if(Mods.checkMod(Mods.Astromine)==true && Mods.checkMod(Mods.AstromineCore)==true){RegisterCrop.addCrop(Mods.Astro, cropName.toLowerCase(), FRED, WILMA, resourceTex, cropModelType, addRecipe, ingredients, addLootTable); RegisterRecipe.add1KeyEssenceRecipe(cat(modNameToLabel, cropName), pattern, outputItem, outputAmount);}
+			if(Mods.checkMod(Mods.Astromine)==true && Mods.checkMod(Mods.AstromineCore)==false){RegisterCrop.addCrop(Mods.Astro, cropName.toLowerCase(), FRED, WILMA, resourceTex, cropModelType, addRecipe, ingredients, addLootTable); RegisterRecipe.add1KeyEssenceRecipe(cat(modNameToLabel, cropName), pattern, outputItem, outputAmount);}
+			if(Mods.checkMod(Mods.Astromine)==false && Mods.checkMod(Mods.AstromineCore)==true){RegisterCrop.addCrop(Mods.Astro, cropName.toLowerCase(), FRED, WILMA, resourceTex, cropModelType, addRecipe, ingredients, addLootTable); RegisterRecipe.add1KeyEssenceRecipe(cat(modNameToLabel, cropName), pattern, outputItem, outputAmount);}
 		}else if(Mods.checkMod(modNameToCheck)){
+			if(modNameToLabel == Mods.C){
+				RegisterRecipe.add1KeyEssenceRecipe(cat(modNameToLabel, cropName), pattern, CommonIngredient.convertTagToCommonMetalItem(outputItem), outputAmount);
+			}else{
+				RegisterRecipe.add1KeyEssenceRecipe(cat(modNameToLabel, cropName), pattern, outputItem, outputAmount);
+			}
 			Main.logDebugMessage(modNameToCheck + " detected, now registering Tinted BlockCrop: " + Mods.ResCrop + ":crop_" + modNameToLabel + "/" + cropName.toLowerCase() + ", using model: CropModelTypes." + cropModelType.toUpperCase());
 			RegisterCrop.addCrop(modNameToLabel, cropName.toLowerCase(), FRED, WILMA, resourceTex, cropModelType, addRecipe, ingredients, addLootTable);
 		}
@@ -658,11 +670,10 @@ public class Crops{
 	}
 	
 	
-	
 	public static BlockCrop cropTinted(String cropName, String tier, String modNameToCheck, String modNameToLabel, int hex){return new BlockCrop(tier, modNameToLabel, cropName, hex);}
 	public static ItemSeeds seedsTinted(String cropName, String tier, String modNameToCheck, String modNameToLabel, Block block, int hex){return new ItemSeeds((BlockCrop) block, new FabricItemSettings().group(Main.GROUP_SEEDS), tier, modNameToLabel, cropName.toLowerCase(), hex);}
 	
-	
+
 	public static Item essenceTinted(String cropName, String tier, String modNameToCheck, String modNameToLabel, int hex, String[] pattern, String outputItem, int outputAmount){
 		Item ITEM_DECLARATION = new ItemEssence(new Item.Settings().group(Main.GROUP_ESSENCE), tier, modNameToLabel, cropName.toLowerCase(), hex, pattern, outputItem, outputAmount);
 		RegisterItem.addEssenceItem(modNameToCheck, modNameToLabel, cropName.toLowerCase(), ITEM_DECLARATION);

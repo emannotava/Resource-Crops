@@ -5,8 +5,10 @@ import java.util.List;
 import com.mememan.resourcecrops.item.ItemSeeds;
 import com.mememan.resourcecrops.util.text.Humanify;
 
+import net.fabricmc.api.EnvType;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -56,13 +58,17 @@ public class BlockCrop extends net.minecraft.block.CropBlock {
 	public BlockCrop(String tier, String mod, String name, int hex){
 		super(BLOCK_SETTINGS());
 		setVars(tier, mod, name);
-		ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> hex, this);
+		if(FabricLoader.getInstance().getEnvironmentType()==EnvType.CLIENT){
+			ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> hex, this);
+		}
 	}
 	
 	public BlockCrop(String tier, String mod, String name, Block soil, int hex){
 		super(BLOCK_SETTINGS());
 		setVars(tier, mod, name, soil);
-		ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> hex, this);
+		if(FabricLoader.getInstance().getEnvironmentType()==EnvType.CLIENT){
+			ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> hex, this);
+		}
 	}
 
 	public void setVars(String tier, String mod, String name){

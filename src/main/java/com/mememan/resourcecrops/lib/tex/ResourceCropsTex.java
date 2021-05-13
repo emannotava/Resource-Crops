@@ -70,9 +70,11 @@ public class ResourceCropsTex {
 	public static final String ORE_TIER_4 = block("ore/tier_4");
 	public static final String ORE_TIER_5 = block("ore/tier_5");
 	public static final String ORE_TIER_6 = block("ore/tier_6");
-	public static final String COMMON_METAL_SIDE = block("common/metal/side");
-	public static final String COMMON_METAL_TOP = block("common/metal/top");
-	public static final String COMMON_METAL_BOTTOM = block("common/metal/bottom");
+	public static final String COMMON_METAL_SIDE = common("metal/side");
+	public static final String COMMON_METAL_TOP = common("metal/top");
+	public static final String COMMON_METAL_BOTTOM = common("metal/bottom");
+	public static final String COMMON_JEWEL_BLOCK = common("jewel/base_block");
+	public static final String COMMON_JEWEL_ITEM = common("jewel/base_item");
 	public static final String FOG = shared("fog/fog");
 	public static final String FOG_TIER_INFINITY = shared("fog/TIER_INFINITY");
 	public static final String FOG_TIER_CREATIVE = shared("fog/TIER_CREATIVE");
@@ -83,10 +85,21 @@ public class ResourceCropsTex {
 	public static final String SPARKLES_TIER_5 = item("sparkles/tier_5");
 	public static final String SPARKLES_TIER_6 = item("sparkles/tier_6");
 	public static final String METALLIC_ESSENCE_INGOT = item("ingot_metallic_essence");
+
+	public static final String INFUSION_STONE_TIER_SINGLIUM = item("infusion_gemstone/tier_singlium");
+	public static final String INFUSION_STONE_TIER_DOUBLIUM = item("infusion_gemstone/tier_doublium");
+	public static final String INFUSION_STONE_TIER_TRILIUM = item("infusion_gemstone/tier_trilium");
+	public static final String INFUSION_STONE_TIER_QUADRIUM = item("infusion_gemstone/tier_quadrium");
+	public static final String INFUSION_STONE_TIER_QUINTERIUM = item("infusion_gemstone/tier_quinterium");
+	public static final String INFUSION_STONE_TIER_SILERIUM = item("infusion_gemstone/tier_silerium");
+	public static final String INFUSION_STONE_TIER_INFINITY = item("infusion_gemstone/tier_infinity");
 	
-	public static final String JEB_WOOL = block("vanilla/jeb_wool");
+	public static final String JEB_WOOL = block("vanilla/jeb/wool");
 	
 
+	public static String common(String input){
+		return Mods.ResourceCrops + ":common/" + input;
+	}
 	public static String shared(String input){
 		return Mods.ResourceCrops + ":shared/" + input;
 	}

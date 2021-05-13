@@ -1,6 +1,7 @@
 package com.mememan.resourcecrops.registry;
 
 import com.mememan.resourcecrops.lib.Mods;
+import com.mememan.resourcecrops.lib.ingredient.CommonIngredient;
 import com.mememan.resourcecrops.lib.ingredient.IndustrialRevolutionIngredient;
 import com.mememan.resourcecrops.lib.ingredient.ResourceCropsIngredient;
 import com.mememan.resourcecrops.lib.ingredient.VanillaIngredient;
@@ -47,12 +48,50 @@ public class RegisterRecipe {
 		public static final String[] CROSSED_SQUARE_2KEY = {"XIX", "IXI", "XIX"};
 	}
 	
+	public static class Unique_Items{
+		public static final String[] ONE = {"A"};
+		public static final String[] ONE_SMALL = {"AA", "AA"};
+		public static final String[] ONE_LARGE = {"AAA", "AAA", "AAA"};
+		public static final String[] TWO = {"AB"};
+		public static final String[] TWO_SMALL = {"AB", "AB"};
+		public static final String[] TWO_LARGE = {"ABA", "BAB", "AB"};
+		public static final String[] THREE = {"ABC"};
+		public static final String[] THREE_SMALL = {"AB", "C"};
+		public static final String[] THREE_LARGE = {"ABC", "ABC", "ABC"};
+		public static final String[] FOUR = {"ABC", "D"};
+		public static final String[] FOUR_SMALL = FOUR;
+		public static final String[] FOUR_LARGE = {"ABC", "DAB", "CD"};
+		public static final String[] FIVE = {"ABC", "DE"};
+		public static final String[] FIVE_LARGE = FIVE;
+		public static final String[] SIX = {"ABC", "DEF"};
+		public static final String[] SIX_LARGE = SIX;
+		public static final String[] SEVEN = {"ABC", "DEF", "G"};
+		public static final String[] SEVEN_LARGE = SEVEN;
+		public static final String[] EIGHT = {"ABC", "DEF", "GH"};
+		public static final String[] EIGHT_LARGE = EIGHT;
+		public static final String[] NINE = {"ABC", "DEF", "GHI"};
+		public static final String[] NINE_LARGE = NINE;
+	}
+	
 	public static void initialize(){
 		if(Main.ENABLE_SELF){
 			/*8 Logs -> 4 Chests*/ ASSETS.addRecipe(new Identifier("arrp", "8logs_to_4chests"), JRecipe.shaped(pattern(SQUARE_HOLLOW), JKeys.keys().key("X", JIngredient.ingredient().tag("minecraft:logs")), output(VanillaIngredient.CHEST, 4)));
-			ASSETS.addRecipe(new Identifier("arrp", "jeb_wool"), JRecipe.shaped(pattern(SQUARE), JKeys.keys().key("X", JIngredient.ingredient().tag(VanillaIngredient.TAGS.WOOL)), output(ResourceCropsIngredient.JEB_WOOL, 1)));
-			ASSETS.addRecipe(new Identifier("arrp", "dragon_egg_fragment_makes_dragon_egg_piece"), JRecipe.shaped(pattern(SQUARE), JKeys.keys().key("X", JIngredient.ingredient().item(ResourceCropsIngredient.DRAGON_EGG_FRAGMENT)), output(ResourceCropsIngredient.DRAGON_EGG_PIECE, 1)));
-			ASSETS.addRecipe(new Identifier("arrp", "dragon_egg_piece_makes_dragon_egg"), JRecipe.shaped(pattern(Essence.TWO_BY_TWO), JKeys.keys().key("X", JIngredient.ingredient().item(ResourceCropsIngredient.DRAGON_EGG_PIECE)), output(VanillaIngredient.DRAGON_EGG, 1)));
+			ASSETS.addRecipe(catI("arrp", "jeb_wool"), JRecipe.shaped(pattern(Unique_Items.NINE), JKeys.keys()
+			.key("A", JIngredient.ingredient().item(VanillaIngredient.RED_WOOL))
+			.key("B", JIngredient.ingredient().item(VanillaIngredient.ORANGE_WOOL))
+			.key("C", JIngredient.ingredient().item(VanillaIngredient.YELLOW_WOOL))
+			.key("D", JIngredient.ingredient().item(VanillaIngredient.GREEN_WOOL))
+			.key("E", JIngredient.ingredient().item(VanillaIngredient.BLUE_WOOL))
+			.key("F", JIngredient.ingredient().item(VanillaIngredient.PURPLE_WOOL))
+			.key("G", JIngredient.ingredient().item(VanillaIngredient.LIGHT_BLUE_WOOL))
+			.key("H", JIngredient.ingredient().item(VanillaIngredient.PINK_WOOL))
+			.key("I", JIngredient.ingredient().item(VanillaIngredient.WHITE_WOOL)),
+			output(ResourceCropsIngredient.JEB_WOOL, 1)));
+			ASSETS.addRecipe(catI("arrp", "jeb_wool"), JRecipe.shaped(pattern(Essence.LINE_HORIZONTAL), JKeys.keys()
+			.key("X", JIngredient.ingredient().item(ResourceCropsIngredient.JEB_WOOL)),
+			output(ResourceCropsIngredient.JEB_WOOL_CARPET, 3)));
+			ASSETS.addRecipe(catI("arrp", "dragon_egg_fragment_makes_dragon_egg_piece"), JRecipe.shaped(pattern(SQUARE), JKeys.keys().key("X", JIngredient.ingredient().item(ResourceCropsIngredient.DRAGON_EGG_FRAGMENT)), output(ResourceCropsIngredient.DRAGON_EGG_PIECE, 1)));
+			ASSETS.addRecipe(catI("arrp", "dragon_egg_piece_makes_dragon_egg"), JRecipe.shaped(pattern(Essence.SQUARE), JKeys.keys().key("X", JIngredient.ingredient().item(ResourceCropsIngredient.DRAGON_EGG_PIECE)), output(VanillaIngredient.DRAGON_EGG, 1)));
 			
 			//Vanilla
 			add2KeyEssenceRecipe(cat(Mods.Vanilla, "dirt"), cat(Mods.Vanilla, "crimson"), Essence.SQUARE_HOLLOW_2KEY, VanillaIngredient.CRIMSON_NYLIUM, 2);
@@ -93,6 +132,12 @@ public class RegisterRecipe {
 	public static String[] cat(String b){
 		return new String[]{b, "meow"};
 	}
+	public static Identifier catI(String a, String b){
+		return new Identifier(a, b);
+	}
+	public static Identifier catI(String b){
+		return new Identifier(b, "meow");
+	}
 
 	public static void add1KeyEssenceRecipe(String[] ingredient, String[] pattern, String output, int outputAmount){
 		//I realized that I don't need to split at the ";" character but I'm too lazy to change it
@@ -100,11 +145,11 @@ public class RegisterRecipe {
 		String NAME_DIRTY = ("meow:essence_" + ingredient[0] + "/" + ingredient[1]);
 		String[] INGREDIENT_SPLIT = NAME_DIRTY.split(":");
 		String[] INGREDIENT_SPLIT2 = INGREDIENT_SPLIT[1].split("/");
-		String[] OUTPUT_SPLIT = output.split(":");
+		String[] OUTPUT_SPLIT = output.toLowerCase().split(":");
 
 		String MOD_NAME_TO_LABEL = ingredient[0];
-		String INGREDIENT_NAME = INGREDIENT_SPLIT2[1];
-		String NAME = INGREDIENT_SPLIT2[1] + "_makes_" + OUTPUT_SPLIT[1];
+		String INGREDIENT_NAME = INGREDIENT_SPLIT2[1].toLowerCase();
+		String NAME = INGREDIENT_SPLIT2[1] + "_makes_" + OUTPUT_SPLIT[1].toLowerCase();
 		try {
 			ASSETS.addRecipe(
 				new Identifier("arrp", "essence_" + MOD_NAME_TO_LABEL + "/" + NAME),
@@ -117,6 +162,8 @@ public class RegisterRecipe {
 			Main.DEBUG_LOGGER.info("What on earth are you trying to do? The Recipe \"" + "essence_" + MOD_NAME_TO_LABEL + "/" + NAME + "\" failed to register, for more info see the error below:\n" + error);
 		}
 	}
+
+
 	public static void add2KeyEssenceRecipe(String[] ingredient, String[] ingredientSecondKey, String[] pattern, String output, int outputAmount){
 		add2KeyEssenceRecipe(ingredient, ingredientSecondKey, pattern, output, outputAmount, true);
 	}
@@ -220,21 +267,21 @@ public class RegisterRecipe {
 	public static void addIngotToBlockRecipe(String output, String[] input){
 		String[] OUTPUT = output.split(":");
 		ASSETS.addRecipe(new Identifier("arrp", "auto_tag_recipes/" + OUTPUT[1]), JRecipe.shaped(pattern(SQUARE), JKeys.keys()
-		.key("X", input(input[0], true))
+		.key("X", input(CommonIngredient.convertTagToCommonMetalItem(input[0]), true))
 		, output(OUTPUT[0], OUTPUT[1])));
 	}
 
 	public static void addBlockToIngotRecipe(String output, String[] input){
 		String[] OUTPUT = output.split(":");
 		ASSETS.addRecipe(new Identifier("arrp", "auto_tag_recipes/" + OUTPUT[1]), JRecipe.shaped(pattern(ONE_ITEM), JKeys.keys()
-		.key("X", input(input[0], true))
+		.key("X", input(CommonIngredient.convertTagToCommonMetalItem(input[0]), true))
 		, output(OUTPUT[0], OUTPUT[1])));
 	}
 
 	public static void addIngotToNuggetRecipe(String output, String[] input){
 		String[] OUTPUT = output.split(":");
 		ASSETS.addRecipe(new Identifier("arrp", "auto_tag_recipes/" + OUTPUT[1]), JRecipe.shaped(pattern(ONE_ITEM), JKeys.keys()
-		.key("X", input(input[0], true))
+		.key("X", input(CommonIngredient.convertTagToCommonMetalItem(input[0]), true))
 		, output(OUTPUT[0], OUTPUT[1])));
 	}
 }

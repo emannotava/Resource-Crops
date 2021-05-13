@@ -23,7 +23,7 @@
               }
             }
           ],
-          "name": "minecraft:feather"
+          "name": "resourcecrops:golden_rainbow_feather"
         }
       ]
     },
@@ -59,4 +59,5 @@
         }
       ]
     }
- 
+  ]
+}

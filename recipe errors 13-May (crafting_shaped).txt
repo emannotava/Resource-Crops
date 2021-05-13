@@ -1,0 +1,56 @@
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/essence_to_essence_block_form/et4
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_4'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/essence_to_essence_block_form/et5
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_5'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/essence_to_essence_block_form/et6
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_6'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/essence_to_essence_block_form/et1
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_1'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/essence_to_essence_block_form/et2
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_2'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/essence_to_essence_block_form/et3
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_3'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/low_essence_to_high_essence/et3_from_et2
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_2'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/et1_from_mob_drops
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_1'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/low_essence_to_high_essence/et6_from_et5
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_5'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/low_essence_to_high_essence/et5_from_et4
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_4'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/low_essence_to_high_essence/et2_from_et1
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_1'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/low_essence_to_high_essence/et4_from_et3
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_3'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/essence_to_essence_block_form/et_creative
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_creative'
+[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/essence_to_essence_block_form/et_infinite
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_infinite'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/essence_to_essence_block_form/et4
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_4'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/essence_to_essence_block_form/et5
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_5'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/essence_to_essence_block_form/et6
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_6'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/essence_to_essence_block_form/et1
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_1'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/essence_to_essence_block_form/et2
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_2'
+[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/essence_to_essence_block_form/et3
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_3'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/low_essence_to_high_essence/et3_from_et2
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_2'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/et1_from_mob_drops
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_1'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/low_essence_to_high_essence/et6_from_et5
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_5'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/low_essence_to_high_essence/et5_from_et4
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_4'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/low_essence_to_high_essence/et2_from_et1
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_1'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/low_essence_to_high_essence/et4_from_et3
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_3'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/essence_to_essence_block_form/et_creative
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_creative'
+[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe resourcecrops:crafting_shaped/essence_to_essence_block_form/et_infinite
+com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_tier_infinite'
