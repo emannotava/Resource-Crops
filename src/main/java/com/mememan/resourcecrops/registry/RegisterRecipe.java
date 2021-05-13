@@ -74,56 +74,63 @@ public class RegisterRecipe {
 	}
 	
 	public static void initialize(){
-		if(Main.ENABLE_SELF){
-			/*8 Logs -> 4 Chests*/ ASSETS.addRecipe(new Identifier("arrp", "8logs_to_4chests"), JRecipe.shaped(pattern(SQUARE_HOLLOW), JKeys.keys().key("X", JIngredient.ingredient().tag("minecraft:logs")), output(VanillaIngredient.CHEST, 4)));
-			ASSETS.addRecipe(catI("arrp", "jeb_wool"), JRecipe.shaped(pattern(Unique_Items.NINE), JKeys.keys()
-			.key("A", JIngredient.ingredient().item(VanillaIngredient.RED_WOOL))
-			.key("B", JIngredient.ingredient().item(VanillaIngredient.ORANGE_WOOL))
-			.key("C", JIngredient.ingredient().item(VanillaIngredient.YELLOW_WOOL))
-			.key("D", JIngredient.ingredient().item(VanillaIngredient.GREEN_WOOL))
-			.key("E", JIngredient.ingredient().item(VanillaIngredient.BLUE_WOOL))
-			.key("F", JIngredient.ingredient().item(VanillaIngredient.PURPLE_WOOL))
-			.key("G", JIngredient.ingredient().item(VanillaIngredient.LIGHT_BLUE_WOOL))
-			.key("H", JIngredient.ingredient().item(VanillaIngredient.PINK_WOOL))
-			.key("I", JIngredient.ingredient().item(VanillaIngredient.WHITE_WOOL)),
-			output(ResourceCropsIngredient.JEB_WOOL, 1)));
-			ASSETS.addRecipe(catI("arrp", "jeb_wool"), JRecipe.shaped(pattern(Essence.LINE_HORIZONTAL), JKeys.keys()
-			.key("X", JIngredient.ingredient().item(ResourceCropsIngredient.JEB_WOOL)),
-			output(ResourceCropsIngredient.JEB_WOOL_CARPET, 3)));
-			ASSETS.addRecipe(catI("arrp", "dragon_egg_fragment_makes_dragon_egg_piece"), JRecipe.shaped(pattern(SQUARE), JKeys.keys().key("X", JIngredient.ingredient().item(ResourceCropsIngredient.DRAGON_EGG_FRAGMENT)), output(ResourceCropsIngredient.DRAGON_EGG_PIECE, 1)));
-			ASSETS.addRecipe(catI("arrp", "dragon_egg_piece_makes_dragon_egg"), JRecipe.shaped(pattern(Essence.SQUARE), JKeys.keys().key("X", JIngredient.ingredient().item(ResourceCropsIngredient.DRAGON_EGG_PIECE)), output(VanillaIngredient.DRAGON_EGG, 1)));
-			
-			//Vanilla
-			add2KeyEssenceRecipe(cat(Mods.Vanilla, "dirt"), cat(Mods.Vanilla, "crimson"), Essence.SQUARE_HOLLOW_2KEY, VanillaIngredient.CRIMSON_NYLIUM, 2);
-			add2KeyEssenceRecipe(cat(Mods.Vanilla, "dirt"), cat(Mods.Vanilla, "warped"), Essence.SQUARE_HOLLOW_2KEY, VanillaIngredient.WARPED_NYLIUM, 2);
-			add2KeyEssenceRecipe(cat(Mods.Vanilla, "dirt"), cat(VanillaIngredient.GRAVEL), Essence.SQUARE_HOLLOW_2KEY, VanillaIngredient.COARSE_DIRT, 4, false);
-			add2KeyEssenceRecipe(cat(Mods.Vanilla, "quartz"), cat(Mods.Vanilla, "nether"), Essence.CROSSED_SQUARE_2KEY, VanillaIngredient.NETHER_QUARTZ_ORE, 2);
+		/*8 Logs -> 4 Chests*/ ASSETS.addRecipe(new Identifier("arrp", "8logs_to_4chests"), JRecipe.shaped(pattern(SQUARE_HOLLOW), JKeys.keys().key("X", JIngredient.ingredient().tag("minecraft:logs")), output(VanillaIngredient.CHEST, 4)));
+		ASSETS.addRecipe(catI("arrp", "jeb_wool"), JRecipe.shaped(pattern(Unique_Items.NINE), JKeys.keys()
+		.key("A", JIngredient.ingredient().item(VanillaIngredient.RED_WOOL))
+		.key("B", JIngredient.ingredient().item(VanillaIngredient.ORANGE_WOOL))
+		.key("C", JIngredient.ingredient().item(VanillaIngredient.YELLOW_WOOL))
+		.key("D", JIngredient.ingredient().item(VanillaIngredient.GREEN_WOOL))
+		.key("E", JIngredient.ingredient().item(VanillaIngredient.BLUE_WOOL))
+		.key("F", JIngredient.ingredient().item(VanillaIngredient.PURPLE_WOOL))
+		.key("G", JIngredient.ingredient().item(VanillaIngredient.LIGHT_BLUE_WOOL))
+		.key("H", JIngredient.ingredient().item(VanillaIngredient.PINK_WOOL))
+		.key("I", JIngredient.ingredient().item(VanillaIngredient.WHITE_WOOL)),
+		output(ResourceCropsIngredient.JEB_WOOL, 1)));
+		ASSETS.addRecipe(catI("arrp", "jeb_wool_carpet"), JRecipe.shaped(pattern(Essence.LINE_HORIZONTAL), JKeys.keys()
+		.key("X", JIngredient.ingredient().item(ResourceCropsIngredient.JEB_WOOL)),
+		output(ResourceCropsIngredient.JEB_WOOL_CARPET, 3)));
+		ASSETS.addRecipe(catI("arrp", "dragon_egg_fragment_makes_dragon_egg_piece"), JRecipe.shaped(pattern(SQUARE), JKeys.keys().key("X", JIngredient.ingredient().item(ResourceCropsIngredient.DRAGON_EGG_FRAGMENT)), output(ResourceCropsIngredient.DRAGON_EGG_PIECE, 1)));
+		ASSETS.addRecipe(catI("arrp", "dragon_egg_piece_makes_dragon_egg"), JRecipe.shaped(pattern(Essence.SQUARE), JKeys.keys().key("X", JIngredient.ingredient().item(ResourceCropsIngredient.DRAGON_EGG_PIECE)), output(VanillaIngredient.DRAGON_EGG, 1)));
+		
+		//Vanilla
+		add2KeyEssenceRecipe(cat(Mods.Vanilla, "dirt"), cat(Mods.Vanilla, "crimson"), Essence.SQUARE_HOLLOW_2KEY, VanillaIngredient.CRIMSON_NYLIUM, 2);
+		add2KeyEssenceRecipe(cat(Mods.Vanilla, "dirt"), cat(Mods.Vanilla, "warped"), Essence.SQUARE_HOLLOW_2KEY, VanillaIngredient.WARPED_NYLIUM, 2);
+		add2KeyEssenceRecipe(cat(Mods.Vanilla, "dirt"), cat(VanillaIngredient.GRAVEL), Essence.SQUARE_HOLLOW_2KEY, VanillaIngredient.COARSE_DIRT, 4, false);
+		add2KeyEssenceRecipe(cat(Mods.Vanilla, "quartz"), cat(Mods.Vanilla, "nether"), Essence.CROSSED_SQUARE_2KEY, VanillaIngredient.NETHER_QUARTZ_ORE, 2);
 
-			add1KeyEssenceRecipe(cat(Mods.Vanilla, "spider"), Essence.BOTTOM_RIGHT_EMPTY, VanillaIngredient.SPIDER_EYE, 8);
-			add1KeyEssenceRecipe(cat(Mods.Vanilla, "dirt"), Essence.BOTTOM_RIGHT_EMPTY, VanillaIngredient.PODZOL, 8);
-			add1KeyEssenceRecipe(cat(Mods.Vanilla, "end"), Essence.STAR_HOLLOW, VanillaIngredient.POPPED_CHORUS_FRUIT, 4);
-			add1KeyEssenceRecipe(cat(Mods.Vanilla, "end"), Essence.BOTTOM_RIGHT_EMPTY, VanillaIngredient.END_STONE_BRICKS, 8);
-			add1KeyEssenceRecipe(cat(Mods.Vanilla, "obsidian"), Essence.BOTTOM_RIGHT_EMPTY, VanillaIngredient.CRYING_OBSIDIAN, 8);
-			add1KeyEssenceRecipe(cat(Mods.Vanilla, "chicken"), Essence.BOTTOM_RIGHT_EMPTY, VanillaIngredient.FEATHER, 8);
-			add1KeyEssenceRecipe(cat(Mods.Vanilla, "cow"), Essence.BOTTOM_RIGHT_EMPTY, VanillaIngredient.LEATHER, 8);
-			add1KeyEssenceRecipe(cat(Mods.Vanilla, "creeper"), Essence.SQUARE, VanillaIngredient.CREEPER_HEAD, 1);
-			add1KeyEssenceRecipe(cat(Mods.Vanilla, "skeleton"), Essence.BOTTOM_RIGHT_EMPTY, VanillaIngredient.BONE_MEAL, 8);
-			add1KeyEssenceRecipe(cat(Mods.Vanilla, "skeleton"), Essence.SQUARE, VanillaIngredient.SKELETON_SKULL, 1);
-			add1KeyEssenceRecipe(cat(Mods.Vanilla, "zombie"), Essence.SQUARE, VanillaIngredient.ZOMBIE_HEAD, 1);
-			add1KeyEssenceRecipe(cat(Mods.Vanilla, "prismarine"), Essence.STAR, VanillaIngredient.PRISMARINE_CRYSTAL, 4);
-			add1KeyEssenceRecipe(cat(Mods.Vanilla, "glowstone"), Essence.TWO_BY_TWO, VanillaIngredient.GLOWSTONE, 4);
-			add1KeyEssenceRecipe(cat(Mods.Vanilla, "nether"), Essence.BOTTOM_RIGHT_EMPTY, VanillaIngredient.SOUL_SAND, 8);
-			add1KeyEssenceRecipe(cat(Mods.Vanilla, "nether"), Essence.BOTTOM_MIDDLE_EMPTY, VanillaIngredient.SOUL_SOIL, 8);
-			add1KeyEssenceRecipe(cat(Mods.Vanilla, "stone"), Essence.MIDDLE_RIGHT_EMPTY, VanillaIngredient.COBBLESTONE, 8);
-			add1KeyEssenceRecipe(cat(Mods.Vanilla, "stone"), Essence.BOTTOM_LEFT_EMPTY, VanillaIngredient.ANDESITE, 8);
-			add1KeyEssenceRecipe(cat(Mods.Vanilla, "stone"), Essence.BOTTOM_MIDDLE_EMPTY, VanillaIngredient.DIORITE, 8);
-			add1KeyEssenceRecipe(cat(Mods.Vanilla, "stone"), Essence.BOTTOM_RIGHT_EMPTY, VanillaIngredient.GRANITE, 8);
-			add1KeyEssenceRecipe(cat(Mods.Vanilla, "stone"), Essence.TWO_BY_TWO, VanillaIngredient.GRAVEL, 4);
+		add1KeyEssenceRecipe(cat(Mods.Vanilla, "spider"), Essence.BOTTOM_RIGHT_EMPTY, VanillaIngredient.SPIDER_EYE, 8);
+		add1KeyEssenceRecipe(cat(Mods.Vanilla, "dirt"), Essence.BOTTOM_RIGHT_EMPTY, VanillaIngredient.PODZOL, 8);
+		add1KeyEssenceRecipe(cat(Mods.Vanilla, "end"), Essence.STAR_HOLLOW, VanillaIngredient.POPPED_CHORUS_FRUIT, 4);
+		add1KeyEssenceRecipe(cat(Mods.Vanilla, "end"), Essence.BOTTOM_RIGHT_EMPTY, VanillaIngredient.END_STONE_BRICKS, 8);
+		add1KeyEssenceRecipe(cat(Mods.Vanilla, "obsidian"), Essence.BOTTOM_RIGHT_EMPTY, VanillaIngredient.CRYING_OBSIDIAN, 8);
+		add1KeyEssenceRecipe(cat(Mods.Vanilla, "chicken"), Essence.BOTTOM_RIGHT_EMPTY, VanillaIngredient.FEATHER, 8);
+		add1KeyEssenceRecipe(cat(Mods.Vanilla, "cow"), Essence.BOTTOM_RIGHT_EMPTY, VanillaIngredient.LEATHER, 8);
+		add1KeyEssenceRecipe(cat(Mods.Vanilla, "creeper"), Essence.SQUARE, VanillaIngredient.CREEPER_HEAD, 1);
+		add1KeyEssenceRecipe(cat(Mods.Vanilla, "skeleton"), Essence.BOTTOM_RIGHT_EMPTY, VanillaIngredient.BONE_MEAL, 8);
+		add1KeyEssenceRecipe(cat(Mods.Vanilla, "skeleton"), Essence.SQUARE, VanillaIngredient.SKELETON_SKULL, 1);
+		add1KeyEssenceRecipe(cat(Mods.Vanilla, "zombie"), Essence.SQUARE, VanillaIngredient.ZOMBIE_HEAD, 1);
+		add1KeyEssenceRecipe(cat(Mods.Vanilla, "prismarine"), Essence.STAR, VanillaIngredient.PRISMARINE_CRYSTAL, 4);
+		add1KeyEssenceRecipe(cat(Mods.Vanilla, "glowstone"), Essence.TWO_BY_TWO, VanillaIngredient.GLOWSTONE, 4);
+		add1KeyEssenceRecipe(cat(Mods.Vanilla, "nether"), Essence.BOTTOM_RIGHT_EMPTY, VanillaIngredient.SOUL_SAND, 8);
+		add1KeyEssenceRecipe(cat(Mods.Vanilla, "nether"), Essence.BOTTOM_MIDDLE_EMPTY, VanillaIngredient.SOUL_SOIL, 8);
+		add1KeyEssenceRecipe(cat(Mods.Vanilla, "stone"), Essence.MIDDLE_RIGHT_EMPTY, VanillaIngredient.COBBLESTONE, 8);
+		add1KeyEssenceRecipe(cat(Mods.Vanilla, "stone"), Essence.BOTTOM_LEFT_EMPTY, VanillaIngredient.ANDESITE, 8);
+		add1KeyEssenceRecipe(cat(Mods.Vanilla, "stone"), Essence.BOTTOM_MIDDLE_EMPTY, VanillaIngredient.DIORITE, 8);
+		add1KeyEssenceRecipe(cat(Mods.Vanilla, "stone"), Essence.BOTTOM_RIGHT_EMPTY, VanillaIngredient.GRANITE, 8);
+		add1KeyEssenceRecipe(cat(Mods.Vanilla, "stone"), Essence.TWO_BY_TWO, VanillaIngredient.GRAVEL, 4);
 
-			//Industrial Revolution
+		//Industrial Revolution
+		if(Mods.checkMod(Mods.IndustrialRevolution)){
 			add2KeyEssenceRecipe(cat(Mods.IndustrialRevolutionShort, "nikolite"), new String[]{Mods.Vanilla, "iron"}, Essence.SQUARE_HOLLOW_2KEY, IndustrialRevolutionIngredient.NIKOLITE_INGOT, 4);
 			add2KeyEssenceRecipe(cat(Mods.IndustrialRevolutionShort, "enriched_nikolite"), new String[]{Mods.IndustrialRevolutionShort, "nikolite"}, Essence.SQUARE_HOLLOW_2KEY, IndustrialRevolutionIngredient.ENRICHED_NIKOLITE_INGOT, 4);
 		}
+		addSeedSmeltingRecipe(cat(Mods.Vanilla, "sand"), cat(Mods.Vanilla, "glass"));
+		addSeedSmeltingRecipe(cat(Mods.Vanilla, "chicken"), cat(Mods.Vanilla, "BBQ_chicken".toLowerCase()));
+		addSeedSmeltingRecipe(cat(Mods.Vanilla, "cow"), cat(Mods.Vanilla, "grilled_cow"));
+		if(Mods.checkMod(Mods.Aether)){
+			addSeedSmeltingRecipe(cat(Mods.AetherShort, "quicksoil"), cat(Mods.AetherShort, "quicksoil_glass"));
+		}
+
 	}
 
 	public static String[] cat(String a, String b){
@@ -222,7 +229,7 @@ public class RegisterRecipe {
 				);
 			}
 		} catch (Exception error) {
-			Main.DEBUG_LOGGER.info("What on earth are you trying to do? The Recipe \"" + "essence_" + MOD_NAME_TO_LABEL + "/" + NAME + "\" failed to register, for more info see the error below:\n" + error);
+			Main.logMessage("What on earth are you trying to do? The Recipe \"" + "essence_" + MOD_NAME_TO_LABEL + "/" + NAME + "\" failed to register, for more info see the error below:\n" + error);
 		}
 	}
 
@@ -283,5 +290,20 @@ public class RegisterRecipe {
 		ASSETS.addRecipe(new Identifier("arrp", "auto_tag_recipes/" + OUTPUT[1]), JRecipe.shaped(pattern(ONE_ITEM), JKeys.keys()
 		.key("X", input(CommonIngredient.convertTagToCommonMetalItem(input[0]), true))
 		, output(OUTPUT[0], OUTPUT[1])));
+	}
+
+	public static void addSmeltingRecipe(String input, String output){
+		String[] OUTPUT = output.split(":");
+		ASSETS.addRecipe(new Identifier("arrp", "auto_item_smelting/" + OUTPUT[1]), JRecipe.smelting(
+			JIngredient.ingredient().item(input), JResult.result(output)
+		));
+	}
+	public static void addSeedSmeltingRecipe(String[] input, String[] output){
+		// String[] OUTPUT = output.split(":");
+		ASSETS.addRecipe(new Identifier("arrp", "auto_item_smelting/crop_" + input[0] + "/" + input[1] + "_seeds_melt_into_" + output[1] + "_seeds"),
+		JRecipe.smelting(
+			JIngredient.ingredient().item(Mods.ResourceCrops + ":crop_" + input[0] + "/" + input[1]),
+			JResult.result(Mods.ResourceCrops + ":crop_" + output[0] + "/" + output[1])
+		));
 	}
 }

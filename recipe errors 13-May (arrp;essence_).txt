@@ -1,12 +1,8 @@
-[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_industrialrevolution/enriched_nikolite_makes_enriched_nikolite_ingot
-com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_industrialrevolution/enriched_nikolite'
-[21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_industrialrevolution/nikolite_makes_nikolite_ingot
-com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_industrialrevolution/nikolite'
+// [21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_industrialrevolution/enriched_nikolite_makes_enriched_nikolite_ingot | com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_industrialrevolution/enriched_nikolite'
+// [21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_industrialrevolution/nikolite_makes_nikolite_ingot | com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_industrialrevolution/nikolite'
 [21:18:57] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_resourcecrops/test_makes_debug_block
 com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:debug_block'
-[21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_industrialrevolution/enriched_nikolite_makes_enriched_nikolite_ingot
-com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_industrialrevolution/enriched_nikolite'
-[21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_industrialrevolution/nikolite_makes_nikolite_ingot
-com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_industrialrevolution/nikolite'
+// [21:22:44] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_industrialrevolution/enriched_nikolite_makes_enriched_nikolite_ingot | com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_industrialrevolution/enriched_nikolite'
+// [21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_industrialrevolution/nikolite_makes_nikolite_ingot | com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:essence_industrialrevolution/nikolite'
 [21:22:45] [main/ERROR] (Minecraft) Parsing error loading recipe arrp:essence_resourcecrops/test_makes_debug_block
 com.google.gson.JsonSyntaxException: Unknown item 'resourcecrops:debug_block'
