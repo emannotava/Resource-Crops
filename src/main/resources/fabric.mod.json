@@ -23,6 +23,9 @@
     ],
     "main": [
       "com.mememan.resourcecrops.Main"
+    ],
+    "modmenu": [
+      "com.mememan.resourcecrops.config.ModMenu"
     ]
   },
   "mixins": [

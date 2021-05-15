@@ -95,7 +95,7 @@ public class RegisterRecipe {
 		//Vanilla
 		add2KeyEssenceRecipe(cat(Mods.Vanilla, "dirt"), cat(Mods.Vanilla, "crimson"), Essence.SQUARE_HOLLOW_2KEY, VanillaIngredient.CRIMSON_NYLIUM, 2);
 		add2KeyEssenceRecipe(cat(Mods.Vanilla, "dirt"), cat(Mods.Vanilla, "warped"), Essence.SQUARE_HOLLOW_2KEY, VanillaIngredient.WARPED_NYLIUM, 2);
-		add2KeyEssenceRecipe(cat(Mods.Vanilla, "dirt"), cat(VanillaIngredient.GRAVEL), Essence.SQUARE_HOLLOW_2KEY, VanillaIngredient.COARSE_DIRT, 4, false);
+		// add2KeyEssenceRecipe(cat(Mods.Vanilla, "dirt"), cat(VanillaIngredient.GRAVEL), Essence.SQUARE_HOLLOW_2KEY, VanillaIngredient.COARSE_DIRT, 4, false); // TODO: Temporarily disabled this recipe cause it causes issues
 		add2KeyEssenceRecipe(cat(Mods.Vanilla, "quartz"), cat(Mods.Vanilla, "nether"), Essence.CROSSED_SQUARE_2KEY, VanillaIngredient.NETHER_QUARTZ_ORE, 2);
 
 		add1KeyEssenceRecipe(cat(Mods.Vanilla, "spider"), Essence.BOTTOM_RIGHT_EMPTY, VanillaIngredient.SPIDER_EYE, 8);
@@ -137,7 +137,7 @@ public class RegisterRecipe {
 		return new String[]{a, b};
 	}
 	public static String[] cat(String b){
-		return new String[]{b, "meow"};
+		return new String[]{b, b};
 	}
 	public static Identifier catI(String a, String b){
 		return new Identifier(a, b);
@@ -152,7 +152,7 @@ public class RegisterRecipe {
 		String NAME_DIRTY = ("meow:essence_" + ingredient[0] + "/" + ingredient[1]);
 		String[] INGREDIENT_SPLIT = NAME_DIRTY.split(":");
 		String[] INGREDIENT_SPLIT2 = INGREDIENT_SPLIT[1].split("/");
-		String[] OUTPUT_SPLIT = output.toLowerCase().split(":");
+		String[] OUTPUT_SPLIT = output.toLowerCase().split(":"); // String "minecraft:gravel" -> String[]{"minecraft", "gravel"}
 
 		String MOD_NAME_TO_LABEL = ingredient[0];
 		String INGREDIENT_NAME = INGREDIENT_SPLIT2[1].toLowerCase();
@@ -271,24 +271,28 @@ public class RegisterRecipe {
 		.key("S", input(input[2], false))
 		, output(output[0], output[1])));
 	}
-	public static void addIngotToBlockRecipe(String output, String[] input){
+	public static void addIngotToBlockRecipe(String output, String input){
 		String[] OUTPUT = output.split(":");
 		ASSETS.addRecipe(new Identifier("arrp", "auto_tag_recipes/" + OUTPUT[1]), JRecipe.shaped(pattern(SQUARE), JKeys.keys()
-		.key("X", input(CommonIngredient.convertTagToCommonMetalItem(input[0]), true))
+		.key("X", input(CommonIngredient.convertTagToCommonMetalItem(input), true))
 		, output(OUTPUT[0], OUTPUT[1])));
 	}
 
-	public static void addBlockToIngotRecipe(String output, String[] input){
+	public static void addNuggetToIngotRecipe(String output, String input){
+		addIngotToBlockRecipe(output, input);
+	}
+
+	public static void addBlockToIngotRecipe(String output, String input){
 		String[] OUTPUT = output.split(":");
 		ASSETS.addRecipe(new Identifier("arrp", "auto_tag_recipes/" + OUTPUT[1]), JRecipe.shaped(pattern(ONE_ITEM), JKeys.keys()
-		.key("X", input(CommonIngredient.convertTagToCommonMetalItem(input[0]), true))
+		.key("X", input(CommonIngredient.convertTagToCommonMetalItem(input), true))
 		, output(OUTPUT[0], OUTPUT[1])));
 	}
 
-	public static void addIngotToNuggetRecipe(String output, String[] input){
+	public static void addIngotToNuggetRecipe(String output, String input){
 		String[] OUTPUT = output.split(":");
 		ASSETS.addRecipe(new Identifier("arrp", "auto_tag_recipes/" + OUTPUT[1]), JRecipe.shaped(pattern(ONE_ITEM), JKeys.keys()
-		.key("X", input(CommonIngredient.convertTagToCommonMetalItem(input[0]), true))
+		.key("X", input(CommonIngredient.convertTagToCommonMetalItem(input), true))
 		, output(OUTPUT[0], OUTPUT[1])));
 	}
 

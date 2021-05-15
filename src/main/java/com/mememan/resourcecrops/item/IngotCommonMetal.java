@@ -1,11 +1,10 @@
 package com.mememan.resourcecrops.item;
+import static com.mememan.resourcecrops.Main.ASSETS;
+
 import com.mememan.resourcecrops.Main;
 import com.mememan.resourcecrops.lib.Mods;
 import com.mememan.resourcecrops.lib.Strings;
-
 import com.mememan.resourcecrops.lib.tex.VanillaTex;
-import com.mememan.resourcecrops.registry.RegisterRecipe;
-import com.mememan.resourcecrops.registry.RegisterTags;
 import com.mememan.resourcecrops.util.color.Color;
 import com.mememan.resourcecrops.util.text.Humanify;
 
@@ -17,8 +16,6 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-
-import static com.mememan.resourcecrops.Main.ASSETS;
 
 public class IngotCommonMetal extends Item {
 
@@ -37,9 +34,6 @@ public class IngotCommonMetal extends Item {
 		addItem(NAME, this);
 		ASSETS.addModel(JModel.modelKeepElements("minecraft:item/generated").textures(JModel.textures().var("layer0", VanillaTex.IRON_INGOT)), new Identifier(Mods.ResourceCrops, "item/" + NAME));
 		Color.setItemColor(hex, this);
-		RegisterRecipe.addIngotToNuggetRecipe(Mods.ResourceCrops + ":" + NAME_NUGGET, new String[]{"c:" + name + "_ingots"});
-		RegisterTags.addToTag("c:" + name + "_ingot", Mods.ResourceCrops + ":" + NAME);
-		RegisterTags.addToTag("c:" + name + "_ingots", Mods.ResourceCrops + ":" + NAME);
 	}
 
 	@Override

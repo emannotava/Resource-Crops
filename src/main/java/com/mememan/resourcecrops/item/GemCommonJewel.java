@@ -1,9 +1,10 @@
 package com.mememan.resourcecrops.item;
+import static com.mememan.resourcecrops.Main.ASSETS;
+
 import com.mememan.resourcecrops.Main;
 import com.mememan.resourcecrops.lib.Mods;
 import com.mememan.resourcecrops.lib.Strings;
 import com.mememan.resourcecrops.lib.tex.ResourceCropsTex;
-import com.mememan.resourcecrops.registry.RegisterTags;
 import com.mememan.resourcecrops.util.color.Color;
 import com.mememan.resourcecrops.util.text.Humanify;
 
@@ -15,8 +16,6 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-
-import static com.mememan.resourcecrops.Main.ASSETS;
 
 public class GemCommonJewel extends Item {
 
@@ -38,8 +37,6 @@ public class GemCommonJewel extends Item {
 		),
 		new Identifier(Mods.ResourceCrops, "item/" + NAME_LOCAL));
 		Color.setItemColor(hex, this);
-		RegisterTags.addToTag("c:" + name + "_gem", Mods.ResourceCrops + ":" + NAME_LOCAL);
-		RegisterTags.addToTag("c:" + name + "_gems", Mods.ResourceCrops + ":" + NAME_LOCAL);
 	}
 
 	@Override

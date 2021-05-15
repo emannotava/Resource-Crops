@@ -68,12 +68,26 @@ public class CommonIngredient {
 
 	public static String convertTagToCommonMetalItem(String input){
 		String[] split = input.split(":");
-		String localInput = split[1].substring(0, split[1].length()-"s".length());
+		String localInput = split[1];
 		String finalString = Mods.ResourceCrops + ":common_metal/" + localInput;
 		Main.logDebugMessage("\"" + input + "\" was converted to " + "\"" + finalString + "\"");
 		return finalString;
 	}
 	public static String convertCommonMetalItemToTag(String input){
+		String[] split = input.split(":");
+		String[] split2 = split[1].split("/");
+		String finalString = Mods.COMMON + ":" + split2[1] + "s";
+		Main.logDebugMessage("\"" + input + "\" was converted to " + "\"" + finalString + "\"");
+		return finalString;
+	}
+	public static String convertTagToCommonJewelItem(String input){
+		String[] split = input.split(":");
+		String localInput = split[1];
+		String finalString = Mods.ResourceCrops + ":common_jewel/" + localInput;
+		Main.logDebugMessage("\"" + input + "\" was converted to " + "\"" + finalString + "\"");
+		return finalString;
+	}
+	public static String convertCommonJewelItemToTag(String input){
 		String[] split = input.split(":");
 		String[] split2 = split[1].split("/");
 		String finalString = Mods.COMMON + ":" + split2[1] + "s";

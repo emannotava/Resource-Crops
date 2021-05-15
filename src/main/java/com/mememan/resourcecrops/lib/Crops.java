@@ -655,7 +655,11 @@ public class Crops{
 			if(Mods.checkMod(Mods.Astromine)==false && Mods.checkMod(Mods.AstromineCore)==true){RegisterCrop.addCrop(Mods.Astro, cropName.toLowerCase(), FRED, WILMA, resourceTex, cropModelType, addRecipe, ingredients, addLootTable); RegisterRecipe.add1KeyEssenceRecipe(cat(modNameToLabel, cropName), pattern, outputItem, outputAmount);}
 		}else if(Mods.checkMod(modNameToCheck)){
 			if(modNameToLabel == Mods.C){
-				RegisterRecipe.add1KeyEssenceRecipe(cat(modNameToLabel, cropName), pattern, CommonIngredient.convertTagToCommonMetalItem(outputItem), outputAmount);
+				if(resourceTex[0] == ResourceCropsTex.COMMON_JEWEL_BLOCK){
+					RegisterRecipe.add1KeyEssenceRecipe(cat(modNameToLabel, cropName), pattern, CommonIngredient.convertTagToCommonMetalItem(outputItem), outputAmount);
+				}else{
+					RegisterRecipe.add1KeyEssenceRecipe(cat(modNameToLabel, cropName), pattern, CommonIngredient.convertTagToCommonMetalItem(outputItem), outputAmount);
+				}
 			}else{
 				RegisterRecipe.add1KeyEssenceRecipe(cat(modNameToLabel, cropName), pattern, outputItem, outputAmount);
 			}

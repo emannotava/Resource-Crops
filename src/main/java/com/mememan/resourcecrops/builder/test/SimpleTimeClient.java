@@ -2,9 +2,12 @@ package com.mememan.resourcecrops.builder.test;
 
 import java.time.*;
 
+import com.mememan.resourcecrops.builder.json.CreateJSON;
 import com.mememan.resourcecrops.lib.Mods;
 import com.mememan.resourcecrops.lib.Strings;
 import com.mememan.resourcecrops.lib.ingredient.CommonIngredient;
+
+import net.fabricmc.loader.api.FabricLoader;
 
 public class SimpleTimeClient implements ITimeClient {
 	
@@ -54,7 +57,6 @@ public class SimpleTimeClient implements ITimeClient {
 		System.out.println("-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-");
 		
 		convertTagToItem(CommonIngredient.TIN_INGOT);
-		System.out.println(Strings.NEW_TIERS(Strings.TIER_1));
 		// System.out.println("-X-X-X-" + modifiedString + "-X-X-X-");
 	}
 	public static String convertTagToItem(String input){

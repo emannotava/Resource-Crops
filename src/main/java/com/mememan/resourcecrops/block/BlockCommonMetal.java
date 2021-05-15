@@ -1,12 +1,12 @@
 package com.mememan.resourcecrops.block;
 
+import static com.mememan.resourcecrops.Main.ASSETS;
+
 import com.mememan.resourcecrops.Main;
 import com.mememan.resourcecrops.lib.Mods;
 import com.mememan.resourcecrops.lib.Strings;
 import com.mememan.resourcecrops.lib.tex.ResourceCropsTex;
 import com.mememan.resourcecrops.registry.RegisterBlockStates;
-import com.mememan.resourcecrops.registry.RegisterRecipe;
-import com.mememan.resourcecrops.registry.RegisterTags;
 import com.mememan.resourcecrops.util.color.Color;
 import com.mememan.resourcecrops.util.text.Humanify;
 
@@ -24,8 +24,6 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-
-import static com.mememan.resourcecrops.Main.ASSETS;
 
 public class BlockCommonMetal extends Block{
 
@@ -51,10 +49,6 @@ public class BlockCommonMetal extends Block{
 		ASSETS.addModel(JModel.modelKeepElements(Mods.ResourceCrops + ":block/" + NAME), new Identifier(Mods.ResourceCrops + ":item/" + NAME));
 		Color.setBlockColor(hex, this);
 		Color.setItemColor(hex, this);
-		RegisterRecipe.addIngotToBlockRecipe(Mods.ResourceCrops + ":" + NAME, new String[]{"c:" + name + "_ingots"});
-		RegisterRecipe.addBlockToIngotRecipe(Mods.ResourceCrops + ":" + NAME_INGOT, new String[]{"c:" + name + "_blocks"});
-		RegisterTags.addToTag("c:" + name + "_block", Mods.ResourceCrops + ":" + NAME);
-		RegisterTags.addToTag("c:" + name + "_blocks", Mods.ResourceCrops + ":" + NAME);
 	}
 
 	@Override

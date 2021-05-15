@@ -1,5 +1,10 @@
 package com.mememan.resourcecrops.lib;
 
+import java.io.File;
+import java.nio.file.Path;
+
+import net.fabricmc.loader.api.FabricLoader;
+
 public class Strings {
 	public static final String modId = "resourcecrops";
 	public static final String version = "1.1.0";
@@ -42,6 +47,8 @@ public class Strings {
 			return "meow";
 		}
 	};
+	public static final Path CONFIG_PATH = FabricLoader.getInstance().getConfigDir().resolve("crops");
+	public static final String CONFIG_PATH_STRING = CONFIG_PATH.toString();
 	public static final String defaultAltModName = "Meow";
 	public static final int defaultCropAge = 7;
 }
