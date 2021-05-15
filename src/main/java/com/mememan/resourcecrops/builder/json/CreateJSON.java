@@ -8,6 +8,7 @@ import java.nio.file.Path;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.mememan.resourcecrops.Main;
 import com.mememan.resourcecrops.lib.CropModelTypes;
 import com.mememan.resourcecrops.lib.Strings;
 import com.mememan.resourcecrops.registry.RegisterRecipe;
@@ -25,15 +26,18 @@ public class CreateJSON {
 		String[] main_essence_recipe_pattern, String essence_recipe_output_item,
 		int essence_recipe_output_amount
 	) throws IOException{
+		Path local_config_path = FabricLoader.getInstance().getConfigDir().normalize().resolve(Strings.modId).resolve("crops").resolve(origin_mod_id).resolve(crop_name + ".json");
 		Path local_config_folder_path = FabricLoader.getInstance().getConfigDir().normalize().resolve(Strings.modId).resolve("crops").resolve(origin_mod_id);
 		Path local_config_json_path = local_config_folder_path.resolve(crop_name + ".json");
 		File local_config_folder_file = local_config_folder_path.toFile();
 		File local_config_json_file = local_config_json_path.toFile();
-		if(!local_config_folder_file.exists()) { local_config_folder_file.getParentFile().mkdirs(); }
+		File local_config_file = local_config_path.toFile();
+		if(!local_config_file.exists()) { local_config_file.getParentFile().mkdirs(); local_config_file.createNewFile(); }
 		// if(!local_config_json_file.exists()) { local_config_json_file.createNewFile(); }
 		// try (Writer writer = new FileWriter("crops/" + origin_mod_id + "/" + crop_name + ".json")) {
-		try (Writer writer = new FileWriter(local_config_json_file.getName())) {
-			// create user object
+		Main.logMessage((String) local_config_json_file.getParentFile().getName());
+		Main.logMessage((String) local_config_json_file.getName());
+		try (Writer writer = new FileWriter(local_config_file)) {
 			CropBaseObject crop = new CropBaseObject(crop_name, origin_mod_id, crop_model_type, crop_textures, custom_top_texture, tier, enable_loot_table_drops, recipe_type, recipe_input_type, recipe_input_item, main_essence_recipe_pattern, essence_recipe_output_item, essence_recipe_output_amount);
 			Gson gson = new GsonBuilder().setPrettyPrinting().create();
 			gson.toJson(crop, writer);
