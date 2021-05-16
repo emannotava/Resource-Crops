@@ -8,6 +8,7 @@ import com.mememan.resourcecrops.block.RegisterCrop;
 import com.mememan.resourcecrops.block.RegisterJewel;
 import com.mememan.resourcecrops.block.RegisterMetal;
 import com.mememan.resourcecrops.builder.json.CreateJSON;
+import com.mememan.resourcecrops.builder.json.ReadJSON;
 import com.mememan.resourcecrops.item.RegisterFood;
 import com.mememan.resourcecrops.item.RegisterItem;
 import com.mememan.resourcecrops.itemgroup.CreativeTab;
@@ -70,6 +71,33 @@ public class Main implements ModInitializer {
 	
 	@Override
 	public void onInitialize() {
+		try {
+			CreateJSON.create(
+				"lorem_ipsum",
+				"example_mod",
+				CropModelTypes.ALL,
+				new String[]{
+					"minecraft:block/coal_block",
+					"resourcecrops:block/gradient/white",
+					"resourcecrops:block/plant_types/narcissus/leaves",
+					"resourcecrops:block/plant_types/narcissus/stem"
+				},
+				"none",
+				false,
+				"0x000000",
+				Strings.TIER_1,
+				true,
+				"CRAFTING_SHAPED",
+				"ITEM",
+				"minecraft:coal",
+				RegisterRecipe.Essence.SQUARE_HOLLOW,
+				"minecraft:coal",
+				8
+			);
+			ReadJSON.read();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		if(Mods.checkDevEnv() && enableExperimetalCreativeSubTabs){
 			GROUP = new CreativeTab(new Identifier(Strings.modId, Strings.modId));
 		}
@@ -94,31 +122,6 @@ public class Main implements ModInitializer {
 		RegisterEntityLoot.initialize();
 		RegisterMetal.initialize();
 		RegisterJewel.initialize();
-		try {
-			CreateJSON.create(
-				"lorem_ipsum",
-				"example_mod",
-				CropModelTypes.ALL,
-				new String[]{
-					"minecraft:block/coal_block",
-					"resourcecrops:block/gradient/white",
-					"resourcecrops:block/plant_types/narcissus/leaves",
-					"resourcecrops:block/plant_types/narcissus/stem"
-				},
-				"disabled",
-				Strings.TIER_1,
-				true,
-				"CRAFTING_SHAPED",
-				"ITEM",
-				"minecraft:coal",
-				RegisterRecipe.Essence.SQUARE_HOLLOW,
-				"minecraft:coal",
-				8
-			);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		RRPCallback.EVENT.register(a -> a.add(ASSETS));
 		LOGGER.info("Server-Side has been initialized!");
 	}

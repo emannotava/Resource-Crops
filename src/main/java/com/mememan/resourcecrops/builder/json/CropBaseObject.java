@@ -3,6 +3,7 @@ package com.mememan.resourcecrops.builder.json;
 public class CropBaseObject {
 
 	public String JSONVersion = "0.0.0";
+	public Boolean isDefaultCrop = true;
 	public String crop_name;
 	public String origin_mod_id;
 	public String crop_model_type;
@@ -13,6 +14,8 @@ public class CropBaseObject {
 	 */
 	public String[] crop_textures;
 	public String custom_top_texture;
+	public Boolean enable_color_overlay;
+	public int hex_color;
 	public String tier;
 	public Boolean enable_loot_table_drops;
 	/* Only valid options:
@@ -34,7 +37,7 @@ public class CropBaseObject {
 	public CropBaseObject(
 		String crop_name, String origin_mod_id,
 		String crop_model_type, String[] crop_textures,
-		String custom_top_texture, String tier,
+		String custom_top_texture, Boolean enable_color_overlay, String hex_color, String tier,
 		Boolean enable_loot_table_drops, String recipe_type,
 		String recipe_input_type, String recipe_input_item,
 		String[] essence_recipe_pattern, String essence_recipe_output_item,
@@ -48,6 +51,12 @@ public class CropBaseObject {
 			this.custom_top_texture = crop_textures[0];
 		}else{
 			this.custom_top_texture = custom_top_texture;
+		}
+		this.enable_color_overlay = enable_color_overlay;
+		if(enable_color_overlay){
+			this.hex_color = Integer.decode(hex_color);
+		}else{
+			this.hex_color = Integer.decode("0x000000");
 		}
 		this.tier = tier;
 		this.enable_loot_table_drops = enable_loot_table_drops;

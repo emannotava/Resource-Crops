@@ -1,6 +1,5 @@
 package com.mememan.resourcecrops.lib;
 
-import java.io.File;
 import java.nio.file.Path;
 
 import net.fabricmc.loader.api.FabricLoader;
